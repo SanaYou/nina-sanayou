@@ -63,45 +63,9 @@
 
     /* Layout */
     .hc-body {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 32px 24px 64px;
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 32px;
-      align-items: start;
-    }
-
-    /* Sidebar */
-    .sidebar {
-      position: sticky;
-      top: 24px;
-    }
-    .sidebar h3 {
-      font-family: 'Bellota', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: #b0b0b0;
-      margin-bottom: 10px;
-    }
-    .sidebar-link {
-      display: block;
-      padding: 8px 12px;
-      border-radius: 8px;
-      font-size: 13.5px;
-      color: #7A7A7A;
-      cursor: pointer;
-      transition: background .15s, color .15s;
-      line-height: 1.4;
-      text-decoration: none;
-      margin-bottom: 2px;
-    }
-    .sidebar-link:hover, .sidebar-link.active {
-      background: #e8f5f5;
-      color: #66B0B2;
-      font-weight: 600;
     }
 
     /* Articles area */
@@ -113,18 +77,30 @@
       font-size: 15px;
     }
 
+    /* 3-column grid for collections */
+    #collections {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
     /* Collection section */
     .collection {
-      margin-bottom: 40px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
     }
     .collection h2 {
       font-family: 'Bellota', sans-serif;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 700;
-      color: #444;
+      color: #66B0B2;
       padding-bottom: 10px;
       border-bottom: 2px solid #e8f5f5;
       margin-bottom: 12px;
+      line-height: 1.3;
     }
 
     /* Article card */
@@ -203,9 +179,11 @@
     }
 
     /* Responsive */
-    @media (max-width: 680px) {
-      .hc-body { grid-template-columns: 1fr; }
-      .sidebar { display: none; }
+    @media (max-width: 900px) {
+      #collections { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 580px) {
+      #collections { grid-template-columns: 1fr; }
       .hc-header h1 { font-size: 24px; }
     }
   </style>
@@ -224,16 +202,9 @@
 </header>
 
 <div class="hc-body">
-  <nav class="sidebar" id="sidebar">
-    <h3>Collecties</h3>
-    <div id="sidebar-links"></div>
-  </nav>
-
-  <main id="main">
-    <div class="loading" id="loading">Artikelen laden…</div>
-    <div id="no-results">Geen artikelen gevonden voor "<span id="no-results-term"></span>"</div>
-    <div id="collections"></div>
-  </main>
+  <div class="loading" id="loading">Artikelen laden…</div>
+  <div id="no-results">Geen artikelen gevonden voor "<span id="no-results-term"></span>"</div>
+  <div id="collections"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -266,7 +237,6 @@
   // Render all collections
   function render(articles) {
     var collectionsEl = document.getElementById('collections');
-    var sidebarEl = document.getElementById('sidebar-links');
     var noResults = document.getElementById('no-results');
     var loading = document.getElementById('loading');
 
@@ -276,18 +246,15 @@
       collectionsEl.innerHTML = '';
       noResults.style.display = 'block';
       document.getElementById('no-results-term').textContent = document.getElementById('search').value;
-      sidebarEl.innerHTML = '';
       return;
     }
 
     noResults.style.display = 'none';
     var groups = groupByCollection(articles);
     var html = '';
-    var sidebarHtml = '';
 
     Object.keys(groups).sort().forEach(function(col) {
       var id = slug(col);
-      sidebarHtml += '<a class="sidebar-link" href="#' + id + '">' + col + '</a>';
       html += '<section class="collection" id="' + id + '">';
       html += '<h2>' + col + '</h2>';
       groups[col].forEach(function(article) {
@@ -303,7 +270,6 @@
     });
 
     collectionsEl.innerHTML = html;
-    sidebarEl.innerHTML = sidebarHtml;
 
     // Toggle open/close
     document.querySelectorAll('.article-header').forEach(function(header) {
@@ -312,20 +278,6 @@
         card.classList.toggle('open');
       });
     });
-
-    // Active sidebar link on scroll
-    var sections = document.querySelectorAll('.collection');
-    var links = document.querySelectorAll('.sidebar-link');
-    window.addEventListener('scroll', function() {
-      var scrollY = window.scrollY + 80;
-      sections.forEach(function(section) {
-        if (section.offsetTop <= scrollY) {
-          links.forEach(function(l) { l.classList.remove('active'); });
-          var link = document.querySelector('.sidebar-link[href="#' + section.id + '"]');
-          if (link) link.classList.add('active');
-        }
-      });
-    }, { passive: true });
   }
 
   // Search
