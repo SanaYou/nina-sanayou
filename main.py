@@ -117,6 +117,65 @@ async def chat(request: ChatRequest):
     return {"response": response.content[0].text}
 
 
+@app.get("/api/articles")
+async def get_articles():
+    articles = []
+    articles_dir = Path("knowledge/articles")
+    if not articles_dir.exists():
+        return []
+
+    for file in sorted(articles_dir.glob("*.md")):
+        content = file.read_text(encoding="utf-8")
+        title = _extract_title(content, file.stem)
+        collection = _extract_collection(content)
+        articles.append({
+            "id": file.stem,
+            "title": title,
+            "collection": collection,
+            "content": content,
+        })
+
+    return articles
+
+
+def _extract_title(content: str, fallback: str) -> str:
+    for line in content.splitlines():
+        line = line.strip()
+        # Intercom format: TITEL: ...
+        if line.startswith("TITEL:"):
+            return line.replace("TITEL:", "").strip()
+        # Markdown H1
+        if line.startswith("# "):
+            title = line.lstrip("# ").strip()
+            # Strip "Helpartikel — " prefix if present
+            if title.startswith("Helpartikel"):
+                title = title.split("—", 1)[-1].strip()
+            return title
+    return fallback.replace("-", " ").title()
+
+
+def _extract_collection(content: str) -> str:
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("COLLECTIE:"):
+            return line.replace("COLLECTIE:", "").strip()
+    # Fallback: try to detect from content
+    text_lower = content.lower()
+    if "ryt300" in text_lower:
+        return "RYT300 Teacher Training"
+    if "ryt/vyn200" in text_lower or "klassikaal" in text_lower:
+        return "RYT/VYN200 Klassikaal"
+    if "online" in text_lower and "ryt200" in text_lower:
+        return "RYT200 Online"
+    if "betaling" in text_lower or "factuur" in text_lower or "termijn" in text_lower:
+        return "Betaling & Facturatie"
+    if "examen" in text_lower or "herkansing" in text_lower:
+        return "Examens & Herkansingen"
+    if "huddle" in text_lower or "inloggen" in text_lower or "technisch" in text_lower:
+        return "Technische Ondersteuning"
+    return "Algemeen"
+
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}

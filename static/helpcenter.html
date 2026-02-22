@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helpcentrum — SanaYou YOGAcademy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #7A7A7A;
+      background: #f7f9f9;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .hc-header {
+      background: #66B0B2;
+      padding: 40px 24px 48px;
+      text-align: center;
+      color: white;
+    }
+    .hc-header h1 {
+      font-family: 'Bellota', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hc-header p {
+      font-size: 15px;
+      opacity: .88;
+      margin-bottom: 24px;
+    }
+
+    /* Search */
+    .search-wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .5;
+    }
+    #search {
+      width: 100%;
+      padding: 14px 18px 14px 44px;
+      border: none;
+      border-radius: 12px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      color: #7A7A7A;
+      outline: none;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    #search::placeholder { color: #bbb; }
+
+    /* Layout */
+    .hc-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 24px;
+    }
+    .sidebar h3 {
+      font-family: 'Bellota', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #b0b0b0;
+      margin-bottom: 10px;
+    }
+    .sidebar-link {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: #7A7A7A;
+      cursor: pointer;
+      transition: background .15s, color .15s;
+      line-height: 1.4;
+      text-decoration: none;
+      margin-bottom: 2px;
+    }
+    .sidebar-link:hover, .sidebar-link.active {
+      background: #e8f5f5;
+      color: #66B0B2;
+      font-weight: 600;
+    }
+
+    /* Articles area */
+    #no-results {
+      display: none;
+      text-align: center;
+      padding: 48px 24px;
+      color: #bbb;
+      font-size: 15px;
+    }
+
+    /* Collection section */
+    .collection {
+      margin-bottom: 40px;
+    }
+    .collection h2 {
+      font-family: 'Bellota', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #444;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8f5f5;
+      margin-bottom: 12px;
+    }
+
+    /* Article card */
+    .article-card {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: box-shadow .2s;
+    }
+    .article-card:hover { box-shadow: 0 3px 12px rgba(102,176,178,0.15); }
+
+    .article-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      cursor: pointer;
+      gap: 12px;
+    }
+    .article-title {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #555;
+      line-height: 1.4;
+    }
+    .article-chevron {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: #66B0B2;
+      transition: transform .2s;
+    }
+    .article-card.open .article-chevron {
+      transform: rotate(180deg);
+    }
+
+    .article-body {
+      display: none;
+      padding: 0 18px 18px;
+      border-top: 1px solid #f0f0f0;
+    }
+    .article-card.open .article-body { display: block; }
+    .article-content {
+      padding-top: 14px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #7A7A7A;
+    }
+    .article-content h1, .article-content h2 { display: none; }
+    .article-content h3 {
+      font-family: 'Bellota', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #555;
+      margin: 14px 0 6px;
+    }
+    .article-content p { margin-bottom: 10px; }
+    .article-content ul, .article-content ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    .article-content li { margin-bottom: 4px; }
+    .article-content a { color: #66B0B2; word-break: break-word; }
+    .article-content strong { color: #555; }
+    .article-content hr { border: none; border-top: 1px solid #f0f0f0; margin: 14px 0; }
+
+    /* Loading */
+    .loading {
+      text-align: center;
+      padding: 60px;
+      color: #bbb;
+      font-size: 15px;
+      grid-column: 1 / -1;
+    }
+
+    /* Responsive */
+    @media (max-width: 680px) {
+      .hc-body { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      .hc-header h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hc-header">
+  <h1>Helpcentrum SanaYou YOGAcademy</h1>
+  <p>Vind snel een antwoord op je vraag</p>
+  <div class="search-wrap">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+    </svg>
+    <input type="text" id="search" placeholder="Zoek in alle artikelen…" autocomplete="off">
+  </div>
+</header>
+
+<div class="hc-body">
+  <nav class="sidebar" id="sidebar">
+    <h3>Collecties</h3>
+    <div id="sidebar-links"></div>
+  </nav>
+
+  <main id="main">
+    <div class="loading" id="loading">Artikelen laden…</div>
+    <div id="no-results">Geen artikelen gevonden voor "<span id="no-results-term"></span>"</div>
+    <div id="collections"></div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  var API = window.location.origin;
+  var allArticles = [];
+
+  // Slug helper for sidebar anchors
+  function slug(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  // Render markdown, hide H1/H2 (shown as card title)
+  function renderMarkdown(md) {
+    var html = marked.parse(md || '');
+    return html;
+  }
+
+  // Group articles by collection
+  function groupByCollection(articles) {
+    var groups = {};
+    articles.forEach(function(a) {
+      var col = a.collection || 'Algemeen';
+      if (!groups[col]) groups[col] = [];
+      groups[col].push(a);
+    });
+    return groups;
+  }
+
+  // Render all collections
+  function render(articles) {
+    var collectionsEl = document.getElementById('collections');
+    var sidebarEl = document.getElementById('sidebar-links');
+    var noResults = document.getElementById('no-results');
+    var loading = document.getElementById('loading');
+
+    loading.style.display = 'none';
+
+    if (articles.length === 0) {
+      collectionsEl.innerHTML = '';
+      noResults.style.display = 'block';
+      document.getElementById('no-results-term').textContent = document.getElementById('search').value;
+      sidebarEl.innerHTML = '';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    var groups = groupByCollection(articles);
+    var html = '';
+    var sidebarHtml = '';
+
+    Object.keys(groups).sort().forEach(function(col) {
+      var id = slug(col);
+      sidebarHtml += '<a class="sidebar-link" href="#' + id + '">' + col + '</a>';
+      html += '<section class="collection" id="' + id + '">';
+      html += '<h2>' + col + '</h2>';
+      groups[col].forEach(function(article) {
+        html += '<div class="article-card" data-id="' + article.id + '">';
+        html += '<div class="article-header">';
+        html += '<span class="article-title">' + article.title + '</span>';
+        html += '<svg class="article-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+        html += '</div>';
+        html += '<div class="article-body"><div class="article-content">' + renderMarkdown(article.content) + '</div></div>';
+        html += '</div>';
+      });
+      html += '</section>';
+    });
+
+    collectionsEl.innerHTML = html;
+    sidebarEl.innerHTML = sidebarHtml;
+
+    // Toggle open/close
+    document.querySelectorAll('.article-header').forEach(function(header) {
+      header.addEventListener('click', function() {
+        var card = this.closest('.article-card');
+        card.classList.toggle('open');
+      });
+    });
+
+    // Active sidebar link on scroll
+    var sections = document.querySelectorAll('.collection');
+    var links = document.querySelectorAll('.sidebar-link');
+    window.addEventListener('scroll', function() {
+      var scrollY = window.scrollY + 80;
+      sections.forEach(function(section) {
+        if (section.offsetTop <= scrollY) {
+          links.forEach(function(l) { l.classList.remove('active'); });
+          var link = document.querySelector('.sidebar-link[href="#' + section.id + '"]');
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { passive: true });
+  }
+
+  // Search
+  function filterArticles(query) {
+    if (!query.trim()) return allArticles;
+    var q = query.toLowerCase();
+    return allArticles.filter(function(a) {
+      return a.title.toLowerCase().includes(q) ||
+             a.content.toLowerCase().includes(q) ||
+             a.collection.toLowerCase().includes(q);
+    });
+  }
+
+  document.getElementById('search').addEventListener('input', function() {
+    render(filterArticles(this.value));
+  });
+
+  // Load articles
+  fetch(API + '/api/articles')
+    .then(function(r) { return r.json(); })
+    .then(function(articles) {
+      allArticles = articles;
+      render(articles);
+    })
+    .catch(function() {
+      document.getElementById('loading').textContent = 'Kon artikelen niet laden. Probeer de pagina te verversen.';
+    });
+</script>
+
+<script src="/static/widget.js"></script>
+</body>
+</html>
