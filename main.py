@@ -120,11 +120,10 @@ async def chat(request: ChatRequest):
         )
 
         return {"response": response.content[0].text}
-    except anthropic.AuthenticationError:
-        return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
+    except anthropic.AuthenticationError as e:
+        return {"error": f"Auth error: {e}"}
     except Exception as e:
-        print(f"[chat] error: {type(e).__name__}: {e}")
-        return {"error": "Er ging iets mis. Probeer het opnieuw of mail naar academy@sanayou.com."}
+        return {"error": f"Error: {type(e).__name__}: {e}"}
 
 
 @app.get("/api/articles")
