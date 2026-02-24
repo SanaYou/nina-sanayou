@@ -159,8 +159,42 @@
       "titel": "Hoe zijn de online RYT200 teacher trainingen opgebouwd?"
     },
     {
+      "bestand": "inbegrepen-online-ryt200.md",
+      "titel": "Wat is inbegrepen in de online RYT200 opleiding?"
+    },
+    {
+      "bestand": "docenten-online-ryt200.md",
+      "titel": "Wie zijn de docenten van de online RYT200?"
+    },
+    {
       "bestand": "begeleiding-online-ryt200.md",
       "titel": "Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?"
+    },
+    {
+      "bestand": "diplomaroute-online-ryt200.md",
+      "titel": "Hoe behaal ik mijn RYT200 diploma online?"
+    },
+    {
+      "bestand": "proefles-en-platform-ryt200.md",
+      "titel": "Kan ik een proefles volgen of het platform bekijken?"
+    }
+  ],
+  "Support Packs bij Online leren": [
+    {
+      "bestand": "lesboeken-pakket.md",
+      "titel": "Wat is het SanaYou Lesboeken Pakket?"
+    },
+    {
+      "bestand": "live-plus-support-pack.md",
+      "titel": "Wat is het LIVE+ Support Pack?"
+    },
+    {
+      "bestand": "teaching-assessment-pack.md",
+      "titel": "Wat is het Teaching & Assessment Pack?"
+    },
+    {
+      "bestand": "studio-plus-lesdagen.md",
+      "titel": "Wat zijn de SanaYou Lesdagen STUDIO+?"
     }
   ]
 }
