@@ -34,6 +34,11 @@ def load_knowledge() -> str:
         for file in sorted(articles_dir.glob("*.md")):
             parts.append(file.read_text(encoding="utf-8"))
 
+    instructies_dir = knowledge_dir / "instructies"
+    if instructies_dir.exists():
+        for file in sorted(instructies_dir.glob("*.md")):
+            parts.append(file.read_text(encoding="utf-8"))
+
     return "\n\n---\n\n".join(parts)
 
 
