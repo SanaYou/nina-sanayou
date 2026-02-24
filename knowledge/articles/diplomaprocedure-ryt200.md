@@ -1,4 +1,4 @@
-COLLECTIE: Examens & Herkansingen
+COLLECTIE: Examens & Certificering
 # Helpartikel — Diplomaprocedure RYT200 & registratie bij Yoga Alliance
 ## SanaYou YOGAcademy
 

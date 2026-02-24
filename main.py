@@ -134,22 +134,37 @@ async def chat(request: ChatRequest):
 
 @app.get("/api/articles")
 async def get_articles():
-    articles = []
     articles_dir = Path("knowledge/articles")
     if not articles_dir.exists():
         return []
 
+    # Laad volgorde.json indien aanwezig
+    volgorde_path = Path("knowledge/volgorde.json")
+    volgorde = {}
+    if volgorde_path.exists():
+        import json as _json
+        raw = _json.loads(volgorde_path.read_text(encoding="utf-8"))
+        # Bouw index: bestandsnaam → (collectie, positie)
+        for col, items in raw.items():
+            for i, item in enumerate(items):
+                volgorde[item["bestand"]] = (col, i)
+
+    articles = []
     for file in sorted(articles_dir.glob("*.md")):
         content = file.read_text(encoding="utf-8")
         title = _extract_title(content, file.stem)
         collection = _extract_collection(content)
+        order = volgorde.get(file.name, (collection, 9999))[1]
         articles.append({
             "id": file.stem,
             "title": title,
             "collection": collection,
             "content": content,
+            "order": order,
         })
 
+    # Sorteer op collectie-volgorde + positie binnen collectie
+    articles.sort(key=lambda a: (a["collection"], a["order"]))
     return articles
 
 
@@ -162,9 +177,11 @@ def _extract_title(content: str, fallback: str) -> str:
         # Markdown H1
         if line.startswith("# "):
             title = line.lstrip("# ").strip()
-            # Strip "Helpartikel — " prefix if present
-            if title.startswith("Helpartikel"):
-                title = title.split("—", 1)[-1].strip()
+            # Strip collection prefix (everything before " – " or " — ")
+            for sep in [" – ", " — "]:
+                if sep in title:
+                    title = title.split(sep, 1)[1].strip()
+                    break
             return title
     return fallback.replace("-", " ").title()
 

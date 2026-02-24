@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Wanneer kom ik in aanmerking voor pakketkorting?
 
 ## Wanneer kom ik in aanmerking voor pakketkorting?

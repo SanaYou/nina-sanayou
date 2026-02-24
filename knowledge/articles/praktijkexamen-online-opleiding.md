@@ -1,4 +1,4 @@
-COLLECTIE: Examens & Herkansingen
+COLLECTIE: Examens & Certificering
 # Examens & Herkansingen – Hoe werkt het praktijkexamen van een online opleiding?
 
 ## Hoe werkt het praktijkexamen van een online opleiding?

@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?
 
 ## Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?

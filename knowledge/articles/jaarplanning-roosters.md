@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Waar vind ik de jaarplanning en roosters?
 
 ## Waar vind ik de jaarplanning en roosters?

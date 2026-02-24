@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Wat is het verschil tussen een opleidingspakket en losse lesmodules?
 
 ## Wat is het verschil tussen een opleidingspakket en losse lesmodules?

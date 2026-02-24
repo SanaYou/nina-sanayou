@@ -1,4 +1,4 @@
-COLLECTIE: Examens & Herkansingen
+COLLECTIE: Examens & Certificering
 # Klassikale erkende Teacher Training – Hoe registreer ik mij als erkend yogadocent bij de VYN?
 
 ## Hoe registreer ik mij als erkend yogadocent bij de VYN?

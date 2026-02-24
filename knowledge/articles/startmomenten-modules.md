@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Wanneer starten de losse lesmodules Yin en Yang?
 
 ## Wanneer starten de losse lesmodules Yin en Yang?

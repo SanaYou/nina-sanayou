@@ -1,4 +1,4 @@
-COLLECTIE: Algemeen
+COLLECTIE: Algemeen (Broncollectie)
 # Algemeen – Hoe we onze support hebben ingericht
 
 ## Hoe we onze support hebben ingericht

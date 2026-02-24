@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Als ik de RYT/VYN200 in één keer boek, kan ik dan zelf mijn modulevolgorde bepalen?
 
 ## Als ik de RYT/VYN200 in één keer boek, kan ik dan zelf mijn modulevolgorde bepalen?

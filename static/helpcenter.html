@@ -226,8 +226,9 @@
   // Group articles by collection
   function groupByCollection(articles) {
     var groups = {};
+    // Artikelen komen al gesorteerd binnen via de API (op order)
     articles.forEach(function(a) {
-      var col = a.collection || 'Algemeen';
+      var col = a.collection || 'Algemeen (Broncollectie)';
       if (!groups[col]) groups[col] = [];
       groups[col].push(a);
     });
@@ -253,7 +254,28 @@
     var groups = groupByCollection(articles);
     var html = '';
 
-    Object.keys(groups).sort().forEach(function(col) {
+    var COLLECTION_ORDER = [
+      "Klassikale RYT/VYN200 Teacher Training",
+      "Online RYT200 Teacher Trainingen",
+      "Online (Bij)scholingen & Specialisaties",
+      "Klassikale Workshops & Bijscholingen",
+      "RYT300 Teacher Training - Hybride",
+      "Support Packs bij Online leren",
+      "Examens & Certificering",
+      "Betaling, Facturatie & Termijnen",
+      "Technische Ondersteuning",
+      "Opleidingsvoorwaarden",
+      "Algemeen (Broncollectie)",
+      "Overig / Nog te plaatsen"
+    ];
+    var sortedCols = Object.keys(groups).sort(function(a, b) {
+      var ai = COLLECTION_ORDER.indexOf(a);
+      var bi = COLLECTION_ORDER.indexOf(b);
+      if (ai === -1) ai = 999;
+      if (bi === -1) bi = 999;
+      return ai - bi;
+    });
+    sortedCols.forEach(function(col) {
       var id = slug(col);
       html += '<section class="collection" id="' + id + '">';
       html += '<h2>' + col + '</h2>';

@@ -1,4 +1,4 @@
-COLLECTIE: Examens & Herkansingen
+COLLECTIE: Examens & Certificering
 # Examens & Herkansingen – Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?
 
 ## Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?

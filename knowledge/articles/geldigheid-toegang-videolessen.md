@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
 
 ## Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?

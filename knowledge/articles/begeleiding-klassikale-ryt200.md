@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Hoe word je begeleid tijdens de klassikale RYT/VYN200 opleiding?
 
 ## Hoe word je begeleid tijdens de klassikale RYT/VYN200 opleiding?

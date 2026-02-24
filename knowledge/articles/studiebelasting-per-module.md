@@ -1,4 +1,4 @@
-COLLECTIE: RYT/VYN200 Klassikaal
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 # Klassikale erkende Teacher Training – Hoeveel studiebelasting moet ik rekening mee houden per lesmodule?
 
 ## Hoeveel studiebelasting moet ik rekening mee houden per lesmodule?
