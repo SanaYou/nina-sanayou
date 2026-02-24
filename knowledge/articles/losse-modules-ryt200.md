@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Kan ik ook alleen losse lesmodules volgen in plaats van een volledige RYT/VYN200 Yin & Yang?
 
 ## Kan ik ook alleen losse lesmodules volgen in plaats van een volledige RYT/VYN200 Yin & Yang?

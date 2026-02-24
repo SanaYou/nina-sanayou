@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Lesdagen missen tijdens de RYT/VYN200 Teacher Training
 
 ## Lesdagen missen tijdens de RYT/VYN200 Teacher Training

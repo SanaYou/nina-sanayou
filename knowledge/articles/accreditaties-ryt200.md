@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Welke accreditaties heeft de RYT/VYN200 Yin & Yang opleiding?
 
 ## Welke accreditaties heeft de RYT/VYN200 Yin & Yang opleiding?

@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?
 
 ## Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?

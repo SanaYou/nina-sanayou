@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?
 
 ## Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?

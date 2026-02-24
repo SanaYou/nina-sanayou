@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Hoe verleng ik mijn toegang tot de videolessen?
 
 ## Hoe verleng ik mijn toegang tot de videolessen?

@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Hoe lang mag ik maximaal over de RYT/VYN200 doen?
 
 ## Hoe lang mag ik maximaal over de RYT/VYN200 doen?

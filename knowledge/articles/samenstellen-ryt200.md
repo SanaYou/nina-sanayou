@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Hoe stel ik mijn RYT/VYN200 Yin & Yang Teacher Training zelf samen?
 
 ## Hoe stel ik mijn RYT/VYN200 Yin & Yang Teacher Training zelf samen?

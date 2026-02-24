@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Wat is de modulevolgorde van de Yin- en Yang-lesmodules?
 
 ## Wat is de modulevolgorde van de Yin- en Yang-lesmodules?

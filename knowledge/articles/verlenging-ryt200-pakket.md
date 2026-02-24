@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Helpartikel — Verlengde toegang voor studenten met een volledig RYT200-pakket
 ## SanaYou YOGAcademy
 

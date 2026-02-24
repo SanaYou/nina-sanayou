@@ -1,3 +1,4 @@
+COLLECTIE: RYT200 Online
 # Erkende RYT200 Teacher Trainingen Online – Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?
 
 ## Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?

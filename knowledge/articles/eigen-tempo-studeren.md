@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Kan ik studeren in mijn eigen tempo?
 
 ## Kan ik studeren in mijn eigen tempo?

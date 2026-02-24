@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Kan ik de lesmodules ook verspreid over meerdere lesjaren volgen?
 
 ## Kan ik de lesmodules ook verspreid over meerdere lesjaren volgen?

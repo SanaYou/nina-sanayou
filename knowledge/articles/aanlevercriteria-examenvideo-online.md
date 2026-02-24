@@ -1,3 +1,4 @@
+COLLECTIE: Examens & Herkansingen
 # Examens en Herkansingen – Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?
 
 ## Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?

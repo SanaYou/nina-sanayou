@@ -1,3 +1,4 @@
+COLLECTIE: RYT/VYN200 Klassikaal
 # Klassikale erkende Teacher Training – Zijn de lesdagen altijd op vaste dagen of wisselt dat?
 
 ## Zijn de lesdagen altijd op vaste dagen of wisselt dat?
