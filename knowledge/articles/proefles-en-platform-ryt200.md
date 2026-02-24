@@ -2,6 +2,8 @@
 
 COLLECTIE: Online RYT200 Teacher Trainingen
 
+Dit artikel gaat over de mogelijkheid om een proefles te volgen of het online lesplatform van SanaYou YOGAcademy te bekijken voordat je een beslissing neemt.
+
 Ja! Bij aanschaf van een online RYT200 teacher training ontvang je twee complete proeflessen cadeau: een zachte Yin Yoga-les en een Easy Flow Yang-les. Zo kun je zelf de balans van Yin en Yang voelen die onze opleidingen zo bijzonder maakt.
 
 ## Wil je eerst kijken voor je beslist?

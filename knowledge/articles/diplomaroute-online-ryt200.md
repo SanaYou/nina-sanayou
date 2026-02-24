@@ -2,6 +2,8 @@
 
 COLLECTIE: Online RYT200 Teacher Trainingen
 
+Dit artikel gaat over de route naar het officiële RYT200-diploma bij SanaYou YOGAcademy: welke vier stappen je doorloopt van start tot certificering, en wat er bij elke stap van je verwacht wordt.
+
 Het RYT200-diploma behaal je in vier stappen. Je bepaalt zelf het tempo, maar de volgorde is vast. Hier is de route.
 
 ## Stap 1 — Modules volgen

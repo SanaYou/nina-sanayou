@@ -2,6 +2,8 @@
 
 COLLECTIE: Online RYT200 Teacher Trainingen
 
+Dit artikel gaat over wat er inbegrepen is bij de online RYT200 teacher trainingen van SanaYou YOGAcademy: wat je krijgt bij aanschaf, hoe de betaling werkt en welke optionele pakketten je kunt toevoegen.
+
 Bij alle drie de online RYT200 teacher trainingen van SanaYou YOGAcademy is het volgende inbegrepen, ongeacht welke richting je kiest.
 
 ## Wat je krijgt

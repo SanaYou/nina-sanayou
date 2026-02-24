@@ -2,6 +2,8 @@
 
 COLLECTIE: Support Packs bij Online leren
 
+Dit artikel gaat over de SanaYou Lesdagen STUDIO+: wat het zijn, voor wie ze bedoeld zijn en wat ze kosten.
+
 De SanaYou Lesdagen STUDIO+ zijn live en klassikale verdiepingsdagen in de studio. Ze zijn bedoeld voor online studenten die het geleerde ook klassikaal willen ervaren.
 
 ## Wat houdt het in?

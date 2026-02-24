@@ -2,6 +2,8 @@
 
 COLLECTIE: Support Packs bij Online leren
 
+Dit artikel gaat over het LIVE+ Support Pack van SanaYou YOGAcademy: wat het inhoudt, voor wie het bedoeld is en wat het kost.
+
 Het SanaYou Support Pack LIVE+ is voor studenten die meer persoonlijke connectie en begeleiding willen tijdens hun opleiding.
 
 ## Wat krijg je?

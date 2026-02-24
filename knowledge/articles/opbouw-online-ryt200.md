@@ -2,6 +2,8 @@
 
 COLLECTIE: Online RYT200 Teacher Trainingen
 
+Dit artikel gaat over de opbouw van de online RYT200 teacher trainingen bij SanaYou YOGAcademy: welke drie richtingen er zijn, wat er per variant in zit, hoeveel modules elke opleiding telt en wat de prijs is.
+
 De online RYT200 teacher trainingen van SanaYou YOGAcademy zijn erkende yogadocentenopleidingen die je volledig online en in jouw eigen tempo kunt volgen. Je studeert thuis, wanneer het jou uitkomt, en werkt toe naar een wereldwijd erkend RYT200-certificaat van Yoga Alliance.
 
 Onze deelnemers geven de opleiding gemiddeld een 9.6.

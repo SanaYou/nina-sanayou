@@ -2,6 +2,8 @@
 
 COLLECTIE: Support Packs bij Online leren
 
+Dit artikel gaat over het SanaYou Lesboeken Pakket: wat het inhoudt, waarom het de enige verplichte literatuur is voor de opleiding en wat het kost.
+
 Het SanaYou Lesboeken Pakket is een speciaal samengesteld pakket met alle digitale lesboeken en hand-outs die bij jouw online RYT200-opleiding horen.
 
 ## Wat zit erin?

@@ -2,6 +2,8 @@
 
 COLLECTIE: Support Packs bij Online leren
 
+Dit artikel gaat over het Teaching & Assessment Pack van SanaYou YOGAcademy: wat je krijgt, hoe het werkt en wat het kost.
+
 Het SanaYou Teaching & Assessment Pack is er voor studenten die hun praktijktoets vol vertrouwen willen afronden. Je krijgt persoonlijke feedback en begeleiding voordat je de toets doet.
 
 ## Wat krijg je?

@@ -2,6 +2,8 @@
 
 COLLECTIE: Online RYT200 Teacher Trainingen
 
+Dit artikel gaat over het docententeam van de online RYT200 teacher trainingen bij SanaYou YOGAcademy: wie de docenten zijn, wat hun achtergrond is en hoe de persoonlijke begeleiding is geregeld.
+
 Bij de online RYT200 teacher trainingen van SanaYou YOGAcademy leer je van een team van ervaren en gepassioneerde yogadocenten en opleiders. Elk met een eigen specialisatie, samen zorgen ze voor een opleiding die zowel inhoudelijk sterk als persoonlijk is.
 
 ## Het docententeam
