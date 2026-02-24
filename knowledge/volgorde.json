@@ -11,6 +11,10 @@
   ],
   "Examens & Certificering": [
     {
+      "bestand": "praktijktoets-online-ryt200.md",
+      "titel": "Hoe werkt de praktijktoets van de online RYT200?"
+    },
+    {
       "bestand": "aanlevercriteria-examenvideo-online.md",
       "titel": "Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?"
     },
@@ -159,8 +163,16 @@
       "titel": "Hoe zijn de online RYT200 teacher trainingen opgebouwd?"
     },
     {
+      "bestand": "verschil-drie-richtingen-ryt200.md",
+      "titel": "Wat is het verschil tussen de drie richtingen van de online RYT200?"
+    },
+    {
       "bestand": "inbegrepen-online-ryt200.md",
       "titel": "Wat is inbegrepen in de online RYT200 opleiding?"
+    },
+    {
+      "bestand": "leertraject-online-ryt200.md",
+      "titel": "Hoe ziet het leertraject van de online RYT200 eruit?"
     },
     {
       "bestand": "docenten-online-ryt200.md",
@@ -171,12 +183,28 @@
       "titel": "Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?"
     },
     {
+      "bestand": "wanneer-starten-online-ryt200.md",
+      "titel": "Wanneer kan ik starten met de online RYT200?"
+    },
+    {
+      "bestand": "combineren-werk-gezin-ryt200.md",
+      "titel": "Kan ik de online RYT200 combineren met werk en gezin?"
+    },
+    {
+      "bestand": "erkenning-yoga-alliance-online-ryt200.md",
+      "titel": "Is de online RYT200 erkend door Yoga Alliance?"
+    },
+    {
       "bestand": "diplomaroute-online-ryt200.md",
       "titel": "Hoe behaal ik mijn RYT200 diploma online?"
     },
     {
       "bestand": "proefles-en-platform-ryt200.md",
       "titel": "Kan ik een proefles volgen of het platform bekijken?"
+    },
+    {
+      "bestand": "doorstroom-ryt300-online.md",
+      "titel": "Kan ik na de online RYT200 doorstromen naar de RYT300?"
     }
   ],
   "Support Packs bij Online leren": [
