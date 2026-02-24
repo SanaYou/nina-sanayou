@@ -1,3 +1,4 @@
+COLLECTIE: Examens & Herkansingen
 # Klassikale erkende Teacher Training – Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?
 
 ## Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?
