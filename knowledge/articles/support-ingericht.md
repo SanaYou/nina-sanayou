@@ -1,3 +1,4 @@
+COLLECTIE: Algemeen
 # Algemeen – Hoe we onze support hebben ingericht
 
 ## Hoe we onze support hebben ingericht
