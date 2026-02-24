@@ -98,23 +98,33 @@ class ChatRequest(BaseModel):
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    if not api_key:
+        return {"error": "API key niet geconfigureerd. Neem contact op met academy@sanayou.com."}
 
-    messages = [{"role": m.role, "content": m.content} for m in request.history]
-    messages.append({"role": "user", "content": request.message})
+    try:
+        client = anthropic.Anthropic(api_key=api_key)
 
-    # Keep history to last 10 exchanges
-    if len(messages) > 20:
-        messages = messages[-20:]
+        messages = [{"role": m.role, "content": m.content} for m in request.history]
+        messages.append({"role": "user", "content": request.message})
 
-    response = client.messages.create(
-        model="claude-opus-4-6",
-        max_tokens=1024,
-        system=SYSTEM_PROMPT,
-        messages=messages,
-    )
+        # Keep history to last 10 exchanges
+        if len(messages) > 20:
+            messages = messages[-20:]
 
-    return {"response": response.content[0].text}
+        response = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=1024,
+            system=SYSTEM_PROMPT,
+            messages=messages,
+        )
+
+        return {"response": response.content[0].text}
+    except anthropic.AuthenticationError:
+        return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
+    except Exception as e:
+        print(f"[chat] error: {type(e).__name__}: {e}")
+        return {"error": "Er ging iets mis. Probeer het opnieuw of mail naar academy@sanayou.com."}
 
 
 @app.get("/api/articles")
