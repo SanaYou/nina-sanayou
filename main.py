@@ -170,15 +170,34 @@ def _extract_title(content: str, fallback: str) -> str:
 
 
 def _extract_collection(content: str) -> str:
+    # Explicit COLLECTIE: tag has highest priority
     for line in content.splitlines():
         line = line.strip()
         if line.startswith("COLLECTIE:"):
             return line.replace("COLLECTIE:", "").strip()
-    # Fallback: try to detect from content
+
+    # Detect from H1 title prefix (most reliable)
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("# "):
+            title = line.lstrip("# ").strip().lower()
+            if "klassikale erkende teacher training" in title:
+                return "RYT/VYN200 Klassikaal"
+            if "erkende ryt200 teacher trainingen online" in title:
+                return "RYT200 Online"
+            if "examens" in title and "herkansing" in title:
+                return "Examens & Herkansingen"
+            if "ryt300" in title:
+                return "RYT300 Teacher Training"
+            if "algemeen" in title:
+                return "Algemeen"
+            break
+
+    # Fallback: keyword detection in full content
     text_lower = content.lower()
     if "ryt300" in text_lower:
         return "RYT300 Teacher Training"
-    if "ryt/vyn200" in text_lower or "klassikaal" in text_lower:
+    if "ryt/vyn200" in text_lower or "klassikale" in text_lower or "klassikaal" in text_lower:
         return "RYT/VYN200 Klassikaal"
     if "online" in text_lower and "ryt200" in text_lower:
         return "RYT200 Online"
