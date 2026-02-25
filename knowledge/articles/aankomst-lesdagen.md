@@ -17,6 +17,6 @@ Algemene informatie over locatie, parkeren en voorzieningen vind je centraal ter
 
 ## Gerelateerde artikelen
 
-- Wat is het adres van SanaYou YOGAcademy?
-- Waar kan ik parkeren?
-- Welke voorzieningen zijn er tijdens lesdagen?
+- Waar is de studio en waar kan ik parkeren?
+- Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?
+- Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?

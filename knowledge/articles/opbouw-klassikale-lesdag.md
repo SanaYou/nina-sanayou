@@ -32,5 +32,5 @@ Soms wijkt de indeling van een lesdag iets af, bijvoorbeeld wanneer er een live 
 ## Gerelateerde artikelen
 
 - Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?
-- Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?
+- Waar is de studio en waar kan ik parkeren?
 - Wat is de modulevolgorde van de Yin- en Yang-lesmodules?

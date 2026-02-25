@@ -7,17 +7,19 @@ In dit artikel lees je wat de onboarding call inhoudt, voor wie hij bedoeld is e
 
 ## Wat is een onboarding call?
 
-De onboarding call is een persoonlijk adviesgesprek met Sandy, alleen op aanvraag en nadat je een opleiding hebt aangekocht. In het gesprek kijkt Sandy samen met jou naar je achtergrond en ervaring, en geeft ze advies over welke module of modules je het beste als eerste kunt oppakken en hoe je de volgorde van de opleiding voor jezelf kunt bepalen.
+De onboarding call is een gratis, persoonlijk adviesgesprek met Sandy. Het is een optionele mogelijkheid, alleen beschikbaar na aankoop van een online RYT200 of RYT300 opleiding.
 
-De onboarding call is optioneel — je hebt hem niet nodig om te starten, maar hij kan nuttig zijn als je even wil sparren over je aanpak.
+In het gesprek kijkt Sandy samen met jou naar je achtergrond en ervaring, en geeft ze advies over welke module of modules je het beste als eerste kunt oppakken en hoe je de volgorde van de opleiding voor jezelf kunt bepalen.
+
+Je hebt de onboarding call niet nodig om te starten. Als je er behoefte aan hebt, kun je die wens gewoon kenbaar maken.
 
 ## RYT300: ook advies over de klassikale lesdagen
 
-Doe je de RYT300? Dan geeft Sandy in de onboarding call ook advies over de klassikale lesdagen. Zodra je je aanmeldt word je automatisch ingepland voor de eerstvolgende lesdagen. Het is verstandig om de online modules die bij een lesdag horen alvast te bekijken voordat je erheen gaat — de onboarding call helpt je daarmee op weg.
+Doe je de RYT300? Dan kan Sandy in de onboarding call ook advies geven over de klassikale lesdagen. Zodra je je aanmeldt word je automatisch ingepland voor de eerstvolgende lesdagen. Het is verstandig om de online modules die bij een lesdag horen alvast te bekijken voordat je erheen gaat.
 
-## Hoe vraag ik een onboarding call aan?
+## Hoe maak ik mijn interesse kenbaar?
 
-Stuur een mail naar academy@sanayou.com met het verzoek om een onboarding call. Vermeld kort je naam, welke opleiding je hebt gevolgd en wanneer je beschikbaar bent.
+Stuur een mail naar academy@sanayou.com als je gebruik wil maken van de onboarding call. Vermeld kort je naam, welke opleiding je hebt aangekocht en wanneer je beschikbaar bent.
 
 ## Gerelateerde artikelen
 

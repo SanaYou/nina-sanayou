@@ -30,5 +30,5 @@ Het oefenen met deze video's hoort bij je huiswerk. Hoe intensief je oefent, ste
 ## Gerelateerde artikelen
 
 - Waarom is de toegang tot videolessen gekoppeld aan de duur van de modules?
-- Kan ik studeren in mijn eigen tempo?
+- Waar is de studio en waar kan ik parkeren?
 - Hoe stel ik mijn RYT/VYN200 Yin & Yang Teacher Training zelf samen?

@@ -1,4 +1,4 @@
-COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+COLLECTIE: Algemene informatie
 TAGS: parkeren, adres, studio, zwolle, hasseltendijk, lesdagen, klassikaal, locatie, route
 
 # Waar is de studio en waar kan ik parkeren?
