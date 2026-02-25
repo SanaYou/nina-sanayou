@@ -120,25 +120,40 @@
       margin-top: 14px;
     }
 
-    /* ─── COLLECTION VIEW ────────────────────────── */
-    .collection-back {
-      display: inline-flex;
+    /* ─── Breadcrumbs ────────────────────────────── */
+    .breadcrumb {
+      display: flex;
       align-items: center;
       gap: 6px;
-      color: #66B0B2;
       font-family: 'Raleway', sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      cursor: pointer;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #b0b0b0;
       margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-link {
+      color: #66B0B2;
+      cursor: pointer;
       text-decoration: none;
       background: none;
       border: none;
       padding: 0;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13.5px;
+      font-weight: 500;
     }
-    .collection-back:hover { text-decoration: underline; }
-    .collection-back svg { width: 16px; height: 16px; flex-shrink: 0; }
+    .breadcrumb-link:hover { text-decoration: underline; }
+    .breadcrumb-sep {
+      color: #ccc;
+      font-size: 12px;
+    }
+    .breadcrumb-current {
+      color: #888;
+      font-weight: 600;
+    }
 
+    /* ─── COLLECTION VIEW ────────────────────────── */
     .collection-view-title {
       font-family: 'Bellota', sans-serif;
       font-size: 26px;
@@ -306,16 +321,22 @@
 
   <!-- COLLECTION VIEW: artikelen als accordeon -->
   <div class="view" id="view-collection">
-    <button class="collection-back" id="back-btn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-      Terug naar overzicht
-    </button>
+    <nav class="breadcrumb">
+      <button class="breadcrumb-link" id="back-btn">Alle collecties</button>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current" id="breadcrumb-collection"></span>
+    </nav>
     <h2 class="collection-view-title" id="collection-title"></h2>
     <div id="collection-articles"></div>
   </div>
 
   <!-- SEARCH VIEW: zoekresultaten -->
   <div class="view" id="view-search">
+    <nav class="breadcrumb">
+      <button class="breadcrumb-link" id="back-btn-search">Alle collecties</button>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Zoekresultaten</span>
+    </nav>
     <p id="search-result-label"></p>
     <div id="no-results">Geen artikelen gevonden voor "<span id="no-results-term"></span>"</div>
     <div id="search-articles"></div>
@@ -447,6 +468,7 @@
 
   function showCollection(collectionName) {
     document.getElementById('collection-title').textContent = collectionName;
+    document.getElementById('breadcrumb-collection').textContent = collectionName;
     var articles = allArticles.filter(function(a) {
       return (a.collection || 'Algemeen') === collectionName;
     });
@@ -636,6 +658,7 @@
   // ─── Back button ───────────────────────────────────────
 
   document.getElementById('back-btn').addEventListener('click', showHome);
+  document.getElementById('back-btn-search').addEventListener('click', showHome);
 
   // ─── Load articles ─────────────────────────────────────
 
