@@ -1,15 +1,28 @@
+COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: ryt300, starten, flexibiliteit, klassikale lesdagen, planning, instappen
+
 # Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?
 
-COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+In dit artikel lees je wanneer je kunt instappen, hoe de online modules en klassikale lesdagen zijn gepland en wat je kunt doen als een datum niet uitkomt.
 
-In dit artikel lees je wanneer je kunt instappen en hoe flexibel het studietempo is binnen de RYT300.
+## Online modules: volledig op jouw tempo
 
-## Je kunt op elk moment beginnen
+De online modules zijn direct toegankelijk zodra je bent ingeschreven. Je volgt ze wanneer het jou uitkomt, in het tempo dat past bij jouw leven.
 
-De online modules zijn direct toegankelijk zodra je bent ingeschreven. De klassikale lesdagen worden jaarlijks herhaald, waardoor je niet hoeft te wachten op een vast startmoment.
+Je hoeft de modules niet in een vaste volgorde te volgen. De enige uitzondering is dat je altijd begint met de Basics-module van jouw gekozen studierichting. Die legt de basis voor de rest van het traject.
 
-Je bepaalt zelf wanneer je klaar bent voor deelname aan de klassikale lesdagen en stemt het tempo af op je agenda en levensfase.
+## Klassikale lesdagen: automatisch ingepland
 
-## Volgorde
+De klassikale lesdagen zijn een vast onderdeel van de RYT300. Zodra je je aanmeldt, word je automatisch ingepland voor de eerstvolgende klassikale lesdagen die bij jouw opleiding horen. Je hoeft hier zelf niets voor te regelen.
 
-Je hoeft de online modules niet in een vaste volgorde te volgen. De enige uitzondering is dat je altijd begint met de Basics-module van jouw gekozen studierichting, zodat je de benodigde basis legt voor de rest van het traject.
+Een goede voorbereiding maakt het meeste uit van een klassikale lesdag: bekijk de bijbehorende online modules alvast voordat je naar de lesdag gaat.
+
+## Datum verplaatsen
+
+Kan een specifieke datum echt niet? Dan kun je een verzoek sturen naar academy@sanayou.com. We kunnen maximaal twee data kosteloos verplaatsen.
+
+## Gerelateerde artikelen
+
+- Hoe werkt de RYT300 The Art of Advanced Teaching?
+- Hoe werkt de combinatie van online leren en klassikale lesdagen binnen de RYT300?
+- Welke vaste modules vormen de gedeelde basis van de RYT300?

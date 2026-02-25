@@ -10,8 +10,18 @@ Docenten lezen mee in de online community en geven waar nodig aanvullingen of ve
 
 ## Live contact via het LIVE+ Support Pack
 
-Wil je meer regelmatig persoonlijk contact? Dan kun je je opleiding uitbreiden met het LIVE+ Support Pack. Daarmee krijg je iedere maand een live CoachCall via Zoom, aanvullende Q&A's en webinars, en begeleiding van SanaYou-docenten en gastdocenten.
+Wil je meer regelmatig persoonlijk contact? Dan kun je je opleiding uitbreiden met het LIVE+ Support Pack. Daarmee krijg je:
+
+- iedere maand een live CoachCall via Zoom
+- aanvullende Q&A's en webinars
+- begeleiding van SanaYou-docenten en gastdocenten
 
 Dit pakket is beschikbaar voor wie behoefte heeft aan regelmatige live ondersteuning naast de online modules.
 
 Meer informatie en aanmelden: https://checkout.sanayou.com/checkout/online-plus-pakket
+
+## Gerelateerde artikelen
+
+- Wat is het LIVE+ Support Pack?
+- Hoe stel ik vragen tijdens mijn online opleiding?
+- Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?

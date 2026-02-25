@@ -10,3 +10,9 @@ De actuele tarieven vind je op de informatiepagina van de opleiding of module ze
 
 Bekijk alle tarieven en aanmeldopties hier:
 https://checkout.sanayou.com/ryt200-teacher-trainingen-online
+
+## Gerelateerde artikelen
+
+- Hoe werkt betalen in termijnen voor de online RYT200?
+- Welke online RYT200-opleidingen kan ik volgen?
+- Waar vind ik de factuur van mijn online module of opleiding?

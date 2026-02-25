@@ -25,3 +25,9 @@ Het resultaat is een hoger aantal erkende studieuren én een verdiepend certific
 
 De klassikale uitbreidingsdagen zijn los te boeken via het workshopoverzicht. Een overzicht van alle beschikbare data vind je hier:
 https://www.sanayou.com/workshops/
+
+## Gerelateerde artikelen
+
+- Welke losse online modules en bijscholingen biedt SanaYou YOGAcademy aan?
+- Wat zijn de SanaYou Lesdagen STUDIO+?
+- Hoe werkt certificering van een losse module?

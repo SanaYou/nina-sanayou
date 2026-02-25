@@ -1,10 +1,13 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+
 # Helpartikel — Verlengde toegang voor studenten met een volledig RYT200-pakket
+
 ## SanaYou YOGAcademy
 
 ---
 
 Van toepassing op:
+
 - RYT200 Yin & Yang Yoga Online
 - RYT200 Yin Yoga Online
 - RYT200 Yang Yoga Online
@@ -22,7 +25,7 @@ Studenten die het volledige RYT200-pakket hebben aangeschaft, ontvangen soms aut
 Voor het volledige RYT200-pakket geldt een eigen verlengregeling:
 
 - Prijs: **slechts € 97,50 per jaar** voor alle lesmodules die onder de 200-uurs opleiding vallen
-- De bijdrage verlengt automatisch, tenzij de student zelf opzegt
+- De bijdrage verlengt automatisch, tenzij je zelf opzegt
 - Opzeggen kan via het klantportaal, waarvan de link staat in de bevestigingsmail na aanschaf van de verlenging
 
 ---
@@ -38,3 +41,10 @@ https://checkout.sanayou.com/checkout/verlenging-ryt200-yin-yoga-teacher-trainin
 **RYT200 Yang Yoga Online:**
 https://checkout.sanayou.com/checkout/verlenging-ryt200-yang-yoga-teacher-training-online-1753429797
 
+---
+
+## Gerelateerde artikelen
+
+- Hoe lang heb ik toegang tot een online module en kan ik die verlengen?
+- Hoe lang heb ik de tijd om de volledige online RYT200 af te ronden?
+- Hoelang heb ik toegang tot een losse online module?

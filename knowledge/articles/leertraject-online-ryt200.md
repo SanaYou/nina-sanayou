@@ -10,14 +10,30 @@ De online RYT200 bij SanaYou YOGAcademy is een gestructureerd leertraject. Je do
 
 ## Wat je doet als student
 
-Je oefent actief mee met de praktische yogalessen en praktijklabs, herhaalt theorielessen waar nodig en maakt kennistoetsen per module. Je deelt ervaringen en stelt vragen in de studentencommunity.
+- Je oefent actief mee met de praktische yogalessen en praktijklabs
+- Je herhaalt theorielessen waar nodig
+- Je maakt kennistoetsen per module
+- Je deelt ervaringen en stelt vragen in de studentencommunity
 
 Na alle modules sluit je af met een praktijktoets: een eigen yogales die je opneemt en instuurt.
 
 ## Wat je leert
 
-Tijdens de opleiding leer je yogahoudingen veilig en correct uitvoeren en opties geven zodat houdingen voor iedereen passend zijn. Je ontwikkelt inzicht in functionele anatomie en leert adem, aandacht en filosofie integreren in je lesstijl. Daarnaast bouw je vaardigheden op in lesopbouw, didactiek en authentiek lesgeven.
+Tijdens de opleiding leer je:
+
+- yogahoudingen veilig en correct uitvoeren
+- opties geven zodat houdingen voor iedereen passend zijn
+- inzicht in functionele anatomie
+- adem, aandacht en filosofie integreren in je lesstijl
+- lesopbouw, didactiek en authentiek lesgeven
 
 ## Studiebelasting
 
-Je hebt 24 maanden toegang. Hoeveel tijd je per week investeert bepaal jij zelf. De modules zijn zo opgebouwd dat je korte of langere studiesessies kunt plannen zoals het jou uitkomt.
+Je hebt 24 maanden toegang. Hoeveel tijd je per week investeert, bepaal jij zelf. De modules zijn zo opgebouwd dat je korte of langere studiesessies kunt plannen zoals het jou uitkomt.
+
+## Gerelateerde artikelen
+
+- Moet ik de online RYT200-modules in een vaste volgorde volgen?
+- Hoe lang heb ik de tijd om de volledige online RYT200 af te ronden?
+- Welke online RYT200-opleidingen kan ik volgen?
+- Hoe werkt de praktijktoets voor de RYT200 Online?

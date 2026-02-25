@@ -15,3 +15,9 @@ De Huddle App is ook beschikbaar voor iOS en Android via de App Store en Google 
 ## Tip: gebruik Google Chrome
 
 Voor de beste ervaring raden we aan om Google Chrome te gebruiken als browser. Dat voorkomt de meeste technische haperingen.
+
+## Gerelateerde artikelen
+
+- Hoe log ik in op Huddle?
+- Hoe navigeer ik door de videolessen in Huddle?
+- Kan ik een proefles volgen of het platform van tevoren bekijken?

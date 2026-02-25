@@ -8,11 +8,11 @@ In dit artikel lees je welke vormen van begeleiding onderdeel zijn van een onlin
 
 De online RYT200 is zo ingericht dat je zelfstandig studeert, met duidelijke structuur en ondersteuning waar nodig.
 
-## Begeleidingsvormen bij online opleidingen
+## Begeleidingsvormen
 
 Afhankelijk van het traject dat je volgt, kun je gebruikmaken van verschillende vormen van begeleiding. Deze ondersteuning is bedoeld om je leerproces te verdiepen en je stap voor stap richting afronding te begeleiden.
 
-- **Online community:** Je hebt toegang tot een besloten community in Huddle, opgebouwd in drie groepen: **YINSPIRATIE** (Yin Yoga), **De YANG ZONE** (Yang Yoga) en **AnatoME** (anatomie). Hier leer je van en met elkaar, deel je ervaringen en kun je vragen stellen. Docenten lezen mee en geven waar nodig aanvullingen of verduidelijking. Na afronding van je opleiding blijf je toegang houden tot deze community.
+- **Online community:** Je hebt toegang tot een besloten community in Huddle, opgebouwd in drie groepen: YINSPIRATIE (Yin Yoga), De YANG ZONE (Yang Yoga) en AnatoME (anatomie). Hier leer je van en met elkaar, deel je ervaringen en kun je vragen stellen. Docenten lezen mee en geven waar nodig aanvullingen of verduidelijking. Na afronding van je opleiding blijf je toegang houden tot deze community.
 
 - **Gezamenlijke online momenten:** Met het Support Pack LIVE+ kun je iedere eerste woensdag van de maand deelnemen aan Live CoachCalls. Tijdens deze momenten kun je vragen stellen aan de hoofddocent. Kun je een keer niet live aanwezig zijn, dan kun je de CoachCall altijd via een replay terugkijken.
 
@@ -23,3 +23,10 @@ Deze vormen van begeleiding ondersteunen je bij vragen, verdieping en het afrond
 ## Keuzevrijheid
 
 Niet iedereen heeft dezelfde mate van begeleiding nodig. Daarom is de begeleiding modulair ingericht en kun je kiezen wat bij jou past.
+
+## Gerelateerde artikelen
+
+- Wat is het LIVE+ Support Pack?
+- Wat zijn de Support Packs?
+- Wat zijn de verschillen tussen de Support Packs?
+- Is persoonlijk contact met een docent mogelijk tijdens de online RYT200?

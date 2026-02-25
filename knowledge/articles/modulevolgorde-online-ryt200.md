@@ -10,12 +10,18 @@ Je hoeft de modules niet in een vaste volgorde te volgen, maar je start altijd m
 
 Afhankelijk van jouw gekozen richting start je met:
 
-- Yin Yoga Basics — voor de RYT200 Yin Yoga Teacher Training Online
-- Yoga Basics — voor de RYT200 Yang Yoga Teacher Training Online
-- Beide basismodules — voor de RYT200 Yin & Yang Yoga Teacher Training Online
+- Yin Yoga Basics, voor de RYT200 Yin Yoga Teacher Training Online
+- Yoga Basics, voor de RYT200 Yang Yoga Teacher Training Online
+- Beide basismodules, voor de RYT200 Yin & Yang Yoga Teacher Training Online
 
 ## Daarna bepaal je zelf
 
 Na de basismodule(s) kies je zelf welke vervolgmodules je doet en in welk tempo. Je past je studie zo aan op je agenda, leerstijl en wat op dat moment voor jou klopt.
 
 Heb je behoefte aan structuur of advies over een logische opbouw? Tijdens de onboarding call kijken we daar graag samen met je naar.
+
+## Gerelateerde artikelen
+
+- Wat is de onboarding call en hoe vraag ik die aan?
+- Hoe ziet het leertraject van de online RYT200 eruit?
+- Kan ik meerdere online modules tegelijk volgen?

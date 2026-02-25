@@ -17,3 +17,9 @@ Dit is de enige verplichte literatuur bij de opleiding. De lesboeken zijn niet l
 ## Hoe voeg je het toe?
 
 Het pakket wordt aangeboden op het moment dat je de opleiding kiest, als extra optie op de checkout-pagina. Het wordt aangeboden met een aanzienlijk voordeel ten opzichte van de losse aankoop.
+
+## Gerelateerde artikelen
+
+- Welke online RYT200-opleidingen kan ik volgen?
+- Krijg ik een digitale of papieren reader?
+- Hoe ziet het leertraject van de online RYT200 eruit?

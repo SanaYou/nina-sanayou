@@ -26,3 +26,10 @@ Gericht op de dynamische, bewustzijnsgerichte Yang-vormen. Aanvullende modules i
 - Ashtanga Yoga
 - Biomechanica in Yang Yoga
 - The Art of Hands-On Adjustments
+
+## Gerelateerde artikelen
+
+- Welke vaste modules vormen de gedeelde basis van de RYT300?
+- Wat zijn de opdrachten voor de praktijktoets RYT300 Yin Mastery?
+- Wat zijn de opdrachten voor de praktijktoets RYT300 Yoga Awakening?
+- Hoe werkt de RYT300 The Art of Advanced Teaching?

@@ -13,3 +13,10 @@ Via de online modules leer je de theorie, verdiep je je in anatomie en alignment
 Tijdens de klassikale lesdagen oefen je met directe feedback, ontvang je persoonlijke begeleiding en werk je samen met medestudenten. De live dagen zijn de plek waar je de theorie in de praktijk brengt en tot leven laat komen.
 
 De twee vormen versterken elkaar: online geeft je de kennis, de klassikale lesdagen maken het concreet.
+
+## Gerelateerde artikelen
+
+- Hoe werkt de RYT300 The Art of Advanced Teaching?
+- Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?
+- Wat zijn de SanaYou Lesdagen STUDIO+?
+- Welke vaste modules vormen de gedeelde basis van de RYT300?

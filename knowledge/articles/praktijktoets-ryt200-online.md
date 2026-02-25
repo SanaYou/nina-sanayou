@@ -30,3 +30,10 @@ Als je de praktijktoets niet met een voldoende afrondt, ontvang je gerichte feed
 
 Een herkansing kost ook € 97,50 en vraag je aan via dezelfde pagina:
 https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online
+
+## Gerelateerde artikelen
+
+- Hoe wordt het online praktijkexamen beoordeeld?
+- Aan welke eisen moet mijn examenvideo voldoen?
+- Wat is het Teaching Assessment Pack?
+- Hoe ontvang ik mijn RYT200-diploma na afronding?

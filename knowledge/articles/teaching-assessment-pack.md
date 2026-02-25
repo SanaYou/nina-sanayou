@@ -10,7 +10,13 @@ Het Teaching Assessment Pack is een optioneel begeleidingstraject ter voorbereid
 
 ## Hoe werkt het?
 
-Je uploadt een lesvideo van maximaal 30 minuten. Sandy bekijkt de les en stelt een uitgebreid schriftelijk feedbackverslag op met concrete tips en tops op het gebied van didactiek, stemgebruik, lesopbouw, cueing en veiligheid.
+Je uploadt een lesvideo van maximaal 30 minuten. Sandy bekijkt de les en stelt een uitgebreid schriftelijk feedbackverslag op met concrete tips en tops op het gebied van:
+
+- didactiek
+- stemgebruik
+- lesopbouw
+- cueing
+- veiligheid
 
 Daarna volgt een individuele CoachCall van 60 minuten waarin je het verslag samen doorneemt, vragen stelt en je lesmethodiek verder verfijnt.
 
@@ -20,6 +26,12 @@ Voor studenten die gerichte feedback willen op hun manier van lesgeven voordat z
 
 ## Kosten
 
-€145 voor het complete pakket, inclusief het schriftelijke feedbackverslag en de CoachCall.
+€ 145 voor het complete pakket, inclusief het schriftelijke feedbackverslag en de CoachCall.
 
 Aanmelden via: https://checkout.sanayou.com/checkout/teaching-assessement-pack
+
+## Gerelateerde artikelen
+
+- Hoe werkt de praktijktoets voor de RYT200 Online?
+- Hoe voeg ik een Support Pack toe aan mijn opleiding?
+- Wat zijn de Support Packs?

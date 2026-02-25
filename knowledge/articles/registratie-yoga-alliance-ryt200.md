@@ -6,7 +6,11 @@ In dit artikel lees je wanneer en hoe je je kunt registreren bij Yoga Alliance n
 
 ## Wanneer ben je klaar voor registratie?
 
-Je kunt je registreren bij Yoga Alliance zodra je alle deelcertificaten hebt behaald, geslaagd bent voor de praktijktoets en het officiële RYT200-diploma hebt ontvangen.
+Je kunt je registreren bij Yoga Alliance zodra je:
+
+- alle deelcertificaten hebt behaald
+- geslaagd bent voor de praktijktoets
+- het officiële RYT200-diploma hebt ontvangen
 
 ## Registreren doe je zelf
 
@@ -14,3 +18,9 @@ Na ontvangst van je diploma meld je je aan als RYT200 Registered Yoga Teacher vi
 https://www.yogaalliance.org
 
 Het diploma is internationaal erkend. Als RYT200 kun je wereldwijd yogalessen geven.
+
+## Gerelateerde artikelen
+
+- Helpartikel — Diplomaprocedure RYT200 & registratie bij Yoga Alliance
+- Hoe ontvang ik mijn RYT200-diploma na afronding?
+- Wanneer ben ik officieel erkend yogadocent?

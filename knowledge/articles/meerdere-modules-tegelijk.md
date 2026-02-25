@@ -9,3 +9,9 @@ In dit artikel lees je of je meerdere online modules naast elkaar kunt volgen bi
 Je kunt zonder probleem meerdere modules naast elkaar volgen. Er is geen technische beperking die je tegenhoudt.
 
 Veel deelnemers kiezen voor één of twee modules tegelijk, omdat dat overzichtelijk blijft en ruimte geeft om de lesstof goed te verwerken. Maar jij bepaalt zelf wat haalbaar is binnen jouw agenda en concentratie.
+
+## Gerelateerde artikelen
+
+- Moet ik de online RYT200-modules in een vaste volgorde volgen?
+- Hoe lang heb ik de tijd om de volledige online RYT200 af te ronden?
+- Hoe ziet het leertraject van de online RYT200 eruit?

@@ -11,3 +11,9 @@ Volgens de richtlijnen van Yoga Alliance heb je maximaal drie jaar de tijd om je
 Dit geldt voor zowel de online als de klassikale varianten van de RYT200-opleiding.
 
 Je kunt het tempo volledig afstemmen op jouw eigen leven en planning.
+
+## Gerelateerde artikelen
+
+- Hoe lang heb ik toegang tot een online module en kan ik die verlengen?
+- Kan ik meerdere online modules tegelijk volgen?
+- Hoe ziet het leertraject van de online RYT200 eruit?

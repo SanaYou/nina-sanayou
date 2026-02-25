@@ -8,7 +8,7 @@ In dit artikel lees je wie de docenten zijn van de online RYT200 Teacher Trainin
 
 De online RYT200 wordt verzorgd door een team van ervaren yogadocenten en opleiders, elk met een eigen specialisatie.
 
-**Sandy Karsten — Hoofd Docentenopleider**
+**Sandy Karsten, Hoofd Docentenopleider**
 E-RYT500 en YACEP. Sandy is de oprichter van SanaYou YOGAcademy en hoofd docentenopleider. Ze is gespecialiseerd in Critical Alignment, Yin Yoga en Functionele Anatomie. Ze begeleidt de opleiding van begin tot einde en is de docent bij de 1-op-1 CoachCall als je het Teaching Assessment Pack afneemt.
 
 **Amanda Beelen**
@@ -23,3 +23,9 @@ Fysiotherapeut, P-DTR practitioner en yogadocente in zowel Yin als Yang Yoga. Ma
 ## Begeleiding via de community
 
 Naast de videolessen van het docententeam kun je vragen stellen in de besloten studentencommunity, waar docenten meelezen en reageren. Met het optionele LIVE+ Support Pack neem je maandelijks deel aan live CoachCalls met Sandy.
+
+## Gerelateerde artikelen
+
+- Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?
+- Wat is het LIVE+ Support Pack?
+- Hoe stel ik vragen tijdens mijn online opleiding?

@@ -10,9 +10,14 @@ Elke online module bevat één of meerdere kennistests. Deze bestaan uit multipl
 
 ## Praktijkopdracht
 
-Na afronding van alle modules lever je een praktijkopdracht in. Je ontwikkelt een les die aansluit bij jouw studierichting en laat daarin zien dat je verdieping kunt aanbrengen in je thema, veilig en functioneel cue't, alignment begrijpt en bewust werkt met assists of therapeutische toepassingen.
+Na afronding van alle modules lever je een praktijkopdracht in. Je ontwikkelt een les die aansluit bij jouw studierichting en laat daarin zien dat je:
 
-De opdracht wordt digitaal ingediend en zorgvuldig beoordeeld, en je ontvangt inhoudelijke feedback.
+- verdieping kunt aanbrengen in je thema
+- veilig en functioneel cue't
+- alignment begrijpt
+- bewust werkt met assists of therapeutische toepassingen
+
+De opdracht wordt digitaal ingediend en zorgvuldig beoordeeld. Je ontvangt inhoudelijke feedback.
 
 ## Diploma en registratie als RYT500
 
@@ -33,3 +38,10 @@ Bij de RYT300 is standaard inbegrepen:
 - Erkenning door Yoga Alliance
 
 Het lesboekenpakket is optioneel bij te bestellen.
+
+## Gerelateerde artikelen
+
+- Hoe werkt de praktijktoets van de RYT300?
+- Kan ik een herkansing aanvragen binnen de RYT300?
+- Hoe registreer ik mijn RYT300 bij Yoga Alliance?
+- Wat is het verschil tussen Yin Mastery en Yoga Awakening binnen de RYT300?

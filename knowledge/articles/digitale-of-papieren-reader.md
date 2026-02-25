@@ -9,3 +9,9 @@ In dit artikel lees je in welke vorm je de lesreader ontvangt tijdens je online 
 Je ontvangt de lesreader digitaal. Dat is overzichtelijk en makkelijk mee te nemen op je apparaat.
 
 Wil je liever een papieren versie? Dan kun je de reader zelf laten printen en inbinden bij een copyshop.
+
+## Gerelateerde artikelen
+
+- Wat is het SanaYou Lesboeken Pakket?
+- Kan ik studeren via laptop, tablet of telefoon?
+- Hoe navigeer ik door de videolessen in Huddle?

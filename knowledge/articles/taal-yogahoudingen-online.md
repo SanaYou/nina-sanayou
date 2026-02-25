@@ -8,6 +8,13 @@ In dit artikel lees je welke taal wordt gebruikt voor de benamingen van yogahoud
 
 De taal die we gebruiken sluit aan bij wat binnen elke stijl het meest gebruikelijk en herkenbaar is.
 
-In Yang-yogastijlen worden houdingen benoemd in het Nederlands én in de traditionele Sanskriettermen. In Yin Yoga gebruiken we voornamelijk Engelse termen, aangevuld met Nederlandse uitleg waar nodig.
+- **Yang-yogastijlen:** houdingen worden benoemd in het Nederlands én in de traditionele Sanskriettermen.
+- **Yin Yoga:** we gebruiken voornamelijk Engelse termen, aangevuld met Nederlandse uitleg waar nodig.
 
 Je leert tijdens de opleiding dus werken met de terminologie die in de praktijk gangbaar is voor jouw richting.
+
+## Gerelateerde artikelen
+
+- Welke online RYT200-opleidingen kan ik volgen?
+- Hoe ziet het leertraject van de online RYT200 eruit?
+- Wat is het verschil tussen de online RYT200 en de klassikale opleiding?

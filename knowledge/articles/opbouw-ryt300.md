@@ -10,12 +10,21 @@ De RYT300 is een hybride opleiding. Dat betekent dat je vaste online lesmodules 
 
 Je bouwt eerst een stevige inhoudelijke basis via de online modules. Daarna neem je deel aan de klassikale lesdagen, waar je verdieping krijgt, feedback ontvangt en alles direct toepast in de praktijk.
 
-## Flexibel instappen
+## Instappen en planning
 
-Omdat de online modules altijd toegankelijk zijn en de klassikale lesdagen jaarlijks worden herhaald, kun je op elk gewenst moment instromen. Je stemt je tempo en planning af op jouw eigen situatie.
+De online modules zijn altijd toegankelijk en volg je in je eigen tempo. Zodra je je aanmeldt voor de RYT300, word je automatisch ingepland voor de eerstvolgende klassikale lesdagen die bij jouw opleiding horen. Het is verstandig om de bijbehorende online modules al bekeken te hebben voordat je naar een klassikale lesdag gaat.
+
+Kan een specifieke datum echt niet? Stuur een mail naar academy@sanayou.com. We kunnen maximaal twee data kosteloos verplaatsen.
 
 ## Erkenning
 
 De RYT300 van SanaYou YOGAcademy is erkend door Yoga Alliance. In combinatie met een RYT200 kun je je registreren als RYT500, het hoogste reguliere niveau binnen Yoga Alliance.
 
 Meer informatie en aanmelden: https://checkout.sanayou.com/ryt300-teacher-training
+
+## Gerelateerde artikelen
+
+- Welke vaste modules vormen de gedeelde basis van de RYT300?
+- Hoe werkt de combinatie van online leren en klassikale lesdagen binnen de RYT300?
+- Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?
+- Voor wie is de RYT300 geschikt?

@@ -17,4 +17,13 @@ Elke RYT300 start met een stevige gedeelde basis van vaste modules. Deze verdiep
 - Yin Yoga & Restorative Alignment
 - Basis Anatomie voor Yogadocenten
 
+## Na de gedeelde basis
+
 Na deze gedeelde basis kies je één van de twee studierichtingen: Yin Mastery of Yoga Awakening.
+
+## Gerelateerde artikelen
+
+- Wat is het verschil tussen Yin Mastery en Yoga Awakening binnen de RYT300?
+- Hoe werkt de RYT300 The Art of Advanced Teaching?
+- Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?
+- Voor wie is de RYT300 geschikt?

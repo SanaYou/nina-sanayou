@@ -10,10 +10,16 @@ Tijdens je online opleiding krijg je automatisch toegang tot de online community
 
 Docenten lezen mee en geven waar nodig aanvullingen of verduidelijking.
 
-De community is opgebouwd in drie groepen, afhankelijk van het onderwerp:
+## De community is opgebouwd in drie groepen
 
-- **YINSPIRATIE** — voor alles rondom Yin Yoga
-- **De YANG ZONE** — voor alles rondom Yang Yoga
-- **AnatoME** — voor anatomievragen
+- **YINSPIRATIE**: voor alles rondom Yin Yoga
+- **De YANG ZONE**: voor alles rondom Yang Yoga
+- **AnatoME**: voor anatomievragen
 
 Stel je vraag in de groep die het beste aansluit bij jouw onderwerp.
+
+## Gerelateerde artikelen
+
+- Is persoonlijk contact met een docent mogelijk tijdens de online RYT200?
+- Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?
+- Hoe log ik in op Huddle?

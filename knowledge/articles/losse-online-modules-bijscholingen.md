@@ -39,3 +39,10 @@ De twee basismodules zijn uitgebreide startpunten die ook als zelfstandige verdi
 ## Uitbreiden met klassikale lesdagen
 
 Een aantal van deze modules kun je aanvullen met klassikale lesdagen. Dat levert meer studieuren op en een verdiepend certificaat. Je leest hoe dat werkt in het artikel over hybride uitbreiding.
+
+## Gerelateerde artikelen
+
+- Kan ik een online module uitbreiden met klassikale lesdagen?
+- Hoe werkt certificering van een losse module?
+- Wat is de studiebelasting van losse online modules?
+- Hoelang heb ik toegang tot een losse online module?

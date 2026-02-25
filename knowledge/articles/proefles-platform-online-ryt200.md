@@ -13,3 +13,9 @@ Bekijk het YouTube-kanaal via de SanaYou-website voor het actuele aanbod.
 ## Hoe het platform werkt
 
 De online leeromgeving is toegankelijk via Huddle, zowel via de browser als via de app op je telefoon of tablet. Na inschrijving zie je direct hoe de modules zijn opgebouwd en hoe de lessen zijn ingericht.
+
+## Gerelateerde artikelen
+
+- Hoe log ik in op Huddle?
+- Hoe navigeer ik door de videolessen in Huddle?
+- Kan ik studeren via laptop, tablet of telefoon?
