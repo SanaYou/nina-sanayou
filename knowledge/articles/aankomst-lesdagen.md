@@ -1,4 +1,4 @@
-COLLECTIE: Algemeen (Broncollectie)
+COLLECTIE: Algemeen
 # Algemeen – Hoe laat ben ik welkom op klassikale les/workshop-dagen?
 
 ## Hoe laat ben ik welkom op klassikale les/workshop-dagen?
