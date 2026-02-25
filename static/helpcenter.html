@@ -151,8 +151,49 @@
       line-height: 1.7;
       color: #7A7A7A;
     }
-    .article-content h1,
+    .article-content h1 { display: none; }
     .article-content h2 { display: none; }
+    .article-content h2.gerelateerd {
+      display: block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 20px 0 8px;
+      padding-top: 14px;
+      border-top: 1px solid #f0f0f0;
+    }
+    .article-content .related-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .article-content .related-list li {
+      margin-bottom: 6px;
+    }
+    .article-content .related-list a {
+      color: #66B0B2;
+      font-size: 13.5px;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .article-content .related-list a::before {
+      content: '→';
+      font-size: 12px;
+      opacity: 0.7;
+    }
+    .article-content .related-list a:hover {
+      text-decoration: underline;
+    }
+    .article-card.highlight {
+      box-shadow: 0 0 0 2px #66B0B2 !important;
+      transition: box-shadow 0.3s;
+    }
     .article-content h3 {
       font-family: 'Bellota', sans-serif;
       font-size: 15px;
@@ -329,7 +370,74 @@
       header.addEventListener('click', function() {
         var card = this.closest('.article-card');
         card.classList.toggle('open');
+        if (card.classList.contains('open')) {
+          postProcessRelated(card);
+        }
       });
+    });
+  }
+
+  // Vind een artikel op titel en open + scroll ernaar toe
+  function openArticleByTitle(title) {
+    var cards = document.querySelectorAll('.article-card');
+    var titleNorm = title.toLowerCase().trim();
+    for (var i = 0; i < cards.length; i++) {
+      var card = cards[i];
+      var cardTitle = card.querySelector('.article-title').textContent.trim().toLowerCase();
+      if (cardTitle === titleNorm) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (!card.classList.contains('open')) {
+          card.classList.add('open');
+          postProcessRelated(card);
+        }
+        // Highlight even
+        card.classList.add('highlight');
+        setTimeout(function(c) { return function() { c.classList.remove('highlight'); }; }(card), 2000);
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // Maak "Gerelateerde artikelen" zichtbaar en klikbaar
+  function postProcessRelated(card) {
+    var content = card.querySelector('.article-content');
+    if (!content || content.dataset.relatedProcessed) return;
+    content.dataset.relatedProcessed = '1';
+
+    var headings = content.querySelectorAll('h2');
+    headings.forEach(function(h) {
+      if (/gerelateerde/i.test(h.textContent)) {
+        h.classList.add('gerelateerd');
+
+        // Vervang volgende ul met klikbare links
+        var ul = h.nextElementSibling;
+        if (ul && ul.tagName === 'UL') {
+          var newUl = document.createElement('ul');
+          newUl.className = 'related-list';
+          ul.querySelectorAll('li').forEach(function(li) {
+            var text = li.textContent.trim();
+            var newLi = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = '#';
+            a.textContent = text;
+            a.addEventListener('click', function(e) {
+              e.preventDefault();
+              var found = openArticleByTitle(text);
+              if (!found) {
+                // Artikel niet zichtbaar (bijv. in andere collectie) — zoek erna
+                document.getElementById('search').value = text;
+                document.getElementById('search').dispatchEvent(new Event('input'));
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(function() { openArticleByTitle(text); }, 300);
+              }
+            });
+            newLi.appendChild(a);
+            newUl.appendChild(newLi);
+          });
+          ul.parentNode.replaceChild(newUl, ul);
+        }
+      }
     });
   }
 
