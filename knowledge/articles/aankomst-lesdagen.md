@@ -1,4 +1,4 @@
-COLLECTIE: Algemeen
+COLLECTIE: Algemene informatie
 # Algemeen – Hoe laat ben ik welkom op klassikale les/workshop-dagen?
 
 ## Hoe laat ben ik welkom op klassikale les/workshop-dagen?

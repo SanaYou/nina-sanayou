@@ -378,7 +378,7 @@
   function countByCollection(articles) {
     var counts = {};
     articles.forEach(function(a) {
-      var col = a.collection || 'Algemeen';
+      var col = a.collection || 'Algemene informatie';
       counts[col] = (counts[col] || 0) + 1;
     });
     return counts;
@@ -388,16 +388,16 @@
 
   var COLLECTION_ORDER = [
     "Klassikale RYT/VYN200 Teacher Training",
-    "Klassikale Workshops & Bijscholingen",
-    "Erkende RYT300 Teacher Training (hybride)",
     "Online RYT200 Teacher Trainingen",
+    "Erkende RYT300 Teacher Training (hybride)",
+    "Klassikale Workshops & Bijscholingen",
     "Losse Online Bijscholingen en Specialisaties",
-    "Examens & Certificering",
     "Ondersteuning en Begeleiding",
+    "Examens & Certificering",
     "Betaling, Facturatie & Termijnen",
-    "Opleidingsvoorwaarden",
     "Technische Ondersteuning",
-    "Algemeen",
+    "Opleidingsvoorwaarden",
+    "Algemene informatie",
     "Overig / Nog te plaatsen"
   ];
 
@@ -470,7 +470,7 @@
     document.getElementById('collection-title').textContent = collectionName;
     document.getElementById('breadcrumb-collection').textContent = collectionName;
     var articles = allArticles.filter(function(a) {
-      return (a.collection || 'Algemeen') === collectionName;
+      return (a.collection || 'Algemene informatie') === collectionName;
     });
     renderArticles(articles, document.getElementById('collection-articles'));
     showView('view-collection');
@@ -523,7 +523,7 @@
     // Not found in current view — find which collection it's in
     var target = allArticles.find(function(a) { return a.title.toLowerCase().trim() === titleNorm; });
     if (target) {
-      showCollection(target.collection || 'Algemeen');
+      showCollection(target.collection || 'Algemene informatie');
       setTimeout(function() { openArticleByTitle(title); }, 350);
       return true;
     }
