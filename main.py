@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 import anthropic
 import os
+import re
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -22,29 +23,128 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
-def load_knowledge() -> str:
+# ── Artikel index (geladen bij startup) ────────────────────────────────────
+def _extract_title(content: str, fallback: str) -> str:
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("TITEL:"):
+            return line.replace("TITEL:", "").strip()
+        if line.startswith("# "):
+            title = line.lstrip("# ").strip()
+            for sep in [" – ", " — "]:
+                if sep in title:
+                    title = title.split(sep, 1)[1].strip()
+                    break
+            return title
+    return fallback.replace("-", " ").title()
+
+
+def _extract_collection(content: str) -> str:
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("COLLECTIE:"):
+            return line.replace("COLLECTIE:", "").strip()
+    return "Algemeen"
+
+
+def _extract_tags(content: str) -> list:
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("TAGS:"):
+            raw = line.replace("TAGS:", "").strip()
+            return [t.strip().lower() for t in raw.split(",")]
+    return []
+
+
+def load_articles_index() -> list:
+    """Laad alle artikelen als geïndexeerde documenten voor RAG."""
+    articles_dir = Path("knowledge/articles")
+    if not articles_dir.exists():
+        return []
+    index = []
+    for file in sorted(articles_dir.glob("*.md")):
+        content = file.read_text(encoding="utf-8")
+        title = _extract_title(content, file.stem)
+        collection = _extract_collection(content)
+        tags = _extract_tags(content)
+        # Strip metadata lines voor schone content in de prompt
+        clean_lines = [
+            l for l in content.splitlines()
+            if not l.startswith("COLLECTIE:") and not l.startswith("TAGS:")
+        ]
+        clean_content = "\n".join(clean_lines).strip()
+        index.append({
+            "id": file.stem,
+            "title": title,
+            "collection": collection,
+            "tags": tags,
+            "content": content,          # voor helpcenter API
+            "clean_content": clean_content,  # voor Nina's prompt
+        })
+    return index
+
+
+ARTICLES_INDEX = load_articles_index()
+
+# Laad ook kleine kennisbestanden in root (bijv. anchorlinks.md)
+def load_base_knowledge() -> str:
     knowledge_dir = Path("knowledge")
     parts = []
-
     for file in sorted(knowledge_dir.glob("*.md")):
         parts.append(file.read_text(encoding="utf-8"))
+    return "\n\n".join(parts)
 
-    articles_dir = knowledge_dir / "articles"
-    if articles_dir.exists():
-        for file in sorted(articles_dir.glob("*.md")):
-            parts.append(file.read_text(encoding="utf-8"))
+BASE_KNOWLEDGE = load_base_knowledge()
 
-    instructies_dir = knowledge_dir / "instructies"
-    if instructies_dir.exists():
-        for file in sorted(instructies_dir.glob("*.md")):
-            parts.append(file.read_text(encoding="utf-8"))
 
+# ── RAG: haal relevante artikelen op ───────────────────────────────────────
+def normalize(text: str) -> str:
+    return re.sub(r"[^a-z0-9\s]", " ", text.lower())
+
+
+def retrieve_articles(query: str, history: List, top_k: int = 6) -> str:
+    """Selecteer de meest relevante artikelen op basis van de vraag + recent gesprek."""
+    # Combineer huidige vraag + laatste 3 berichten voor context
+    search_text = query
+    for msg in history[-6:]:
+        search_text += " " + msg.content
+    words = [w for w in normalize(search_text).split() if len(w) > 2]
+
+    if not words:
+        return ""
+
+    scored = []
+    for article in ARTICLES_INDEX:
+        score = 0
+        title_norm = normalize(article["title"])
+        tags_norm = normalize(" ".join(article["tags"]))
+        content_norm = normalize(article["clean_content"])
+
+        for word in words:
+            if word in title_norm:
+                score += 8
+            if word in tags_norm:
+                score += 4
+            if word in content_norm:
+                score += 1
+
+        if score > 0:
+            scored.append((score, article))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+    relevant = [a for _, a in scored[:top_k]]
+
+    if not relevant:
+        return ""
+
+    parts = []
+    for a in relevant:
+        parts.append(f"## {a['title']}\n(Collectie: {a['collection']})\n\n{a['clean_content']}")
     return "\n\n---\n\n".join(parts)
 
 
-KNOWLEDGE = load_knowledge()
-
-SYSTEM_PROMPT = f"""Je bent Nina, de digitale assistent van SanaYou YOGAcademy.
+# ── System prompt (zonder kennisbank — die wordt dynamisch ingevoegd) ──────
+SYSTEM_PROMPT_BASE = """Je bent Nina, de digitale assistent van SanaYou YOGAcademy.
 
 Je helpt studenten en geïnteresseerden met vragen over opleidingen, prijzen, planning, technische ondersteuning en meer. Je communiceert warm, professioneel en to-the-point — in de stem van Sandy Karsten, hoofd docentenopleider van SanaYou YOGAcademy.
 
@@ -86,11 +186,18 @@ Geef de Calendly-link NIET:
 - Als de vraag informatief is en je die gewoon kunt beantwoorden
 - Bij technische vragen of procedurevragen
 
-## Kennisbank
+## Anchorlinks en URL's
 
-{KNOWLEDGE}"""
+{BASE_KNOWLEDGE}
+
+## Kennisbank (relevante artikelen voor deze vraag)
+
+{{ARTICLES}}"""
+
+SYSTEM_PROMPT_BASE = SYSTEM_PROMPT_BASE.replace("{BASE_KNOWLEDGE}", BASE_KNOWLEDGE)
 
 
+# ── Chat endpoint ───────────────────────────────────────────────────────────
 class Message(BaseModel):
     role: str
     content: str
@@ -110,17 +217,21 @@ async def chat(request: ChatRequest):
     try:
         client = anthropic.Anthropic(api_key=api_key)
 
-        messages = [{"role": m.role, "content": m.content} for m in request.history]
+        # RAG: haal relevante artikelen op voor deze vraag
+        relevant_knowledge = retrieve_articles(request.message, request.history or [])
+        system_prompt = SYSTEM_PROMPT_BASE.replace("{ARTICLES}", relevant_knowledge or "(geen specifieke artikelen gevonden)")
+
+        messages = [{"role": m.role, "content": m.content} for m in (request.history or [])]
         messages.append({"role": "user", "content": request.message})
 
-        # Keep history to last 10 exchanges
+        # Maximaal 20 berichten geschiedenis
         if len(messages) > 20:
             messages = messages[-20:]
 
         response = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=2048,
-            system=SYSTEM_PROMPT,
+            max_tokens=1024,
+            system=system_prompt,
             messages=messages,
         )
 
@@ -132,19 +243,18 @@ async def chat(request: ChatRequest):
         return {"error": "Er ging iets mis. Probeer het opnieuw of mail naar academy@sanayou.com."}
 
 
+# ── Helpcenter API ──────────────────────────────────────────────────────────
 @app.get("/api/articles")
 async def get_articles():
     articles_dir = Path("knowledge/articles")
     if not articles_dir.exists():
         return []
 
-    # Laad volgorde.json indien aanwezig
     volgorde_path = Path("knowledge/volgorde.json")
     volgorde = {}
     if volgorde_path.exists():
         import json as _json
         raw = _json.loads(volgorde_path.read_text(encoding="utf-8"))
-        # Bouw index: bestandsnaam → (collectie, positie)
         for col, items in raw.items():
             for i, item in enumerate(items):
                 volgorde[item["bestand"]] = (col, i)
@@ -154,77 +264,19 @@ async def get_articles():
         content = file.read_text(encoding="utf-8")
         title = _extract_title(content, file.stem)
         collection = _extract_collection(content)
+        tags = _extract_tags(content)
         order = volgorde.get(file.name, (collection, 9999))[1]
         articles.append({
             "id": file.stem,
             "title": title,
             "collection": collection,
+            "tags": tags,
             "content": content,
             "order": order,
         })
 
-    # Sorteer op collectie-volgorde + positie binnen collectie
     articles.sort(key=lambda a: (a["collection"], a["order"]))
     return articles
-
-
-def _extract_title(content: str, fallback: str) -> str:
-    for line in content.splitlines():
-        line = line.strip()
-        # Intercom format: TITEL: ...
-        if line.startswith("TITEL:"):
-            return line.replace("TITEL:", "").strip()
-        # Markdown H1
-        if line.startswith("# "):
-            title = line.lstrip("# ").strip()
-            # Strip collection prefix (everything before " – " or " — ")
-            for sep in [" – ", " — "]:
-                if sep in title:
-                    title = title.split(sep, 1)[1].strip()
-                    break
-            return title
-    return fallback.replace("-", " ").title()
-
-
-def _extract_collection(content: str) -> str:
-    # Explicit COLLECTIE: tag has highest priority
-    for line in content.splitlines():
-        line = line.strip()
-        if line.startswith("COLLECTIE:"):
-            return line.replace("COLLECTIE:", "").strip()
-
-    # Detect from H1 title prefix (most reliable)
-    for line in content.splitlines():
-        line = line.strip()
-        if line.startswith("# "):
-            title = line.lstrip("# ").strip().lower()
-            if "klassikale erkende teacher training" in title:
-                return "RYT/VYN200 Klassikaal"
-            if "erkende ryt200 teacher trainingen online" in title:
-                return "RYT200 Online"
-            if "examens" in title and "herkansing" in title:
-                return "Examens & Herkansingen"
-            if "ryt300" in title:
-                return "RYT300 Teacher Training"
-            if "algemeen" in title:
-                return "Algemeen"
-            break
-
-    # Fallback: keyword detection in full content
-    text_lower = content.lower()
-    if "ryt300" in text_lower:
-        return "RYT300 Teacher Training"
-    if "ryt/vyn200" in text_lower or "klassikale" in text_lower or "klassikaal" in text_lower:
-        return "RYT/VYN200 Klassikaal"
-    if "online" in text_lower and "ryt200" in text_lower:
-        return "RYT200 Online"
-    if "betaling" in text_lower or "factuur" in text_lower or "termijn" in text_lower:
-        return "Betaling & Facturatie"
-    if "examen" in text_lower or "herkansing" in text_lower:
-        return "Examens & Herkansingen"
-    if "huddle" in text_lower or "inloggen" in text_lower or "technisch" in text_lower:
-        return "Technische Ondersteuning"
-    return "Algemeen"
 
 
 @app.get("/health")
