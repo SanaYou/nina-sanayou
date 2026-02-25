@@ -47,7 +47,7 @@ Modules:
 ## Meer informatie en aanmelden
 
 Bekijk hier alle drie de online opleidingen met uitgebreide informatie en aanmeldmogelijkheden:
-https://checkout.sanayou.com/ryt200-teacher-trainingen-online
+[bekijk alle online opleidingen](https://checkout.sanayou.com/ryt200-teacher-trainingen-online)
 
 ## Gerelateerde artikelen
 

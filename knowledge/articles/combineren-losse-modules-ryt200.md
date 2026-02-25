@@ -16,7 +16,7 @@ De losse online modules zijn bedoeld als bijscholing, verdieping of specialisati
 Dan schrijf je je in voor een van de drie volledige RYT200 online Teacher Trainingen. Daarin zitten alle benodigde modules, het examentraject en de certificering als één geheel.
 
 Bekijk hier alle drie de online opleidingen:
-https://checkout.sanayou.com/ryt200-teacher-trainingen-online
+[Bekijk het online aanbod](https://checkout.sanayou.com/ryt200-teacher-trainingen-online)
 
 ## Gerelateerde artikelen
 

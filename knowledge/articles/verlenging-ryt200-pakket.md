@@ -33,13 +33,13 @@ Voor het volledige RYT200-pakket geldt een eigen verlengregeling:
 ## Verlenglinks per pakket
 
 **RYT200 Yin & Yang Yoga Online:**
-https://checkout.sanayou.com/checkout/verlenging-ryt200-yin-yang-teacher-training-online
+[Verleng je Yin & Yang pakket](https://checkout.sanayou.com/checkout/verlenging-ryt200-yin-yang-teacher-training-online)
 
 **RYT200 Yin Yoga Online:**
-https://checkout.sanayou.com/checkout/verlenging-ryt200-yin-yoga-teacher-training-online
+[Verleng je Yin Yoga pakket](https://checkout.sanayou.com/checkout/verlenging-ryt200-yin-yoga-teacher-training-online)
 
 **RYT200 Yang Yoga Online:**
-https://checkout.sanayou.com/checkout/verlenging-ryt200-yang-yoga-teacher-training-online-1753429797
+[Verleng je Yang Yoga pakket](https://checkout.sanayou.com/checkout/verlenging-ryt200-yang-yoga-teacher-training-online-1753429797)
 
 ---
 

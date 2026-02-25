@@ -28,7 +28,7 @@ Voor studenten die gerichte feedback willen op hun manier van lesgeven voordat z
 
 € 145 voor het complete pakket, inclusief het schriftelijke feedbackverslag en de CoachCall.
 
-Aanmelden via: https://checkout.sanayou.com/checkout/teaching-assessement-pack
+[Meld je aan voor het Teaching Assessment Pack](https://checkout.sanayou.com/checkout/teaching-assessement-pack)
 
 ## Gerelateerde artikelen
 

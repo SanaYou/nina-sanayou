@@ -39,9 +39,9 @@ Bij de klassikale opleiding ontvang je directe feedback van docenten tijdens de 
 
 De online RYT200 kost €1.250,- en is te betalen in 1, 5 of 10 termijnen. Voor de klassikale RYT/VYN200 gelden andere tarieven, afhankelijk van of je losse modules boekt of de volledige opleiding als pakket. Bij het boeken van alle vier de modules in één keer geldt een pakketkorting van €500. Je vindt de actuele tarieven op de opleidingspagina.
 
-Bekijk de klassikale opleiding: https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal
+[Bekijk de klassikale opleiding](https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal)
 
-Bekijk de online opleidingen: https://checkout.sanayou.com/ryt200-teacher-trainingen-online
+[Bekijk de online opleidingen](https://checkout.sanayou.com/ryt200-teacher-trainingen-online)
 
 ## Gerelateerde artikelen
 

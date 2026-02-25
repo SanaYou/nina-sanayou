@@ -9,7 +9,7 @@ In dit artikel lees je wanneer de losse lesmodules Yin Yoga en Yang Yogadocent j
 
 De losse lesmodules binnen de RYT/VYN200 Yin & Yang Teacher Training worden jaarlijks volgens een vaste structuur ingepland. Dit geeft overzicht en maakt het mogelijk om je opleiding stap voor stap te plannen.
 
-Bekijk hier het volledige overzicht van alle lesdata: https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-68bcdb97-a077-49b5-aa3f-cd7ea4ab2fb0
+[Bekijk het volledige overzicht van alle lesdata](https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-68bcdb97-a077-49b5-aa3f-cd7ea4ab2fb0)
 
 Hieronder zie je hoe de startmomenten er doorgaans uitzien.
 

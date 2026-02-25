@@ -20,7 +20,7 @@ De exacte opdracht ontvang je per e-mail zodra je de toets hebt aangevraagd. Na 
 ## Kosten en aanvragen
 
 Deelname aan de praktijktoets kost € 97,50. Je vraagt de toets aan via:
-https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online
+[Vraag je praktijktoets aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online)
 
 Na je aanvraag ontvang je een bevestiging en verdere instructies per e-mail.
 
@@ -29,7 +29,7 @@ Na je aanvraag ontvang je een bevestiging en verdere instructies per e-mail.
 Als je de praktijktoets niet met een voldoende afrondt, ontvang je gerichte feedback zodat je precies weet welke onderdelen je kunt verbeteren. Je kunt daarna in je eigen tempo een herkansing voorbereiden en opnieuw insturen.
 
 Een herkansing kost ook € 97,50 en vraag je aan via dezelfde pagina:
-https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online
+[Vraag je praktijktoets aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online)
 
 ## Gerelateerde artikelen
 

@@ -19,7 +19,7 @@ De tarieven voor een herkansing zijn:
 
 De aanvraag verloopt via de daarvoor bestemde checkout-pagina. Je ontvangt na aanvraag een bevestiging en verdere instructies per e-mail.
 
-Aanvragen praktijktoets RYT300: https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300
+[Vraag je praktijktoets RYT300 aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300)
 
 ## Gerelateerde artikelen
 

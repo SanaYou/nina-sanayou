@@ -28,7 +28,7 @@ Plan je datum pas in als je volledig tevreden bent met je opnames — zo laat je
 ## Aanvragen
 
 Je vraagt de praktijktoets aan nadat je alle kennistests hebt behaald en alle deelcertificaten hebt ontvangen:
-https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online
+[Vraag je praktijktoets aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online)
 
 ## Gerelateerde artikelen
 

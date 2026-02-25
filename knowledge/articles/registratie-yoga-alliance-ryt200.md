@@ -15,7 +15,7 @@ Je kunt je registreren bij Yoga Alliance zodra je:
 ## Registreren doe je zelf
 
 Na ontvangst van je diploma meld je je aan als RYT200 Registered Yoga Teacher via:
-https://www.yogaalliance.org
+[de website van Yoga Alliance](https://www.yogaalliance.org)
 
 Het diploma is internationaal erkend. Als RYT200 kun je wereldwijd yogalessen geven.
 

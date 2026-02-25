@@ -7,7 +7,7 @@ In dit artikel lees je hoe je inlogt op Huddle, het online leerplatform van Sana
 
 ## Inloggen via de browser
 
-Ga naar: https://sanayou.thehuddle.nl/
+[Ga naar Huddle](https://sanayou.thehuddle.nl/)
 
 Log in met de inloggegevens die je hebt ontvangen na aanschaf van je opleiding of module.
 

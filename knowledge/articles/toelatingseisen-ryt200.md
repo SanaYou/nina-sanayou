@@ -27,7 +27,7 @@ Op deze momenten worden de lessen verzorgd door docentenopleiders die ook betrok
 
 Wil je samen kijken of de RYT/VYN200 bij jou past, of heb je vragen over starten, tempo of mogelijkheden? Dan kun je een vrijblijvend studieadviesgesprek van 30 minuten inplannen met hoofddocente Sandy of iemand uit haar team, via telefoon of Zoom. Er is altijd ruimte om jouw vragen te stellen.
 
-Plan een gratis studieadviesgesprek in: https://calendly.com/sanayou-sandy/studie-advies-gesprek
+[Plan een gratis studieadviesgesprek in](https://calendly.com/sanayou-sandy/studie-advies-gesprek)
 
 ## Gerelateerde artikelen
 

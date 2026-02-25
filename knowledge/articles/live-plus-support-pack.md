@@ -26,7 +26,7 @@ Voor studenten die naast het zelfstandig studeren behoefte hebben aan live conta
 
 € 75 per jaar. Het abonnement wordt automatisch verlengd, tenzij je het zelf opzegt.
 
-Aanmelden via: https://checkout.sanayou.com/checkout/online-plus-pakket
+[Meld je aan voor LIVE+](https://checkout.sanayou.com/checkout/online-plus-pakket)
 
 ## Gerelateerde artikelen
 

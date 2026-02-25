@@ -12,7 +12,7 @@ Je kunt het LIVE+ Support Pack op elk moment toevoegen — zowel bij aanschaf va
 Het abonnement wordt jaarlijks automatisch verlengd. Opzeggen doe je vóór de verlengingsdatum.
 
 Boek het LIVE+ Support Pack via:
-https://checkout.sanayou.com/checkout/online-plus-pakket
+[LIVE+ Support Pack bestellen](https://checkout.sanayou.com/checkout/online-plus-pakket)
 
 ## Teaching Assessment Pack toevoegen
 
@@ -21,7 +21,7 @@ Het Teaching Assessment Pack is ook optioneel bij checkout, maar je kunt het ook
 Na betaling ontvang je instructies over hoe en waar je je lesvideo aanlevert.
 
 Boek het Teaching Assessment Pack via:
-https://checkout.sanayou.com/checkout/teaching-assessement-pack
+[Teaching Assessment Pack bestellen](https://checkout.sanayou.com/checkout/teaching-assessement-pack)
 
 ## Wanneer boek je welk pack?
 

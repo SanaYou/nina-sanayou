@@ -7,7 +7,7 @@ In dit artikel lees je hoe je het officiële RYT200-diploma ontvangt nadat je de
 ## Alle deelcertificaten en geslaagd praktijkexamen
 
 Wanneer je alle verplichte online modules hebt afgerond en alle kennistests hebt behaald, vraag je zelf de praktijktoets aan via:
-https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online
+[Vraag je praktijktoets aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online)
 
 Na een succesvolle beoordeling vraagt SanaYou YOGAcademy het diploma voor je aan bij Yoga Alliance. Je ontvangt het diploma digitaal per e-mail. Dit document gebruik je vervolgens voor je registratie bij Yoga Alliance.
 

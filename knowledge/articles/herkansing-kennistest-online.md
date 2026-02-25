@@ -11,7 +11,7 @@ Elke kennistest kan maar één keer worden geopend. Slaag je niet, dan kun je ee
 ## Kosten en aanvragen
 
 Een herkansing kost € 24,95 en vraag je aan via:
-https://checkout.sanayou.com/checkout/aanvraag-herkansing-theorietoets-online
+[Vraag je herkansing aan](https://checkout.sanayou.com/checkout/aanvraag-herkansing-theorietoets-online)
 
 Na je aanvraag ontvang je per e-mail verdere instructies.
 

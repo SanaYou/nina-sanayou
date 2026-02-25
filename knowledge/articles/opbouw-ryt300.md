@@ -20,7 +20,7 @@ Kan een specifieke datum echt niet? Stuur een mail naar academy@sanayou.com. We 
 
 De RYT300 van SanaYou YOGAcademy is erkend door Yoga Alliance. In combinatie met een RYT200 kun je je registreren als RYT500, het hoogste reguliere niveau binnen Yoga Alliance.
 
-Meer informatie en aanmelden: https://checkout.sanayou.com/ryt300-teacher-training
+[Meer informatie en aanmelden voor de RYT300](https://checkout.sanayou.com/ryt300-teacher-training)
 
 ## Gerelateerde artikelen
 

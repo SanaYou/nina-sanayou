@@ -23,7 +23,7 @@ Het is gebruikelijk om het praktijkexamen aansluitend aan het laatste lesweekend
 
 Je schrijft je in voor het praktijkexamen via de boekingspagina:
 
-Bekijk hier de beschikbare examenmomenten en meld je aan: https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-b7f7cdd4-1a13-4c8a-a0ec-c7577f16f775
+[Bekijk de beschikbare examenmomenten en meld je aan](https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-b7f7cdd4-1a13-4c8a-a0ec-c7577f16f775)
 
 ## Deelcertificaten en einddiploma
 

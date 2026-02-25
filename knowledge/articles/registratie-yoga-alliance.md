@@ -13,7 +13,7 @@ Om je te kunnen registreren bij Yoga Alliance is het belangrijk dat je de volled
 
 ## Het registratieproces in hoofdlijnen
 
-De registratie bij Yoga Alliance verloopt volledig online via hun eigen platform: https://yogaalliance.org/
+De registratie bij Yoga Alliance verloopt volledig online via [de website van Yoga Alliance](https://yogaalliance.org/)
 
 In grote lijnen ziet het proces er als volgt uit:
 

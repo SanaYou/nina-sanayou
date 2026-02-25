@@ -13,7 +13,7 @@ Om je te kunnen registreren bij de VYN, moet je een door de VYN erkende opleidin
 
 ## Het registratieproces in hoofdlijnen
 
-De registratie bij de VYN verloopt via hun eigen website: https://www.yoganederland.nl/
+De registratie bij de VYN verloopt via [de website van de VYN](https://www.yoganederland.nl/)
 
 In grote lijnen ziet het proces er als volgt uit:
 

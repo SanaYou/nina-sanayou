@@ -9,7 +9,7 @@ In dit artikel lees je waar je de actuele jaarplanning en lesroosters van de RYT
 
 De meest actuele lesdata van alle lesmodules vind je altijd op de opleidingspagina van de RYT/VYN200 Yin & Yang Teacher Training, direct bij het overzicht van de modules:
 
-Bekijk hier de actuele lesdata per module: https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-68bcdb97-a077-49b5-aa3f-cd7ea4ab2fb0
+[Bekijk hier de actuele lesdata per module](https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-68bcdb97-a077-49b5-aa3f-cd7ea4ab2fb0)
 
 Omdat planningen kunnen wijzigen, is de website altijd de leidende en meest actuele bron.
 

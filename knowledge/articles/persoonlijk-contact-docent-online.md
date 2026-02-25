@@ -18,7 +18,7 @@ Wil je meer regelmatig persoonlijk contact? Dan kun je je opleiding uitbreiden m
 
 Dit pakket is beschikbaar voor wie behoefte heeft aan regelmatige live ondersteuning naast de online modules.
 
-Meer informatie en aanmelden: https://checkout.sanayou.com/checkout/online-plus-pakket
+[Meer informatie en aanmelden voor LIVE+](https://checkout.sanayou.com/checkout/online-plus-pakket)
 
 ## Gerelateerde artikelen
 
