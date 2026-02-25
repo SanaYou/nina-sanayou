@@ -90,8 +90,14 @@ ARTICLES_INDEX = load_articles_index()
 def load_base_knowledge() -> str:
     knowledge_dir = Path("knowledge")
     parts = []
+    # Laad root-bestanden (bijv. anchorlinks.md)
     for file in sorted(knowledge_dir.glob("*.md")):
         parts.append(file.read_text(encoding="utf-8"))
+    # Laad instructies voor Nina (gedragsregels, doorvragen, etc.)
+    instructies_dir = knowledge_dir / "instructies"
+    if instructies_dir.exists():
+        for file in sorted(instructies_dir.glob("*.md")):
+            parts.append(file.read_text(encoding="utf-8"))
     return "\n\n".join(parts)
 
 BASE_KNOWLEDGE = load_base_knowledge()
