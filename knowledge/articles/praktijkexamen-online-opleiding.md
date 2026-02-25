@@ -26,4 +26,4 @@ Na beoordeling ontvang je via e-mail de uitslag van het praktijkexamen. Bij een 
 - Hoe meld ik mij aan voor een praktijkexamen (online)?
 - Hoe wordt het online praktijkexamen beoordeeld?
 - Wat is het Teaching Assessment Pack?
-- Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?
+- Aan welke eisen moet mijn examenvideo voldoen?

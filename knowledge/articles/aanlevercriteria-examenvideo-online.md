@@ -1,21 +1,31 @@
-COLLECTIE: Examens & Certificering
-# Examens en Herkansingen – Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?
+COLLECTIE: Examens en Certificering
+TAGS: examenvideo, aanlevercriteria, praktijkexamen, videokwaliteit, WeTransfer, deadline, RYT200, RYT300
 
-## Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?
+# Aan welke eisen moet mijn examenvideo voldoen?
 
-In dit artikel lees je aan welke criteria de examenvideo moet voldoen wanneer je het online praktijkexamen aanlevert.
+In dit artikel lees je aan welke criteria de examenvideo moet voldoen wanneer je jouw praktijktoets aanlevert.
 
 ## Doel van de aanlevercriteria
 
 De aanlevercriteria zijn er om het praktijkexamen voor iedereen op een zorgvuldige en vergelijkbare manier te kunnen beoordelen. Ze zorgen ervoor dat de docent een goed beeld krijgt van jouw les en didactische keuzes.
 
-## Inhoud van de examenvideo
+## Duur van de examenvideo
 
-De examenvideo bestaat uit één volledige lesopname. Je laat hierin zien hoe je een les opbouwt, begeleidt en afrondt. De exacte lengte en inhoud van de les zijn afhankelijk van het examen dat je aanvraagt. Deze specificaties ontvang je bij de bevestiging van je examenaanvraag.
+De lengte van je examenvideo is afhankelijk van de opleiding en studierichting die je volgt.
+
+Voor de RYT200 online geldt:
+
+- **RYT200 Yin Yoga** — 1 les van 60 minuten (inclusief savasana)
+- **RYT200 Yang Yoga** — 1 les van 60 minuten (inclusief savasana)
+- **RYT200 Yin & Yang Yoga** — 2 lessen van elk 30 minuten, zonder savasana (één Yin-les en één Yang-les)
+
+Voor de RYT300 ontvang je de exacte opdracht inclusief lesduur per e-mail na het aanvragen van de praktijktoets.
 
 ## Opname en beeld
 
 De les wordt opgenomen vanuit één vast camerastandpunt. Zorg ervoor dat jij en je deelnemer(s) goed zichtbaar zijn en dat zowel instructies als hands-on assists duidelijk in beeld komen.
+
+Werk je met meerdere camera's vanwege de ruimte? Lever dan één gemonteerde video aan per examenles, waarin helder afgewisseld wordt tussen docent en deelnemer(s).
 
 ## Geluid en verstaanbaarheid
 
@@ -35,4 +45,5 @@ Naast deze algemene criteria ontvang je bij het aanvragen van het examen altijd 
 
 - Hoe werkt het praktijkexamen van een online opleiding?
 - Hoe wordt het online praktijkexamen beoordeeld?
+- Hoe werkt de praktijktoets van de RYT300?
 - Wat is het Teaching Assessment Pack?
