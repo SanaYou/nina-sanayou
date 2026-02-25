@@ -1,6 +1,6 @@
 # Hoe werkt de herkansing voor een online kennistest?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je wat je kunt doen wanneer je niet slaagt voor een online kennistest binnen de RYT200.
 

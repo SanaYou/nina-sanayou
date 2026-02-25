@@ -1,4 +1,4 @@
-COLLECTIE: Examens en Certificering
+COLLECTIE: Examens & Certificering
 TAGS: RYT300, Yin Mastery, praktijktoets, examen, opdrachten, video, yin yoga, dragon dance
 
 # Wat zijn de opdrachten voor de praktijktoets RYT300 Yin Mastery?

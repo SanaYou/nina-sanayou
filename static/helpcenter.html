@@ -63,7 +63,7 @@
 
     /* Layout */
     .hc-body {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 32px 24px 64px;
     }
@@ -77,10 +77,10 @@
       font-size: 15px;
     }
 
-    /* 3-column grid for collections */
+    /* 2-column grid for collections */
     #collections {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       align-items: start;
     }
@@ -151,7 +151,8 @@
       line-height: 1.7;
       color: #7A7A7A;
     }
-    .article-content h1, .article-content h2 { display: none; }
+    .article-content h1,
+    .article-content h2 { display: none; }
     .article-content h3 {
       font-family: 'Bellota', sans-serif;
       font-size: 15px;
@@ -169,6 +170,15 @@
     .article-content strong { color: #555; }
     .article-content hr { border: none; border-top: 1px solid #f0f0f0; margin: 14px 0; }
 
+    /* Intro sentence bold + italic */
+    .article-intro {
+      font-weight: 700;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 10px;
+      display: block;
+    }
+
     /* Loading */
     .loading {
       text-align: center;
@@ -179,10 +189,7 @@
     }
 
     /* Responsive */
-    @media (max-width: 900px) {
-      #collections { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 580px) {
+    @media (max-width: 680px) {
       #collections { grid-template-columns: 1fr; }
       .hc-header h1 { font-size: 24px; }
     }
@@ -212,21 +219,42 @@
   var API = window.location.origin;
   var allArticles = [];
 
-  // Slug helper for sidebar anchors
+  // Slug helper
   function slug(str) {
     return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   }
 
-  // Render markdown, hide H1/H2 (shown as card title)
-  function renderMarkdown(md) {
-    var html = marked.parse(md || '');
+  // Strip metadata lines (COLLECTIE:, TAGS:) and handle intro sentence
+  function cleanContent(md) {
+    var lines = md.split('\n');
+    var cleaned = [];
+    var introHandled = false;
+
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      // Strip COLLECTIE: and TAGS: lines (and blank lines directly after)
+      if (/^COLLECTIE:/i.test(line) || /^TAGS:/i.test(line)) continue;
+      cleaned.push(line);
+    }
+
+    // Convert cleaned lines to HTML via marked
+    var html = marked.parse(cleaned.join('\n') || '');
+
+    // Make "In dit artikel lees je..." bold + italic
+    html = html.replace(
+      /(<p>)(In dit artikel lees je[^<]*<\/p>)/i,
+      '$1<em><strong>$2</strong></em>'
+    );
+    // Fix double-wrapped p tag
+    html = html.replace(/<p><em><strong>(<p>)/gi, '<p><em><strong>');
+    html = html.replace(/(<\/p>)<\/strong><\/em><\/p>/gi, '$1');
+
     return html;
   }
 
   // Group articles by collection
   function groupByCollection(articles) {
     var groups = {};
-    // Artikelen komen al gesorteerd binnen via de API (op order)
     articles.forEach(function(a) {
       var col = a.collection || 'Algemeen (Broncollectie)';
       if (!groups[col]) groups[col] = [];
@@ -234,6 +262,22 @@
     });
     return groups;
   }
+
+  // Authoritative collection order (matches article COLLECTIE: names)
+  var COLLECTION_ORDER = [
+    "Klassikale RYT/VYN200 Teacher Training",
+    "Klassikale Workshops & Bijscholingen",
+    "Erkende RYT300 Teacher Training (hybride)",
+    "Online RYT200 Teacher Trainingen",
+    "Losse Online Bijscholingen en Specialisaties",
+    "Examens & Certificering",
+    "Ondersteuning en Begeleiding",
+    "Betaling, Facturatie & Termijnen",
+    "Opleidingsvoorwaarden",
+    "Technische Ondersteuning",
+    "Algemeen (Broncollectie)",
+    "Overig / Nog te plaatsen"
+  ];
 
   // Render all collections
   function render(articles) {
@@ -254,20 +298,6 @@
     var groups = groupByCollection(articles);
     var html = '';
 
-    var COLLECTION_ORDER = [
-      "Klassikale RYT/VYN200 Teacher Training",
-      "Online RYT200 Teacher Trainingen",
-      "Online (Bij)scholingen & Specialisaties",
-      "Klassikale Workshops & Bijscholingen",
-      "RYT300 Teacher Training - Hybride",
-      "Support Packs bij Online leren",
-      "Examens & Certificering",
-      "Betaling, Facturatie & Termijnen",
-      "Technische Ondersteuning",
-      "Opleidingsvoorwaarden",
-      "Algemeen (Broncollectie)",
-      "Overig / Nog te plaatsen"
-    ];
     var sortedCols = Object.keys(groups).sort(function(a, b) {
       var ai = COLLECTION_ORDER.indexOf(a);
       var bi = COLLECTION_ORDER.indexOf(b);
@@ -275,6 +305,7 @@
       if (bi === -1) bi = 999;
       return ai - bi;
     });
+
     sortedCols.forEach(function(col) {
       var id = slug(col);
       html += '<section class="collection" id="' + id + '">';
@@ -285,7 +316,7 @@
         html += '<span class="article-title">' + article.title + '</span>';
         html += '<svg class="article-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
         html += '</div>';
-        html += '<div class="article-body"><div class="article-content">' + renderMarkdown(article.content) + '</div></div>';
+        html += '<div class="article-body"><div class="article-content">' + cleanContent(article.content) + '</div></div>';
         html += '</div>';
       });
       html += '</section>';
@@ -302,15 +333,98 @@
     });
   }
 
-  // Search
+  // Normalize Dutch text for search
+  function normalize(str) {
+    return str.toLowerCase()
+      .replace(/[áàä]/g, 'a').replace(/[éèê]/g, 'e')
+      .replace(/[íì]/g, 'i').replace(/[óòö]/g, 'o')
+      .replace(/[úùü]/g, 'u')
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+  }
+
+  // Dutch synonyms / aliases for better search
+  var SYNONYMS = {
+    'inloggen': ['login', 'aanmelden', 'inlog', 'toegang'],
+    'login': ['inloggen', 'aanmelden'],
+    'wachtwoord': ['password', 'wachtwoorden', 'reset'],
+    'examen': ['praktijktoets', 'toets', 'beoordeling', 'examenvideo'],
+    'praktijktoets': ['examen', 'toets', 'beoordeling'],
+    'diploma': ['certificaat', 'erkenning', 'registratie'],
+    'certificaat': ['diploma', 'erkend', 'deelcertificaat'],
+    'betaling': ['betalen', 'termijn', 'factuur', 'facturatie', 'prijs', 'kosten'],
+    'prijs': ['kosten', 'betalen', 'betaling', 'termijn'],
+    'toegang': ['inloggen', 'account', 'platform'],
+    'huddle': ['platform', 'leerplatform', 'videolessen'],
+    'opleiding': ['training', 'cursus', 'course'],
+    'docenten': ['docent', 'leraar', 'begeleiding', 'team'],
+    'bijscholing': ['verdieping', 'module', 'specialisatie', 'workshop'],
+    'workshop': ['bijscholing', 'themadag', 'cursus'],
+    'yoga': ['yogales', 'les', 'training'],
+    'annuleren': ['annulering', 'annulatie', 'opzeggen', 'restitutie'],
+    'restitutie': ['terugbetaling', 'annulering', 'opzeggen'],
+    'ryt200': ['200 uur', '200u', 'opleiding', 'teacher training'],
+    'ryt300': ['300 uur', '300u', 'hybride', 'verdieping'],
+    'support': ['begeleiding', 'hulp', 'pack', 'coachcall'],
+    'coachcall': ['coaching', 'call', 'zoom', 'live', 'support'],
+    'video': ['opname', 'videoles', 'les', 'upload'],
+    'erkend': ['erkenning', 'yoga alliance', 'ryt', 'certificaat'],
+  };
+
+  // Expand query words with synonyms
+  function expandQuery(words) {
+    var expanded = [];
+    words.forEach(function(w) {
+      expanded.push(w);
+      if (SYNONYMS[w]) {
+        SYNONYMS[w].forEach(function(s) { expanded.push(s); });
+      }
+    });
+    return expanded;
+  }
+
+  // Score an article against a query
+  function scoreArticle(article, queryWords) {
+    var titleNorm = normalize(article.title);
+    var contentNorm = normalize(article.content || '');
+    var tagsNorm = normalize((article.tags || []).join(' '));
+    var colNorm = normalize(article.collection || '');
+    var allText = titleNorm + ' ' + tagsNorm + ' ' + colNorm + ' ' + contentNorm;
+
+    var score = 0;
+    var expandedWords = expandQuery(queryWords);
+
+    queryWords.forEach(function(w) {
+      if (titleNorm.includes(w)) score += 10;
+      if (tagsNorm.includes(w)) score += 5;
+      if (colNorm.includes(w)) score += 3;
+      if (contentNorm.includes(w)) score += 2;
+    });
+
+    // Bonus for synonym matches
+    expandedWords.forEach(function(w) {
+      if (!queryWords.includes(w)) {
+        if (titleNorm.includes(w)) score += 4;
+        if (tagsNorm.includes(w)) score += 3;
+        if (contentNorm.includes(w)) score += 1;
+      }
+    });
+
+    return score;
+  }
+
+  // Smart search: split into words, score each article, filter by min score
   function filterArticles(query) {
     if (!query.trim()) return allArticles;
-    var q = query.toLowerCase();
-    return allArticles.filter(function(a) {
-      return a.title.toLowerCase().includes(q) ||
-             a.content.toLowerCase().includes(q) ||
-             a.collection.toLowerCase().includes(q);
-    });
+    var queryWords = normalize(query).split(' ').filter(function(w) { return w.length > 1; });
+    if (queryWords.length === 0) return allArticles;
+
+    var scored = allArticles.map(function(a) {
+      return { article: a, score: scoreArticle(a, queryWords) };
+    }).filter(function(item) { return item.score > 0; })
+      .sort(function(a, b) { return b.score - a.score; });
+
+    return scored.map(function(item) { return item.article; });
   }
 
   document.getElementById('search').addEventListener('input', function() {

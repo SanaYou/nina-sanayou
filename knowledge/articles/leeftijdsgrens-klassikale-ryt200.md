@@ -1,6 +1,6 @@
 # Is er een leeftijdsgrens voor de klassikale RYT/VYN200?
 
-COLLECTIE: Klassikale erkende Teacher Training
+COLLECTIE: Klassikale RYT/VYN200 Teacher Training
 
 In dit artikel lees je of er een leeftijdsgrens geldt voor deelname aan de klassikale RYT/VYN200 Yin & Yang Teacher Training.
 

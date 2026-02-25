@@ -1,6 +1,6 @@
 # Wanneer kan ik me registreren bij Yoga Alliance als RYT200-docent?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je wanneer en hoe je je kunt registreren bij Yoga Alliance na afronding van je online RYT200-opleiding.
 

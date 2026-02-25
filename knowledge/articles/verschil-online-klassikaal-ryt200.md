@@ -1,4 +1,4 @@
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: online opleiding, klassikaal, RYT200, verschil, flexibiliteit, erkenning, VYN
 
 # Wat is het verschil tussen de online RYT200 en de klassikale opleiding?

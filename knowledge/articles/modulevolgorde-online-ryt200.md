@@ -1,6 +1,6 @@
 # Moet ik de online RYT200-modules in een vaste volgorde volgen?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je in welke volgorde je de modules van de online RYT200 volgt en hoeveel vrijheid je daarin hebt.
 

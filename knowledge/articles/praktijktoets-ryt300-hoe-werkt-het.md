@@ -1,4 +1,4 @@
-COLLECTIE: Examens en Certificering
+COLLECTIE: Examens & Certificering
 TAGS: RYT300, praktijktoets, examen, beoordeling, video, planning, afronden
 
 # Hoe werkt de praktijktoets van de RYT300?

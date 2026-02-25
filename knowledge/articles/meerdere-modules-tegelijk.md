@@ -1,6 +1,6 @@
 # Kan ik meerdere online modules tegelijk volgen?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je of je meerdere online modules naast elkaar kunt volgen binnen de online RYT200-opleidingen.
 

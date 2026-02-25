@@ -1,6 +1,6 @@
 # Hoe ontvang ik mijn RYT200-diploma na afronding?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je hoe je het officiële RYT200-diploma ontvangt nadat je de volledige online opleiding hebt afgerond.
 

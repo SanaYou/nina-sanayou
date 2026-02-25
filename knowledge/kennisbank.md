@@ -411,6 +411,11 @@ Apart bij te boeken, optioneel. Bieden directe feedback, hands-on correcties, ve
 - Beoordeling via semi-live methode: docent bekijkt video + mondelinge feedback + schriftelijk feedbackverslag
 - Aanvragen: https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online
 
+**Videoduur per studierichting:**
+- RYT200 Yin Yoga → 1 les van 60 minuten
+- RYT200 Yang Yoga → 1 les van 60 minuten
+- RYT200 Yin & Yang Yoga → 2 lessen van elk 30 minuten (1 Yin + 1 Yang)
+
 ### Praktijktoets RYT300
 
 - Afzonderlijk aan te vragen
@@ -517,3 +522,57 @@ Een schriftelijk verslag met:
 | Praktijktoets RYT300 aanvragen | https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300 |
 | Support Pack LIVE+ | https://checkout.sanayou.com/checkout/online-plus-pakket |
 | Teaching Assessment Pack | https://checkout.sanayou.com/checkout/teaching-assessement-pack |
+
+---
+
+## 8. Praktijktoets RYT200 online — volledige opdrachtomschrijving
+
+### Algemeen (voor alle drie varianten)
+- Pre-check: alle kennistests behaald + alle deelcertificaten ontvangen
+- Beoordeling: semi-live — examinator bekijkt video en pauzeert om feedback te geven
+- Student hoeft NIET aanwezig te zijn tijdens beoordeling
+- Op beoordelingsdag per e-mail: uitslag + feedbackverslag met Tips & Tops + link naar feedbackvideo
+- Beoordelingsdatum: student plant zelf in via boekingsbutton in de aanvraagmail
+- Exacte tijdstip kan afwijken van gekozen tijdslot
+- Technische eisen: docent én deelnemer(s) goed zichtbaar + goed verstaanbaar geluid
+- Bij meerdere camera's: zelf monteren tot één duidelijke video
+- Lesmateriaal: altijd conform Yin/Yang Basics — verdiepingsmodules aanvulling, nooit vervanging
+- Savasana: bij 30 min lessen weglaten, bij 60 min lessen verplicht
+
+### Praktijktoets RYT200 Yin Yoga Online (60 min)
+- Volwaardige Yin Yogales van 60 minuten
+- Kennis tonen van primaire rekgebieden, meridianen, fysieke en energetische effecten
+- Passende opties geven (benoemen waarom en wanneer)
+- Samenhangend geheel — geen opsomming van rijtjes
+- Navoelen: gericht kiezen hoe, verband leggen tussen houding en effect
+- Minimaal 2 assists bij: (1) één vooroverbuiging, (2) houding Twisted Roots
+- Aandacht voor: eigen houding, afstemmen, aankomen, afscheid nemen, laten navoelen
+- Zoveel mogelijk verbaal cueing; bij complexe houdingen kort voordoen mag
+- Didactische richtlijnen: verboden woorden vermijden, spreken in de wij-vorm
+
+### Praktijktoets RYT200 Yang Yoga Online (60 min incl. savasana)
+- Vinyasa flow les volgens aangeleerde lesopbouw
+- Sticky dolls tekening van de les meesturen
+- Volledige les van 60 min inclusief aarden en savasana
+- Eigen techniek van asana's beheersen
+- Verbaal cueing zonder zelf mee te doen, anticiperen op wat je ziet, precieze woordkeuze
+- Kennis tonen van opties en gebruik van props
+- Adem, focuspunt en core/bandha's benoemen en integreren
+- Minimaal 3 adjustments bij: (1) staande houding, (2) zittende houding, (3) neerwaarts kijkende hond — hardop uitleggen wat je doet en waarom
+- Didactische richtlijnen: verboden woorden vermijden, spreken in de wij-vorm, overbodige woorden vermijden, regie behouden
+
+### Praktijktoets RYT200 Yin & Yang Yoga Online (2x 30 min, geen savasana)
+**Yin les (30 min):**
+- Start met korte meditatie om te landen
+- Minimaal 3 Yin houdingen
+- Geen savasana
+
+**Yang les (30 min):**
+- Start met zonnegroeten, maximaal 10 minuten
+- Overige 20 min: eigen samengestelde les
+- Opbouw volgt logica van Yang les, maar compacter
+- Geen savasana
+
+**Beide lessen:**
+- Bewuste keuzes zodat didactiek, techniek, opties en kennis goed zichtbaar zijn
+- Zelfde didactische richtlijnen als bij Yin en Yang apart

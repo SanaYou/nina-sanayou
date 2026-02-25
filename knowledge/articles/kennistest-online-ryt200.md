@@ -1,6 +1,6 @@
 # Hoe werkt de online kennistest?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je hoe de kennistests werken binnen de online RYT200-opleidingen en wanneer je het deelcertificaat ontvangt.
 

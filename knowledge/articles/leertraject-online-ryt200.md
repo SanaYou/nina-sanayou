@@ -1,6 +1,6 @@
 # Hoe ziet het leertraject van de online RYT200 eruit?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je hoe het leertraject van de online RYT200 Teacher Training is opgebouwd en wat je als student doorloopt van start tot afronding.
 

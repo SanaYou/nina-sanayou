@@ -1,6 +1,6 @@
 # Hoe lang heb ik toegang tot een online module en kan ik die verlengen?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je hoe lang je toegang hebt tot een online module en wat je kunt doen als je die wilt verlengen.
 

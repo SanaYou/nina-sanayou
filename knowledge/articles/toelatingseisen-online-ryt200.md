@@ -1,6 +1,6 @@
 # Wat zijn de toelatingseisen voor de RYT200 Teacher Training Online?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je welke voorwaarden gelden om te kunnen starten met een erkende RYT200 Teacher Training Online bij SanaYou YOGAcademy.
 

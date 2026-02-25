@@ -1,6 +1,6 @@
 # In welke taal worden de yogahoudingen benoemd?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je welke taal wordt gebruikt voor de benamingen van yogahoudingen binnen de online RYT200-opleidingen.
 

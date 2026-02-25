@@ -1,6 +1,6 @@
 # Hoe stel ik vragen tijdens mijn online opleiding?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je waar je terecht kunt met vragen tijdens je online opleiding.
 

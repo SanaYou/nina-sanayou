@@ -1,6 +1,6 @@
 # Welke online RYT200-opleidingen kan ik volgen?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je welke drie erkende online RYT200-opleidingen SanaYou YOGAcademy aanbiedt en waar je meer informatie vindt.
 

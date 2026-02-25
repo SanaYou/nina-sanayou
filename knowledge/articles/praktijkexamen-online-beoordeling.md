@@ -1,4 +1,4 @@
-COLLECTIE: Examens en Certificering
+COLLECTIE: Examens & Certificering
 TAGS: praktijkexamen, beoordeling, semi-live, feedback, lesvideo, feedbackvideo
 
 # Hoe wordt het online praktijkexamen beoordeeld?

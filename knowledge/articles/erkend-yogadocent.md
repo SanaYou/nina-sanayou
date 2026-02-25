@@ -1,4 +1,4 @@
-COLLECTIE: Examens en Certificering
+COLLECTIE: Examens & Certificering
 TAGS: erkend yogadocent, diploma, Yoga Alliance, RYT200, certificaat, registratie
 
 # Wanneer ben ik officieel erkend yogadocent?

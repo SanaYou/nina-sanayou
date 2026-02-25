@@ -1,6 +1,6 @@
 # Hoe werkt de praktijktoets voor de RYT200 Online?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je hoe de praktijktoets werkt binnen de erkende RYT200 Yin Yoga, Yang Yoga en Yin & Yang Yoga Teacher Training Online, en hoe je deze aanvraagt.
 

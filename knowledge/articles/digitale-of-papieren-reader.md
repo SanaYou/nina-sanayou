@@ -1,6 +1,6 @@
 # Krijg ik een digitale of papieren reader?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je in welke vorm je de lesreader ontvangt tijdens je online opleiding.
 

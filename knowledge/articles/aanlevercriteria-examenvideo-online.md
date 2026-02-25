@@ -1,4 +1,4 @@
-COLLECTIE: Examens en Certificering
+COLLECTIE: Examens & Certificering
 TAGS: examenvideo, aanlevercriteria, praktijkexamen, videokwaliteit, WeTransfer, deadline, RYT200, RYT300
 
 # Aan welke eisen moet mijn examenvideo voldoen?

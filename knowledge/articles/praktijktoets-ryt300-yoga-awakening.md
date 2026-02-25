@@ -1,4 +1,4 @@
-COLLECTIE: Examens en Certificering
+COLLECTIE: Examens & Certificering
 TAGS: RYT300, Yoga Awakening, praktijktoets, examen, opdrachten, video, vinyasa, ashtanga, sticky dolls
 
 # Wat zijn de opdrachten voor de praktijktoets RYT300 Yoga Awakening?

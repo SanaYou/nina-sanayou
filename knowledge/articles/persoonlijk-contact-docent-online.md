@@ -1,6 +1,6 @@
 # Is persoonlijk contact met een docent mogelijk tijdens de online RYT200?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je welke mogelijkheden er zijn voor live en persoonlijk contact met een docent tijdens je online opleiding.
 

@@ -1,6 +1,6 @@
 # Kan ik studeren via laptop, tablet of telefoon?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je via welke apparaten je kunt studeren binnen de online RYT200-opleidingen.
 

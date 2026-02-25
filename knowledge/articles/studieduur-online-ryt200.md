@@ -1,6 +1,6 @@
 # Hoe lang heb ik de tijd om de volledige online RYT200 af te ronden?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je hoelang je de tijd hebt om de volledige online RYT200-opleiding af te ronden.
 

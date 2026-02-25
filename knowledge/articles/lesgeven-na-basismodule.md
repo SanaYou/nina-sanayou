@@ -1,6 +1,6 @@
 # Kan ik na Yoga Basics of Yin Yoga Basics al yogales geven?
 
-COLLECTIE: Erkende RYT200 Teacher Trainingen Online
+COLLECTIE: Online RYT200 Teacher Trainingen
 
 In dit artikel lees je wat je wel en niet kunt doen na het afronden van een basismodule binnen de online RYT200-opleidingen.
 
