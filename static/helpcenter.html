@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helpcentrum — SanaYou YOGAcademy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,7 +16,7 @@
       min-height: 100vh;
     }
 
-    /* Header */
+    /* ─── Header ─────────────────────────────────── */
     .hc-header {
       background: #66B0B2;
       padding: 40px 24px 48px;
@@ -35,7 +35,7 @@
       margin-bottom: 24px;
     }
 
-    /* Search */
+    /* ─── Search ─────────────────────────────────── */
     .search-wrap {
       max-width: 560px;
       margin: 0 auto;
@@ -61,14 +61,99 @@
     }
     #search::placeholder { color: #bbb; }
 
-    /* Layout */
+    /* ─── Body ───────────────────────────────────── */
     .hc-body {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 32px 24px 64px;
+      padding: 36px 24px 72px;
     }
 
-    /* Articles area */
+    /* ─── Views ──────────────────────────────────── */
+    .view { display: none; }
+    .view.active { display: block; }
+
+    /* ─── Loading ────────────────────────────────── */
+    #loading {
+      text-align: center;
+      padding: 60px;
+      color: #bbb;
+      font-size: 15px;
+    }
+
+    /* ─── HOME VIEW: Collectie-tegels ────────────── */
+    #tiles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .collection-tile {
+      background: white;
+      border-radius: 14px;
+      padding: 22px 22px 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      cursor: pointer;
+      transition: box-shadow .2s, transform .18s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 108px;
+      border-top: 4px solid #66B0B2;
+    }
+    .collection-tile:hover {
+      box-shadow: 0 8px 24px rgba(102,176,178,0.22);
+      transform: translateY(-3px);
+    }
+    .tile-name {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 15.5px;
+      color: #2e2e2e;
+      line-height: 1.35;
+      flex: 1;
+    }
+    .tile-count {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      color: #b0b0b0;
+      margin-top: 14px;
+    }
+
+    /* ─── COLLECTION VIEW ────────────────────────── */
+    .collection-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #66B0B2;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 22px;
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .collection-back:hover { text-decoration: underline; }
+    .collection-back svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    .collection-view-title {
+      font-family: 'Bellota', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #2e2e2e;
+      margin-bottom: 24px;
+    }
+
+    /* ─── SEARCH VIEW ────────────────────────────── */
+    #search-result-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #999;
+      margin-bottom: 16px;
+    }
     #no-results {
       display: none;
       text-align: center;
@@ -77,33 +162,7 @@
       font-size: 15px;
     }
 
-    /* 2-column grid for collections */
-    #collections {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      align-items: start;
-    }
-
-    /* Collection section */
-    .collection {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-    }
-    .collection h2 {
-      font-family: 'Bellota', sans-serif;
-      font-size: 17px;
-      font-weight: 700;
-      color: #66B0B2;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e8f5f5;
-      margin-bottom: 12px;
-      line-height: 1.3;
-    }
-
-    /* Article card */
+    /* ─── Article accordion (shared) ─────────────── */
     .article-card {
       background: white;
       border-radius: 10px;
@@ -135,9 +194,7 @@
       color: #66B0B2;
       transition: transform .2s;
     }
-    .article-card.open .article-chevron {
-      transform: rotate(180deg);
-    }
+    .article-card.open .article-chevron { transform: rotate(180deg); }
 
     .article-body {
       display: none;
@@ -145,6 +202,7 @@
       border-top: 1px solid #f0f0f0;
     }
     .article-card.open .article-body { display: block; }
+
     .article-content {
       padding-top: 14px;
       font-size: 14px;
@@ -170,9 +228,7 @@
       padding: 0;
       margin: 0;
     }
-    .article-content .related-list li {
-      margin-bottom: 6px;
-    }
+    .article-content .related-list li { margin-bottom: 6px; }
     .article-content .related-list a {
       color: #66B0B2;
       font-size: 13.5px;
@@ -187,12 +243,9 @@
       font-size: 12px;
       opacity: 0.7;
     }
-    .article-content .related-list a:hover {
-      text-decoration: underline;
-    }
+    .article-content .related-list a:hover { text-decoration: underline; }
     .article-card.highlight {
       box-shadow: 0 0 0 2px #66B0B2 !important;
-      transition: box-shadow 0.3s;
     }
     .article-content h3 {
       font-family: 'Bellota', sans-serif;
@@ -220,18 +273,12 @@
       display: block;
     }
 
-    /* Loading */
-    .loading {
-      text-align: center;
-      padding: 60px;
-      color: #bbb;
-      font-size: 15px;
-      grid-column: 1 / -1;
+    /* ─── Responsive ─────────────────────────────── */
+    @media (max-width: 780px) {
+      #tiles-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
-    /* Responsive */
-    @media (max-width: 680px) {
-      #collections { grid-template-columns: 1fr; }
+    @media (max-width: 480px) {
+      #tiles-grid { grid-template-columns: 1fr; }
       .hc-header h1 { font-size: 24px; }
     }
   </style>
@@ -250,9 +297,29 @@
 </header>
 
 <div class="hc-body">
-  <div class="loading" id="loading">Artikelen laden…</div>
-  <div id="no-results">Geen artikelen gevonden voor "<span id="no-results-term"></span>"</div>
-  <div id="collections"></div>
+  <div id="loading">Artikelen laden…</div>
+
+  <!-- HOME VIEW: collectie-tegels -->
+  <div class="view" id="view-home">
+    <div id="tiles-grid"></div>
+  </div>
+
+  <!-- COLLECTION VIEW: artikelen als accordeon -->
+  <div class="view" id="view-collection">
+    <button class="collection-back" id="back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      Terug naar overzicht
+    </button>
+    <h2 class="collection-view-title" id="collection-title"></h2>
+    <div id="collection-articles"></div>
+  </div>
+
+  <!-- SEARCH VIEW: zoekresultaten -->
+  <div class="view" id="view-search">
+    <p id="search-result-label"></p>
+    <div id="no-results">Geen artikelen gevonden voor "<span id="no-results-term"></span>"</div>
+    <div id="search-articles"></div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -260,51 +327,44 @@
   var API = window.location.origin;
   var allArticles = [];
 
-  // Slug helper
+  // ─── Helpers ──────────────────────────────────────────
+
   function slug(str) {
     return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   }
 
-  // Strip metadata lines (COLLECTIE:, TAGS:) and handle intro sentence
+  // Strip COLLECTIE:/TAGS: lines; bold+italic intro sentence
   function cleanContent(md) {
     var lines = md.split('\n');
     var cleaned = [];
-    var introHandled = false;
-
     for (var i = 0; i < lines.length; i++) {
       var line = lines[i];
-      // Strip COLLECTIE: and TAGS: lines (and blank lines directly after)
       if (/^COLLECTIE:/i.test(line) || /^TAGS:/i.test(line)) continue;
       cleaned.push(line);
     }
-
-    // Convert cleaned lines to HTML via marked
     var html = marked.parse(cleaned.join('\n') || '');
-
-    // Make "In dit artikel lees je..." bold + italic
     html = html.replace(
       /(<p>)(In dit artikel lees je[^<]*<\/p>)/i,
       '$1<em><strong>$2</strong></em>'
     );
-    // Fix double-wrapped p tag
     html = html.replace(/<p><em><strong>(<p>)/gi, '<p><em><strong>');
     html = html.replace(/(<\/p>)<\/strong><\/em><\/p>/gi, '$1');
-
     return html;
   }
 
-  // Group articles by collection
-  function groupByCollection(articles) {
-    var groups = {};
+  // ─── Article count per collection ─────────────────────
+
+  function countByCollection(articles) {
+    var counts = {};
     articles.forEach(function(a) {
       var col = a.collection || 'Algemeen (Broncollectie)';
-      if (!groups[col]) groups[col] = [];
-      groups[col].push(a);
+      counts[col] = (counts[col] || 0) + 1;
     });
-    return groups;
+    return counts;
   }
 
-  // Authoritative collection order (matches article COLLECTIE: names)
+  // ─── Authoritative collection order ───────────────────
+
   var COLLECTION_ORDER = [
     "Klassikale RYT/VYN200 Teacher Training",
     "Klassikale Workshops & Bijscholingen",
@@ -320,53 +380,22 @@
     "Overig / Nog te plaatsen"
   ];
 
-  // Render all collections
-  function render(articles) {
-    var collectionsEl = document.getElementById('collections');
-    var noResults = document.getElementById('no-results');
-    var loading = document.getElementById('loading');
+  // ─── Render article cards into a container ─────────────
 
-    loading.style.display = 'none';
-
-    if (articles.length === 0) {
-      collectionsEl.innerHTML = '';
-      noResults.style.display = 'block';
-      document.getElementById('no-results-term').textContent = document.getElementById('search').value;
-      return;
-    }
-
-    noResults.style.display = 'none';
-    var groups = groupByCollection(articles);
+  function renderArticles(articles, container) {
     var html = '';
-
-    var sortedCols = Object.keys(groups).sort(function(a, b) {
-      var ai = COLLECTION_ORDER.indexOf(a);
-      var bi = COLLECTION_ORDER.indexOf(b);
-      if (ai === -1) ai = 999;
-      if (bi === -1) bi = 999;
-      return ai - bi;
+    articles.forEach(function(article) {
+      html += '<div class="article-card" data-id="' + article.id + '">';
+      html += '<div class="article-header">';
+      html += '<span class="article-title">' + article.title + '</span>';
+      html += '<svg class="article-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+      html += '</div>';
+      html += '<div class="article-body"><div class="article-content">' + cleanContent(article.content) + '</div></div>';
+      html += '</div>';
     });
+    container.innerHTML = html;
 
-    sortedCols.forEach(function(col) {
-      var id = slug(col);
-      html += '<section class="collection" id="' + id + '">';
-      html += '<h2>' + col + '</h2>';
-      groups[col].forEach(function(article) {
-        html += '<div class="article-card" data-id="' + article.id + '">';
-        html += '<div class="article-header">';
-        html += '<span class="article-title">' + article.title + '</span>';
-        html += '<svg class="article-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
-        html += '</div>';
-        html += '<div class="article-body"><div class="article-content">' + cleanContent(article.content) + '</div></div>';
-        html += '</div>';
-      });
-      html += '</section>';
-    });
-
-    collectionsEl.innerHTML = html;
-
-    // Toggle open/close
-    document.querySelectorAll('.article-header').forEach(function(header) {
+    container.querySelectorAll('.article-header').forEach(function(header) {
       header.addEventListener('click', function() {
         var card = this.closest('.article-card');
         card.classList.toggle('open');
@@ -377,8 +406,82 @@
     });
   }
 
-  // Vind een artikel op titel en open + scroll ernaar toe
+  // ─── HOME VIEW: render tiles ───────────────────────────
+
+  function renderTiles(articles) {
+    var counts = countByCollection(articles);
+    var grid = document.getElementById('tiles-grid');
+    var html = '';
+
+    COLLECTION_ORDER.forEach(function(col) {
+      if (!counts[col]) return; // skip empty collections
+      var n = counts[col];
+      var label = n === 1 ? '1 artikel' : n + ' artikelen';
+      html += '<div class="collection-tile" data-col="' + col + '">';
+      html += '<span class="tile-name">' + col + '</span>';
+      html += '<span class="tile-count">' + label + '</span>';
+      html += '</div>';
+    });
+
+    grid.innerHTML = html;
+
+    grid.querySelectorAll('.collection-tile').forEach(function(tile) {
+      tile.addEventListener('click', function() {
+        showCollection(this.dataset.col);
+      });
+    });
+  }
+
+  // ─── Views ────────────────────────────────────────────
+
+  function showView(id) {
+    ['view-home', 'view-collection', 'view-search'].forEach(function(v) {
+      document.getElementById(v).classList.toggle('active', v === id);
+    });
+  }
+
+  function showHome() {
+    document.getElementById('search').value = '';
+    showView('view-home');
+  }
+
+  function showCollection(collectionName) {
+    document.getElementById('collection-title').textContent = collectionName;
+    var articles = allArticles.filter(function(a) {
+      return (a.collection || 'Algemeen (Broncollectie)') === collectionName;
+    });
+    renderArticles(articles, document.getElementById('collection-articles'));
+    showView('view-collection');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showSearchResults(query) {
+    if (!query.trim()) {
+      showView('view-home');
+      return;
+    }
+    var results = filterArticles(query);
+    var noResults = document.getElementById('no-results');
+    var label = document.getElementById('search-result-label');
+    var container = document.getElementById('search-articles');
+
+    if (results.length === 0) {
+      container.innerHTML = '';
+      noResults.style.display = 'block';
+      document.getElementById('no-results-term').textContent = query;
+      label.textContent = '';
+    } else {
+      noResults.style.display = 'none';
+      label.textContent = results.length + (results.length === 1 ? ' resultaat' : ' resultaten') + ' voor \u201c' + query + '\u201d';
+      renderArticles(results, container);
+    }
+    showView('view-search');
+  }
+
+  // ─── Open article by title (for related links) ─────────
+
   function openArticleByTitle(title) {
+    // Search across all visible article cards
     var cards = document.querySelectorAll('.article-card');
     var titleNorm = title.toLowerCase().trim();
     for (var i = 0; i < cards.length; i++) {
@@ -390,27 +493,31 @@
           card.classList.add('open');
           postProcessRelated(card);
         }
-        // Highlight even
         card.classList.add('highlight');
         setTimeout(function(c) { return function() { c.classList.remove('highlight'); }; }(card), 2000);
         return true;
       }
     }
+    // Not found in current view — find which collection it's in
+    var target = allArticles.find(function(a) { return a.title.toLowerCase().trim() === titleNorm; });
+    if (target) {
+      showCollection(target.collection || 'Algemeen (Broncollectie)');
+      setTimeout(function() { openArticleByTitle(title); }, 350);
+      return true;
+    }
     return false;
   }
 
-  // Maak "Gerelateerde artikelen" zichtbaar en klikbaar
+  // ─── Gerelateerde artikelen post-processing ────────────
+
   function postProcessRelated(card) {
     var content = card.querySelector('.article-content');
     if (!content || content.dataset.relatedProcessed) return;
     content.dataset.relatedProcessed = '1';
 
-    var headings = content.querySelectorAll('h2');
-    headings.forEach(function(h) {
+    content.querySelectorAll('h2').forEach(function(h) {
       if (/gerelateerde/i.test(h.textContent)) {
         h.classList.add('gerelateerd');
-
-        // Vervang volgende ul met klikbare links
         var ul = h.nextElementSibling;
         if (ul && ul.tagName === 'UL') {
           var newUl = document.createElement('ul');
@@ -423,13 +530,10 @@
             a.textContent = text;
             a.addEventListener('click', function(e) {
               e.preventDefault();
-              var found = openArticleByTitle(text);
-              if (!found) {
-                // Artikel niet zichtbaar (bijv. in andere collectie) — zoek erna
+              if (!openArticleByTitle(text)) {
                 document.getElementById('search').value = text;
-                document.getElementById('search').dispatchEvent(new Event('input'));
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                setTimeout(function() { openArticleByTitle(text); }, 300);
+                showSearchResults(text);
+                setTimeout(function() { openArticleByTitle(text); }, 350);
               }
             });
             newLi.appendChild(a);
@@ -441,7 +545,8 @@
     });
   }
 
-  // Normalize Dutch text for search
+  // ─── Search ────────────────────────────────────────────
+
   function normalize(str) {
     return str.toLowerCase()
       .replace(/[áàä]/g, 'a').replace(/[éèê]/g, 'e')
@@ -451,7 +556,6 @@
       .replace(/\s+/g, ' ').trim();
   }
 
-  // Dutch synonyms / aliases for better search
   var SYNONYMS = {
     'inloggen': ['login', 'aanmelden', 'inlog', 'toegang'],
     'login': ['inloggen', 'aanmelden'],
@@ -479,26 +583,20 @@
     'erkend': ['erkenning', 'yoga alliance', 'ryt', 'certificaat'],
   };
 
-  // Expand query words with synonyms
   function expandQuery(words) {
     var expanded = [];
     words.forEach(function(w) {
       expanded.push(w);
-      if (SYNONYMS[w]) {
-        SYNONYMS[w].forEach(function(s) { expanded.push(s); });
-      }
+      if (SYNONYMS[w]) SYNONYMS[w].forEach(function(s) { expanded.push(s); });
     });
     return expanded;
   }
 
-  // Score an article against a query
   function scoreArticle(article, queryWords) {
     var titleNorm = normalize(article.title);
     var contentNorm = normalize(article.content || '');
     var tagsNorm = normalize((article.tags || []).join(' '));
     var colNorm = normalize(article.collection || '');
-    var allText = titleNorm + ' ' + tagsNorm + ' ' + colNorm + ' ' + contentNorm;
-
     var score = 0;
     var expandedWords = expandQuery(queryWords);
 
@@ -508,8 +606,6 @@
       if (colNorm.includes(w)) score += 3;
       if (contentNorm.includes(w)) score += 2;
     });
-
-    // Bonus for synonym matches
     expandedWords.forEach(function(w) {
       if (!queryWords.includes(w)) {
         if (titleNorm.includes(w)) score += 4;
@@ -517,34 +613,39 @@
         if (contentNorm.includes(w)) score += 1;
       }
     });
-
     return score;
   }
 
-  // Smart search: split into words, score each article, filter by min score
   function filterArticles(query) {
     if (!query.trim()) return allArticles;
     var queryWords = normalize(query).split(' ').filter(function(w) { return w.length > 1; });
     if (queryWords.length === 0) return allArticles;
-
-    var scored = allArticles.map(function(a) {
+    return allArticles.map(function(a) {
       return { article: a, score: scoreArticle(a, queryWords) };
     }).filter(function(item) { return item.score > 0; })
-      .sort(function(a, b) { return b.score - a.score; });
-
-    return scored.map(function(item) { return item.article; });
+      .sort(function(a, b) { return b.score - a.score; })
+      .map(function(item) { return item.article; });
   }
 
+  // ─── Search input handler ──────────────────────────────
+
   document.getElementById('search').addEventListener('input', function() {
-    render(filterArticles(this.value));
+    showSearchResults(this.value);
   });
 
-  // Load articles
+  // ─── Back button ───────────────────────────────────────
+
+  document.getElementById('back-btn').addEventListener('click', showHome);
+
+  // ─── Load articles ─────────────────────────────────────
+
   fetch(API + '/api/articles')
     .then(function(r) { return r.json(); })
     .then(function(articles) {
       allArticles = articles;
-      render(articles);
+      document.getElementById('loading').style.display = 'none';
+      renderTiles(articles);
+      showView('view-home');
     })
     .catch(function() {
       document.getElementById('loading').textContent = 'Kon artikelen niet laden. Probeer de pagina te verversen.';
