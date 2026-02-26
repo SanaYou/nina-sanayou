@@ -234,6 +234,20 @@ async def chat(request: ChatRequest):
         if len(messages) > 20:
             messages = messages[-20:]
 
+        # Zorg dat berichten altijd afwisselen (user/assistant)
+        # Verwijder dubbele opeenvolgende rollen om API-fouten te voorkomen
+        cleaned = []
+        for msg in messages:
+            if cleaned and cleaned[-1]["role"] == msg["role"]:
+                # Vervang het vorige bericht van dezelfde rol door het nieuwste
+                cleaned[-1] = msg
+            else:
+                cleaned.append(msg)
+        # Anthropic API vereist dat het eerste bericht altijd "user" is
+        while cleaned and cleaned[0]["role"] != "user":
+            cleaned.pop(0)
+        messages = cleaned
+
         response = client.messages.create(
             model="claude-sonnet-4-6",
             max_tokens=1024,
