@@ -142,10 +142,14 @@
       });
       var data = await res.json();
       hideTyping();
-      addMsg("bot", data.response);
-      history.push({ role: "user", content: text });
-      history.push({ role: "assistant", content: data.response });
-      if (history.length > 20) history = history.slice(-20);
+      if (data.error) {
+        addMsg("bot", "Er ging iets mis. Probeer het opnieuw of stuur een mail naar academy@sanayou.com");
+      } else {
+        addMsg("bot", data.response);
+        history.push({ role: "user", content: text });
+        history.push({ role: "assistant", content: data.response });
+        if (history.length > 20) history = history.slice(-20);
+      }
     } catch (e) {
       hideTyping();
       addMsg(

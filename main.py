@@ -245,7 +245,9 @@ async def chat(request: ChatRequest):
     except anthropic.AuthenticationError:
         return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
     except Exception as e:
+        import traceback
         print(f"[chat] error: {type(e).__name__}: {e}")
+        print(traceback.format_exc())
         return {"error": "Er ging iets mis. Probeer het opnieuw of mail naar academy@sanayou.com."}
 
 
