@@ -8,7 +8,7 @@ In dit artikel lees je het adres van de studio in Zwolle en waar je de auto kwij
 ## Adres
 
 SanaYou YOGAcademy
-Hasseltendijk 20e
+Hasselterdijk 20-E
 8043 PD Zwolle
 
 ## Parkeren
