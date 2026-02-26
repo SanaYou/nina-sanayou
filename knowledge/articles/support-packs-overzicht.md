@@ -24,6 +24,6 @@ De Support Packs zijn optioneel. Ze zijn zinvol als je:
 
 ## Gerelateerde artikelen
 
-- Wat zijn de verschillen tussen de Support Packs?
-- Hoe voeg ik een Support Pack toe aan mijn opleiding?
-- Hoe werkt het praktijkexamen van de online RYT200?
+- Wat is het LIVE+ Support Pack?
+- Wat is het Teaching Assessment Pack?
+- Hoe zeg ik mijn abonnement op via het klantportaal?

@@ -16,6 +16,10 @@ De online modules zijn altijd toegankelijk en volg je in je eigen tempo. Zodra j
 
 Kan een specifieke datum echt niet? Stuur een mail naar academy@sanayou.com. We kunnen maximaal twee data kosteloos verplaatsen.
 
+## Wat is inbegrepen?
+
+Naast de online modules en klassikale lesdagen is bij de RYT300 ook het **LIVE+ Support Pack kosteloos inbegrepen** voor de duur van je opleiding. Dit geeft je toegang tot maandelijkse live CoachCalls met Sandy via Zoom. Je betaalt hier geen apart abonnement voor.
+
 ## Erkenning
 
 De RYT300 van SanaYou YOGAcademy is erkend door Yoga Alliance. In combinatie met een RYT200 kun je je registreren als RYT500, het hoogste reguliere niveau binnen Yoga Alliance.
