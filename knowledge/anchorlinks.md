@@ -36,6 +36,20 @@ https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-k
 
 ---
 
+## Proeflessen — direct naar videosectie op website
+
+Gebruik deze links wanneer een student vraagt of ze een kijkje kunnen nemen in het platform of proefles kunnen zien. De pagina's bevatten ook video-testimonials. Altijd als hyperlink weergeven, niet als losse URL.
+
+| Opleiding | Link |
+|---|---|
+| Klassikale RYT/VYN200 | https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-cf383a5c-1bad-4122-aa7c-b0a70aaa9c91 |
+| Online RYT200 (alle 3 varianten) | https://checkout.sanayou.com/ryt200-teacher-trainingen-online?scrollTo=element-9d7942d9-56a7-45ee-85c6-93ddfacebf2e |
+| RYT300 | https://checkout.sanayou.com/ryt300-teacher-training?scrollTo=element-d5dc3091-ab71-4a65-99b1-0c888fe288cb |
+
+> Tip voor Nina: verwijs naar de proefles die bij de opleiding hoort waar de student naar vraagt. Als nog niet duidelijk is welke opleiding, verwijs naar de online RYT200 pagina (meest bezochte).
+
+---
+
 ## Notities
 
 - Anchorlinks verwijzen naar specifieke blokken op de pagina en zijn stabieler dan algemene URL's.
