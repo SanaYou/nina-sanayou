@@ -221,7 +221,7 @@ async def chat(request: ChatRequest):
         return {"error": "API key niet geconfigureerd. Neem contact op met academy@sanayou.com."}
 
     try:
-        client = anthropic.Anthropic(api_key=api_key)
+        client = anthropic.Anthropic(api_key=api_key, timeout=25.0)
 
         # RAG: haal relevante artikelen op voor deze vraag
         relevant_knowledge = retrieve_articles(request.message, request.history or [])
@@ -239,7 +239,6 @@ async def chat(request: ChatRequest):
         cleaned = []
         for msg in messages:
             if cleaned and cleaned[-1]["role"] == msg["role"]:
-                # Vervang het vorige bericht van dezelfde rol door het nieuwste
                 cleaned[-1] = msg
             else:
                 cleaned.append(msg)
@@ -248,16 +247,45 @@ async def chat(request: ChatRequest):
             cleaned.pop(0)
         messages = cleaned
 
-        response = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=1024,
-            system=system_prompt,
-            messages=messages,
-        )
+        # Retry bij overloaded (529) — max 2 pogingen
+        import time
+        last_error = None
+        for attempt in range(2):
+            try:
+                response = client.messages.create(
+                    model="claude-sonnet-4-6",
+                    max_tokens=1024,
+                    system=system_prompt,
+                    messages=messages,
+                )
+                return {"response": response.content[0].text}
+            except anthropic.APIStatusError as e:
+                last_error = e
+                if e.status_code == 529 and attempt == 0:
+                    print(f"[chat] Anthropic overloaded (529), retry na 2s...")
+                    time.sleep(2)
+                    continue
+                raise
+            except anthropic.APITimeoutError as e:
+                last_error = e
+                if attempt == 0:
+                    print(f"[chat] Timeout op poging 1, retry...")
+                    time.sleep(1)
+                    continue
+                raise
+        raise last_error
 
-        return {"response": response.content[0].text}
     except anthropic.AuthenticationError:
         return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
+    except anthropic.RateLimitError as e:
+        print(f"[chat] RateLimitError: {e}")
+        return {"error": "Nina is even overbelast. Probeer het over een minuutje opnieuw."}
+    except anthropic.APITimeoutError as e:
+        print(f"[chat] TimeoutError: {e}")
+        return {"error": "Nina reageert even niet. Probeer het opnieuw of mail naar academy@sanayou.com."}
+    except anthropic.APIStatusError as e:
+        print(f"[chat] APIStatusError {e.status_code}: {e}")
+        return {"error": "Er ging iets mis aan onze kant. Probeer het opnieuw of mail naar academy@sanayou.com."}
     except Exception as e:
         import traceback
         print(f"[chat] error: {type(e).__name__}: {e}")

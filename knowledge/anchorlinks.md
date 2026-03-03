@@ -10,10 +10,10 @@ Dit bestand bevat alle anchorlinks die direct naar specifieke blokken op de webp
 https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal
 
 **Direct naar losse modules boeken / lesdata van alle lesmodules:**
-https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainings-klassikaal?scrollTo=element-68bcdb97-a077-49b5-aa3f-cd7ea4ab2fb0
+https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-68bcdb97-a077-49b5-aa3f-cd7ea4ab2fb0
 
 **Direct naar praktijkexamens boeken:**
-https://checkout.sanayou.com/ryt200-vyn200-yin-en-ang-yoga-teacher-trainings-klassikaal?scrollTo=element-b7f7cdd4-1a13-4c8a-a0ec-c7577f16f775
+https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-b7f7cdd4-1a13-4c8a-a0ec-c7577f16f775
 
 **Direct naar volledige opleiding in één keer boeken (pakketkorting):**
 https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-99025a35-77d4-4255-890d-0b58b5ca787d
@@ -30,9 +30,16 @@ https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-k
 
 | Opleiding | Aanvraaglink |
 |---|---|
-| Klassikale RYT/VYN200 | https://checkout.sanayou.com/ryt200-vyn200-yin-en-ang-yoga-teacher-trainings-klassikaal?scrollTo=element-b7f7cdd4-1a13-4c8a-a0ec-c7577f16f775 |
+| Klassikale RYT/VYN200 | https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-b7f7cdd4-1a13-4c8a-a0ec-c7577f16f775 |
 | Online RYT200 | https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online |
 | RYT300 | https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300 |
+
+---
+
+## Online RYT200 – Algemene overzichtspagina (alle 3 varianten)
+
+**Algemene pagina:**
+https://checkout.sanayou.com/ryt200-teacher-trainingen-online
 
 ---
 
