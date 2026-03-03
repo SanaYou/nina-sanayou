@@ -25,6 +25,12 @@ Je stuurt het verslag uitgetypt in een Word- of PDF-bestand per e-mail naar acad
 
 Heb je een lesdag gemist van het laatste lesweekend van een lesmodule, dan dient het verslag bij ons binnen te zijn vóórdat je examen plaatsvindt.
 
+Na ontvangst en beoordeling van je verslag worden de contacturen voor de gemiste lesdag alsnog voor je geregistreerd.
+
+## Tip: betrek je medestudenten
+
+Vraag via de besloten Huddle-groep van jouw opleiding ook aantekeningen op bij je medestudenten. Tijdens een klassikale lesdag gebeurt meer dan wat je alleen uit de online leeromgeving kunt halen. Stem op de eerstvolgende lesdag ook even af met je groep over wat er besproken is.
+
 ## Afmelden bij afwezigheid
 
 Kun je niet aanwezig zijn op een lesdag, dan vragen we je om je afwezigheid te mailen naar academy@sanayou.com én een bericht te plaatsen in de besloten Huddle-groep van jouw opleiding. Zo zijn zowel het team als je medestudenten op de hoogte.
