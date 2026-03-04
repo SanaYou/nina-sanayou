@@ -1,24 +1,30 @@
-# Interne instructie: RYT300 lesdag — uitschrijven of verplaatsen
+# Interne instructie: RYT300 lesdag — verplaatsen (niet uitschrijven)
 
-## Wat Nina moet weten
+## De kernregel
 
-Als een student zegt dat ze een RYT300-lesdag willen afzeggen, annuleren of "uitschrijven", stuur ze dan altijd naar academy@sanayou.com. **Studenten moeten zichzelf NIET via het systeem uitschrijven.**
+Niemand schrijft een student uit voor een RYT300-lesdag of themadag — ook Sandy niet. Uitschrijven is nooit de juiste actie: de reservering vervalt dan in het systeem en de datum verdwijnt. De enige correcte actie is **verplaatsen**.
 
-## Waarom (intern, niet voor student)
+## Wanneer een student een datum wil verzetten
 
-Wanneer een student zichzelf uitschrijft voor een RYT300-lesdag, vervalt de reservering in het systeem. De datum verdwijnt en Sandy moet deze handmatig opnieuw inplannen naar de volgende beschikbare datum (doorgaans het jaar erop). Dit kost onnodig werk en kan verwarring geven bij de student.
+De student mailt academy@sanayou.com met het verzoek. Sandy verplaatst de reservering handmatig naar de eerstvolgende beschikbare datum van diezelfde lesdag of themadag (doorgaans het jaar erop).
 
-De juiste procedure is:
-1. Student mailt academy@sanayou.com met het verzoek om een datum te verplaatsen
-2. Sandy verplaatst de reservering handmatig naar de eerstvolgende datum (bijv. zelfde lesdag volgend jaar)
-3. De student ontvangt bevestiging via de persoonlijke lesagenda
+## Kosten
+
+- **Maximaal 2 lesdagen of themadagen** kunnen kosteloos worden verplaatst per RYT300-traject.
+- **Vanaf de 3e verplaatsing:** de reguliere annuleringskosten zijn van toepassing (percentage afhankelijk van hoe ver vooruit het verzoek wordt gedaan), plus €25 administratiekosten per datum.
+
+## Annuleringspercentages (ter referentie)
+
+- Tot 1 maand voor aanvang: 25% van het lesgeld
+- Vanaf 1 maand voor aanvang: 50% van het lesgeld
+- Vanaf 1 week voor aanvang of na de aanvangsdatum: 100% van het lesgeld
 
 ## Wat Nina zegt tegen de student
 
-Wanneer iemand vraagt of ze een RYT300-lesdag kunnen afzeggen of uitschrijven:
+Wanneer iemand vraagt of ze een RYT300-lesdag of themadag kunnen afzeggen, overslaan of uitschrijven:
 
-> "Je kunt een RYT300-lesdag altijd verplaatsen naar een volgende datum. Stuur daarvoor een mailtje naar academy@sanayou.com, dan regelen we dat voor je. Je hoeft jezelf niet uit te schrijven in het systeem. Binnen je RYT300-traject kun je maximaal twee lesdagen kosteloos verplaatsen."
+> "Je kunt een RYT300-lesdag of themadag laten verplaatsen naar een volgende datum. Stuur daarvoor een mailtje naar academy@sanayou.com. Binnen je RYT300-traject kun je maximaal twee lesdagen kosteloos laten verplaatsen."
 
 ## Referentie
 
-Bron: e-mail Sandy aan Gemma Vonk (3 maart 2026) over het verplaatsen van Yin & het Hout Element van 3 april 2026 naar 2 april 2027.
+Bron: e-mail Sandy aan Gemma Vonk (3 maart 2026) + toelichting Sandy (4 maart 2026).
