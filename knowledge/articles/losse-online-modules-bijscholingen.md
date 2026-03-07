@@ -2,7 +2,7 @@
 
 COLLECTIE: Losse Online Bijscholingen en Specialisaties
 
-In dit artikel lees je welke losse online modules en bijscholingen beschikbaar zijn, hoeveel studieuren ze bevatten en welke erkenning ze meebrengen.
+In dit artikel lees je welke losse online modules en bijscholingen beschikbaar zijn, hoeveel studieuren ze bevatten, wat ze kosten en welke erkenning ze meebrengen.
 
 ## Erkenning
 
@@ -12,29 +12,29 @@ Alle losse online modules van SanaYou YOGAcademy zijn erkend door Yoga Alliance 
 
 De twee basismodules zijn uitgebreide startpunten die ook als zelfstandige verdieping gevolgd kunnen worden:
 
-- **Yin Yoga Basics** – 70 uur | Thema's: meridianen, bindweefsel, assisted Yin en lesopbouw. Geschikt voor startende Yin-docenten of wie Yin Yoga wil verdiepen.
-- **Yang Yoga Basics** – 70 uur | Thema's: Vinyasa, Hatha, Ashtanga basis, sequencing en ademhaling. Geschikt voor startende Yang-docenten.
+- **Yin Yoga Basics** – 70 uur – €375 | Thema's: meridianen, bindweefsel, assisted Yin en lesopbouw. Geschikt voor startende Yin-docenten of wie Yin Yoga wil verdiepen.
+- **Yang Yoga Basics** – 70 uur – €375 | Thema's: Vinyasa, Hatha, Ashtanga basis, sequencing en ademhaling. Geschikt voor startende Yang-docenten.
 
 ## Actieve yogavormen
 
-- **Critical Alignment Yoga** – 32 uur
-- **Ashtanga Yoga** – 50 uur
-- **Restorative Alignment Yoga** – 20 uur
+- **Critical Alignment Yoga** – 32 uur – €475
+- **Ashtanga Yoga** – 50 uur – €475
+- **Restorative Alignment Yoga** – 20 uur – €275
 
 ## Rustige yogavormen
 
-- **Yoga Nidra** – 25 uur
-- **Yin Yoga & de 5 Elementenleer** – 32 uur
-- **De Kracht van de Nervus Vagus** – 25 uur
-- **Advanced Yin & Yang Flows** – 20 uur
-- **Yin Yoga & de Wereld van Fascia** – 25 uur
+- **Yoga Nidra** – 25 uur – €375
+- **Yin Yoga & de 5 Elementenleer** – 32 uur – €475
+- **De Kracht van de Nervus Vagus** – 25 uur – €375
+- **Advanced Yin & Yang Flows** – 20 uur – €275
+- **Yin Yoga & de Wereld van Fascia** – 25 uur – €375
 
 ## Functionele anatomie
 
-- **Basis Anatomie voor Yogadocenten**
-- **Your Body Your Yoga**
-- **Yin Yoga: Omgaan met Klachten**
-- **Anatomie & Biomechanica**
+- **Basis Anatomie voor Yogadocenten** – 4 uur – €75
+- **Your Body, Your Yoga** – 8 uur – €95
+- **Yin Yoga: Omgaan met Klachten** – 12 uur – €195
+- **Biomechanica & Anatomie** – €195
 
 ## Uitbreiden met klassikale lesdagen
 
