@@ -253,7 +253,7 @@ async def chat(request: ChatRequest):
         for attempt in range(2):
             try:
                 response = client.messages.create(
-                    model="claude-3-5-haiku-20241022",
+                    model="claude-sonnet-4-6",
                     max_tokens=1024,
                     system=system_prompt,
                     messages=messages,
