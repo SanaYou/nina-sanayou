@@ -10,7 +10,7 @@ Vanaf het moment dat je een online module aanschaft, heb je 24 maanden toegang t
 
 ## Verlengen
 
-Wanneer je toegang bijna verloopt, ontvang je automatisch een bericht met een verlengaanbod. Voor een vast jaarbedrag kun je daarna zolang je wilt toegang behouden tot de lesstof.
+Wanneer je toegang bijna verloopt, ontvang je automatisch een bericht met een verlengaanbod — ongeveer een maand voor de verloopdatum. Je hoeft daar zelf niets voor bij te houden. Voor een vast jaarbedrag kun je daarna zolang je wilt toegang behouden tot de lesstof.
 
 Je kunt het jaarabonnement zelf opzeggen wanneer je wilt.
 
