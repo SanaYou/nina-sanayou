@@ -214,6 +214,16 @@ class ChatRequest(BaseModel):
     history: Optional[List[Message]] = []
 
 
+@app.get("/test-model")
+async def test_model(model: str = "claude-haiku-4-5"):
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    client = anthropic.Anthropic(api_key=api_key, timeout=10.0)
+    try:
+        r = client.messages.create(model=model, max_tokens=10, messages=[{"role": "user", "content": "hi"}])
+        return {"model": model, "status": "ok", "response": r.content[0].text}
+    except Exception as e:
+        return {"model": model, "status": "error", "error": str(e)[:200]}
+
 @app.post("/chat")
 async def chat(request: ChatRequest):
     api_key = os.getenv("ANTHROPIC_API_KEY")
