@@ -343,11 +343,7 @@ async def chat(request: ChatRequest):
                 response = client.messages.create(
                     model="claude-haiku-4-5",
                     max_tokens=1024,
-                    system=[{
-                        "type": "text",
-                        "text": system_prompt,
-                        "cache_control": {"type": "ephemeral"}
-                    }],
+                    system=system_prompt,
                     messages=messages,
                 )
                 response_text = response.content[0].text
