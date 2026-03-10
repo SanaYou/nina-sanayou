@@ -334,7 +334,26 @@ async def chat(request: ChatRequest):
                     system=system_prompt,
                     messages=messages,
                 )
-                return {"response": response.content[0].text}
+                response_text = response.content[0].text
+
+                # Check op escalatietag en stuur door naar Help Scout
+                escalation_match = re.search(
+                    r'\[\[ESCALATIE\s+naam="([^"]+)"\s+email="([^"]+)"\s+samenvatting="([^"]+)"\]\]',
+                    response_text
+                )
+                if escalation_match:
+                    esc_name = escalation_match.group(1)
+                    esc_email = escalation_match.group(2)
+                    esc_summary = escalation_match.group(3)
+                    # Strip de tag uit het zichtbare antwoord
+                    response_text = response_text.replace(escalation_match.group(0), "").strip()
+                    # Stuur escalatie naar Help Scout (async, niet blokkeren)
+                    try:
+                        _send_escalation(esc_name, esc_email, esc_summary, messages)
+                    except Exception as esc_err:
+                        logger.error(f"Escalatie mislukt: {esc_err}")
+
+                return {"response": response_text}
             except anthropic.APIStatusError as e:
                 last_error = e
                 if e.status_code == 529 and attempt == 0:
@@ -402,6 +421,88 @@ async def get_articles():
 
     articles.sort(key=lambda a: (a["collection"], a["order"]))
     return articles
+
+
+# ── Help Scout escalatie ───────────────────────────────────────────────────
+import json as _json
+import requests as _requests
+
+_hs_token_cache = {"access_token": None, "expires_at": 0}
+
+def _hs_get_token():
+    """Haal Help Scout OAuth2 access token (cached)."""
+    import time as _t
+    now = _t.time()
+    if _hs_token_cache["access_token"] and now < _hs_token_cache["expires_at"]:
+        return _hs_token_cache["access_token"]
+
+    app_id = os.getenv("HELPSCOUT_APP_ID")
+    app_secret = os.getenv("HELPSCOUT_APP_SECRET")
+    if not app_id or not app_secret:
+        return None
+
+    resp = _requests.post("https://api.helpscout.net/v2/oauth2/token", json={
+        "grant_type": "client_credentials",
+        "client_id": app_id,
+        "client_secret": app_secret,
+    })
+    resp.raise_for_status()
+    data = resp.json()
+    _hs_token_cache["access_token"] = data["access_token"]
+    _hs_token_cache["expires_at"] = now + data["expires_in"] - 60
+    return data["access_token"]
+
+
+def _hs_headers():
+    return {"Authorization": f"Bearer {_hs_get_token()}", "Content-Type": "application/json"}
+
+
+def _format_chat_html(history: list, summary: str) -> str:
+    """Format het gesprek als leesbare HTML voor Help Scout."""
+    html = f"<p><strong>Samenvatting:</strong> {summary}</p><hr>"
+    html += "<h3>Volledig gesprek met Nina</h3>"
+    for msg in history:
+        role = "Bezoeker" if msg.get("role") == "user" else "Nina"
+        color = "#66B0B2" if role == "Nina" else "#555"
+        text = msg.get("content", "").replace("\n", "<br>")
+        html += f'<p><strong style="color:{color}">{role}:</strong><br>{text}</p>'
+    return html
+
+
+def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
+    """Stuur escalatie naar Help Scout (aangeroepen vanuit /chat)."""
+    token = _hs_get_token()
+    if not token:
+        logger.error("Help Scout credentials niet geconfigureerd — escalatie niet verstuurd")
+        return
+
+    mailbox_id = int(os.getenv("HELPSCOUT_MAILBOX_ID", "0"))
+    chat_html = _format_chat_html(chat_messages, summary)
+
+    resp = _requests.post(
+        "https://api.helpscout.net/v2/conversations",
+        headers=_hs_headers(),
+        json={
+            "subject": f"Nina-escalatie: {summary[:80]}",
+            "customer": {
+                "email": email,
+                "firstName": name,
+            },
+            "mailboxId": mailbox_id,
+            "type": "email",
+            "status": "pending",
+            "tags": ["nina-escalatie"],
+            "threads": [
+                {
+                    "type": "customer",
+                    "customer": {"email": email},
+                    "text": chat_html,
+                }
+            ],
+        },
+    )
+    resp.raise_for_status()
+    logger.info(f"Escalatie aangemaakt in Help Scout: {name} ({email})")
 
 
 @app.get("/health")
