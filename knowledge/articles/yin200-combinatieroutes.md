@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: yin200-combinatieroutes
+
 # Interne instructie Nina: Routes naar erkend Yin Yoga 200-uursdiploma
 *Interne instructie — geen helpartikel | Opgeslagen 2 maart 2026*
 

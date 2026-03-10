@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: aanmeldlinks-boekingsstatus
+
 # INTERN – Instructie Nina: Aanmeldlinks en boekingsstatus
 
 ## Doel

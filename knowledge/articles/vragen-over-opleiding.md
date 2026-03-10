@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: vragen-over-opleiding
+
 # INTERN – Instructie Nina: Ik heb wat vragen over jullie opleiding
 
 ## Doel

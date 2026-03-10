@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: ryt300-lesdag-uitschrijven
+
 # Interne instructie: RYT300 lesdag — verplaatsen (niet uitschrijven)
 
 ## De kernregel

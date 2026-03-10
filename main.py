@@ -119,14 +119,25 @@ validate_articles(ARTICLES_INDEX)
 def load_base_knowledge() -> str:
     knowledge_dir = Path("knowledge")
     parts = []
-    # Laad root-bestanden (bijv. anchorlinks.md)
+    # Laad root-bestanden (anchorlinks, jaarkalender, etc.)
     for file in sorted(knowledge_dir.glob("*.md")):
         parts.append(file.read_text(encoding="utf-8"))
-    # Laad instructies voor Nina (gedragsregels, doorvragen, etc.)
+    # Laad alleen universele gedragsregels — content-specifieke instructies
+    # worden via RAG geladen zodat ze alleen meekomen als ze relevant zijn.
+    ALTIJD_LADEN = {
+        "gesprek-afsluiten.md",
+        "schrijfstijl.md",
+        "doorvragen-voor-informatie.md",
+        "past-bij-mij-vragen.md",
+        "kortingen-kosten.md",
+        "whatsapp-telefoonnummer.md",
+        "naam-email-verzamelen.md",
+    }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
         for file in sorted(instructies_dir.glob("*.md")):
-            parts.append(file.read_text(encoding="utf-8"))
+            if file.name in ALTIJD_LADEN:
+                parts.append(file.read_text(encoding="utf-8"))
     return "\n\n".join(parts)
 
 BASE_KNOWLEDGE = load_base_knowledge()

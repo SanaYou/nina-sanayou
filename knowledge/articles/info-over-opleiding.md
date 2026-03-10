@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: info-over-opleiding
+
 # INTERN – Instructie Nina: Ik wil wat weten over jullie opleiding
 
 ## Gedragsinstructie

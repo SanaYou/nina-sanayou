@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: verlenging-links-intern
+
 # Interne instructie: verlengingslinks RYT300
 
 Wanneer een student vraagt hoe ze hun toegang tot de online modules van de RYT300 kunnen verlengen, geef dan de verlengingslink die hoort bij hun studierichting. Deel deze link NOOIT uit eigen beweging of in openbare artikelen — alleen op directe vraag van een student die al ingeschreven staat.

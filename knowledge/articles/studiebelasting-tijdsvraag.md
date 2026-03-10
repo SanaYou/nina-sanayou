@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: studiebelasting-tijdsvraag
+
 # INTERN – Instructie Nina: Hoeveel tijd ben ik per week kwijt?
 
 ## Gedragsinstructie

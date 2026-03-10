@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: uren-elders-en-erkenning
+
 # Interne richtlijn: uren elders gevolgd + erkenningsregels YA en VYN
 
 ## Kernregel: alle uren bij één opleider

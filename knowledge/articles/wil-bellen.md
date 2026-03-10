@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: wil-bellen
+
 # INTERN – Instructie Nina: Iemand wil Sandy spreken
 
 ## Gedragsinstructie

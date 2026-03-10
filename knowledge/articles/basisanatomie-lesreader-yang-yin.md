@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: basisanatomie-lesreader-yang-yin
+
 # INTERNE INSTRUCTIE — Basisanatomie-lesreader: Yin vs Yang
 
 Gebruik deze informatie als een student vraagt waarom ze geen aparte anatomie-reader hebben bij hun Yang-modules.

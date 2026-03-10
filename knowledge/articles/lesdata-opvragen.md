@@ -1,3 +1,6 @@
+COLLECTIE: Algemene informatie
+TAGS: lesdata-opvragen
+
 # INTERN – Instructie Nina: Lesdata opvragen per lesmodule
 
 ## Twee situaties
