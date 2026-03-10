@@ -40,6 +40,11 @@ De twee basismodules zijn uitgebreide startpunten die ook als zelfstandige verdi
 
 Een aantal van deze modules kun je aanvullen met klassikale lesdagen. Dat levert meer studieuren op en een verdiepend certificaat. Je leest hoe dat werkt in het artikel over hybride uitbreiding.
 
+## Alle losse modules bekijken
+
+Een overzicht van alle losse online modules en bijscholingen vind je hier:
+[Bekijk alle modules en specialisaties](https://www.sanayou.com/yoga-kennis-verdiepen-modules-&-specialisaties/)
+
 ## Gerelateerde artikelen
 
 - Kan ik een online module uitbreiden met klassikale lesdagen?

@@ -3,7 +3,7 @@ TAGS: annulering, annuleringsvoorwaarden, klassikaal, lesdag, lesmodule, kosten,
 
 # Wat zijn de annuleringsvoorwaarden voor klassikale lesmodules en lesdagen?
 
-In dit artikel lees je wat de kosten zijn als je een klassikale lesmodule of lesdag wilt annuleren.
+In dit artikel lees je wat de kosten zijn als je een klassikale lesmodule of lesdag wilt annuleren. Dit geldt voor alle klassikale opleidingen: de RYT/VYN200 Yin & Yang Teacher Training, losse klassikale modules en de klassikale lesdagen van de RYT300.
 
 ## Annuleringskosten
 
@@ -12,6 +12,10 @@ De kosten bij annulering zijn afhankelijk van het moment waarop je annuleert:
 - **Tot één maand voor aanvang** van de lesmodule: 25% van het lesgeld
 - **Vanaf één maand voor aanvang** van de lesmodule: 50% van het lesgeld
 - **Vanaf één week voor aanvang en/of na de aanvangsdatum** van de lesmodule: 100% van het lesgeld
+
+## Lesgeld altijd verschuldigd
+
+Het lesgeld blijft altijd volledig verschuldigd, ook bij voortijdig stoppen of bij een betalingsregeling in termijnen. Een termijnbetaling ontslaat je niet van de betalingsverplichting.
 
 ## Annuleren of verplaatsen
 

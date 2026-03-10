@@ -6,7 +6,7 @@
 ## Klassikale RYT/VYN200 Teacher Training
 - [ ] Hoe bereid ik me voor op de Yang lesmodules?
 
-## Klassikale Workshops & Bijscholingen *(hele collectie nog te schrijven)*
+## Klassikale Workshops & Bijscholingen *(wacht op nieuwe landingspagina's van Sandy — HOGE PRIO)*
 - [ ] Waar vind ik het overzicht van alle workshops en themadagen?
 - [ ] Hoe boek ik een workshop of bijscholing?
 - [ ] Waar vind ik mijn persoonlijke boekingsagenda voor workshops?
@@ -16,9 +16,9 @@
 - [ ] Wanneer ontvang ik mijn certificaat na een workshop?
 
 ## Erkende RYT300 Teacher Training (hybride)
-- [ ] Waar vind ik de jaarplanning van de RYT300 lesdagen?
-- [ ] Hoelang heb ik toegang tot de online modules van de RYT300?
-- [ ] Hoe upgrade ik mijn certificaat met klassikale uren?
+- ✅ Waar vind ik de jaarplanning van de RYT300 lesdagen?
+- ✅ Hoelang heb ik toegang tot de online modules van de RYT300?
+- ~~Hoe upgrade ik mijn certificaat met klassikale uren?~~ *(niet van toepassing bij RYT300 — geen apart artikel nodig)*
 - ✅ Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?
 - ✅ Hoe registreer ik mijn RYT300 bij Yoga Alliance?
 - ✅ Hoe werkt de praktijktoets van de RYT300?
@@ -34,19 +34,19 @@
 - ✅ Kan ik losse modules combineren tot een volledige RYT200?
 - ✅ Hoe werkt certificering van een losse module?
 - ✅ Hoelang heb ik toegang tot een losse online module?
-- [ ] Voor wie zijn de losse online modules geschikt?
-- [ ] Heb ik voorkennis nodig voor een losse module?
-- [ ] Welke doorstroommogelijkheden zijn er na een losse module?
-- [ ] Waarom is anatomie essentieel voor yogadocenten?
-- [ ] Welke anatomiemodule past bij welke opleiding?
-- [ ] Hoelang heb ik toegang tot anatomiemodules?
-- [ ] Hoe worden anatomie-uren meegeteld voor certificering?
-- [ ] Hoe integreer ik anatomie in mijn yogalessen?
+- [ ] Voor wie zijn de losse online modules geschikt? *(wacht op nieuwe salespages — samen met klassikale workshops)*
+- [ ] Heb ik voorkennis nodig voor een losse module? *(wacht op nieuwe salespages)*
+- [ ] Welke doorstroommogelijkheden zijn er na een losse module? *(wacht op nieuwe salespages)*
+- [ ] Waarom is anatomie essentieel voor yogadocenten? *(wacht op nieuwe salespages)*
+- [ ] Welke anatomiemodule past bij welke opleiding? *(wacht op nieuwe salespages)*
+- [ ] Hoelang heb ik toegang tot anatomiemodules? *(wacht op nieuwe salespages)*
+- [ ] Hoe worden anatomie-uren meegeteld voor certificering? *(wacht op nieuwe salespages)*
+- [ ] Hoe integreer ik anatomie in mijn yogalessen? *(wacht op nieuwe salespages)*
 
 ## Examens & Certificering
 - ✅ Hoe wordt het online praktijkexamen beoordeeld?
 - ✅ Wanneer ben ik officieel erkend yogadocent?
-- [ ] Hoe werkt het praktijkexamen van de klassikale RYT/VYN200?
+- ✅ Hoe werkt het praktijkexamen van de klassikale RYT/VYN200?
 - [ ] Hoe plan ik mijn online praktijkexamen in?
 - [ ] Kan ik aanvullende klassikale lesdagen volgen ter voorbereiding op mijn examen?
 - [ ] Waar vind ik de voorwaarden en het examenreglement?
@@ -57,23 +57,23 @@
 - ✅ Hoe voeg ik een Support Pack toe aan mijn opleiding?
 - ✅ Wat is de onboarding call en hoe vraag ik die aan?
 
-## Betaling, Facturatie & Termijnen
-- [ ] Wat gebeurt er bij een mislukte betaling?
-- [ ] Wat zijn de annuleringsvoorwaarden? ⚠️ *tegoed van Sandy (3 varianten)*
-- [ ] Wanneer heb ik recht op restitutie? ⚠️ *tegoed van Sandy*
+## Betaling, Facturatie & Termijnen *(wacht op update algemene voorwaarden)*
+- [ ] Wat gebeurt er bij een mislukte betaling? *(wacht op updated AV)*
+- [ ] Wat zijn de annuleringsvoorwaarden? *(3 varianten — wacht op updated AV)*
+- [ ] Wanneer heb ik recht op restitutie? *(wacht op updated AV)*
 
-## Opleidingsvoorwaarden *(hele collectie nog te schrijven)*
-- [ ] Wat zijn de algemene voorwaarden van SanaYou YOGAcademy? ⚠️ *tegoed van Sandy*
-- [ ] Welke voorwaarden gelden per opleiding of module?
-- [ ] Wat zijn de aanwezigheidsrichtlijnen?
-- [ ] Hoe zit het met copyright en gebruik van lesmateriaal? ⚠️ *info nodig van Sandy*
+## Opleidingsvoorwaarden *(hele collectie nog te schrijven — wacht op update algemene voorwaarden)*
+- [ ] Wat zijn de algemene voorwaarden van SanaYou YOGAcademy? ⚠️ *wacht op updated AV van Sandy*
+- [ ] Welke voorwaarden gelden per opleiding of module? *(wacht op updated AV)*
+- [ ] Wat zijn de aanwezigheidsrichtlijnen? *(wacht op updated AV)*
+- [ ] Hoe zit het met copyright en gebruik van lesmateriaal? *(wacht op updated AV)*
 
 ## Technische Ondersteuning
 - ✅ Hoe log ik in op Huddle?
 - ✅ Hoe navigeer ik door de videolessen in Huddle?
-- [ ] Waar vind ik mijn persoonlijke agenda in Huddle?
-- [ ] Hoe reset ik mijn wachtwoord op Huddle?
-- [ ] Waarom kan ik online lessen niet downloaden?
+- [ ] Waar vind ik mijn persoonlijke agenda in Huddle? *(wacht op algemene voorwaarden update)*
+- [ ] Hoe reset ik mijn wachtwoord op Huddle? *(wacht op algemene voorwaarden update)*
+- [ ] Waarom kan ik online lessen niet downloaden? *(wacht op algemene voorwaarden update)*
 
 ## Algemene informatie
 - ✅ Waar is de studio en waar kan ik parkeren?

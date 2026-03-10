@@ -11,6 +11,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+import logging
+
+# ── Logging setup ─────────────────────────────────────────────────────────────
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logger = logging.getLogger("nina")
+
 app = FastAPI()
 
 app.add_middleware(
@@ -86,6 +92,29 @@ def load_articles_index() -> list:
 
 ARTICLES_INDEX = load_articles_index()
 
+# ── Startup-validatie: check artikelen op ontbrekende metadata ────────────────
+def validate_articles(index: list):
+    """Log waarschuwingen voor artikelen zonder COLLECTIE of TAGS."""
+    missing_collectie = []
+    missing_tags = []
+    for article in index:
+        if article["collection"] == "Algemeen":
+            # Check of er echt geen COLLECTIE: regel was (niet bewust "Algemeen")
+            raw = Path("knowledge/articles") / f"{article['id']}.md"
+            if raw.exists():
+                content = raw.read_text(encoding="utf-8")
+                if "COLLECTIE:" not in content:
+                    missing_collectie.append(article["id"])
+        if not article["tags"]:
+            missing_tags.append(article["id"])
+    if missing_collectie:
+        logger.warning(f"Artikelen ZONDER collectie ({len(missing_collectie)}): {', '.join(missing_collectie[:5])}{'...' if len(missing_collectie) > 5 else ''}")
+    if missing_tags:
+        logger.warning(f"Artikelen ZONDER tags ({len(missing_tags)}): {', '.join(missing_tags[:5])}{'...' if len(missing_tags) > 5 else ''}")
+    logger.info(f"Kennisbank geladen: {len(index)} artikelen")
+
+validate_articles(ARTICLES_INDEX)
+
 # Laad ook kleine kennisbestanden in root (bijv. anchorlinks.md)
 def load_base_knowledge() -> str:
     knowledge_dir = Path("knowledge")
@@ -108,16 +137,61 @@ def normalize(text: str) -> str:
     return re.sub(r"[^a-z0-9\s]", " ", text.lower())
 
 
+# Synoniemenlijst: mensen gebruiken andere woorden dan in de kennisbank staan
+SYNONIEMEN = {
+    "kosten": ["prijs", "prijzen", "bedrag", "betalen", "investering", "tarief"],
+    "prijs": ["kosten", "bedrag", "betalen", "investering", "tarief"],
+    "betalen": ["kosten", "prijs", "betaling", "afrekenen"],
+    "inschrijven": ["aanmelden", "registreren", "opgeven", "boeken"],
+    "aanmelden": ["inschrijven", "registreren", "opgeven", "boeken"],
+    "starten": ["beginnen", "start", "startdatum", "wanneer"],
+    "beginnen": ["starten", "start", "startdatum", "wanneer"],
+    "examen": ["toets", "beoordeling", "certificering", "examens"],
+    "toets": ["examen", "beoordeling", "examens"],
+    "certificaat": ["diploma", "certificering", "getuigschrift"],
+    "diploma": ["certificaat", "certificering", "getuigschrift"],
+    "rooster": ["planning", "lesrooster", "schema", "agenda", "lesdagen"],
+    "planning": ["rooster", "lesrooster", "schema", "agenda", "lesdagen"],
+    "online": ["afstandsleren", "digitaal", "thuisstudie"],
+    "klassikaal": ["fysiek", "locatie", "zwolle", "studio"],
+    "opzeggen": ["annuleren", "stoppen", "beeindigen", "uitschrijven"],
+    "annuleren": ["opzeggen", "stoppen", "beeindigen", "uitschrijven"],
+    "docent": ["leraar", "opleider", "trainer", "sandy"],
+    "voorwaarden": ["regels", "eisen", "toelatingseisen", "vereisten"],
+    "eisen": ["voorwaarden", "toelatingseisen", "vereisten"],
+    "lesdag": ["lesmoment", "contactdag", "module", "bijeenkomst"],
+    "module": ["lesdag", "onderdeel", "blok", "cursus"],
+    "gemist": ["afwezig", "absent", "inhalen", "gemiste"],
+    "inhalen": ["gemist", "herkansing", "missen"],
+    "betaalregeling": ["termijnen", "gespreid", "gespreide betaling"],
+    "termijnen": ["betaalregeling", "gespreid", "gespreide betaling"],
+}
+
+
+def expand_with_synonyms(words: list) -> list:
+    """Breid zoekwoorden uit met synoniemen voor betere matching."""
+    expanded = list(words)
+    for word in words:
+        if word in SYNONIEMEN:
+            for syn in SYNONIEMEN[word]:
+                if syn not in expanded:
+                    expanded.append(syn)
+    return expanded
+
+
 def retrieve_articles(query: str, history: List, top_k: int = 6) -> str:
     """Selecteer de meest relevante artikelen op basis van de vraag + recent gesprek."""
     # Combineer huidige vraag + laatste 3 berichten voor context
     search_text = query
     for msg in history[-6:]:
         search_text += " " + msg.content
-    words = [w for w in normalize(search_text).split() if len(w) > 2]
+    base_words = [w for w in normalize(search_text).split() if len(w) > 2]
+    words = expand_with_synonyms(base_words)
 
     if not words:
         return ""
+
+    base_words_set = set(base_words)
 
     scored = []
     for article in ARTICLES_INDEX:
@@ -127,12 +201,14 @@ def retrieve_articles(query: str, history: List, top_k: int = 6) -> str:
         content_norm = normalize(article["clean_content"])
 
         for word in words:
+            # Synoniemen scoren de helft van directe matches
+            multiplier = 1.0 if word in base_words_set else 0.5
             if word in title_norm:
-                score += 8
+                score += 8 * multiplier
             if word in tags_norm:
-                score += 4
+                score += 4 * multiplier
             if word in content_norm:
-                score += 1
+                score += 1 * multiplier
 
         if score > 0:
             scored.append((score, article))
@@ -221,7 +297,7 @@ async def chat(request: ChatRequest):
         return {"error": "API key niet geconfigureerd. Neem contact op met academy@sanayou.com."}
 
     try:
-        client = anthropic.Anthropic(api_key=api_key, timeout=25.0)
+        client = anthropic.Anthropic(api_key=api_key, timeout=45.0)
 
         # RAG: haal relevante artikelen op voor deze vraag
         relevant_knowledge = retrieve_articles(request.message, request.history or [])
@@ -248,7 +324,7 @@ async def chat(request: ChatRequest):
         messages = cleaned
 
         # Retry bij overloaded (529) — max 2 pogingen
-        import time
+        import time as _time
         last_error = None
         for attempt in range(2):
             try:
@@ -262,15 +338,15 @@ async def chat(request: ChatRequest):
             except anthropic.APIStatusError as e:
                 last_error = e
                 if e.status_code == 529 and attempt == 0:
-                    print(f"[chat] Anthropic overloaded (529), retry na 2s...")
-                    time.sleep(2)
+                    logger.warning("Anthropic overloaded (529), retry na 2s...")
+                    _time.sleep(2)
                     continue
                 raise
             except anthropic.APITimeoutError as e:
                 last_error = e
                 if attempt == 0:
-                    print(f"[chat] Timeout op poging 1, retry...")
-                    time.sleep(1)
+                    logger.warning("Timeout op poging 1, retry...")
+                    _time.sleep(1)
                     continue
                 raise
         raise last_error
@@ -278,18 +354,17 @@ async def chat(request: ChatRequest):
     except anthropic.AuthenticationError:
         return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
     except anthropic.RateLimitError as e:
-        print(f"[chat] RateLimitError: {e}")
+        logger.warning(f"RateLimitError: {e}")
         return {"error": "Nina is even overbelast. Probeer het over een minuutje opnieuw."}
     except anthropic.APITimeoutError as e:
-        print(f"[chat] TimeoutError: {e}")
+        logger.warning(f"TimeoutError: {e}")
         return {"error": "Nina reageert even niet. Probeer het opnieuw of mail naar academy@sanayou.com."}
     except anthropic.APIStatusError as e:
-        print(f"[chat] APIStatusError {e.status_code}: {e}")
+        logger.error(f"APIStatusError {e.status_code}: {e}")
         return {"error": "Er ging iets mis aan onze kant. Probeer het opnieuw of mail naar academy@sanayou.com."}
     except Exception as e:
         import traceback
-        print(f"[chat] error: {type(e).__name__}: {e}")
-        print(traceback.format_exc())
+        logger.error(f"{type(e).__name__}: {e}\n{traceback.format_exc()}")
         return {"error": "Er ging iets mis. Probeer het opnieuw of mail naar academy@sanayou.com."}
 
 

@@ -134,28 +134,60 @@
     sendEl.disabled = true;
     showTyping();
 
-    try {
-      var res = await fetch(NINA_API + "/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, history: history }),
-      });
-      var data = await res.json();
+    // Cold-start detectie: als het langer dan 8s duurt, toon een melding
+    var coldStartShown = false;
+    var coldStartTimer = setTimeout(function () {
+      coldStartShown = true;
       hideTyping();
-      if (data.error) {
-        addMsg("bot", "Er ging iets mis. Probeer het opnieuw of stuur een mail naar academy@sanayou.com");
-      } else {
-        addMsg("bot", data.response);
-        history.push({ role: "user", content: text });
-        history.push({ role: "assistant", content: data.response });
-        if (history.length > 20) history = history.slice(-20);
+      addMsg("bot", "Ik word even wakker... nog een paar seconden geduld.");
+      showTyping();
+    }, 8000);
+
+    // Fetch met automatische retry bij netwerkfout (Render cold start)
+    var maxRetries = 2;
+    var data = null;
+    var lastErr = null;
+
+    for (var attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        var res = await fetch(NINA_API + "/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: text, history: history }),
+        });
+        data = await res.json();
+        lastErr = null;
+        break;
+      } catch (e) {
+        lastErr = e;
+        // Bij eerste netwerkfout: wacht 3s en probeer opnieuw (server start op)
+        if (attempt === 0) {
+          if (!coldStartShown) {
+            hideTyping();
+            addMsg("bot", "Ik word even wakker... nog een paar seconden geduld.");
+            showTyping();
+            coldStartShown = true;
+          }
+          await new Promise(function (r) { setTimeout(r, 3000); });
+        }
       }
-    } catch (e) {
-      hideTyping();
+    }
+
+    clearTimeout(coldStartTimer);
+    hideTyping();
+
+    if (lastErr) {
       addMsg(
         "bot",
-        "Er ging iets mis. Probeer het opnieuw of stuur een mail naar academy@sanayou.com"
+        "Ik kan even geen verbinding maken. Probeer het over een minuutje opnieuw, of stuur een mail naar academy@sanayou.com"
       );
+    } else if (data.error) {
+      addMsg("bot", data.error);
+    } else {
+      addMsg("bot", data.response);
+      history.push({ role: "user", content: text });
+      history.push({ role: "assistant", content: data.response });
+      if (history.length > 20) history = history.slice(-20);
     }
 
     isTyping = false;

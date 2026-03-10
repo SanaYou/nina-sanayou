@@ -9,11 +9,13 @@ In dit artikel lees je welke aanvullende begeleidingsopties SanaYou YOGAcademy b
 
 Bij de online RYT200 Teacher Training zijn standaard de community en de online modules inbegrepen. Wil je meer begeleiding of voorbereiding op het praktijkexamen, dan kun je een van de twee Support Packs toevoegen:
 
-**LIVE+ Support Pack**
-Extra live contact met de hoofddocent via maandelijkse CoachCalls. Geschikt als je vragen hebt over de lesstof, feedback wilt of meer structuur zoekt in je studieproces.
+**LIVE+ Support Pack — € 75 per jaar**
+Extra live contact met de hoofddocent via maandelijkse CoachCalls. Geschikt als je vragen hebt over de lesstof, feedback wilt of meer structuur zoekt in je studieproces. Wordt jaarlijks automatisch verlengd; opzeggen via het klantportaal.
+Aanmelden: https://checkout.sanayou.com/checkout/online-plus-pakket
 
-**Teaching Assessment Pack**
-Een praktijkgericht begeleidingstraject ter voorbereiding op het praktijkexamen. Je uploadt een lesvideo en ontvangt uitgebreide schriftelijke feedback plus een individuele CoachCall van 60 minuten.
+**Teaching Assessment Pack — € 145**
+Een praktijkgericht begeleidingstraject ter voorbereiding op het praktijkexamen. Je levert een lesvideo aan (max. 30 minuten) en ontvangt uitgebreide schriftelijke feedback op didactiek, stemgebruik, opbouw, cueing en veiligheid, plus een individuele CoachCall van 60 minuten.
+Aanmelden: https://checkout.sanayou.com/checkout/teaching-assessement-pack
 
 ## Wanneer is een Support Pack zinvol?
 
