@@ -32,5 +32,4 @@ Na goedkeuring van je aanvraag word je opgenomen in het register van de VYN als 
 ## Gerelateerde artikelen
 
 - Welke accreditaties heeft de RYT/VYN200 Yin & Yang opleiding?
-- Welke accreditaties heeft de RYT/VYN200 Yin & Yang opleiding?
 - Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?

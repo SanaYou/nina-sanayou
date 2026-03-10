@@ -18,7 +18,7 @@ Is een onderdeel van je praktijkexamen nog niet voldoende, dan ontvang je gerich
 
 ## Gerelateerde artikelen
 
-- Helpartikel — Diplomaprocedure RYT200 & registratie bij Yoga Alliance
+- Diplomaprocedure RYT200 & registratie bij Yoga Alliance
 - Wanneer kan ik me registreren bij Yoga Alliance als RYT200-docent?
 - Hoe werkt de praktijktoets voor de RYT200 Online?
 - Wanneer ben ik officieel erkend yogadocent?

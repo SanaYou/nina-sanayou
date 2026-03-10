@@ -17,6 +17,6 @@ Je kunt het jaarabonnement zelf opzeggen wanneer je wilt.
 
 ## Gerelateerde artikelen
 
-- Helpartikel — Verlengde toegang voor studenten met een volledig RYT200-pakket
+- Verlengde toegang voor studenten met een volledig RYT200-pakket
 - Hoe lang heb ik de tijd om de volledige online RYT200 af te ronden?
 - Hoelang heb ik toegang tot een losse online module?

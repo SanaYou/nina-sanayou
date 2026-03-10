@@ -22,6 +22,6 @@ Het diploma is internationaal erkend. Als RYT200 kun je wereldwijd yogalessen ge
 
 ## Gerelateerde artikelen
 
-- Helpartikel — Diplomaprocedure RYT200 & registratie bij Yoga Alliance
+- Diplomaprocedure RYT200 & registratie bij Yoga Alliance
 - Hoe ontvang ik mijn RYT200-diploma na afronding?
 - Wanneer ben ik officieel erkend yogadocent?

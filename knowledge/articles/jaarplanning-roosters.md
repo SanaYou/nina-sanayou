@@ -30,4 +30,3 @@ Op dezelfde opleidingspagina vind je ook informatie over de verschillende pakket
 
 - Wanneer starten de losse lesmodules Yin en Yang?
 - Wat is het verschil tussen het reguliere en het versnelde traject?
-- Wanneer starten de losse lesmodules Yin en Yang?

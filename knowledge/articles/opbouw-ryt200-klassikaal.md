@@ -39,5 +39,4 @@ Beide benaderingen zijn complementair aan elkaar en maken je samen tot een allro
 ## Gerelateerde artikelen
 
 - Wat is de modulevolgorde van de Yin- en Yang-lesmodules?
-- Wat is de modulevolgorde van de Yin- en Yang-lesmodules?
 - Hoe lang mag ik maximaal over de RYT/VYN200 doen?
