@@ -336,22 +336,17 @@ async def chat(request: ChatRequest):
                 )
                 response_text = response.content[0].text
 
-                # Check op escalatietag en stuur door naar Help Scout
-                escalation_match = re.search(
-                    r'\[\[ESCALATIE\s+naam="([^"]+)"\s+email="([^"]+)"\s+samenvatting="([^"]+)"\]\]',
-                    response_text
-                )
-                if escalation_match:
-                    esc_name = escalation_match.group(1)
-                    esc_email = escalation_match.group(2)
-                    esc_summary = escalation_match.group(3)
-                    # Strip de tag uit het zichtbare antwoord
-                    response_text = response_text.replace(escalation_match.group(0), "").strip()
-                    # Stuur escalatie naar Help Scout (async, niet blokkeren)
-                    try:
-                        _send_escalation(esc_name, esc_email, esc_summary, messages)
-                    except Exception as esc_err:
-                        logger.error(f"Escalatie mislukt: {esc_err}")
+                # Strip eventuele [[ESCALATIE]] tag als Nina die toch meestuurt
+                tag_match = re.search(r'\[\[ESCALATIE[^\]]*\]\]', response_text)
+                if tag_match:
+                    response_text = response_text.replace(tag_match.group(0), "").strip()
+
+                # Detecteer escalatie: bevat Nina's antwoord een bevestiging
+                # met een e-mailadres dat de gebruiker net heeft gegeven?
+                try:
+                    _detect_and_escalate(request.message, response_text, messages)
+                except Exception as esc_err:
+                    logger.error(f"Escalatie-detectie mislukt: {esc_err}")
 
                 return {"response": response_text}
             except anthropic.APIStatusError as e:
@@ -467,6 +462,59 @@ def _format_chat_html(history: list, summary: str) -> str:
         text = msg.get("content", "").replace("\n", "<br>")
         html += f'<p><strong style="color:{color}">{role}:</strong><br>{text}</p>'
     return html
+
+
+def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: list):
+    """Detecteer of Nina een escalatie bevestigt en stuur door naar Help Scout.
+
+    Logica: als het bericht van de gebruiker een e-mailadres bevat EN
+    Nina's antwoord datzelfde e-mailadres herhaalt (= bevestiging),
+    dan is dit een escalatie.
+    """
+    # Zoek e-mailadres in het bericht van de gebruiker
+    email_match = re.search(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', user_message)
+    if not email_match:
+        return
+
+    email = email_match.group(0).lower()
+
+    # Check of Nina hetzelfde e-mailadres noemt in haar antwoord (= bevestiging)
+    if email not in nina_response.lower():
+        return
+
+    # Probeer naam te extraheren uit het bericht van de gebruiker
+    # Patronen: "Mijn naam is X", "Ik ben X", "X en mijn email", of gewoon naam voor het @
+    name = ""
+    name_patterns = [
+        r'(?:mijn naam is|ik ben|ik heet)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)(?:\s+en\b|\s*[,.]|\s+mijn)',
+        r'([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)\s+(?:en\s+)?(?:mijn\s+)?(?:e-?mail|mailadres)',
+    ]
+    for pattern in name_patterns:
+        m = re.search(pattern, user_message, re.IGNORECASE)
+        if m:
+            name = m.group(1).strip()
+            break
+
+    # Fallback: gebruik voornaam uit Nina's bevestiging ("Bedankt, Lisa")
+    if not name:
+        confirm_match = re.search(r'(?:Bedankt|Dank je|Hoi),?\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ-]+)', nina_response)
+        if confirm_match:
+            name = confirm_match.group(1).strip()
+
+    if not name:
+        name = email.split("@")[0].replace(".", " ").title()
+
+    # Bouw een samenvatting uit de eerste gebruikersvraag
+    summary = "Vraag via Nina-chat"
+    for msg in chat_messages:
+        if msg.get("role") == "user":
+            first_q = msg.get("content", "")[:120]
+            if first_q and "@" not in first_q:
+                summary = first_q
+            break
+
+    logger.info(f"Escalatie gedetecteerd: {name} ({email}) — {summary[:60]}")
+    _send_escalation(name, email, summary, chat_messages)
 
 
 def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
