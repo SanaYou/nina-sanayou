@@ -179,7 +179,7 @@ def expand_with_synonyms(words: list) -> list:
     return expanded
 
 
-def retrieve_articles(query: str, history: List, top_k: int = 6) -> str:
+def retrieve_articles(query: str, history: List, top_k: int = 3) -> str:
     """Selecteer de meest relevante artikelen op basis van de vraag + recent gesprek."""
     # Combineer huidige vraag + laatste 3 berichten voor context
     search_text = query
@@ -323,10 +323,11 @@ async def chat(request: ChatRequest):
             cleaned.pop(0)
         messages = cleaned
 
-        # Retry bij overloaded (529) — max 2 pogingen
+        # Retry bij overloaded (529) of rate limit (429) — max 3 pogingen
         import time as _time
         last_error = None
-        for attempt in range(2):
+        retry_delays = [2, 6, 15]  # wachttijden in seconden per poging
+        for attempt in range(3):
             try:
                 response = client.messages.create(
                     model="claude-haiku-4-5",
@@ -349,18 +350,27 @@ async def chat(request: ChatRequest):
                     logger.error(f"Escalatie-detectie mislukt: {esc_err}")
 
                 return {"response": response_text}
+            except anthropic.RateLimitError as e:
+                last_error = e
+                if attempt < 2:
+                    wait = retry_delays[attempt]
+                    logger.warning(f"RateLimitError (poging {attempt+1}), retry na {wait}s...")
+                    _time.sleep(wait)
+                    continue
+                raise
             except anthropic.APIStatusError as e:
                 last_error = e
-                if e.status_code == 529 and attempt == 0:
-                    logger.warning("Anthropic overloaded (529), retry na 2s...")
-                    _time.sleep(2)
+                if e.status_code == 529 and attempt < 2:
+                    wait = retry_delays[attempt]
+                    logger.warning(f"Anthropic overloaded (529, poging {attempt+1}), retry na {wait}s...")
+                    _time.sleep(wait)
                     continue
                 raise
             except anthropic.APITimeoutError as e:
                 last_error = e
-                if attempt == 0:
-                    logger.warning("Timeout op poging 1, retry...")
-                    _time.sleep(1)
+                if attempt < 2:
+                    logger.warning(f"Timeout (poging {attempt+1}), retry...")
+                    _time.sleep(retry_delays[attempt])
                     continue
                 raise
         raise last_error
@@ -368,7 +378,7 @@ async def chat(request: ChatRequest):
     except anthropic.AuthenticationError:
         return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
     except anthropic.RateLimitError as e:
-        logger.warning(f"RateLimitError: {e}")
+        logger.warning(f"RateLimitError na alle retries: {e}")
         return {"error": "Nina is even overbelast. Probeer het over een minuutje opnieuw."}
     except anthropic.APITimeoutError as e:
         logger.warning(f"TimeoutError: {e}")
