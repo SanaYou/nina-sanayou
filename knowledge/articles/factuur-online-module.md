@@ -1,6 +1,7 @@
 # Waar vind ik de factuur van mijn online module of opleiding?
 
 COLLECTIE: Betaling, Facturatie & Termijnen
+TAGS: betaling, factuur, module, online
 
 In dit artikel lees je hoe je de factuur van je online module of opleiding terugvindt.
 
@@ -17,5 +18,4 @@ Staat de factuur er nog steeds niet tussen, dan helpen we je graag verder. Stuur
 ## Gerelateerde artikelen
 
 - Hoe werkt betalen in termijnen voor de online RYT200?
-- Waar vind ik de tarieven voor de online RYT200-opleidingen?
 - Hoe lang heb ik toegang tot een online module en kan ik die verlengen?

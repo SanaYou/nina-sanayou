@@ -1,6 +1,7 @@
 # Kan ik studeren via laptop, tablet of telefoon?
 
 COLLECTIE: Online RYT200 Teacher Trainingen
+TAGS: huddle, online, ryt200, teacher training
 
 In dit artikel lees je via welke apparaten je kunt studeren binnen de online RYT200-opleidingen.
 

@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: huddle, klassikaal, lesdagen, ryt200, teacher training, vyn200
 # Klassikale erkende Teacher Training – Lesdagen missen tijdens de RYT/VYN200 Teacher Training
 
 ## Lesdagen missen tijdens de RYT/VYN200 Teacher Training
@@ -42,5 +43,5 @@ Dit beleid geldt voor alle lesmodules binnen de RYT/VYN200, zowel voor de Yin- a
 ## Gerelateerde artikelen
 
 - Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?
-- Hoe werkt het praktijkexamen van een klassikale opleiding?
+- Hoe werkt het praktijkexamen van een online opleiding?
 - Hoe krijg ik toegang tot de ondersteunende videolessen?

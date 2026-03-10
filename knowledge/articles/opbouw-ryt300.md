@@ -1,6 +1,7 @@
 # Hoe werkt de RYT300 The Art of Advanced Teaching?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: aanmelden, ryt300, teacher training, yoga alliance
 
 In dit artikel lees je hoe de RYT300 is opgebouwd en hoe online en klassikaal samenkomen in één verdiepend traject.
 

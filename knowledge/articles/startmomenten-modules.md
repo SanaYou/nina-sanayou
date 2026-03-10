@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: aanmelden, klassikaal, module, ryt200, starten, teacher training, yang yoga, yin yoga
 # Klassikale erkende Teacher Training – Wanneer starten de losse lesmodules Yin en Yang?
 
 ## Wanneer starten de losse lesmodules Yin en Yang?

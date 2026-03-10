@@ -1,6 +1,7 @@
 # Wat is het LIVE+ Support Pack?
 
 COLLECTIE: Ondersteuning en Begeleiding
+TAGS: aanmelden, begeleiding, huddle, kosten, support pack
 
 In dit artikel lees je wat het LIVE+ Support Pack inhoudt, voor wie het bedoeld is en hoe het werkt.
 

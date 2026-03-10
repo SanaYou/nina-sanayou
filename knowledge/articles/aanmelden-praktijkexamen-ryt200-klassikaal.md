@@ -1,4 +1,5 @@
 COLLECTIE: Examens & Certificering
+TAGS: aanmelden, certificering, examen, klassikaal, kosten, praktijkexamen, ryt200, vyn200
 # Examens & Herkansingen – Hoe meld ik mij aan voor het praktijkexamen van de RYT/VYN200?
 
 ## Hoe meld ik mij aan voor het praktijkexamen van de RYT/VYN200?
@@ -33,6 +34,4 @@ Wanneer je beide deelcertificaten hebt behaald én alle theorie- en praktijktoet
 
 ## Gerelateerde artikelen
 
-- Hoe werkt het praktijkexamen van een klassikale opleiding?
-- Wanneer ontvang ik mijn RYT/VYN200 certificaat?
-- Wat kost een herkansing?
+- Hoe werkt het praktijkexamen van een online opleiding?

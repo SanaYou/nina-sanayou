@@ -21,4 +21,4 @@ Op onze diensten zijn tevens de Algemene Voorwaarden en de Opleidings- en Betali
 
 - Wat zijn de annuleringsvoorwaarden voor klassikale lesmodules en lesdagen?
 - Wat zijn de annuleringsvoorwaarden voor de RYT300?
-- Hoe verleng ik mijn toegang tot de online lesmodules?
+- Hoe verleng ik mijn toegang tot de videolessen?

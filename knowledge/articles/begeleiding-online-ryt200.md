@@ -1,4 +1,5 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
+TAGS: begeleiding, online, ryt200, teacher training
 # Erkende RYT200 Teacher Trainingen Online – Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?
 
 ## Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?
@@ -26,5 +27,5 @@ Niet iedereen heeft dezelfde mate van begeleiding nodig. Daarom is de begeleidin
 ## Gerelateerde artikelen
 
 - Wat is het verschil tussen de online RYT200 en de klassikale opleiding?
-- Welke Support Packs zijn er?
-- Hoe werkt het praktijkexamen van de online RYT200?
+- Wat zijn de Support Packs?
+- Hoe werkt het praktijkexamen van een online opleiding?

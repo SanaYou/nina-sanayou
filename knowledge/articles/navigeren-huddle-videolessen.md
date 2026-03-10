@@ -36,4 +36,3 @@ Volg je ook bij een andere aanbieder een opleiding via Huddle met hetzelfde e-ma
 
 - Hoe log ik in op Huddle?
 - Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
-- Hoe bereid ik me voor op de Yin Yoga lesmodules?

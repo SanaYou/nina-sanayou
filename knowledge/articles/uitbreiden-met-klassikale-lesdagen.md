@@ -1,6 +1,7 @@
 # Kan ik een online module uitbreiden met klassikale lesdagen?
 
 COLLECTIE: Losse Online Bijscholingen en Specialisaties
+TAGS: bijscholing, kosten, lesdagen, module, online
 
 In dit artikel lees je welke online modules je kunt aanvullen met klassikale lesdagen, hoeveel extra studieuren dat oplevert en wat dit betekent voor je certificaat.
 

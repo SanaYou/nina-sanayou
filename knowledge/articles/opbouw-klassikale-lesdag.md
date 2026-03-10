@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, lesdagen, ryt200, teacher training, vyn200, yang yoga, yin yoga
 # Klassikale erkende Teacher Training – Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?
 
 ## Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?

@@ -1,4 +1,5 @@
 COLLECTIE: Algemene informatie
+TAGS: lesdagen, opleiding
 # Algemeen – Hoe laat ben ik welkom op klassikale les/workshop-dagen?
 
 ## Hoe laat ben ik welkom op klassikale les/workshop-dagen?

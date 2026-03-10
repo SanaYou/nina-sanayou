@@ -1,6 +1,7 @@
 # Kan ik een proefles volgen of het platform van tevoren bekijken?
 
 COLLECTIE: Online RYT200 Teacher Trainingen
+TAGS: aanmelden, huddle, online, proefles, ryt200, teacher training
 
 In dit artikel lees je hoe je een indruk kunt krijgen van de online lessen en het platform van SanaYou YOGAcademy voordat je een beslissing neemt.
 

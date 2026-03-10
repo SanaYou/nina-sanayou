@@ -23,6 +23,6 @@ Wat je wel of niet meeneemt in je eigen beoefening en lessen is volledig jouw ke
 
 ## Gerelateerde artikelen
 
-- Voor wie is de RYT200 Teacher Training geschikt?
+- Voor wie is de RYT300 geschikt?
 - Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?
-- Wat zijn de toelatingseisen voor de online RYT200?
+- Wat zijn de toelatingseisen voor de RYT200 Teacher Training Online?

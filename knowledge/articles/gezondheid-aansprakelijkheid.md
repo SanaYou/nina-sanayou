@@ -26,5 +26,5 @@ Neem gerust contact op via academy@sanayou.com. We bespreken dan samen of en hoe
 ## Gerelateerde artikelen
 
 - Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?
-- Wat zijn de toelatingseisen voor de online RYT200?
+- Wat zijn de toelatingseisen voor de RYT200 Teacher Training Online?
 - Waar kan ik terecht als ik het ergens niet mee eens ben?

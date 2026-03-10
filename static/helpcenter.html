@@ -502,31 +502,77 @@
 
   // ─── Open article by title (for related links) ─────────
 
+  // Normalize for flexible matching: strip punctuation, "Helpartikel --" prefix
+  function normTitle(t) {
+    return t.toLowerCase().trim()
+      .replace(/^helpartikel\s*[-–—]\s*/i, '')
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+  }
+
+  // Word-overlap score (0-1) between two normalized titles
+  function titleSimilarity(a, b) {
+    if (a === b) return 1;
+    var wordsA = a.split(' ');
+    var wordsB = b.split(' ');
+    var matches = 0;
+    wordsA.forEach(function(w) { if (wordsB.indexOf(w) >= 0) matches++; });
+    return matches / Math.max(wordsA.length, wordsB.length);
+  }
+
+  function scrollToCard(card) {
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (!card.classList.contains('open')) {
+      card.classList.add('open');
+      postProcessRelated(card);
+    }
+    card.classList.add('highlight');
+    setTimeout(function(c) { return function() { c.classList.remove('highlight'); }; }(card), 2000);
+  }
+
   function openArticleByTitle(title) {
-    // Search across all visible article cards
+    var titleN = normTitle(title);
+
+    // 1. Exact match in current view
     var cards = document.querySelectorAll('.article-card');
-    var titleNorm = title.toLowerCase().trim();
     for (var i = 0; i < cards.length; i++) {
-      var card = cards[i];
-      var cardTitle = card.querySelector('.article-title').textContent.trim().toLowerCase();
-      if (cardTitle === titleNorm) {
-        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        if (!card.classList.contains('open')) {
-          card.classList.add('open');
-          postProcessRelated(card);
-        }
-        card.classList.add('highlight');
-        setTimeout(function(c) { return function() { c.classList.remove('highlight'); }; }(card), 2000);
+      if (normTitle(cards[i].querySelector('.article-title').textContent) === titleN) {
+        scrollToCard(cards[i]);
         return true;
       }
     }
-    // Not found in current view — find which collection it's in
-    var target = allArticles.find(function(a) { return a.title.toLowerCase().trim() === titleNorm; });
+
+    // 2. Fuzzy match in current view (>70% word overlap)
+    var bestCard = null, bestScore = 0;
+    for (var j = 0; j < cards.length; j++) {
+      var s = titleSimilarity(titleN, normTitle(cards[j].querySelector('.article-title').textContent));
+      if (s > bestScore) { bestScore = s; bestCard = cards[j]; }
+    }
+    if (bestScore >= 0.7 && bestCard) {
+      scrollToCard(bestCard);
+      return true;
+    }
+
+    // 3. Exact match in allArticles (may be in different collection)
+    var target = allArticles.find(function(a) { return normTitle(a.title) === titleN; });
     if (target) {
       showCollection(target.collection || 'Algemene informatie');
       setTimeout(function() { openArticleByTitle(title); }, 350);
       return true;
     }
+
+    // 4. Fuzzy match in allArticles
+    var bestArt = null, bestArtScore = 0;
+    allArticles.forEach(function(a) {
+      var sc = titleSimilarity(titleN, normTitle(a.title));
+      if (sc > bestArtScore) { bestArtScore = sc; bestArt = a; }
+    });
+    if (bestArtScore >= 0.7 && bestArt) {
+      showCollection(bestArt.collection || 'Algemene informatie');
+      setTimeout(function() { openArticleByTitle(bestArt.title); }, 350);
+      return true;
+    }
+
     return false;
   }
 

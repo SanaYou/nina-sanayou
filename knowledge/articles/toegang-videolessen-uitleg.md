@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, module, ryt200, teacher training, toegang, videolessen
 # Klassikale erkende Teacher Training – Waarom is de toegang tot videolessen gekoppeld aan de duur van de modules?
 
 ## Waarom is de toegang tot videolessen gekoppeld aan de duur van de modules?
@@ -33,6 +34,6 @@ De toegang tot de videolessen is gekoppeld aan lesmodules omdat leren in duideli
 
 ## Gerelateerde artikelen
 
-- Hoelang blijft mijn toegang tot de videolessen geldig?
+- Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
 - Hoe verleng ik mijn toegang tot de videolessen?
 - Hoe krijg ik toegang tot de ondersteunende videolessen?

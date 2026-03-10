@@ -26,5 +26,4 @@ De RYT200-registratie bij Yoga Alliance is wereldwijd geldig. Je kunt als erkend
 ## Gerelateerde artikelen
 
 - Hoe wordt het online praktijkexamen beoordeeld?
-- Hoe registreer ik mij bij Yoga Alliance na afronding?
-- Hoe werken de theorie-examens en deelcertificaten?
+- Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?

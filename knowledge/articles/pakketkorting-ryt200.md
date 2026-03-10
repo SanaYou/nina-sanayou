@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: aanmelden, klassikaal, korting, kosten, pakket, ryt200, teacher training
 # Klassikale erkende Teacher Training – Wanneer kom ik in aanmerking voor pakketkorting?
 
 ## Wanneer kom ik in aanmerking voor pakketkorting?

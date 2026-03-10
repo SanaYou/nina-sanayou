@@ -1,4 +1,5 @@
 COLLECTIE: Algemene informatie
+TAGS: opleiding, support pack
 # Algemeen – Hoe we onze support hebben ingericht
 
 ## Hoe we onze support hebben ingericht
@@ -30,7 +31,3 @@ Werken met Intercom heeft een aantal duidelijke voordelen voor jou:
 Zo kunnen we je beter en consistenter ondersteunen, ook als we elkaar niet dagelijks spreken. Gaat je vraag verder dan een praktisch antwoord in de chat en wil je persoonlijk advies over een van onze opleidingen bij SanaYou YOGAcademy, dan kun je vanuit de supportdesk eenvoudig een studieadviesgesprek inplannen. In dat gesprek denken we met je mee en kijken we samen wat op een moment die het beste bij jou en onze agenda past.
 
 ## Gerelateerde artikelen
-
-- Hoe neem ik contact op met SanaYou?
-- Wanneer kan ik een reactie van SanaYou verwachten?
-- Waar vind ik antwoorden op veelgestelde vragen?

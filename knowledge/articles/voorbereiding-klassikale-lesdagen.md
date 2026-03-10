@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, lesdagen, ryt200, teacher training, vyn200
 # Klassikale erkende Teacher Training – Hoe bereid ik me voor op de klassikale lesdagen van de RYT/VYN200?
 
 ## Hoe bereid ik me voor op de klassikale lesdagen van de RYT/VYN200?

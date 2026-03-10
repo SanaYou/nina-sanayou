@@ -1,6 +1,7 @@
 # Hoe werkt de combinatie van online leren en klassikale lesdagen binnen de RYT300?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: klassikaal, lesdagen, online, ryt300, teacher training
 
 In dit artikel lees je hoe de online en klassikale onderdelen van de RYT300 elkaar aanvullen.
 

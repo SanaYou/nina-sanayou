@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, lesdagen, ryt200, teacher training
 # Klassikale erkende Teacher Training – Zijn de lesdagen altijd op vaste dagen of wisselt dat?
 
 ## Zijn de lesdagen altijd op vaste dagen of wisselt dat?
@@ -23,6 +24,6 @@ Bij sommige verdiepingsmodules kan de opzet afwijken, bijvoorbeeld met lesdagen 
 
 ## Gerelateerde artikelen
 
-- Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200?
+- Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?
 - Waar vind ik de jaarplanning en roosters?
 - Wanneer starten de losse lesmodules Yin en Yang?

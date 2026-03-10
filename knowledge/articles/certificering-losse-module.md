@@ -24,4 +24,4 @@ Losse modules zijn onderdeel van de bredere opleidingsstructuur van SanaYou YOGA
 
 - Wat is de studiebelasting van losse online modules?
 - Kan ik losse modules combineren tot een volledige RYT200?
-- Hoelang heb ik toegang tot een losse module?
+- Hoelang heb ik toegang tot een losse online module?

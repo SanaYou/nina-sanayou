@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, ryt200, starten, teacher training, vyn200, yang yoga, yin yoga
 # Klassikale erkende Teacher Training – Hoe vaak per jaar kan ik starten met de RYT/VYN200 Yin & Yang Teacher Training?
 
 ## Hoe vaak per jaar kan ik starten met de RYT/VYN200 Yin & Yang Teacher Training?

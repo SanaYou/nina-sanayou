@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, module, ryt200, teacher training, vyn200, yang yoga, yin yoga, yoga alliance
 # Klassikale erkende Teacher Training – Kan ik ook alleen losse lesmodules volgen in plaats van een volledige RYT/VYN200 Yin & Yang?
 
 ## Kan ik ook alleen losse lesmodules volgen in plaats van een volledige RYT/VYN200 Yin & Yang?

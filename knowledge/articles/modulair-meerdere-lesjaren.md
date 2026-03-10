@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, module, ryt200, teacher training
 # Klassikale erkende Teacher Training – Kan ik de lesmodules ook verspreid over meerdere lesjaren volgen?
 
 ## Kan ik de lesmodules ook verspreid over meerdere lesjaren volgen?

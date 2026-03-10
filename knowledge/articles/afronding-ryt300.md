@@ -1,6 +1,7 @@
 # Hoe rond ik de RYT300 af en wat zit er inbegrepen?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: ryt300, teacher training, yoga alliance
 
 In dit artikel lees je hoe de toetsing verloopt, hoe je het diploma ontvangt en wat er standaard inbegrepen is bij de RYT300.
 

@@ -40,4 +40,4 @@ Alle losse modules zijn erkend voor:
 
 - Kan ik losse modules combineren tot een volledige RYT200?
 - Hoe werkt certificering van een losse module?
-- Hoelang heb ik toegang tot een losse module?
+- Hoelang heb ik toegang tot een losse online module?

@@ -1,6 +1,7 @@
 # Welke online RYT200-opleidingen kan ik volgen?
 
 COLLECTIE: Online RYT200 Teacher Trainingen
+TAGS: aanmelden, kosten, online, ryt200, teacher training, yoga alliance
 
 In dit artikel lees je welke drie erkende online RYT200-opleidingen SanaYou YOGAcademy aanbiedt en waar je meer informatie vindt.
 

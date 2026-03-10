@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: aanmelden, klassikaal, planning, rooster, ryt200, teacher training
 # Klassikale erkende Teacher Training – Waar vind ik de jaarplanning en roosters?
 
 ## Waar vind ik de jaarplanning en roosters?

@@ -1,4 +1,5 @@
 COLLECTIE: Examens & Certificering
+TAGS: certificering, diploma, registratie, ryt200, yoga alliance
 
 # Helpartikel — Diplomaprocedure RYT200 & registratie bij Yoga Alliance
 

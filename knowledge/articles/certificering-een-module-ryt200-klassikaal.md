@@ -25,6 +25,6 @@ Wanneer je alle 4 de modules hebt afgerond, ontvang je het officiële 200-uurs d
 
 ## Gerelateerde artikelen
 
-- Kan ik de modules in een vaste volgorde of zelf kiezen?
-- Hoe werkt de certificering van de online RYT200?
-- Hoe registreer ik mij bij Yoga Alliance na afronding?
+- Moet ik de online RYT200-modules in een vaste volgorde volgen?
+- Hoe werkt de praktijktoets voor de RYT200 Online?
+- Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?

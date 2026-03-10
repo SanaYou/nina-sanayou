@@ -1,6 +1,7 @@
 # Welke losse online modules en bijscholingen biedt SanaYou YOGAcademy aan?
 
 COLLECTIE: Losse Online Bijscholingen en Specialisaties
+TAGS: bijscholing, kosten, module, online, yoga alliance
 
 In dit artikel lees je welke losse online modules en bijscholingen beschikbaar zijn, hoeveel studieuren ze bevatten, wat ze kosten en welke erkenning ze meebrengen.
 

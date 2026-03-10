@@ -1,6 +1,7 @@
 # Wie zijn de docenten van de online RYT200?
 
 COLLECTIE: Online RYT200 Teacher Trainingen
+TAGS: docent, online, ryt200, teacher training
 
 In dit artikel lees je wie de docenten zijn van de online RYT200 Teacher Trainingen bij SanaYou YOGAcademy.
 

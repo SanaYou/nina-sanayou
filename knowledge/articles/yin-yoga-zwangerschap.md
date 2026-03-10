@@ -1,9 +1,5 @@
----
-collection: Ondersteuning en Begeleiding
-title: Yin Yoga tijdens je zwangerschap
-description: Wat moet je weten als je zwanger bent en yin yoga beoefent of doceert?
----
-
+COLLECTIE: Ondersteuning en Begeleiding
+TAGS: zwangerschap, yin yoga, veiligheid, relaxine, trimester, aanpassing
 # Yin Yoga tijdens je zwangerschap
 
 Gefeliciteerd als je dit leest vanwege een zwangerschap! Goed dat je hier alvast bij stilstaat. Er zijn bij yin yoga een paar belangrijke aandachtspunten die je helpen om veilig en comfortabel te blijven bewegen.

@@ -1,4 +1,5 @@
 COLLECTIE: Examens & Certificering
+TAGS: aanmelden, certificering, examen, klassikaal, praktijkexamen, vyn200
 # Examens & Herkansingen – Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?
 
 ## Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?
@@ -13,6 +14,5 @@ Je meldt je aan voor het praktijkexamen via de boekingspagina van SanaYou YOGAca
 
 ## Gerelateerde artikelen
 
-- Hoe werkt het praktijkexamen van een klassikale opleiding?
+- Hoe werkt het praktijkexamen van een online opleiding?
 - Wat is het Teaching Assessment Pack?
-- Wat kost een herkansing?

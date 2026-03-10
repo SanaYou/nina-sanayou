@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, ryt200, teacher training
 # Klassikale erkende Teacher Training – Wat is het verschil tussen het reguliere en het versnelde traject?
 
 ## Wat is het verschil tussen het reguliere en het versnelde traject?

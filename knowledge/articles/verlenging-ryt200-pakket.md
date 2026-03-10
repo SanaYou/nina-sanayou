@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: aanmelden, klassikaal, kosten, pakket, ryt200, teacher training, toegang, verlenging
 
 # Helpartikel — Verlengde toegang voor studenten met een volledig RYT200-pakket
 

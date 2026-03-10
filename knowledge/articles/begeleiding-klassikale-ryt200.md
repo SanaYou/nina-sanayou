@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: begeleiding, huddle, klassikaal, ryt200, teacher training, vyn200
 # Klassikale erkende Teacher Training – Hoe word je begeleid tijdens de klassikale RYT/VYN200 opleiding?
 
 ## Hoe word je begeleid tijdens de klassikale RYT/VYN200 opleiding?

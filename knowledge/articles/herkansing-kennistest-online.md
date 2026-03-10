@@ -27,6 +27,6 @@ Zodra alle kennistests met voldoende punten zijn behaald, ontvang je automatisch
 
 ## Gerelateerde artikelen
 
-- [Hoe werkt de online kennistest?](kennistest-online-ryt200)
-- [Hoe werkt de praktijktoets voor de RYT200 Online?](praktijktoets-ryt200-online)
-- [Hoe ziet het leertraject van de online RYT200 eruit?](losse-modules-ryt200)
+- Hoe werkt de online kennistest?
+- Hoe werkt de praktijktoets voor de RYT200 Online?
+- Hoe ziet het leertraject van de online RYT200 eruit?

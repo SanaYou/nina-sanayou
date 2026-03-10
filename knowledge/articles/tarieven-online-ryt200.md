@@ -1,6 +1,7 @@
 # Wat zijn de tarieven voor de online RYT200-opleidingen en losse modules?
 
 COLLECTIE: Betaling, Facturatie & Termijnen
+TAGS: betaling, kosten, module, online, ryt200
 
 In dit artikel vind je de actuele tarieven voor alle online opleidingen, losse modules, bijscholingen en klassikale verdiepingsdagen van SanaYou YOGAcademy.
 
@@ -73,4 +74,4 @@ De meeste losse klassikale verdiepingsdagen kosten **€ 97,50 per dag**. Dit ge
 - Hoe werkt betalen in termijnen voor de online RYT200?
 - Welke online RYT200-opleidingen kan ik volgen?
 - Waar vind ik de factuur van mijn online module of opleiding?
-- Welke losse online modules en bijscholingen biedt SanaYou aan?
+- Welke losse online modules en bijscholingen biedt SanaYou YOGAcademy aan?

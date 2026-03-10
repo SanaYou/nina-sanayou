@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, ryt200, studeren, studieduur, teacher training, vyn200
 # Klassikale erkende Teacher Training – Hoe lang mag ik maximaal over de RYT/VYN200 doen?
 
 ## Hoe lang mag ik maximaal over de RYT/VYN200 doen?

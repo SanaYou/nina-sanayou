@@ -39,4 +39,4 @@ Het Teaching Assessment Pack is geschikt als je concrete, persoonlijke feedback 
 
 - Wat zijn de Support Packs?
 - Hoe voeg ik een Support Pack toe aan mijn opleiding?
-- Hoe werkt het praktijkexamen van de online RYT200?
+- Hoe werkt het praktijkexamen van een online opleiding?

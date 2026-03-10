@@ -1,4 +1,5 @@
 COLLECTIE: Examens & Certificering
+TAGS: certificering, examen, online, praktijkexamen
 # Examens & Herkansingen – Hoe werkt het praktijkexamen van een online opleiding?
 
 ## Hoe werkt het praktijkexamen van een online opleiding?
@@ -23,7 +24,7 @@ Na beoordeling ontvang je via e-mail de uitslag van het praktijkexamen. Bij een 
 
 ## Gerelateerde artikelen
 
-- Hoe meld ik mij aan voor een praktijkexamen (online)?
+- Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?
 - Hoe wordt het online praktijkexamen beoordeeld?
 - Wat is het Teaching Assessment Pack?
 - Aan welke eisen moet mijn examenvideo voldoen?

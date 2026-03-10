@@ -1,6 +1,7 @@
 # Hoe stel ik vragen tijdens mijn online opleiding?
 
 COLLECTIE: Online RYT200 Teacher Trainingen
+TAGS: huddle, online, ryt200, teacher training
 
 In dit artikel lees je waar je terecht kunt met vragen tijdens je online opleiding.
 

@@ -24,5 +24,4 @@ Als je eerder je RYT200 hebt geregistreerd bij Yoga Alliance, heb je al een acco
 ## Gerelateerde artikelen
 
 - Hoe rond ik de RYT300 af en wat zit er inbegrepen?
-- Hoe registreer ik mij bij Yoga Alliance na afronding van de RYT200?
 - Voor wie is de RYT300 geschikt?

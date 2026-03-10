@@ -1,6 +1,7 @@
 # Wat zijn de toelatingseisen voor de RYT300 Teacher Training?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: ryt300, teacher training, toelatingseisen
 
 In dit artikel lees je welke voorwaarden gelden om te kunnen starten met de RYT300 The Art of Advanced Teaching.
 

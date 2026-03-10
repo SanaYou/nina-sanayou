@@ -59,6 +59,6 @@ Je wordt tijdens het Yang Yoga-examen beoordeeld op:
 
 ## Gerelateerde artikelen
 
-- Hoe meld ik mij aan voor het praktijkexamen van de klassikale RYT/VYN200?
+- Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?
 - Wat is het Teaching Assessment Pack?
-- Wanneer ontvang ik mijn RYT/VYN200-diploma na afronding?
+- Hoe ontvang ik mijn RYT200-diploma na afronding?

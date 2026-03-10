@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, ryt200, teacher training
 # Klassikale erkende Teacher Training – Waar vind ik mijn persoonlijke reserveringen voor klassikale opleidingsdagen?
 
 ## Waar vind ik mijn persoonlijke reserveringen voor klassikale opleidingsdagen?

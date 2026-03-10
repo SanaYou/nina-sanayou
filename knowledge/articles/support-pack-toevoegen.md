@@ -32,4 +32,4 @@ Boek het Teaching Assessment Pack via:
 
 - Wat zijn de Support Packs?
 - Wat zijn de verschillen tussen de Support Packs?
-- Hoe werkt het praktijkexamen van de online RYT200?
+- Hoe werkt het praktijkexamen van een online opleiding?

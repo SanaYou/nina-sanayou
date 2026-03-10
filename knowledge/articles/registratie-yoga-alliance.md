@@ -1,4 +1,5 @@
 COLLECTIE: Examens & Certificering
+TAGS: certificering, docent, registratie, yoga alliance
 # Klassikale erkende Teacher Training – Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?
 
 ## Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?

@@ -30,5 +30,3 @@ Controleer ook je spammap als de mail niet meteen aankomt.
 ## Gerelateerde artikelen
 
 - Hoe navigeer ik door de videolessen in Huddle?
-- Waar vind ik mijn persoonlijke agenda?
-- Welke apparaten en browsers worden ondersteund?

@@ -25,6 +25,4 @@ Als je twijfelt, vraag het even aan Sandy tijdens een van de lesdagen.
 
 ## Gerelateerde artikelen
 
-- Wat ontvang ik aan studiemateriaal bij de opleiding?
-- Hoe lang heb ik toegang tot de videolessen?
-- Kan ik de videolessen downloaden?
+- Hoe krijg ik toegang tot de ondersteunende videolessen?

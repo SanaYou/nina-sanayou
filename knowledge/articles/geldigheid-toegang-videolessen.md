@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, ryt200, teacher training, toegang, videolessen
 # Klassikale erkende Teacher Training – Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
 
 ## Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
@@ -17,6 +18,6 @@ Ja, dat kan. Het verlengen van je toegang is optioneel en bedoeld als extra onde
 
 ## Gerelateerde artikelen
 
-- Waarom is de toegang tot videolessen gekoppeld aan de lesmodules?
+- Waarom is de toegang tot videolessen gekoppeld aan de duur van de modules?
 - Hoe verleng ik mijn toegang tot de videolessen?
 - Hoe krijg ik toegang tot de ondersteunende videolessen?

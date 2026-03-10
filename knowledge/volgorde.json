@@ -1,48 +1,4 @@
 {
-  "Algemeen (Broncollectie)": [
-    {
-      "bestand": "aankomst-lesdagen.md",
-      "titel": "Hoe laat ben ik welkom op klassikale les/workshop-dagen?"
-    },
-    {
-      "bestand": "support-ingericht.md",
-      "titel": "Hoe we onze support hebben ingericht"
-    }
-  ],
-  "Examens & Certificering": [
-    {
-      "bestand": "praktijktoets-online-ryt200.md",
-      "titel": "Hoe werkt de praktijktoets van de online RYT200?"
-    },
-    {
-      "bestand": "aanlevercriteria-examenvideo-online.md",
-      "titel": "Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?"
-    },
-    {
-      "bestand": "aanmelden-praktijkexamen-klassikaal.md",
-      "titel": "Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?"
-    },
-    {
-      "bestand": "aanmelden-praktijkexamen-ryt200-klassikaal.md",
-      "titel": "Hoe meld ik mij aan voor het praktijkexamen van de RYT/VYN200?"
-    },
-    {
-      "bestand": "diplomaprocedure-ryt200.md",
-      "titel": "Diplomaprocedure RYT200 & registratie bij Yoga Alliance"
-    },
-    {
-      "bestand": "praktijkexamen-online-opleiding.md",
-      "titel": "Hoe werkt het praktijkexamen van een online opleiding?"
-    },
-    {
-      "bestand": "registratie-vyn.md",
-      "titel": "Hoe registreer ik mij als erkend yogadocent bij de VYN?"
-    },
-    {
-      "bestand": "registratie-yoga-alliance.md",
-      "titel": "Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?"
-    }
-  ],
   "Klassikale RYT/VYN200 Teacher Training": [
     {
       "bestand": "accreditaties-ryt200.md",
@@ -155,21 +111,17 @@
     {
       "bestand": "voorbereiding-klassikale-lesdagen.md",
       "titel": "Hoe bereid ik me voor op de klassikale lesdagen van de RYT/VYN200?"
+    },
+    {
+      "bestand": "leeftijdsgrens-klassikale-ryt200.md",
+      "titel": "Is er een leeftijdsgrens voor de klassikale RYT/VYN200?"
+    },
+    {
+      "bestand": "toelatingseisen-klassikale-ryt200.md",
+      "titel": "Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?"
     }
   ],
   "Online RYT200 Teacher Trainingen": [
-    {
-      "bestand": "opbouw-online-ryt200.md",
-      "titel": "Hoe zijn de online RYT200 teacher trainingen opgebouwd?"
-    },
-    {
-      "bestand": "verschil-drie-richtingen-ryt200.md",
-      "titel": "Wat is het verschil tussen de drie richtingen van de online RYT200?"
-    },
-    {
-      "bestand": "inbegrepen-online-ryt200.md",
-      "titel": "Wat is inbegrepen in de online RYT200 opleiding?"
-    },
     {
       "bestand": "leertraject-online-ryt200.md",
       "titel": "Hoe ziet het leertraject van de online RYT200 eruit?"
@@ -183,28 +135,322 @@
       "titel": "Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?"
     },
     {
-      "bestand": "wanneer-starten-online-ryt200.md",
-      "titel": "Wanneer kan ik starten met de online RYT200?"
+      "bestand": "begeleidingsvormen-online-ryt200.md",
+      "titel": "Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?"
     },
     {
-      "bestand": "combineren-werk-gezin-ryt200.md",
-      "titel": "Kan ik de online RYT200 combineren met werk en gezin?"
+      "bestand": "digitale-of-papieren-reader.md",
+      "titel": "Krijg ik een digitale of papieren reader?"
     },
     {
-      "bestand": "erkenning-yoga-alliance-online-ryt200.md",
-      "titel": "Is de online RYT200 erkend door Yoga Alliance?"
+      "bestand": "diploma-na-afronding-ryt200-online.md",
+      "titel": "Hoe ontvang ik mijn RYT200-diploma na afronding?"
     },
     {
-      "bestand": "diplomaroute-online-ryt200.md",
-      "titel": "Hoe behaal ik mijn RYT200 diploma online?"
+      "bestand": "herkansing-kennistest-online.md",
+      "titel": "Hoe werkt de herkansing voor een online kennistest?"
     },
     {
-      "bestand": "proefles-en-platform-ryt200.md",
-      "titel": "Kan ik een proefles volgen of het platform bekijken?"
+      "bestand": "kennistest-online-ryt200.md",
+      "titel": "Hoe werkt de online kennistest?"
     },
     {
-      "bestand": "doorstroom-ryt300-online.md",
-      "titel": "Kan ik na de online RYT200 doorstromen naar de RYT300?"
+      "bestand": "lesgeven-na-basismodule.md",
+      "titel": "Kan ik na Yoga Basics of Yin Yoga Basics al yogales geven?"
+    },
+    {
+      "bestand": "meerdere-modules-tegelijk.md",
+      "titel": "Kan ik meerdere online modules tegelijk volgen?"
+    },
+    {
+      "bestand": "modulevolgorde-online-ryt200.md",
+      "titel": "Moet ik de online RYT200-modules in een vaste volgorde volgen?"
+    },
+    {
+      "bestand": "persoonlijk-contact-docent-online.md",
+      "titel": "Is persoonlijk contact met een docent mogelijk tijdens de online RYT200?"
+    },
+    {
+      "bestand": "praktijktoets-ryt200-online.md",
+      "titel": "Hoe werkt de praktijktoets voor de RYT200 Online?"
+    },
+    {
+      "bestand": "proefles-platform-online-ryt200.md",
+      "titel": "Kan ik een proefles volgen of het platform van tevoren bekijken?"
+    },
+    {
+      "bestand": "registratie-yoga-alliance-ryt200.md",
+      "titel": "Wanneer kan ik me registreren bij Yoga Alliance als RYT200-docent?"
+    },
+    {
+      "bestand": "studeren-laptop-tablet-telefoon.md",
+      "titel": "Kan ik studeren via laptop, tablet of telefoon?"
+    },
+    {
+      "bestand": "studieduur-online-ryt200.md",
+      "titel": "Hoe lang heb ik de tijd om de volledige online RYT200 af te ronden?"
+    },
+    {
+      "bestand": "taal-yogahoudingen-online.md",
+      "titel": "In welke taal worden de yogahoudingen benoemd?"
+    },
+    {
+      "bestand": "toegang-verlengen-online-module.md",
+      "titel": "Hoe lang heb ik toegang tot een online module en kan ik die verlengen?"
+    },
+    {
+      "bestand": "toelatingseisen-online-ryt200.md",
+      "titel": "Wat zijn de toelatingseisen voor de RYT200 Teacher Training Online?"
+    },
+    {
+      "bestand": "verschil-online-klassikaal-ryt200.md",
+      "titel": "Wat is het verschil tussen de online RYT200 en de klassikale opleiding?"
+    },
+    {
+      "bestand": "vragen-stellen-online-opleiding.md",
+      "titel": "Hoe stel ik vragen tijdens mijn online opleiding?"
+    },
+    {
+      "bestand": "welke-online-ryt200-opleidingen.md",
+      "titel": "Welke online RYT200-opleidingen kan ik volgen?"
+    }
+  ],
+  "Erkende RYT300 Teacher Training (hybride)": [
+    {
+      "bestand": "afronding-ryt300.md",
+      "titel": "Hoe rond ik de RYT300 af en wat zit er inbegrepen?"
+    },
+    {
+      "bestand": "annuleringsvoorwaarden-ryt300.md",
+      "titel": "Wat zijn de annuleringsvoorwaarden voor de RYT300?"
+    },
+    {
+      "bestand": "basismodules-ryt300.md",
+      "titel": "Welke vaste modules vormen de gedeelde basis van de RYT300?"
+    },
+    {
+      "bestand": "herkansing-ryt300.md",
+      "titel": "Kan ik een herkansing aanvragen binnen de RYT300?"
+    },
+    {
+      "bestand": "jaarplanning-ryt300-lesdagen.md",
+      "titel": "Waar vind ik de jaarplanning van de RYT300 lesdagen?"
+    },
+    {
+      "bestand": "online-klassikaal-combinatie-ryt300.md",
+      "titel": "Hoe werkt de combinatie van online leren en klassikale lesdagen binnen de RYT300?"
+    },
+    {
+      "bestand": "opbouw-ryt300.md",
+      "titel": "Hoe werkt de RYT300 The Art of Advanced Teaching?"
+    },
+    {
+      "bestand": "registratie-yoga-alliance-ryt300.md",
+      "titel": "Hoe registreer ik mijn RYT300 bij Yoga Alliance?"
+    },
+    {
+      "bestand": "starten-flexibiliteit-ryt300.md",
+      "titel": "Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?"
+    },
+    {
+      "bestand": "toegangsduur-online-modules-ryt300.md",
+      "titel": "Hoelang heb ik toegang tot de online modules van de RYT300?"
+    },
+    {
+      "bestand": "toelatingseisen-ryt300.md",
+      "titel": "Wat zijn de toelatingseisen voor de RYT300 Teacher Training?"
+    },
+    {
+      "bestand": "verlenging-ryt300.md",
+      "titel": "Kan ik mijn toegang tot de online modules van de RYT300 verlengen?"
+    },
+    {
+      "bestand": "voor-wie-ryt300.md",
+      "titel": "Voor wie is de RYT300 geschikt?"
+    },
+    {
+      "bestand": "yin-mastery-yoga-awakening-ryt300.md",
+      "titel": "Wat is het verschil tussen Yin Mastery en Yoga Awakening binnen de RYT300?"
+    }
+  ],
+  "Losse Online Bijscholingen en Specialisaties": [
+    {
+      "bestand": "certificering-losse-module.md",
+      "titel": "Hoe werkt certificering van een losse module?"
+    },
+    {
+      "bestand": "combineren-losse-modules-ryt200.md",
+      "titel": "Kan ik losse modules combineren tot een volledige RYT200?"
+    },
+    {
+      "bestand": "losse-online-modules-bijscholingen.md",
+      "titel": "Welke losse online modules en bijscholingen biedt SanaYou YOGAcademy aan?"
+    },
+    {
+      "bestand": "studiebelasting-losse-modules.md",
+      "titel": "Wat is de studiebelasting van losse online modules?"
+    },
+    {
+      "bestand": "tarieven-klassikale-themadagen.md",
+      "titel": "Wat zijn de tarieven voor klassikale verdiepingsdagen, workshops en weekenden?"
+    },
+    {
+      "bestand": "toegang-losse-module.md",
+      "titel": "Hoelang heb ik toegang tot een losse online module?"
+    },
+    {
+      "bestand": "uitbreiden-met-klassikale-lesdagen.md",
+      "titel": "Kan ik een online module uitbreiden met klassikale lesdagen?"
+    }
+  ],
+  "Ondersteuning en Begeleiding": [
+    {
+      "bestand": "onboarding-call.md",
+      "titel": "Wat is de onboarding call en hoe vraag ik die aan?"
+    },
+    {
+      "bestand": "support-pack-toevoegen.md",
+      "titel": "Hoe voeg ik een Support Pack toe aan mijn opleiding?"
+    },
+    {
+      "bestand": "support-packs-overzicht.md",
+      "titel": "Wat zijn de Support Packs?"
+    },
+    {
+      "bestand": "support-packs-vergelijking.md",
+      "titel": "Wat zijn de verschillen tussen de Support Packs?"
+    }
+  ],
+  "Examens & Certificering": [
+    {
+      "bestand": "aanlevercriteria-examenvideo-online.md",
+      "titel": "Welke aanlevercriteria gelden voor de examenvideo van het online praktijkexamen?"
+    },
+    {
+      "bestand": "aanmelden-praktijkexamen-klassikaal.md",
+      "titel": "Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?"
+    },
+    {
+      "bestand": "aanmelden-praktijkexamen-ryt200-klassikaal.md",
+      "titel": "Hoe meld ik mij aan voor het praktijkexamen van de RYT/VYN200?"
+    },
+    {
+      "bestand": "diplomaprocedure-ryt200.md",
+      "titel": "Diplomaprocedure RYT200 & registratie bij Yoga Alliance"
+    },
+    {
+      "bestand": "praktijkexamen-online-opleiding.md",
+      "titel": "Hoe werkt het praktijkexamen van een online opleiding?"
+    },
+    {
+      "bestand": "registratie-vyn.md",
+      "titel": "Hoe registreer ik mij als erkend yogadocent bij de VYN?"
+    },
+    {
+      "bestand": "registratie-yoga-alliance.md",
+      "titel": "Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?"
+    },
+    {
+      "bestand": "erkend-yogadocent.md",
+      "titel": "Wanneer ben ik officieel erkend yogadocent?"
+    },
+    {
+      "bestand": "praktijkexamen-klassikale-ryt200.md",
+      "titel": "Hoe verloopt de praktijkexamendag van de klassikale RYT/VYN200?"
+    },
+    {
+      "bestand": "praktijkexamen-online-beoordeling.md",
+      "titel": "Hoe wordt het online praktijkexamen beoordeeld?"
+    },
+    {
+      "bestand": "praktijktoets-ryt300-hoe-werkt-het.md",
+      "titel": "Hoe werkt de praktijktoets van de RYT300?"
+    },
+    {
+      "bestand": "praktijktoets-ryt300-yin-mastery.md",
+      "titel": "Wat zijn de opdrachten voor de praktijktoets RYT300 Yin Mastery?"
+    },
+    {
+      "bestand": "praktijktoets-ryt300-yoga-awakening.md",
+      "titel": "Wat zijn de opdrachten voor de praktijktoets RYT300 Yoga Awakening?"
+    }
+  ],
+  "Betaling, Facturatie & Termijnen": [
+    {
+      "bestand": "abonnement-opzeggen.md",
+      "titel": "Hoe zeg ik mijn abonnement op via het klantportaal?"
+    },
+    {
+      "bestand": "factuur-online-module.md",
+      "titel": "Waar vind ik de factuur van mijn online module of opleiding?"
+    },
+    {
+      "bestand": "tarieven-online-ryt200.md",
+      "titel": "Wat zijn de tarieven voor de online RYT200-opleidingen en losse modules?"
+    },
+    {
+      "bestand": "termijnen-betaling-online-ryt200.md",
+      "titel": "Hoe werkt betalen in termijnen voor de online RYT200?"
+    }
+  ],
+  "Technische Ondersteuning": [
+    {
+      "bestand": "inloggen-huddle.md",
+      "titel": "Hoe log ik in op Huddle?"
+    },
+    {
+      "bestand": "navigeren-huddle-videolessen.md",
+      "titel": "Hoe navigeer ik door de videolessen in Huddle?"
+    }
+  ],
+  "Opleidingsvoorwaarden": [
+    {
+      "bestand": "annuleringsvoorwaarden-klassikaal.md",
+      "titel": "Wat zijn de annuleringsvoorwaarden voor klassikale lesmodules en lesdagen?"
+    },
+    {
+      "bestand": "annuleringsvoorwaarden-online.md",
+      "titel": "Wat zijn de annuleringsvoorwaarden voor online scholingen en modules?"
+    },
+    {
+      "bestand": "klachtenprocedure.md",
+      "titel": "Waar kan ik terecht als ik het ergens niet mee eens ben?"
+    }
+  ],
+  "Algemene informatie": [
+    {
+      "bestand": "certificering-een-module-ryt200-klassikaal.md",
+      "titel": "Word ik gecertificeerd yogadocent als ik één lesmodule volg?"
+    },
+    {
+      "bestand": "gezondheid-aansprakelijkheid.md",
+      "titel": "Blessures of gezondheidsklachten melden"
+    },
+    {
+      "bestand": "huisregels-klassikale-lesdagen.md",
+      "titel": "Wat zijn de huisregels voor klassikale lesdagen?"
+    },
+    {
+      "bestand": "lesmateriaal-delen.md",
+      "titel": "Auteursrecht op lesmateriaal"
+    },
+    {
+      "bestand": "parkeren-bij-de-studio.md",
+      "titel": "Waar is de studio en waar kan ik parkeren?"
+    },
+    {
+      "bestand": "yoga-religie-geloof.md",
+      "titel": "Moet ik spiritueel of religieus zijn om de opleiding te volgen?"
+    }
+  ],
+  "Algemeen (Broncollectie)": [
+    {
+      "bestand": "aankomst-lesdagen.md",
+      "titel": "Hoe laat ben ik welkom op klassikale les/workshop-dagen?"
+    },
+    {
+      "bestand": "support-ingericht.md",
+      "titel": "Hoe we onze support hebben ingericht"
     }
   ],
   "Support Packs bij Online leren": [
@@ -223,6 +469,12 @@
     {
       "bestand": "studio-plus-lesdagen.md",
       "titel": "Wat zijn de SanaYou Lesdagen STUDIO+?"
+    }
+  ],
+  "Algemeen": [
+    {
+      "bestand": "yin-yoga-zwangerschap.md",
+      "titel": "Yin Yoga tijdens je zwangerschap"
     }
   ]
 }

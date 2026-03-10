@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: klassikaal, ryt200, studieadvies, teacher training, toelatingseisen, vyn200
 # Klassikale erkende Teacher Training – Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?
 
 ## Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?

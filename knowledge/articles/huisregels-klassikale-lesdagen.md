@@ -36,5 +36,5 @@ We vragen iedereen om de persoonlijke en lichamelijke integriteit van alle aanwe
 ## Gerelateerde artikelen
 
 - Waar is de studio en waar kan ik parkeren?
-- Hoe laat ben ik welkom op klassikale lesdagen?
+- Hoe laat ben ik welkom op klassikale les/workshop-dagen?
 - Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?

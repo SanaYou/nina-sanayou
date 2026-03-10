@@ -1,4 +1,5 @@
 COLLECTIE: Examens & Certificering
+TAGS: certificering, docent, registratie, vyn200, yoga alliance
 # Klassikale erkende Teacher Training – Hoe registreer ik mij als erkend yogadocent bij de VYN?
 
 ## Hoe registreer ik mij als erkend yogadocent bij de VYN?

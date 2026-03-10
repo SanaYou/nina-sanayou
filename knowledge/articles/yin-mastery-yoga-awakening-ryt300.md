@@ -1,6 +1,7 @@
 # Wat is het verschil tussen Yin Mastery en Yoga Awakening binnen de RYT300?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: ryt300, teacher training, yin yoga
 
 In dit artikel lees je wat de twee studierichtingen van de RYT300 inhouden en welke modules daarbij horen.
 

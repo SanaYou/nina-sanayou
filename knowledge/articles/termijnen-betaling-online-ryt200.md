@@ -1,6 +1,7 @@
 # Hoe werkt betalen in termijnen voor de online RYT200?
 
 COLLECTIE: Betaling, Facturatie & Termijnen
+TAGS: betaling, online, ryt200, termijnen
 
 In dit artikel lees je hoe termijnbetalingen werken bij de erkende online RYT200-opleidingen.
 
@@ -20,6 +21,5 @@ Behalve de eerste termijn hoef je niets handmatig over te maken. Het systeem ver
 
 ## Gerelateerde artikelen
 
-- Waar vind ik de tarieven voor de online RYT200-opleidingen?
 - Waar vind ik de factuur van mijn online module of opleiding?
 - Welke online RYT200-opleidingen kan ik volgen?

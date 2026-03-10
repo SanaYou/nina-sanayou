@@ -1,6 +1,7 @@
 # Kan ik een herkansing aanvragen binnen de RYT300?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
+TAGS: aanmelden, herkansing, kosten, ryt300, teacher training
 
 In dit artikel lees je wat je kunt doen wanneer een toets of praktijkopdracht binnen de RYT300 nog niet voldoende is.
 

@@ -1,6 +1,7 @@
 # Wat zijn de tarieven voor klassikale verdiepingsdagen, workshops en weekenden?
 
 COLLECTIE: Losse Online Bijscholingen en Specialisaties
+TAGS: bijscholing, kosten, online, opleiding
 
 In dit artikel vind je de actuele tarieven voor alle klassikale verdiepingsdagen, workshops en meerdaagse events van SanaYou YOGAcademy.
 
@@ -49,4 +50,4 @@ De klassikale lesmodules maken deel uit van de RYT/VYN200 opleiding en zijn ook 
 
 - Wat zijn de tarieven voor de online RYT200-opleidingen en losse modules?
 - Kan ik een online module uitbreiden met klassikale lesdagen?
-- Wat zijn de annuleringsvoorwaarden voor klassikale lesdagen?
+- Wat zijn de huisregels voor klassikale lesdagen?

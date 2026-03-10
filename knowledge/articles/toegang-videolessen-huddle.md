@@ -1,4 +1,5 @@
 COLLECTIE: Klassikale RYT/VYN200 Teacher Training
+TAGS: huddle, klassikaal, ryt200, teacher training, toegang, videolessen
 # Klassikale erkende Teacher Training – Hoe krijg ik toegang tot de ondersteunende videolessen?
 
 ## Hoe krijg ik toegang tot de ondersteunende videolessen?
@@ -35,6 +36,6 @@ In Huddle vind je alles wat je nodig hebt rondom je lesdagen: voorbereidende the
 
 ## Gerelateerde artikelen
 
-- Waarom is de toegang tot videolessen gekoppeld aan de lesmodules?
-- Hoelang blijft mijn toegang tot de videolessen geldig?
+- Waarom is de toegang tot videolessen gekoppeld aan de duur van de modules?
+- Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
 - Hoe verleng ik mijn toegang tot de videolessen?
