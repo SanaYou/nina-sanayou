@@ -9,7 +9,7 @@ In dit artikel vind je de actuele tarieven voor alle online opleidingen, losse m
 
 Alle drie de richtingen hebben dezelfde prijs:
 
-**€ 1.595** — betaling in 1, 5 of 10 termijnen
+**€ 1.250** — betaling in 1, 5 of 10 termijnen
 
 - RYT200 Yin Yoga
 - RYT200 Yin & Yang Yoga
