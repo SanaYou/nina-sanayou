@@ -11,19 +11,13 @@ Het LIVE+ Support Pack is een optioneel jaarabonnement voor studenten die naast 
 
 ## Wat zit erin?
 
-- Iedere eerste woensdag van de maand om 11:00 uur: een live CoachCall via Zoom met hoofddocent Sandy
-- Mogelijkheid om vooraf vragen in te sturen, die tijdens de sessie worden behandeld
-- Toegang tot de replay als je niet live aanwezig kunt zijn
+Elke eerste woensdag van de maand om 11:00 uur is er een live CoachCall via Zoom met hoofddocent Sandy. Stuur van tevoren je vragen in via de besloten LIVE+-groep in Huddle. Kun je niet live aanwezig zijn? Geen probleem — je vragen worden sowieso beantwoord en de replay staat daarna klaar op het online lesplatform.
+
+Daarnaast krijg je:
 - Toegang tot de besloten LIVE+-community
 - Regelmatige Q&A's met gastdocenten voor extra inhoudelijke verdieping
 
-## Hoe werken de CoachCalls?
-
-De CoachCalls vinden elke eerste woensdag van de maand om 11:00 uur plaats via Zoom. Bij 12 maanden toegang heb je recht op 12 CoachCalls.
-
-Stuur van tevoren je vragen of onderwerpen in via de besloten groep in Huddle. Geef ook aan als je live aanwezig wilt zijn, zelfs als je geen specifieke vraag hebt. Als er geen vragen of onderwerpen zijn ingediend, kan de CoachCall niet doorgaan.
-
-Kun je niet live aanwezig zijn? Je vragen worden sowieso beantwoord. De replay staat daarna klaar in een aparte module op het online lesplatform, onder de basismodules.
+Bij 12 maanden toegang heb je recht op 12 CoachCalls. Als er geen vragen of onderwerpen zijn ingediend, kan de CoachCall niet doorgaan.
 
 ## LIVE+ bij de RYT300
 
