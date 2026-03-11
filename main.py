@@ -587,7 +587,8 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
             },
             "mailboxId": mailbox_id,
             "type": "email",
-            "status": "pending",
+            "status": "active",
+            "imported": False,
             "tags": ["nina-escalatie"],
             "threads": [
                 {
