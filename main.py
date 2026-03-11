@@ -285,7 +285,7 @@ Geef de Calendly-link NIET:
 
 ## Kennisbank (relevante artikelen voor deze vraag)
 
-{{ARTICLES}}"""
+{ARTICLES}"""
 
 SYSTEM_PROMPT_BASE = SYSTEM_PROMPT_BASE.replace("{BASE_KNOWLEDGE}", BASE_KNOWLEDGE)
 
@@ -341,7 +341,7 @@ async def chat(request: ChatRequest):
         for attempt in range(3):
             try:
                 response = client.messages.create(
-                    model="claude-haiku-4-5",
+                    model="claude-3-5-haiku-20241022",
                     max_tokens=1024,
                     system=system_prompt,
                     messages=messages,
