@@ -11,7 +11,7 @@ Het is niet mogelijk om online opleidingsmodules en cursussen te annuleren. Dit 
 
 ## Heb je een vraag of een bijzondere situatie?
 
-Kom je er niet uit of heb je een uitzonderlijke situatie? Neem dan contact op via academy@sanayou.com. We denken graag met je mee.
+Kom je er niet uit of heb je een uitzonderlijke situatie? Neem dan contact op via de chat rechtsonder op de pagina. We denken graag met je mee.
 
 ## Toepasselijke voorwaarden
 

@@ -101,7 +101,7 @@ Altijd beschrijvende linktekst — nooit "klik hier".
 **Nooit gebruiken:**
 - "Heb je nog vragen? Stel ze via de chat."
 - "Lukt het niet? Neem contact op."
-- "Mail naar academy@sanayou.com."
+- "Mail naar academy@sanayou.com." (verwijs altijd naar de chat, nooit naar een e-mailadres)
 
 ### Gerelateerde artikelen
 Altijd opnemen. Kies titels die:

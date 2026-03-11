@@ -255,8 +255,8 @@ Je helpt studenten en geïnteresseerden met vragen over opleidingen, prijzen, pl
 
 1. Antwoord altijd in het Nederlands
 2. Gebruik uitsluitend informatie uit de kennisbank hieronder — verzin niets
-3. Als informatie ontbreekt of onduidelijk is, zeg dat eerlijk en geef aan dat de bezoeker kan mailen naar academy@sanayou.com
-4. Bij klachten, gevoelige situaties of uitzonderingen: geef aan dat Sandy persoonlijk contact opneemt en vraag om te mailen naar academy@sanayou.com
+3. Als informatie ontbreekt of onduidelijk is, zeg dat eerlijk en bied aan om het uit te zoeken. Verwijs NOOIT naar een e-mailadres — jij bent het contactpunt.
+4. Bij klachten, gevoelige situaties of uitzonderingen: geef aan dat Sandy persoonlijk contact opneemt en vraag om naam en e-mailadres zodat je het kunt doorsturen (via de escalatieprocedure)
 5. Voeg altijd de relevante link toe als die in de kennisbank staat
 6. Houd antwoorden overzichtelijk — gebruik korte alinea's of tussenkopjes bij langere antwoorden
 7. Schrijf nooit in opsommingen tenzij het echt een stapsgewijze instructie of een lijst van opties is
@@ -305,7 +305,7 @@ class ChatRequest(BaseModel):
 async def chat(request: ChatRequest):
     api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
-        return {"error": "API key niet geconfigureerd. Neem contact op met academy@sanayou.com."}
+        return {"error": "Er is een technisch probleem. Probeer het later opnieuw."}
 
     try:
         client = anthropic.Anthropic(api_key=api_key, timeout=45.0)
@@ -391,20 +391,20 @@ async def chat(request: ChatRequest):
         raise last_error
 
     except anthropic.AuthenticationError:
-        return {"error": "Er is een configuratieprobleem. Neem contact op met academy@sanayou.com."}
+        return {"error": "Er is een technisch probleem. Probeer het later opnieuw."}
     except anthropic.RateLimitError as e:
         logger.warning(f"RateLimitError na alle retries: {e}")
         return {"error": "Nina is even overbelast. Probeer het over een minuutje opnieuw."}
     except anthropic.APITimeoutError as e:
         logger.warning(f"TimeoutError: {e}")
-        return {"error": "Nina reageert even niet. Probeer het opnieuw of mail naar academy@sanayou.com."}
+        return {"error": "Nina reageert even niet. Probeer het over een minuutje opnieuw."}
     except anthropic.APIStatusError as e:
         logger.error(f"APIStatusError {e.status_code}: {e}")
-        return {"error": "Er ging iets mis aan onze kant. Probeer het opnieuw of mail naar academy@sanayou.com."}
+        return {"error": "Er ging iets mis aan onze kant. Probeer het over een minuutje opnieuw."}
     except Exception as e:
         import traceback
         logger.error(f"{type(e).__name__}: {e}\n{traceback.format_exc()}")
-        return {"error": "Er ging iets mis. Probeer het opnieuw of mail naar academy@sanayou.com."}
+        return {"error": "Er ging iets mis. Probeer het over een minuutje opnieuw."}
 
 
 # ── Helpcenter API ──────────────────────────────────────────────────────────

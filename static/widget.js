@@ -179,7 +179,7 @@
     if (lastErr) {
       addMsg(
         "bot",
-        "Ik kan even geen verbinding maken. Probeer het over een minuutje opnieuw, of stuur een mail naar academy@sanayou.com"
+        "Ik kan even geen verbinding maken. Probeer het over een minuutje opnieuw."
       );
     } else if (data.error) {
       addMsg("bot", data.error);

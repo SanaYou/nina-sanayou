@@ -55,7 +55,7 @@ Alle verdiepingsmodules, themadagen en workshops vinden **eenmaal per jaar** pla
 
 ## Kan ik me aanmelden?
 
-Ja, via [sanayou.com/workshops](https://sanayou.com/workshops) of door een mail te sturen naar academy@sanayou.com.
+Ja, via [sanayou.com/workshops](https://sanayou.com/workshops) of stel je vraag via de chat.
 
 ## Gerelateerde artikelen
 

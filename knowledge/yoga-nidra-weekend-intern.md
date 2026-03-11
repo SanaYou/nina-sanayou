@@ -38,4 +38,4 @@ Je hoeft het certificaat van de online module niet af te hebben vóór het weeke
 ## Meer informatie
 
 - [Yoga Nidra docentenopleiding](https://sanayou.com/yoga-nidra-opleiding-online/)
-- Andere vragen? Stel ze via de chat of stuur een mail naar academy@sanayou.com
+- Andere vragen? Stel ze via de chat rechtsonder op de pagina

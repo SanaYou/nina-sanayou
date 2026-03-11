@@ -19,7 +19,7 @@ Doe je de RYT300? Dan kan Sandy in de onboarding call ook advies geven over de k
 
 ## Hoe maak ik mijn interesse kenbaar?
 
-Stuur een mail naar academy@sanayou.com als je gebruik wil maken van de onboarding call. Vermeld kort je naam, welke opleiding je hebt aangekocht en wanneer je beschikbaar bent.
+Wil je gebruik maken van de onboarding call? Geef dit dan door via de chat. Vermeld kort je naam, welke opleiding je hebt aangekocht en wanneer je beschikbaar bent.
 
 ## Gerelateerde artikelen
 
