@@ -490,41 +490,55 @@ def _format_chat_html(history: list, summary: str) -> str:
 
 
 def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: list):
-    """Detecteer of Nina een escalatie bevestigt en stuur door naar Help Scout.
+    """Detecteer of de gebruiker een escalatie bevestigt en stuur door naar Help Scout.
 
-    Logica: als het bericht van de gebruiker een e-mailadres bevat EN
-    Nina's antwoord datzelfde e-mailadres herhaalt (= bevestiging),
-    dan is dit een escalatie.
+    Flow: Nina vraagt "Even checken: je naam is X en je e-mailadres is Y, klopt dat?"
+    Gebruiker antwoordt "ja" / "klopt" / "correct" etc.
+    Nina antwoordt met "doorgestuurd" → op DAT moment triggert de escalatie.
+
+    Detectie: gebruiker zegt iets bevestigends EN in de chathistorie staat
+    een eerdere Nina-response met een e-mailadres (de bevestigingsvraag).
     """
-    # Zoek e-mailadres in het bericht van de gebruiker
-    email_match = re.search(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', user_message)
-    if not email_match:
+    # Check of het huidige bericht van de gebruiker een bevestiging is
+    confirm_words = r'\b(ja|jaa|jep|yes|klopt|correct|kloppt|dat klopt|is goed|akkoord|ok|oké|oke)\b'
+    if not re.search(confirm_words, user_message.lower()):
         return
 
-    email = email_match.group(0).lower()
+    # Zoek in de chathistorie naar Nina's bevestigingsvraag met een e-mailadres
+    email = None
+    name = None
+    for i, msg in enumerate(chat_messages):
+        if msg.get("role") != "assistant":
+            continue
+        content = msg.get("content", "")
+        # Zoek een bericht van Nina dat een emailadres bevat EN "klopt" of "checken" bevat
+        email_match = re.search(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', content)
+        if email_match and re.search(r'(klopt|checken|kloppen|check)', content.lower()):
+            email = email_match.group(0).lower()
+            # Probeer naam uit datzelfde bericht te halen
+            name_match = re.search(r'(?:naam is|naam:)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)(?:\s+en\b|\s*[,.])', content)
+            if name_match:
+                name = name_match.group(1).strip()
 
-    # Check of Nina hetzelfde e-mailadres noemt in haar antwoord (= bevestiging)
-    if email not in nina_response.lower():
+    if not email:
         return
 
-    # Probeer naam te extraheren uit het bericht van de gebruiker
-    # Patronen: "Mijn naam is X", "Ik ben X", "X en mijn email", of gewoon naam voor het @
-    name = ""
-    name_patterns = [
-        r'(?:mijn naam is|ik ben|ik heet)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)(?:\s+en\b|\s*[,.]|\s+mijn)',
-        r'([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)\s+(?:en\s+)?(?:mijn\s+)?(?:e-?mail|mailadres)',
-    ]
-    for pattern in name_patterns:
-        m = re.search(pattern, user_message, re.IGNORECASE)
-        if m:
-            name = m.group(1).strip()
-            break
-
-    # Fallback: gebruik voornaam uit Nina's bevestiging ("Bedankt, Lisa")
+    # Fallback naam: zoek in hele chathistorie
     if not name:
-        confirm_match = re.search(r'(?:Bedankt|Dank je|Hoi),?\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ-]+)', nina_response)
-        if confirm_match:
-            name = confirm_match.group(1).strip()
+        for msg in chat_messages:
+            if msg.get("role") != "user":
+                continue
+            content = msg.get("content", "")
+            for pattern in [
+                r'(?:mijn naam is|ik ben|ik heet)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)(?:\s+en\b|\s*[,.]|\s+mijn|\s*$)',
+                r'([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)\s+(?:en\s+)?(?:mijn\s+)?(?:e-?mail|mailadres)',
+            ]:
+                m = re.search(pattern, content, re.IGNORECASE)
+                if m:
+                    name = m.group(1).strip()
+                    break
+            if name:
+                break
 
     if not name:
         name = email.split("@")[0].replace(".", " ").title()
