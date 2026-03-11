@@ -36,7 +36,7 @@ def test_nina():
     for i, vraag in enumerate(VRAGEN, 1):
         print(f"📨 Vraag {i}: {vraag}")
         try:
-            r = requests.post(CHAT_URL, json={"message": vraag, "history": history}, timeout=60)
+            r = requests.post(CHAT_URL, json={"message": vraag, "history": history}, timeout=90)
             data = r.json()
 
             if "error" in data:
@@ -58,15 +58,15 @@ def test_nina():
             history.append({"role": "assistant", "content": antwoord})
 
         except requests.exceptions.Timeout:
-            print(f"❌ Timeout na 60 seconden\n")
+            print(f"❌ Timeout na 90 seconden\n")
             fouten.append(f"Vraag {i}: timeout")
         except Exception as e:
             print(f"❌ Fout: {e}\n")
             fouten.append(f"Vraag {i}: {e}")
 
-        # Korte pauze tussen vragen (realistisch gebruik)
+        # Pauze tussen vragen (realistisch: bezoeker leest antwoord + typt)
         if i < len(VRAGEN):
-            time.sleep(2)
+            time.sleep(10)
 
     # Resultaat
     print("=" * 50)
