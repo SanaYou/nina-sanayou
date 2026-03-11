@@ -16,7 +16,7 @@ Tijdens de praktijkopdracht laat je in ieder geval het volgende zien:
 - het gebruik van minstens één assist of adjustment
 - jouw eigen didactische stijl en techniek
 
-De exacte opdracht ontvang je per e-mail zodra je de toets hebt aangevraagd. Na beoordeling ontvang je uitgebreide feedback.
+De exacte en uitgebreide examenopdracht ontvang je per e-mail zodra je de toets hebt aangevraagd. Daarin staat precies wat er van je verwacht wordt. Na beoordeling ontvang je uitgebreide feedback.
 
 ## Kosten en aanvragen
 
@@ -24,6 +24,15 @@ Deelname aan de praktijktoets kost € 97,50. Je vraagt de toets aan via:
 [Vraag je praktijktoets aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online)
 
 Na je aanvraag ontvang je een bevestiging en verdere instructies per e-mail.
+
+## Wil je eerst oefenen of feedback vóór je examen?
+
+Als je graag gerichte feedback wilt op je lesgeven voordat je het examen doet, dan zijn de Support Packs er speciaal voor:
+
+- **Teaching Assessment Pack** (€ 145, eenmalig) — stuur een lesvideo in (max. 30 min) en ontvang uitgebreid schriftelijk feedback + een individuele CoachCall van 60 minuten met Sandy. Ideaal als voorbereiding op je praktijktoets.
+- **LIVE+ Support Pack** (€ 75/jaar) — maandelijkse CoachCall, besloten community en gastdocent Q&A's. Geschikt als je doorlopend vragen hebt over de stof of meer structuur wilt.
+
+Meer informatie vind je in de artikelen over de Support Packs.
 
 ## Wat als een onderdeel nog niet voldoende is?
 

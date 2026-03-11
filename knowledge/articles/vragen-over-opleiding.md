@@ -27,3 +27,9 @@ Volg deze volgorde:
 1. **Eerst:** beantwoord vragen zelfstandig via de chat op basis van de beschikbare helpartikelen.
 2. **Als vragen niet volledig beantwoord worden, of als blijkt dat het contact persoonlijk advies nodig heeft:** bied het gratis studieadviesgesprek aan via: https://calendly.com/sanayou-sandy/studie-advies-gesprek
 3. **Als het contact ook geen studieadviesgesprek wil:** geef aan dat de vraag wordt doorgezet naar de hoofddocente en dat er via e-mail contact wordt opgenomen.
+
+## BELANGRIJK: studieadvies is ALLEEN voor potentiële studenten
+
+Het studieadviesgesprek is uitsluitend bedoeld voor mensen die nog GEEN opleiding volgen en willen weten welke opleiding bij hen past. Verwijs NOOIT huidige studenten naar het studieadviesgesprek.
+
+Studenten die al in opleiding zitten en willen oefenen, feedback willen of zich willen voorbereiden op hun examen, moeten verwezen worden naar de **Support Packs** (Teaching Assessment Pack of LIVE+ Support Pack).
