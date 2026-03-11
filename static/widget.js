@@ -139,7 +139,7 @@
     var coldStartTimer = setTimeout(function () {
       coldStartShown = true;
       hideTyping();
-      addMsg("bot", "Ik word even wakker... nog een paar seconden geduld.");
+      addMsg("bot", "Ik zoek het even voor je op, momentje.");
       showTyping();
     }, 8000);
 
@@ -164,7 +164,7 @@
         if (attempt === 0) {
           if (!coldStartShown) {
             hideTyping();
-            addMsg("bot", "Ik word even wakker... nog een paar seconden geduld.");
+            addMsg("bot", "Ik zoek het even voor je op, momentje.");
             showTyping();
             coldStartShown = true;
           }
@@ -201,7 +201,7 @@
     if (isOpen && msgsEl.children.length === 0) {
       addMsg(
         "bot",
-        "Hoi! Ik ben Nina, de digitale assistent van SanaYou YOGAcademy.\n\nHeb je een vraag over een opleiding, planning of iets technisch? Stel je vraag gerust — ik help je graag verder."
+        "Hoi! Ik ben Nina, de AI-assistent van hoofddocent Sandy.\n\nIk ben 24/7 beschikbaar om je vragen te beantwoorden. Je kunt je vragen aan mij stellen, dan zoek ik direct een helder antwoord voor je.\n\nMocht ik je niet verder kunnen helpen, dan zorg ik dat Sandy het persoonlijk oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
       );
       inpEl.focus();
     }

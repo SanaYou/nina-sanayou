@@ -14,13 +14,13 @@ Het reguliere traject wordt het meest gekozen. Hierbij volg je de volledige ople
 
 Het versnelde traject is intensiever en vindt plaats binnen een kortere periode. Yin en Yang lopen parallel en de opleiding wordt afgerond in zes maanden, van januari tot en met juni. De planning en de volgorde van de modules liggen volledig vast. Omdat Yin en Yang gelijktijdig worden gevolgd, is er binnen het versnelde traject geen keuze in startvolgorde.
 
+## In je eigen tempo — losse modules boeken
+
+Je kunt ook losse lesmodules boeken in plaats van een vast traject. Je bepaalt dan zelf je tempo en volgorde (binnen de vaste opbouw per stroming) en spreidt de modules over meerdere lesjaren. Dit geeft je meer tijd en ruimte dan binnen het reguliere traject van één jaar. Pakketkorting is bij losse modules niet van toepassing.
+
 ## Belangrijkste verschillen
 
-Het verschil tussen beide trajecten zit vooral in de duur van de opleiding, de intensiteit van het traject, de mate van ruimte voor integratie en de manier waarop Yin en Yang worden ingepland — na elkaar of parallel. Beide trajecten leiden tot dezelfde volledige RYT/VYN200 Yin & Yang Teacher Training en dezelfde erkenning na afronding.
-
-## Losse lesmodules volgen
-
-Naast het volgen van de opleiding in pakketvorm is het ook mogelijk om losse lesmodules te volgen. Je boekt dan per module, bepaalt zelf je tempo en volgorde (binnen de vaste opbouw per stroming) en spreidt de modules vaak over meerdere lesjaren. Pakketkorting is bij losse modules niet van toepassing.
+Het verschil tussen de drie routes zit vooral in de duur, de intensiteit en de vrijheid in planning. Het reguliere traject duurt ongeveer een jaar, het versnelde traject een half jaar, en met losse modules bepaal je helemaal zelf je tempo. Alle routes leiden tot dezelfde volledige RYT/VYN200 Yin & Yang Teacher Training en dezelfde erkenning na afronding.
 
 ## Pakketkorting
 
