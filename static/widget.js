@@ -23,8 +23,11 @@
     "#nina-win.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all;}",
     ".n-hdr{background:#66B0B2;padding:16px 20px;color:#fff;display:flex;align-items:center;gap:12px;}",
     ".n-hdr-icon{width:36px;height:36px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}",
+    ".n-hdr-info{flex:1;}",
     ".n-hdr-name{font-family:'Bellota',sans-serif;font-size:17px;font-weight:700;margin:0;line-height:1.2;}",
     ".n-hdr-sub{font-size:11px;opacity:.85;margin:2px 0 0;}",
+    ".n-hdr-reset{width:32px;height:32px;background:rgba(255,255,255,0.15);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;}",
+    ".n-hdr-reset:hover{background:rgba(255,255,255,0.3);}",
     ".n-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;}",
     ".n-msgs::-webkit-scrollbar{width:4px;} .n-msgs::-webkit-scrollbar-thumb{background:#ddd;border-radius:4px;}",
     ".n-msg{max-width:86%;padding:10px 14px;border-radius:14px;font-size:13.5px;line-height:1.55;color:#7A7A7A;word-break:break-word;}",
@@ -51,6 +54,34 @@
   var isOpen = false;
   var history = [];
   var isTyping = false;
+  var inactivityTimer = null;
+  var INACTIVITY_TIMEOUT = 10 * 60 * 1000; // 10 minuten
+
+  function resetChat() {
+    history = [];
+    msgsEl.innerHTML = "";
+    isTyping = false;
+    sendEl.disabled = false;
+    clearInactivityTimer();
+  }
+
+  function startInactivityTimer() {
+    clearInactivityTimer();
+    inactivityTimer = setTimeout(function () {
+      if (isOpen) {
+        win.classList.remove("open");
+        isOpen = false;
+      }
+      resetChat();
+    }, INACTIVITY_TIMEOUT);
+  }
+
+  function clearInactivityTimer() {
+    if (inactivityTimer) {
+      clearTimeout(inactivityTimer);
+      inactivityTimer = null;
+    }
+  }
 
   // Chat button
   var btn = document.createElement("button");
@@ -65,7 +96,8 @@
   win.innerHTML =
     '<div class="n-hdr">' +
     '<div class="n-hdr-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="white"/></svg></div>' +
-    '<div><p class="n-hdr-name">Nina</p><p class="n-hdr-sub">Digitale assistent van SanaYou YOGAcademy</p></div>' +
+    '<div class="n-hdr-info"><p class="n-hdr-name">Nina</p><p class="n-hdr-sub">Digitale assistent van SanaYou YOGAcademy</p></div>' +
+    '<button class="n-hdr-reset" id="nina-reset" title="Nieuw gesprek"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58 4 4.01 7.58 4.01 12S7.58 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69 18 6 15.31 6 12S8.69 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="white"/></svg></button>' +
     "</div>" +
     '<div class="n-msgs" id="nina-msgs"></div>' +
     '<div class="n-foot">' +
@@ -193,11 +225,17 @@
     isTyping = false;
     sendEl.disabled = false;
     inpEl.focus();
+    startInactivityTimer();
   }
 
   btn.addEventListener("click", function () {
     isOpen = !isOpen;
     win.classList.toggle("open", isOpen);
+    if (isOpen) {
+      startInactivityTimer();
+    } else {
+      clearInactivityTimer();
+    }
     if (isOpen && msgsEl.children.length === 0) {
       addMsg(
         "bot",
@@ -205,6 +243,16 @@
       );
       inpEl.focus();
     }
+  });
+
+  var resetEl = document.getElementById("nina-reset");
+  resetEl.addEventListener("click", function () {
+    resetChat();
+    addMsg(
+      "bot",
+      "Hoi! Ik ben Nina, de AI-assistent van hoofddocent Sandy.\n\nIk ben 24/7 beschikbaar om je vragen te beantwoorden. Je kunt je vragen aan mij stellen, dan zoek ik direct een helder antwoord voor je.\n\nMocht ik je niet verder kunnen helpen, dan zorg ik dat Sandy het persoonlijk oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
+    );
+    inpEl.focus();
   });
 
   sendEl.addEventListener("click", send);
