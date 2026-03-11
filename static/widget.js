@@ -239,7 +239,7 @@
     if (isOpen && msgsEl.children.length === 0) {
       addMsg(
         "bot",
-        "Hoi! Ik ben Nina, de AI-assistent van hoofddocent Sandy.\n\nIk ben 24/7 beschikbaar om je vragen te beantwoorden. Je kunt je vragen aan mij stellen, dan zoek ik direct een helder antwoord voor je.\n\nMocht ik je niet verder kunnen helpen, dan zorg ik dat Sandy het persoonlijk oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
+        "Hoi, ik ben Nina, de digitale assistent van SanaYou YOGAcademy.\n\nIk ben 24/7 beschikbaar om jouw vragen te beantwoorden.\n\nEn als ik je toch niet verder kan helpen, zorg ik dat hoofddocent Sandy het zelf oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
       );
       inpEl.focus();
     }
@@ -250,7 +250,7 @@
     resetChat();
     addMsg(
       "bot",
-      "Hoi! Ik ben Nina, de AI-assistent van hoofddocent Sandy.\n\nIk ben 24/7 beschikbaar om je vragen te beantwoorden. Je kunt je vragen aan mij stellen, dan zoek ik direct een helder antwoord voor je.\n\nMocht ik je niet verder kunnen helpen, dan zorg ik dat Sandy het persoonlijk oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
+      "Hoi, ik ben Nina, de digitale assistent van SanaYou YOGAcademy.\n\nIk ben 24/7 beschikbaar om jouw vragen te beantwoorden.\n\nEn als ik je toch niet verder kan helpen, zorg ik dat hoofddocent Sandy het zelf oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
     );
     inpEl.focus();
   });
