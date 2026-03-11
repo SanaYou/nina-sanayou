@@ -239,7 +239,7 @@ def retrieve_articles(query: str, history: List, top_k: int = 3) -> str:
 # ── System prompt (zonder kennisbank — die wordt dynamisch ingevoegd) ──────
 SYSTEM_PROMPT_BASE = """Je bent Nina, de digitale assistent van SanaYou YOGAcademy.
 
-Je helpt studenten en geïnteresseerden met vragen over opleidingen, prijzen, planning, technische ondersteuning en meer. Je communiceert warm, professioneel en to-the-point — in de stem van Sandy Karsten, hoofd docentenopleider van SanaYou YOGAcademy.
+Je helpt studenten en geïnteresseerden met hun vragen. Je communiceert warm, professioneel en to-the-point — in de stem van Sandy Karsten, hoofddocent van SanaYou YOGAcademy. Houd je antwoorden kort en natuurlijk — nooit lange opsommingen van wat je allemaal kunt.
 
 ## Toon en schrijfstijl
 
@@ -490,28 +490,26 @@ def _format_chat_html(history: list, summary: str) -> str:
 
 
 def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: list):
-    """Detecteer of de gebruiker een escalatie bevestigt en stuur door naar Help Scout.
+    """Detecteer of Nina een escalatie afrondt en stuur door naar Help Scout.
 
-    Flow: Nina vraagt "Even checken: je naam is X en je e-mailadres is Y, klopt dat?"
-    Gebruiker antwoordt "ja" / "klopt" / "correct" etc.
-    Nina antwoordt met "doorgestuurd" → op DAT moment triggert de escalatie.
-
-    Detectie: gebruiker zegt iets bevestigends EN in de chathistorie staat
-    een eerdere Nina-response met een e-mailadres (de bevestigingsvraag).
+    Trigger: Nina zegt "doorgestuurd" in haar antwoord → dat betekent dat ze
+    klaar is met de escalatieflow (naam+email bevestigd, en bij flow 2 ook
+    het onderwerp gevraagd). Op dat moment zoeken we het emailadres op in
+    de chathistorie en sturen alles door.
     """
-    # Check of het huidige bericht van de gebruiker een bevestiging is
-    confirm_words = r'\b(ja|jaa|jep|yes|klopt|correct|kloppt|dat klopt|is goed|akkoord|ok|oké|oke)\b'
-    if not re.search(confirm_words, user_message.lower()):
+    # Check of Nina's antwoord "doorgestuurd" bevat (= escalatie afronden)
+    if not re.search(r'doorgestuurd', nina_response.lower()):
         return
 
-    # Zoek in de chathistorie naar Nina's bevestigingsvraag met een e-mailadres
+    # Zoek e-mailadres in de chathistorie (uit Nina's bevestigingsvraag of uit user berichten)
     email = None
     name = None
-    for i, msg in enumerate(chat_messages):
+
+    # Eerst: zoek in Nina's eerdere berichten naar de "klopt dat?" bevestigingsvraag
+    for msg in chat_messages:
         if msg.get("role") != "assistant":
             continue
         content = msg.get("content", "")
-        # Zoek een bericht van Nina dat een emailadres bevat EN "klopt" of "checken" bevat
         email_match = re.search(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', content)
         if email_match and re.search(r'(klopt|checken|kloppen|check)', content.lower()):
             email = email_match.group(0).lower()
@@ -520,10 +518,20 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
             if name_match:
                 name = name_match.group(1).strip()
 
+    # Fallback: zoek emailadres in user berichten
+    if not email:
+        for msg in chat_messages:
+            if msg.get("role") != "user":
+                continue
+            email_match = re.search(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', msg.get("content", ""))
+            if email_match:
+                email = email_match.group(0).lower()
+                break
+
     if not email:
         return
 
-    # Fallback naam: zoek in hele chathistorie
+    # Fallback naam: zoek in user berichten
     if not name:
         for msg in chat_messages:
             if msg.get("role") != "user":
