@@ -24,7 +24,7 @@ De twee basismodules zijn uitgebreide startpunten die ook als zelfstandige verdi
 
 ## Rustige yogavormen
 
-- **Yoga Nidra** – 25 uur – €375
+- **Yoga Nidra** – 25 uur online – €375 (uitbreidbaar met 2 klassikale lesdagen → 40 uur totaal; instructeur: Amanda Beelen)
 - **Yin Yoga & de 5 Elementenleer** – 32 uur – €475
 - **De Kracht van de Nervus Vagus** – 25 uur – €375
 - **Advanced Yin & Yang Flows** – 20 uur – €275
