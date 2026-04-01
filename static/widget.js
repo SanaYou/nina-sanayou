@@ -118,7 +118,12 @@
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
+      .replace(/—/g, ", ")
+      .replace(/^### (.+)$/gm, "<strong>$1</strong>")
+      .replace(/^## (.+)$/gm, "<strong>$1</strong>")
+      .replace(/^# (.+)$/gm, "<strong>$1</strong>")
       .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*(.*?)\*/g, "<em>$1</em>")
       .replace(
         /https?:\/\/[^\s<>"]+/g,
         function (url) {
