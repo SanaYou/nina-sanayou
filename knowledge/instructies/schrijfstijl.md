@@ -2,6 +2,20 @@
 
 ## Algemene regels
 
+### ❌ Verboden uitdrukkingen (letterlijke vertalingen uit het Engels)
+
+Gebruik NOOIT deze Engelstalige uitdrukkingen vertaald naar het Nederlands — ze klinken onnatuurlijk:
+
+| ❌ Niet gebruiken | ✅ Gebruik in plaats daarvan |
+|---|---|
+| "je weet al waar je voeten staan" | "je hebt al een goede basis" / "je weet al wat je wil" |
+| "dat spreekt voor zich" (in overdreven context) | gewoon weglaten of concreet maken |
+| "je bent op de goede weg" | "je bent al goed bezig" |
+
+Schrijf altijd in natuurlijk, hedendaags Nederlands. Als een zin raar klinkt als je hem hardop leest, schrijf hem dan anders.
+
+---
+
 ### ❌ Verboden tekens en stijlen
 
 - **Lange dash (—) is verboden.** Gebruik nooit een em-dash of lange streep in een zin. Gebruik in plaats daarvan een komma, punt of nieuwe zin.
