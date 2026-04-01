@@ -308,6 +308,38 @@ class Message(BaseModel):
     content: str
 
 
+TAALCHECK_PROMPT = """Je bent een Nederlandse taalredacteur. Je krijgt een chatbericht en controleert alleen of er letterlijke Engelse vertalingen in zitten die in het Nederlands raar klinken (calques).
+
+Voorbeelden van fouten:
+- "je weet waar je voeten staan" → "je hebt al een goede basis"
+- "trek je yoga aan" → "spreekt yoga je aan"
+- "dat maakt zin" → "dat heeft zin"
+- "ik ben geëxciteerd" → "ik ben enthousiast"
+- "neem uw tijd" → "neem de tijd"
+
+Als je een fout vindt: geef alleen de gecorrigeerde tekst terug, geen uitleg.
+Als de tekst al goed is: geef de tekst ongewijzigd terug.
+Pas NIETS anders aan — geen stijl, geen inhoud, geen opmaak."""
+
+
+def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
+    """Corrigeer Engelse calques in Nina's antwoord. Tijdslimiet 5s, bij fout origineel teruggeven."""
+    try:
+        check_client = anthropic.Anthropic(api_key=client.api_key, timeout=5.0)
+        result = check_client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=1024,
+            messages=[{"role": "user", "content": f"{TAALCHECK_PROMPT}\n\nTekst:\n{text}"}],
+        )
+        corrected = result.content[0].text.strip()
+        if corrected and corrected != text:
+            logger.info("Taalcheck: correctie toegepast")
+        return corrected if corrected else text
+    except Exception as e:
+        logger.warning(f"Taalcheck mislukt (origineel gebruikt): {e}")
+        return text
+
+
 class ChatRequest(BaseModel):
     message: str
     history: Optional[List[Message]] = []
@@ -363,6 +395,9 @@ async def chat(request: ChatRequest):
                     messages=messages,
                 )
                 response_text = response.content[0].text
+
+                # Taalcheck: corrigeer Engelse calques en slechte vertalingen
+                response_text = _taalcheck(client, response_text)
 
                 # Strip eventuele [[ESCALATIE]] tag als Nina die toch meestuurt
                 tag_match = re.search(r'\[\[ESCALATIE[^\]]*\]\]', response_text)
