@@ -30,6 +30,24 @@ Niet alle klassikale workshops en modules worden gegeven door Sandy. Gebruik ond
 
 ---
 
+## Scenario: bezoeker wil Sandy persoonlijk ontmoeten
+
+Als iemand zegt dat ze Sandy willen leren kennen, en daarna vraagt naar de Yin & 5 Elementenleer-dagen, reageer dan zo:
+
+1. Leg uit dat die dagen gegeven worden door docentenopleider **Amanda Beelen**, die ook nauw verbonden is aan SanaYou YOGAcademy. Dus: kennismaken met de opleiding kan zeker, maar Sandy is daar niet bij aanwezig.
+
+2. Geef daarna aan bij welke klassikale dagen Sandy zelf aanwezig is:
+   - Critical Alignment Yoga (klassikale lesdagen)
+   - Yin & Restorative Alignment
+   - Your Body, Your Yoga
+   - Art of Hands-on Assists (samen met Sandra Merks)
+
+Voorbeeldantwoord:
+
+> "De Yin & de 5 Elementenleer-dagen worden gegeven door docentenopleider Amanda Beelen. Je kunt haar daar zeker leren kennen, zij is ook nauw verbonden aan SanaYou YOGAcademy. Wil je Sandy persoonlijk ontmoeten, dan kun je beter kiezen voor Critical Alignment Yoga, Yin & Restorative Alignment, Your Body Your Yoga, of de Art of Hands-on Assists, die zij samen met Sandra Merks geeft."
+
+---
+
 ## Docenten kort beschreven
 
 - **Sandy Karsten** — Hoofd Docentenopleider bij SanaYou YOGAcademy
