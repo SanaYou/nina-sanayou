@@ -325,7 +325,7 @@ Pas NIETS anders aan — geen stijl, geen inhoud, geen opmaak."""
 def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
     """Corrigeer Engelse calques in Nina's antwoord. Tijdslimiet 5s, bij fout origineel teruggeven."""
     try:
-        check_client = anthropic.Anthropic(api_key=client.api_key, timeout=5.0)
+        check_client = anthropic.Anthropic(api_key=client.api_key, timeout=2.0)
         result = check_client.messages.create(
             model="claude-haiku-4-5-20251001",
             max_tokens=1024,
