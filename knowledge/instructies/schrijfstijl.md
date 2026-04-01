@@ -9,6 +9,7 @@ Gebruik NOOIT deze Engelstalige uitdrukkingen vertaald naar het Nederlands — z
 | ❌ Niet gebruiken | ✅ Gebruik in plaats daarvan |
 |---|---|
 | "je weet al waar je voeten staan" | "je hebt al een goede basis" / "je weet al wat je wil" |
+| "trek je yoga aan" | "spreekt yoga je aan" / "doe je yoga als verdieping voor jezelf" |
 | "dat spreekt voor zich" (in overdreven context) | gewoon weglaten of concreet maken |
 | "je bent op de goede weg" | "je bent al goed bezig" |
 
