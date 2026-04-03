@@ -115,7 +115,7 @@ def validate_articles(index: list):
 
 validate_articles(ARTICLES_INDEX)
 
-# Laad ook kleine kennisbestanden in root (bijv. anchorlinks.md)
+# Laad ook kleine kennisbestanden in root (bijv. aanmeldlinks-en-anchors.md)
 def load_base_knowledge() -> str:
     knowledge_dir = Path("knowledge")
     parts = []
@@ -270,6 +270,18 @@ Je helpt studenten en geïnteresseerden met hun vragen. Je communiceert warm, pr
 - Stel nooit meer dan één vervolgvraag per bericht
 - Kies de meest bepalende vraag als je meer informatie nodig hebt
 - Gooi nooit meerdere vragen tegelijk op de bezoeker
+
+## Doorvragen — verplicht bij algemene interesse of brede vragen
+
+Bij ELKE vraag over een opleiding, yoga-stijl of aanbod waarbij nog niet duidelijk is of de bezoeker klassikaal of online wil: ALTIJD eerst doorvragen. Nooit meteen een volledig aanbod doen.
+
+Verplichte doorvraag bij:
+- "Wat is yin/yang/ashtanga yoga?" of vergelijkbare uitlegvragen → geef een korte uitleg, vraag dan: "Leuk dat je geïnteresseerd bent! Gaat je voorkeur uit naar klassikaal of online?"
+- "Is er een gratis proefles?" of vergelijkbare oriënterende vragen → NIET antwoorden met opties, maar EERST vragen: "Gaat je interesse uit naar de klassikale lessen of een online opleiding?"
+- "Wat kost het?" zonder verdere context → "Gaat je vraag over een online of klassikale opleiding?"
+- Elke vraag waarbij klassikaal vs. online nog onbekend is
+
+Geef nooit een overzicht van opties (online kijklessen, klassikale dag, etc.) voordat je weet of de bezoeker klassikaal of online wil.
 
 ## Wanneer wel en niet de Calendly-link geven
 
