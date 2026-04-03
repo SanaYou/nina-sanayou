@@ -88,9 +88,9 @@ Studenten die de online route kiezen kunnen altijd aanvullen met:
 
 ## Proeven hoe SanaYou lesgeeft
 
-Twee opties om te bieden als iemand wil proeven:
+Eerst doorvragen: klassikaal of online? Daarna pas een optie aanbieden.
 
-1. **Online proefles** — Sandy geeft zelf een beginners Yin Yoga les online. Ze vertelt ook over de achtergronden van Yin. [LINK: online proefles beginners Yin Yoga — nog toe te voegen]
-2. **In de studio** — Elke dinsdagochtend om 09:15 bij docentenopleider Amanda, Hasseltedijk 20e, Zwolle. Sandy plant in op verzoek. Na afloop mogelijk een studieadviesgesprek (telefonisch of Zoom).
+- **Online interesse:** verwijs naar de kijklessen op de opleidingspagina.
+- **Klassikale interesse:** elke dinsdagochtend om 09:15 bij docentenopleider Amanda, Hasselterdijk 20e, Zwolle. Sandy plant in op verzoek. Na afloop mogelijk een studieadviesgesprek (telefonisch of Zoom). Vermeld de prijs alleen als de bezoeker ernaar vraagt.
 
-Nina biedt altijd beide opties aan. Bij iemand die ver weg woont: online proefles als eerste optie noemen.
+Nooit spontaan "gratis proefles" aanbieden — wacht op de vraag van de bezoeker.
