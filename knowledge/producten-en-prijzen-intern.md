@@ -1,4 +1,4 @@
-# Producten & Diensten SanaYou YOGAcademy — Volledig Overzicht
+# Producten & Diensten SanaYou YOGAcademy -Volledig Overzicht
 *Laatste update: 23 maart 2026*
 
 ---
@@ -11,14 +11,14 @@
 - **Volledig traject (1 jaar):** €2.999 incl. €500 pakketkorting (betaling in 1, 5 of 10 termijnen)
 - **Duur:** 1 lesjaar (regulier sep–jun, versneld jan–jun)
 
-### Online RYT200 — 3 richtingen
+### Online RYT200 -3 richtingen
 - **Omschrijving:** Volledig online opleiding van 200u, eigen tempo, open instroom. Drie richtingen: Yin Yoga / Yin & Yang Yoga / Yang Yoga.
 - **Prijs:** €1.250 (betaling in 1, 5 of 10 termijnen)
 - **Duur:** 24 maanden toegang
 
-### RYT300 The Art of Advanced Teaching — 2 richtingen
+### RYT300 The Art of Advanced Teaching -2 richtingen
 - **Omschrijving:** Hybride verdiepingsopleiding van 300u (online + klassikale lesdagen). Twee richtingen: Yin Mastery / Yoga Awakening. Erkend door Yoga Alliance.
-- **Prijs:** €2.250 (betaling in 1, 5 of 10 termijnen) — beide richtingen zelfde prijs
+- **Prijs:** €2.250 (betaling in 1, 5 of 10 termijnen) -beide richtingen zelfde prijs
 - **Duur:** 24 maanden toegang
 
 ---
@@ -38,7 +38,7 @@
 | Restorative Alignment Yoga | 20u | €275 |
 | Advanced Yin & Yang Flows | 20u | €275 |
 | Yin Yoga: Omgaan met Klachten | 12u | €195 |
-| Biomechanica & Anatomie | — | €195 |
+| Biomechanica & Anatomie | -| €195 |
 | Your Body, Your Yoga | 8u | €95 |
 | Basis Anatomie voor Yogadocenten | 4u | €75 |
 
@@ -48,12 +48,12 @@
 
 ## 3. LOSSE KLASSIKALE VERDIEPINGSDAGEN & WEEKENDEN
 
-### Losse verdiepingsdagen — €97,50 per dag
+### Losse verdiepingsdagen -€97,50 per dag
 Alle onderstaande klassikale dagen hebben dezelfde prijs:
-- Verdiepingsdagen Yin & de 5 Elementen (Hout / Vuur / Aarde / Metaal / Water) — elk €97,50
-- CAY-workshopdagen (Critical Alignment Yoga) — elk €97,50
-- Your Body, Your Yoga (klassikale dag) — €97,50
-- Yin Yoga meets Restorative Alignment — €97,50
+- Verdiepingsdagen Yin & de 5 Elementen (Hout / Vuur / Aarde / Metaal / Water) -elk €97,50
+- CAY-workshopdagen (Critical Alignment Yoga) -elk €97,50
+- Your Body, Your Yoga (klassikale dag) -€97,50
+- Yin Yoga meets Restorative Alignment -€97,50
 
 ### Weekenden & meerdaagse
 | Event | Duur | Prijs |
@@ -66,7 +66,7 @@ Alle onderstaande klassikale dagen hebben dezelfde prijs:
 *Alle klassikale lesdagen vinden plaats op Hasselterdijk 20-E, Zwolle, 10:30–17:00u.*
 
 ### Upgrades (online + klassikale lesdagen)
-Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module. De prijzen zijn identiek aan de losse dagprijzen hierboven — er is geen apart upgradepakket.
+Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module. De prijzen zijn identiek aan de losse dagprijzen hierboven -er is geen apart upgradepakket.
 
 | Module | Online uren | Prijs online | Klassikale uitbreiding | Prijs klassikaal | Totaal na upgrade |
 |---|---|---|---|---|---|
