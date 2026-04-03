@@ -2,6 +2,7 @@
 Nina Monitor: test elke X minuten of Nina werkt en stuur Telegram-alert bij problemen.
 Gebruik: python3 monitor_nina.py
 """
+import os
 import requests
 import time
 import logging
@@ -10,8 +11,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger("nina-monitor")
 
 NINA_URL = "https://nina-sanayou.onrender.com"
-TELEGRAM_BOT_TOKEN = "8536818621:AAFKj2R3gmoqPjEMgALF1ogEVTVWfrUUTlU"
-TELEGRAM_CHAT_ID = "8453524279"
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 # Voorkom alert-spam: max 1 alert per uur
 _last_alert_time = 0
