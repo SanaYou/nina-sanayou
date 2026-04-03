@@ -38,7 +38,7 @@ Modules: Yin Yoga Basics, Yang Yoga Basics, Basis Anatomie voor Yogadocenten, Yo
 - Diploma RYT200 Teacher Training
 - Erkend door Yoga Alliance
 - Betaling in 1, 5 of 10 termijnen
-- Kijklessen/demo-lessen zijn te bekijken op de opleidingspagina (geen gratis proefles)
+- Twee gratis proeflessen: zachte Yin Yoga-les + Easy Flow Yang-les
 
 ## WAT JE LEERT
 - Yogahoudingen veilig en correct uitvoeren
@@ -71,7 +71,7 @@ Stap 4: Diploma behalen — videoles indienen, datum beoordeling plannen, Yoga A
 - "YOGAcademy-studenten aan het woord" → delen als iemand vraagt naar ervaringen van studenten
 - "Rondleiding Online Lesplatform" → delen als iemand wil weten hoe het platform eruitziet
 - "Proeflessen Yin en Yang" → delen als iemand een proefles wil of wil ervaren hoe de lessen zijn
-- Kijklessen zijn zichtbaar op de opleidingspagina; geen gratis proeflessen inbegrepen
+- Twee gratis proeflessen zijn inbegrepen bij aanschaf: Yin Yoga-les + Easy Flow Yang-les
 
 ## TE SCHRIJVEN ARTIKELEN (op basis van deze pagina)
 1. ✅ Hoe zijn de online RYT200 teacher trainingen opgebouwd? (done)
