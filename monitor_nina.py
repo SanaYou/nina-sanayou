@@ -39,56 +39,16 @@ def send_telegram(message):
 
 
 def check_nina():
-    """Test of Nina reageert op een vraag."""
-    # Stap 1: health check
+    """Test of Nina bereikbaar is via /health (geen API tokens)."""
     try:
         r = requests.get(f"{NINA_URL}/health", timeout=15)
         if r.status_code != 200:
             return False, f"Health check mislukt (status {r.status_code})"
+        return True, "Health OK"
+    except requests.exceptions.Timeout:
+        return False, "Nina timeout na 15 seconden"
     except Exception as e:
         return False, f"Nina is niet bereikbaar: {e}"
-
-    # Stap 2: echte vraag stellen (max 2 pogingen bij lege response / cold start)
-    for attempt in range(2):
-        try:
-            r = requests.post(
-                f"{NINA_URL}/chat",
-                json={"message": "Welke opleidingen bieden jullie aan?", "history": []},
-                timeout=90,
-            )
-
-            # Lege response afvangen voordat we JSON parsen
-            if not r.text or not r.text.strip():
-                if attempt == 0:
-                    logger.warning(f"Lege response (HTTP {r.status_code}), retry na 5s (cold start?)...")
-                    time.sleep(5)
-                    continue
-                return False, f"Lege response van Render (HTTP {r.status_code})"
-
-            try:
-                data = r.json()
-            except ValueError:
-                if attempt == 0:
-                    logger.warning(f"Geen geldige JSON (HTTP {r.status_code}), retry na 5s...")
-                    time.sleep(5)
-                    continue
-                return False, f"Ongeldige JSON response (HTTP {r.status_code}): {r.text[:100]}"
-
-            if "error" in data:
-                return False, f"Nina geeft foutmelding: {data['error']}"
-
-            antwoord = data.get("response", "")
-            if not antwoord:
-                return False, "Nina geeft een leeg antwoord"
-
-            return True, antwoord[:80]
-
-        except requests.exceptions.Timeout:
-            return False, "Nina timeout na 90 seconden"
-        except Exception as e:
-            return False, f"Onverwachte fout: {e}"
-
-    return False, "Alle pogingen mislukt"
 
 
 def run_check():
@@ -100,7 +60,7 @@ def run_check():
         logger.warning(f"Nina FOUT: {detail}")
         send_telegram(
             f"⚠️ <b>Nina-alert</b>\n\n"
-            f"Nina reageert niet goed op vragen.\n\n"
+            f"Nina is niet bereikbaar.\n\n"
             f"<b>Probleem:</b> {detail}\n\n"
             f"Laat dit even checken door Claude Code."
         )
