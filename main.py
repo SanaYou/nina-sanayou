@@ -307,9 +307,7 @@ Verwijs NOOIT naar studieadvies voor deze situaties.
 
 {BASE_KNOWLEDGE}
 
-## Kennisbank (relevante artikelen voor deze vraag)
-
-{ARTICLES}"""
+"""
 
 SYSTEM_PROMPT_BASE = SYSTEM_PROMPT_BASE.replace("{BASE_KNOWLEDGE}", BASE_KNOWLEDGE)
 
@@ -368,7 +366,7 @@ async def chat(request: ChatRequest):
 
         # RAG: haal relevante artikelen op voor deze vraag
         relevant_knowledge = retrieve_articles(request.message, request.history or [])
-        system_prompt = SYSTEM_PROMPT_BASE.replace("{ARTICLES}", relevant_knowledge or "(geen specifieke artikelen gevonden)")
+        articles_section = relevant_knowledge or "(geen specifieke artikelen gevonden)"
 
         messages = [{"role": m.role, "content": m.content} for m in (request.history or [])]
         messages.append({"role": "user", "content": request.message})
@@ -399,11 +397,17 @@ async def chat(request: ChatRequest):
                 response = client.messages.create(
                     model="claude-haiku-4-5-20251001",
                     max_tokens=1024,
-                    system=[{
-                        "type": "text",
-                        "text": system_prompt,
-                        "cache_control": {"type": "ephemeral"}
-                    }],
+                    system=[
+                        {
+                            "type": "text",
+                            "text": SYSTEM_PROMPT_BASE,
+                            "cache_control": {"type": "ephemeral"},
+                        },
+                        {
+                            "type": "text",
+                            "text": f"## Kennisbank (relevante artikelen voor deze vraag)\n\n{articles_section}",
+                        },
+                    ],
                     messages=messages,
                 )
                 response_text = response.content[0].text
