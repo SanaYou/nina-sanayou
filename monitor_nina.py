@@ -10,7 +10,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("nina-monitor")
 
-NINA_URL = "https://nina-sanayou.onrender.com"
+NINA_URL = "https://nina-chatbot.vercel.app"
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
