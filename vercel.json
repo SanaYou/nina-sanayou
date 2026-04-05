@@ -6,7 +6,7 @@
     { "source": "/api/articles", "destination": "/api/index" }
   ],
   "functions": {
-    "api/index.py": {
+    "api/**/*.py": {
       "maxDuration": 300,
       "memory": 1024
     }
