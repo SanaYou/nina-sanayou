@@ -618,7 +618,13 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "articles_count": len(ARTICLES_INDEX),
+        "has_api_key": bool(os.getenv("ANTHROPIC_API_KEY")),
+        "knowledge_exists": KNOWLEDGE_DIR.exists(),
+        "project_root": str(PROJECT_ROOT),
+    }
 
 
 @app.get("/debug")
