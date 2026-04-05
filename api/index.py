@@ -619,3 +619,17 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
+
+@app.get("/debug")
+async def debug():
+    """Tijdelijk debug endpoint - verwijderen na migratie."""
+    return {
+        "project_root": str(PROJECT_ROOT),
+        "knowledge_dir": str(KNOWLEDGE_DIR),
+        "knowledge_exists": KNOWLEDGE_DIR.exists(),
+        "articles_count": len(ARTICLES_INDEX),
+        "has_api_key": bool(os.getenv("ANTHROPIC_API_KEY")),
+        "base_knowledge_length": len(BASE_KNOWLEDGE),
+        "system_prompt_length": len(SYSTEM_PROMPT_BASE),
+    }
