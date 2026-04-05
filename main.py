@@ -685,4 +685,4 @@ async def test_api():
         return {"ok": True, "response": response.content[0].text}
     except Exception as e:
         import traceback
-        return {"error": str(e), "type": type(e).__name__}
+        return {"error": str(e), "type": type(e).__name__, "trace": traceback.format_exc()}
