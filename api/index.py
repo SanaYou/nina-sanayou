@@ -618,13 +618,26 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
 
 @app.get("/health")
 async def health():
-    return {
-        "status": "ok",
-        "articles_count": len(ARTICLES_INDEX),
-        "has_api_key": bool(os.getenv("ANTHROPIC_API_KEY")),
-        "knowledge_exists": KNOWLEDGE_DIR.exists(),
-        "project_root": str(PROJECT_ROOT),
-    }
+    return {"status": "ok"}
+
+
+@app.get("/test-api")
+async def test_api():
+    """Tijdelijk: test of Anthropic API bereikbaar is."""
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    if not api_key:
+        return {"error": "ANTHROPIC_API_KEY niet gevonden"}
+    try:
+        client = anthropic.Anthropic(api_key=api_key, timeout=10.0)
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=10,
+            messages=[{"role": "user", "content": "Zeg alleen: test"}],
+        )
+        return {"ok": True, "response": response.content[0].text}
+    except Exception as e:
+        import traceback
+        return {"error": str(e), "type": type(e).__name__, "trace": traceback.format_exc()}
 
 
 @app.get("/debug")
