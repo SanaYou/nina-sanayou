@@ -1,14 +1,7 @@
 {
-  "buildCommand": "pip install -r requirements.txt",
   "rewrites": [
     { "source": "/chat", "destination": "/api/index" },
     { "source": "/health", "destination": "/api/index" },
     { "source": "/api/articles", "destination": "/api/index" }
-  ],
-  "functions": {
-    "api/**/*.py": {
-      "maxDuration": 300,
-      "memory": 1024
-    }
-  }
+  ]
 }
