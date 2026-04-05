@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    { "source": "/chat", "destination": "/api/index" },
-    { "source": "/health", "destination": "/api/index" },
-    { "source": "/api/articles", "destination": "/api/index" },
-    { "source": "/debug", "destination": "/api/index" }
+    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
