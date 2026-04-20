@@ -496,6 +496,9 @@ async def get_articles():
         if file.stem.endswith("-intern"):
             continue
         content = file.read_text(encoding="utf-8")
+        first_heading = next((l for l in content.splitlines() if l.startswith("#")), "").lower()
+        if any(marker in first_heading for marker in ["intern", "interne", "instructie nina", "instructie voor nina"]):
+            continue
         title = _extract_title(content, file.stem)
         collection = _extract_collection(content)
         tags = _extract_tags(content)
