@@ -63,30 +63,33 @@ def _extract_tags(content: str) -> list:
 
 
 def load_articles_index() -> list:
-    """Laad alle artikelen als geïndexeerde documenten voor RAG."""
-    articles_dir = Path("knowledge/articles")
-    if not articles_dir.exists():
-        return []
+    """Laad alle artikelen (publiek + intern) als geïndexeerde documenten voor RAG.
+    Publiek = knowledge/articles/, intern = knowledge/articles-intern/.
+    Beide zijn beschikbaar voor Nina's prompt; alleen publieke worden via /api/articles naar het Helpcentrum gestuurd."""
     index = []
-    for file in sorted(articles_dir.glob("*.md")):
-        content = file.read_text(encoding="utf-8")
-        title = _extract_title(content, file.stem)
-        collection = _extract_collection(content)
-        tags = _extract_tags(content)
-        # Strip metadata lines voor schone content in de prompt
-        clean_lines = [
-            l for l in content.splitlines()
-            if not l.startswith("COLLECTIE:") and not l.startswith("TAGS:")
-        ]
-        clean_content = "\n".join(clean_lines).strip()
-        index.append({
-            "id": file.stem,
-            "title": title,
-            "collection": collection,
-            "tags": tags,
-            "content": content,          # voor helpcenter API
-            "clean_content": clean_content,  # voor Nina's prompt
-        })
+    for dir_name, is_public in [("knowledge/articles", True), ("knowledge/articles-intern", False)]:
+        articles_dir = Path(dir_name)
+        if not articles_dir.exists():
+            continue
+        for file in sorted(articles_dir.glob("*.md")):
+            content = file.read_text(encoding="utf-8")
+            title = _extract_title(content, file.stem)
+            collection = _extract_collection(content)
+            tags = _extract_tags(content)
+            clean_lines = [
+                l for l in content.splitlines()
+                if not l.startswith("COLLECTIE:") and not l.startswith("TAGS:")
+            ]
+            clean_content = "\n".join(clean_lines).strip()
+            index.append({
+                "id": file.stem,
+                "title": title,
+                "collection": collection,
+                "tags": tags,
+                "content": content,
+                "clean_content": clean_content,
+                "public": is_public,
+            })
     return index
 
 
@@ -473,6 +476,8 @@ async def chat(request: ChatRequest):
 # ── Helpcenter API ──────────────────────────────────────────────────────────
 @app.get("/api/articles")
 async def get_articles():
+    """Publieke Helpcentrum API. Leest ALLEEN uit knowledge/articles/.
+    Bestanden eindigend op '-intern.md' worden defensief uitgesloten."""
     articles_dir = Path("knowledge/articles")
     if not articles_dir.exists():
         return []
@@ -488,6 +493,8 @@ async def get_articles():
 
     articles = []
     for file in sorted(articles_dir.glob("*.md")):
+        if file.stem.endswith("-intern"):
+            continue
         content = file.read_text(encoding="utf-8")
         title = _extract_title(content, file.stem)
         collection = _extract_collection(content)
