@@ -57,6 +57,17 @@ Je wordt tijdens het Yang Yoga-examen beoordeeld op:
 - Het niet gebruiken van verboden woorden of verboden didactische vormen, zoals de WUF-vorm
 - Het lesgeven alsof je aan beginners lesgeeft, met extra uitleg en context
 
+## Beoordelingsschaal
+
+Beide praktijkexamens worden beoordeeld met de volgende schaal:
+
+- O = Onvoldoende
+- V = Voldoende
+- G = Goed
+- HG = Heel Goed
+
+Je bent geslaagd wanneer je maximaal 1x een Onvoldoende (O) hebt op de beoordelingscriteria.
+
 ## Gerelateerde artikelen
 
 - Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?

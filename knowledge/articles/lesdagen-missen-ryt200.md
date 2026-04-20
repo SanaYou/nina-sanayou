@@ -36,6 +36,18 @@ Vraag via de besloten Huddle-groep van jouw opleiding ook aantekeningen op bij j
 
 Kun je niet aanwezig zijn op een lesdag, dan vragen we je om je afwezigheid te mailen naar academy@sanayou.com én een bericht te plaatsen in de besloten Huddle-groep van jouw opleiding. Zo zijn zowel het team als je medestudenten op de hoogte.
 
+## Aanwezigheidseis
+
+Per module geldt een aanwezigheidseis van minimaal 85%. Bij een module van 50 contacturen mag je maximaal 1 lesdag missen. Mis je meer dan 1 lesdag per module, dan kan dit gevolgen hebben voor je toelating tot het praktijkexamen.
+
+## Eisen aan het verslag
+
+Het inhaalverslag bevat minimaal 600 woorden per gemiste lesdag.
+
+## Ziekte op de examendag
+
+Ben je ziek op de dag van je praktijkexamen, dan kun je kosteloos verzetten naar een volgende examendatum, mits je dit minimaal 48 uur van tevoren doorgeeft.
+
 ## Voor wie geldt dit beleid?
 
 Dit beleid geldt voor alle lesmodules binnen de RYT/VYN200, zowel voor de Yin- als de Yang-modules. Voor beide geldt hetzelfde uitgangspunt en dezelfde werkwijze.

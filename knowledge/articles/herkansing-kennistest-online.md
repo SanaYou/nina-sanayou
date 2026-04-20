@@ -6,9 +6,13 @@ TAGS: herkansing, kennistest, quiz, niet geslaagd, opnieuw, theorietoets, certif
 
 In dit artikel lees je wat je kunt doen wanneer je niet slaagt voor een online kennistest, of het nu gaat om een module binnen de RYT200 of een losse bijscholing.
 
-## Herkansen is altijd mogelijk
+## Herkansen is mogelijk
 
-Elke kennistest kan maar één keer worden geopend. Slaag je niet, dan kun je een herkansing aanvragen. Je hoeft de module daarvoor niet opnieuw aan te schaffen.
+Elke kennistest kan maar een keer worden geopend. Slaag je niet, dan kun je een herkansing aanvragen. Je hoeft de module daarvoor niet opnieuw aan te schaffen. Per toets kun je maximaal drie herkansingen aanvragen, zolang je binnen de maximale studieduur van 3 jaar blijft.
+
+## Cesuur
+
+Voor alle kennistests geldt een cesuur van 65%. Je moet minimaal 65% van de vragen goed beantwoorden om te slagen.
 
 ## Voorbereiding: neem even de tijd
 

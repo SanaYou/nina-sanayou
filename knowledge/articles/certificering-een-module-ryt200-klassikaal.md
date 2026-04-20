@@ -13,11 +13,15 @@ Om erkend yogadocent te worden en je te registreren bij Yoga Alliance (YA) en de
 
 De opleiding bestaat uit twee trajecten van elk twee modules:
 
-**Yin Yoga 1 & Yin Yoga 2**
-Deze twee modules sluit je samen af met een theorie- en praktijktoets. Na afronding ontvang je je 100 uur basis lesbevoegdheid voor de Yin yogavormen.
+**Yin Yoga 1 & Yin Yoga 2 -- "Yin Yoga Foundations 100 hr"**
+Deze twee modules sluit je samen af met een theorie- en praktijktoets. Na afronding ontvang je het certificaat "Yin Yoga Foundations 100 hr" en daarmee je 100 uur basis lesbevoegdheid voor de Yin yogavormen.
 
-**Yogadocent Level 1 & Level 2 (Yang)**
-Ook deze twee modules vormen samen één traject. Na afronding ontvang je je 100 uur basis lesbevoegdheid voor de Yang yogavormen.
+**Yogadocent Level 1 & Level 2 (Yang) -- "Flow & Alignment 100 hr"**
+Ook deze twee modules vormen samen een traject. Na afronding ontvang je het certificaat "Flow & Alignment 100 hr" en daarmee je 100 uur basis lesbevoegdheid voor de Yang yogavormen.
+
+## Geldigheid certificaten
+
+Alle deelcertificaten zijn 3 jaar geldig vanaf de datum van uitgifte.
 
 ## Volledig diploma na alle 4 de modules
 

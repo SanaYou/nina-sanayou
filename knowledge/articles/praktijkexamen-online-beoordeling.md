@@ -19,6 +19,17 @@ Op de dag van de beoordeling ontvang je per e-mail:
 
 Het exacte tijdstip kan afwijken van het gekozen tijdslot, afhankelijk van eerder geplande afspraken die dag. Wat vaststaat: je ontvangt het resultaat altijd op de beoordelingsdag zelf.
 
+## Beoordelingsschaal
+
+De examinator beoordeelt je op meerdere criteria met de volgende schaal:
+
+- O = Onvoldoende
+- V = Voldoende
+- G = Goed
+- HG = Heel Goed
+
+Je bent geslaagd wanneer je maximaal 1x een Onvoldoende (O) hebt op de beoordelingscriteria.
+
 ## Beoordelingsdatum inplannen
 
 Na het aanvragen van je praktijktoets ontvang je een e-mail met de exacte opdracht en een boekingsbutton waarmee je zelf een beoordelingsdatum inplant.

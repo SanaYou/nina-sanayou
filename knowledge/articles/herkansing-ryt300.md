@@ -7,7 +7,7 @@ In dit artikel lees je wat je kunt doen wanneer een toets of praktijkopdracht bi
 
 ## Herkansen is mogelijk
 
-Wanneer een kennistest of praktijkopdracht nog niet voldoende is, kun je een herkansing aanvragen. Je ontvangt eerst gerichte feedback zodat je weet welke onderdelen je kunt verbeteren.
+Wanneer een kennistest of praktijkopdracht nog niet voldoende is, kun je een herkansing aanvragen. Per toets kun je maximaal drie herkansingen aanvragen. Je ontvangt eerst gerichte feedback zodat je weet welke onderdelen je kunt verbeteren.
 
 ## Tarieven
 
