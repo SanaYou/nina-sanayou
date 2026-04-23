@@ -17,7 +17,7 @@
 
   // Inject styles
   var css = [
-    "#nina-btn{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#66B0B2;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(102,176,178,0.4);display:flex;align-items:center;justify-content:center;z-index:99999;transition:transform .2s,box-shadow .2s;}",
+    "#nina-btn{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#66B0B2;border:3px solid #fff;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.25);display:flex;align-items:center;justify-content:center;z-index:99999;transition:transform .2s,box-shadow .2s;}",
     "#nina-btn:hover{transform:scale(1.06);box-shadow:0 6px 20px rgba(102,176,178,0.5);}",
     "#nina-win{position:fixed;bottom:90px;right:24px;width:360px;height:540px;background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.14);z-index:99998;display:flex;flex-direction:column;overflow:hidden;font-family:'Raleway',sans-serif;transform:scale(0.94) translateY(12px);opacity:0;pointer-events:none;transition:transform .25s ease,opacity .25s ease;}",
     "#nina-win.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all;}",
