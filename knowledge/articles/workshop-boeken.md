@@ -7,7 +7,7 @@ In dit artikel lees je hoe je je aanmeldt voor een workshop, themadag of verdiep
 
 ## Aanmelden via de website
 
-1. Ga naar het [overzicht van workshops en themadagen](https://www.sanayou.com/workshops.html) of naar de webpagina van de online opleiding die je volgt
+1. Ga naar het [overzicht van workshops en themadagen](https://sanayou.com/workshops) of naar de webpagina van de online opleiding die je volgt
 2. Klik bij de workshop die je wilt volgen op de knop om je aan te melden
 3. Je wordt doorgeleid naar de checkout-pagina waar je je gegevens invult en betaalt via iDeal
 4. Na betaling ontvang je een bevestigingsmail met daarin een link naar je persoonlijke boekingsagenda

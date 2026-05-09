@@ -34,7 +34,7 @@ Let op: de upgrade kun je pas aanvragen na afronding van je online certificaat e
 
 De eerstvolgende data van klassikale lesdagen vind je op twee plekken:
 - Op de webpagina van de online opleiding die je volgt
-- Op de [workshops- en verdiepingspagina](https://www.sanayou.com/workshops.html)
+- Op de [workshops- en verdiepingspagina](https://sanayou.com/workshops)
 
 ## Gerelateerde artikelen
 

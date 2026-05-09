@@ -22,7 +22,7 @@ De pakketkorting is gekoppeld aan specifieke trajecten en bijbehorende boekingsp
 
 Op het moment dat een opleidingspakket te boeken is, wordt de boekingsknop actief op de webpagina. Deze periodes gelden ieder studiejaar opnieuw.
 
-[Bekijk hier welk pakket je kunt boeken](https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-99025a35-77d4-4255-890d-0b58b5ca787d)
+[Bekijk hier welk pakket je kunt boeken](https://sanayou.com/yin-yang-yoga-teacher-training-ryt200-klassikaal#pakketten)
 
 ## Meer lezen over de trajecten
 

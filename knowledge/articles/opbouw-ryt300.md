@@ -25,7 +25,7 @@ Naast de online modules en klassikale lesdagen is bij de RYT300 ook het **LIVE+ 
 
 De RYT300 van SanaYou YOGAcademy is erkend door Yoga Alliance. In combinatie met een RYT200 kun je je registreren als RYT500, het hoogste reguliere niveau binnen Yoga Alliance.
 
-[Meer informatie en aanmelden voor de RYT300](https://checkout.sanayou.com/ryt300-teacher-training)
+[Meer informatie en aanmelden voor de RYT300](https://sanayou.com/overzicht-ryt300-yoga-opleidingen)
 
 ## Gerelateerde artikelen
 

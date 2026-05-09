@@ -9,9 +9,9 @@ In dit artikel lees je hoe je een indruk kunt krijgen van de online lessen en he
 
 Op de opleidingspagina staan proeflessen die je direct een indruk geven van de inhoud en de sfeer van de opleiding. Je ziet hoe de lessen zijn opgebouwd en wat je kunt verwachten als student. Naast de proeflessen vind je er ook video-ervaringen van studenten.
 
-[Bekijk de proeflessen van de online RYT200](https://checkout.sanayou.com/ryt200-teacher-trainingen-online?scrollTo=element-9d7942d9-56a7-45ee-85c6-93ddfacebf2e)
+[Bekijk de proeflessen van de online RYT200](https://sanayou.com/overzicht-online-ryt200-yoga-opleidingen#proeflessen)
 
-Volg je een andere opleiding? Dan vind je de proeflessen ook op de pagina van de [klassikale RYT/VYN200](https://checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal?scrollTo=element-cf383a5c-1bad-4122-aa7c-b0a70aaa9c91) en de [RYT300](https://checkout.sanayou.com/ryt300-teacher-training?scrollTo=element-d5dc3091-ab71-4a65-99b1-0c888fe288cb).
+Volg je een andere opleiding? Dan vind je de proeflessen ook op de pagina van de [klassikale RYT/VYN200](https://sanayou.com/yin-yang-yoga-teacher-training-ryt200-klassikaal#proeflessen) en de [RYT300](https://sanayou.com/overzicht-ryt300-yoga-opleidingen#proeflessen).
 
 ## Hoe het platform werkt
 

@@ -25,7 +25,7 @@ Het resultaat is een hoger aantal erkende studieuren én een verdiepend certific
 ## Hoe boek je een klassikale uitbreiding?
 
 De klassikale uitbreidingsdagen zijn los te boeken via het workshopoverzicht. Een overzicht van alle beschikbare data vind je hier:
-[Bekijk het workshopaanbod](https://www.sanayou.com/workshops/)
+[Bekijk het workshopaanbod](https://sanayou.com/workshops)
 
 ## Gerelateerde artikelen
 

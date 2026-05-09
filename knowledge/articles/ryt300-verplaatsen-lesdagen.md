@@ -19,9 +19,7 @@ De eerste twee klassikale lesdagen die je verplaatst zijn kosteloos. Voor iedere
 
 ## Waar vind ik de RYT300 lesdagen?
 
-De klassikale lesdagen van de RYT300 vind je op meerdere plekken:
-- Op de [RYT300 opleidingspagina](https://www.sanayou.com/overzicht-ryt300-yoga-opleidingen.html) staan de lesdagen per studierichting (algemeen deel, Yin Mastery en Yoga Awakening). Deze data worden automatisch actueel gehouden.
-- Op de [workshops- en verdiepingspagina](https://www.sanayou.com/workshops.html) staan ze ook altijd vermeld.
+De klassikale lesdagen van de RYT300 staan op de [RYT300 opleidingspagina](https://sanayou.com/overzicht-ryt300-yoga-opleidingen#lesdata), opgesplitst per studierichting (algemeen deel, Yin Mastery en Yoga Awakening). Deze data worden automatisch actueel gehouden.
 
 ## Gerelateerde artikelen
 

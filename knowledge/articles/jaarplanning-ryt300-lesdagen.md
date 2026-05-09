@@ -11,15 +11,9 @@ De RYT300 biedt twee studierichtingen: Yin Mastery en Yoga Awakening. Elke studi
 
 ## Waar vind je de data?
 
-De klassikale lesdagen van de RYT300 vind je op twee plekken:
+De klassikale lesdagen van de RYT300 staan op de RYT300 opleidingspagina zelf, opgesplitst per studierichting (algemeen deel, Yin Mastery en Yoga Awakening). Zo zie je in een oogopslag welke data bij jouw traject horen. De planning wordt automatisch actueel gehouden via SuperSaaS, dus je ziet daar altijd de meest recente data.
 
-1. **Op de RYT300 opleidingspagina zelf** -- daar zie je de lesdagen per studierichting (algemeen deel, Yin Mastery en Yoga Awakening), zodat je in een oogopslag weet welke data bij jouw traject horen.
-2. **Op de workshoppagina** -- daar staan alle klassikale lesdagen en workshops van SanaYou YOGAcademy bij elkaar.
-
-De data op beide pagina's worden automatisch actueel gehouden via SuperSaaS, dus je ziet daar altijd de meest recente planning.
-
-Bekijk de lesdagen per studierichting: [sanayou.com/overzicht-ryt300-yoga-opleidingen](https://www.sanayou.com/overzicht-ryt300-yoga-opleidingen.html)
-Bekijk het overzicht van alle klassikale lesdagen en workshops: [sanayou.com/workshops](https://www.sanayou.com/workshops/)
+[Bekijk de actuele RYT300 lesdata](https://sanayou.com/overzicht-ryt300-yoga-opleidingen#lesdata)
 
 ## Jouw persoonlijke lesagenda
 

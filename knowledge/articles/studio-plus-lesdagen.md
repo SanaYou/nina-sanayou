@@ -20,7 +20,7 @@ Naast de losse lesdagen biedt SanaYou YOGAcademy ook klassikale workshops en bij
 ## Overzicht en boeken
 
 Een actueel overzicht van alle beschikbare lesdagen en workshops vind je hier:
-[bekijk het workshopaanbod](https://www.sanayou.com/workshops/)
+[bekijk het workshopaanbod](https://sanayou.com/workshops)
 
 ## Gerelateerde artikelen
 

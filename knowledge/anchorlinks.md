@@ -27,6 +27,11 @@ Alle checkout-URLs, aanmeldlinks en anchor-links op één plek.
 - Klassikaal - Middenrug: `https://checkout.sanayou.com/checkout/verdiepingsdag-cay-middenrug`
 - Klassikaal - Bovenrug: `https://checkout.sanayou.com/checkout/verdiepingsdag-cay-bovenrug`
 
+### Ashtanga Yoga
+- Online module: `https://checkout.sanayou.com/checkout/the-origin-of-vinyasa-ashtanga-yoga`
+- Klassikaal - The Art of Hands-on Assists (3-daagse): `https://checkout.sanayou.com/checkout/the-art-of-hands-on-assists-3-daagse`
+- Klassikaal - 3-day Ashtanga Course (3-daagse): `https://checkout.sanayou.com/checkout/ashtanga-yoga-beginners-course-3-daagse`
+
 ### RYT/VYN200 Pakketten (volledige opleiding)
 - Versneld (jan-jun): `https://checkout.sanayou.com/checkout/ryt200-yin-yang-klassikaal-4-modules-x-50-uur`
 - Regulier start Yin (sep-jun): `https://checkout.sanayou.com/checkout/ryt200-yin-yang-klassikaal-sept-juni-start-yin`
@@ -35,6 +40,14 @@ Alle checkout-URLs, aanmeldlinks en anchor-links op één plek.
 ### RYT300 — Art of Advanced Teaching
 - Yin Mastery: `https://checkout.sanayou.com/checkout/ryt300-yin-mastery-art-of-advanced-teaching`
 - Yoga Awakening: `https://checkout.sanayou.com/checkout/ryt300-yoga-awakening-art-of-advanced-teaching-1761161085`
+
+### Yin Yoga — De 5 Elementenleer
+- Online module: `https://checkout.sanayou.com/checkout/assisted-yin-de-5-elementenleer`
+- Klassikaal - Vuur element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-vuur-element`
+- Klassikaal - Metaal element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-metaal-element`
+- Klassikaal - Hout element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-hout-element`
+- Klassikaal - Water element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-water-element`
+- Klassikaal - Aarde element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-aarde-element`
 
 ## Anchor-links per pagina
 

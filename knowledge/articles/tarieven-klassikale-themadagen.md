@@ -44,7 +44,7 @@ De klassikale lesmodules maken deel uit van de RYT/VYN200 opleiding en zijn ook 
 
 - Alle klassikale lesdagen vinden plaats op **Hasselterdijk 20-E, Zwolle**, van **10:30–17:00u**
 - Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module — dezelfde prijs
-- Alle data en aanmeldopties: [sanayou.com/workshops](https://www.sanayou.com/workshops/)
+- Alle data en aanmeldopties: [sanayou.com/workshops](https://sanayou.com/workshops)
 
 ## Gerelateerde artikelen
 

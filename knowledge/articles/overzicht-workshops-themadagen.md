@@ -9,7 +9,7 @@ In dit artikel lees je waar je het actuele aanbod van klassikale workshops, them
 
 Op de workshoppagina vind je alle aankomende losse workshops, themadagen en verdiepingsdagen, chronologisch geordend met datum, tijd en een korte omschrijving. Van daaruit kun je direct doorklikken voor meer informatie of om je aan te melden.
 
-Bekijk hier het actuele aanbod: [Workshops en verdiepingsdagen](https://www.sanayou.com/workshops.html)
+Bekijk hier het actuele aanbod: [Workshops en verdiepingsdagen](https://sanayou.com/workshops)
 
 ## Klassikale lesdagen bij online modules
 

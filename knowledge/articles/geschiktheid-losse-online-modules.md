@@ -20,7 +20,7 @@ Je hoeft geen opleiding bij SanaYou te volgen om een losse module te kunnen doen
 
 Het aanbod omvat onder andere modules in Yin Yoga, Yang Yoga, Ashtanga Yoga, Critical Alignment Yoga, Yoga Nidra, anatomie, fascia en de 5 Elementenleer. De modules varieren van 4 tot 70 contacturen.
 
-Bekijk hier het volledige aanbod: [Verdiepingsmodules en specialisaties](https://www.sanayou.com/yoga-kennis-verdiepen-modules-specialisaties.html)
+Bekijk hier het volledige aanbod: [Verdiepingsmodules en specialisaties](https://sanayou.com/yoga-kennis-verdiepen-modules-specialisaties)
 
 ## Leeftijd
 

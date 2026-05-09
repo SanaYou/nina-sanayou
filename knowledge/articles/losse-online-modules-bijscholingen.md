@@ -44,7 +44,7 @@ Een aantal van deze modules kun je aanvullen met klassikale lesdagen. Dat levert
 ## Alle losse modules bekijken
 
 Een overzicht van alle losse online modules en bijscholingen vind je hier:
-[Bekijk alle modules en specialisaties](https://www.sanayou.com/yoga-kennis-verdiepen-modules-&-specialisaties/)
+[Bekijk alle modules en specialisaties](https://sanayou.com/yoga-kennis-verdiepen-modules-specialisaties)
 
 ## Gerelateerde artikelen
 
