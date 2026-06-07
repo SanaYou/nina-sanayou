@@ -53,6 +53,19 @@
   // State
   var isOpen = false;
   var history = [];
+  // Sessie-id: koppelt losse berichten tot één gesprek in het weeklog
+  var sessionId = (function () {
+    try {
+      var s = sessionStorage.getItem("nina_session_id");
+      if (!s) {
+        s = "s-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+        sessionStorage.setItem("nina_session_id", s);
+      }
+      return s;
+    } catch (e) {
+      return "s-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+    }
+  })();
   var isTyping = false;
   var inactivityTimer = null;
   var INACTIVITY_TIMEOUT = 10 * 60 * 1000; // 10 minuten
@@ -190,7 +203,7 @@
         var res = await fetch(NINA_API + "/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: text, history: history }),
+          body: JSON.stringify({ message: text, history: history, session_id: sessionId }),
         });
         data = await res.json();
         lastErr = null;

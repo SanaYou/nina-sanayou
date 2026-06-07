@@ -193,8 +193,12 @@ def expand_with_synonyms(words: list) -> list:
     return expanded
 
 
-def retrieve_articles(query: str, history: List, top_k: int = 3) -> str:
-    """Selecteer de meest relevante artikelen op basis van de vraag + recent gesprek."""
+def retrieve_articles(query: str, history: List, top_k: int = 3):
+    """Selecteer de meest relevante artikelen op basis van de vraag + recent gesprek.
+
+    Retourneert (kennis_tekst, [artikeltitels]) — de titels worden in het weeklog
+    vastgelegd zodat Sandy kan zien waarop Nina haar antwoord baseerde.
+    """
     # Combineer huidige vraag + laatste 3 berichten voor context
     search_text = query
     for msg in history[-6:]:
@@ -203,7 +207,7 @@ def retrieve_articles(query: str, history: List, top_k: int = 3) -> str:
     words = expand_with_synonyms(base_words)
 
     if not words:
-        return ""
+        return "", []
 
     base_words_set = set(base_words)
 
@@ -231,12 +235,14 @@ def retrieve_articles(query: str, history: List, top_k: int = 3) -> str:
     relevant = [a for _, a in scored[:top_k]]
 
     if not relevant:
-        return ""
+        return "", []
 
     parts = []
+    titles = []
     for a in relevant:
         parts.append(f"## {a['title']}\n(Collectie: {a['collection']})\n\n{a['clean_content']}")
-    return "\n\n---\n\n".join(parts)
+        titles.append(a["title"])
+    return "\n\n---\n\n".join(parts), titles
 
 
 # ── System prompt (zonder kennisbank — die wordt dynamisch ingevoegd) ──────
@@ -371,6 +377,7 @@ def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
 class ChatRequest(BaseModel):
     message: str
     history: Optional[List[Message]] = []
+    session_id: Optional[str] = None
 
 
 @app.post("/chat")
@@ -383,7 +390,7 @@ async def chat(request: ChatRequest):
         client = anthropic.Anthropic(api_key=api_key, timeout=45.0)
 
         # RAG: haal relevante artikelen op voor deze vraag
-        relevant_knowledge = retrieve_articles(request.message, request.history or [])
+        relevant_knowledge, used_articles = retrieve_articles(request.message, request.history or [])
         articles_section = relevant_knowledge or "(geen specifieke artikelen gevonden)"
 
         messages = [{"role": m.role, "content": m.content} for m in (request.history or [])]
@@ -440,10 +447,16 @@ async def chat(request: ChatRequest):
 
                 # Detecteer escalatie: bevat Nina's antwoord een bevestiging
                 # met een e-mailadres dat de gebruiker net heeft gegeven?
+                escalated = False
                 try:
-                    _detect_and_escalate(request.message, response_text, messages)
+                    escalated = bool(_detect_and_escalate(request.message, response_text, messages))
                 except Exception as esc_err:
                     logger.error(f"Escalatie-detectie mislukt: {esc_err}")
+
+                # Leg de gespreksbeurt vast in het weeklog (faalt stil, blokkeert Nina nooit)
+                _log_conversation(
+                    request.session_id, request.message, response_text, used_articles, escalated
+                )
 
                 return {"response": response_text}
             except anthropic.RateLimitError as e:
@@ -650,6 +663,7 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
 
     logger.info(f"Escalatie gedetecteerd: {name} ({email}) — {summary[:60]}")
     _send_escalation(name, email, summary, chat_messages)
+    return True
 
 
 def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
@@ -687,6 +701,34 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
     )
     resp.raise_for_status()
     logger.info(f"Escalatie aangemaakt in Help Scout: {name} ({email})")
+
+
+def _log_conversation(session_id, user_msg, nina_response, used_articles, escalated):
+    """Schrijf één gespreksbeurt weg naar het externe weeklog (Google Sheet via Apps Script).
+
+    Vercel bewaart zelf niks, dus we sturen elke beurt naar een Apps Script-webhook
+    die een regel toevoegt aan een Google Sheet. Faalt altijd stil: als het log even
+    niet bereikbaar is, merkt de bezoeker daar niets van en blijft Nina gewoon werken.
+    We loggen GEEN IP of techniek — alleen vraag, antwoord en context.
+    """
+    log_url = os.getenv("NINA_LOG_URL")
+    if not log_url:
+        return
+    try:
+        _requests.post(
+            log_url,
+            json={
+                "secret": os.getenv("NINA_LOG_SECRET", ""),
+                "session_id": session_id or "",
+                "vraag": user_msg or "",
+                "antwoord": nina_response or "",
+                "artikelen": ", ".join(used_articles) if used_articles else "— geen artikel gevonden —",
+                "escalatie": "ja" if escalated else "",
+            },
+            timeout=3,
+        )
+    except Exception as e:
+        logger.warning(f"Weeklog-schrijven mislukt (genegeerd): {e}")
 
 
 @app.get("/health")
