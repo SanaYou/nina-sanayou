@@ -11,7 +11,9 @@ Het LIVE+ Support Pack is een optioneel jaarabonnement voor studenten die naast 
 
 ## Wat zit erin?
 
-Elke eerste woensdag van de maand om 11:00 uur is er een live CoachCall via Zoom met hoofddocent Sandy. Stuur van tevoren je vragen in via de besloten LIVE+-groep in Huddle. Kun je niet live aanwezig zijn? Geen probleem — je vragen worden sowieso beantwoord en de replay staat daarna klaar op het online lesplatform.
+Elke eerste woensdag van de maand om 11:00 uur is er een live CoachCall via Zoom met hoofddocent Sandy. Een paar dagen van tevoren ontvang je een reminder-mail waarin de Zoom-link staat waarmee je deelneemt. Stuur vooraf je vragen in via de besloten LIVE+-groep in Huddle.
+
+Kun je niet live aanwezig zijn? Geen probleem, je vragen worden sowieso beantwoord en je kunt de CoachCall later als replay terugkijken. Die vind je op het online lesplatform onder Basismodules, op dezelfde plek als de Yin Basics en Yang Basics.
 
 Daarnaast krijg je:
 - Toegang tot de besloten LIVE+-community

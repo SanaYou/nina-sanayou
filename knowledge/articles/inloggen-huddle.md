@@ -21,6 +21,12 @@ Huddle is standaard ingesteld op inloggen via een magische link. Je vult je e-ma
 
 Wil je liever inloggen met een wachtwoord? Die optie staat direct onder het veld voor de magische link. Dit wordt soms over het hoofd gezien, maar het werkt gewoon.
 
+## Zie je je modules niet, of lukt inloggen niet?
+
+Log je in via de app en zie je je online modules of opleidingen niet, terwijl het op de desktop wél goed gaat (of andersom)? Je logt op de app en de desktop met dezelfde gegevens in, dus probeer het eerst op het andere apparaat.
+
+Lukt inloggen ondanks de bovenstaande stappen nog steeds niet, of krijg je een foutmelding? Stuur ons dan altijd een screenshot van wat je ziet, en geef erbij aan of je het via de app of via de desktop probeert. Zo kunnen we met je meekijken en je vraag waar nodig doorsturen naar de supportdesk van Huddle.
+
 ## Wachtwoord vergeten of opnieuw instellen?
 
 Je kunt je wachtwoord zelf opnieuw instellen via Huddle. Klik op de inlogpagina op "Wachtwoord vergeten" en volg de stappen. Je ontvangt een herstelmail op het e-mailadres waarmee je bent aangemeld.
