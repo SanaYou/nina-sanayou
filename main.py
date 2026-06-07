@@ -81,11 +81,19 @@ def load_articles_index() -> list:
                 if not l.startswith("COLLECTIE:") and not l.startswith("TAGS:")
             ]
             clean_content = "\n".join(clean_lines).strip()
+            # Subkopjes (## ...) apart indexeren: dit zijn vaak losse deelvragen
+            headings = [
+                re.sub(r"^#+\s*", "", l).strip()
+                for l in content.splitlines()
+                if l.lstrip().startswith("##")
+            ]
+            headings = [h for h in headings if h and "gerelateerde" not in h.lower()]
             index.append({
                 "id": file.stem,
                 "title": title,
                 "collection": collection,
                 "tags": tags,
+                "headings": headings,
                 "content": content,
                 "clean_content": clean_content,
                 "public": is_public,
@@ -216,6 +224,7 @@ def retrieve_articles(query: str, history: List, top_k: int = 3):
         score = 0
         title_norm = normalize(article["title"])
         tags_norm = normalize(" ".join(article["tags"]))
+        headings_norm = normalize(" ".join(article.get("headings", [])))
         content_norm = normalize(article["clean_content"])
 
         for word in words:
@@ -223,6 +232,9 @@ def retrieve_articles(query: str, history: List, top_k: int = 3):
             multiplier = 1.0 if word in base_words_set else 0.5
             if word in title_norm:
                 score += 8 * multiplier
+            if word in headings_norm:
+                # subkopjes zijn vaak losse deelvragen: zwaar meewegen
+                score += 5 * multiplier
             if word in tags_norm:
                 score += 4 * multiplier
             if word in content_norm:

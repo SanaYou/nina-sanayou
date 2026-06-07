@@ -430,6 +430,7 @@
         card.classList.toggle('open');
         if (card.classList.contains('open')) {
           postProcessRelated(card);
+          assignHeadingIds(card);
         }
       });
     });
@@ -591,7 +592,23 @@
 
   // ─── Deeplink: open een artikel direct via #id in de URL ──
   // Voorbeeld: support.sanayou.com/#vragen-stellen-online-opleiding
-  function openArticleById(id) {
+  // Geef elke subkop een eigen anker-id (artikel__subkop) zodat je er direct naar kunt linken
+  function assignHeadingIds(card) {
+    var aid = card.dataset.id;
+    card.querySelectorAll('.article-content h2').forEach(function(h) {
+      if (h.classList.contains('gerelateerd')) return;
+      if (!h.id) {
+        h.id = aid + '__' + slug(h.textContent);
+        h.style.cursor = 'pointer';
+        h.title = 'Kopieer de link naar dit onderdeel';
+        h.addEventListener('click', function() {
+          history.replaceState(null, '', '#' + this.id);
+        });
+      }
+    });
+  }
+
+  function openArticleById(id, subSlug) {
     if (!id) return false;
     var art = allArticles.find(function(a) { return a.id === id; });
     if (!art) return false;
@@ -603,9 +620,12 @@
         card.classList.add('open');
         postProcessRelated(card);
       }
-      history.replaceState(null, '', '#' + id);
-      // Plaats het artikel bovenaan, direct onder de navigatie (niet gecentreerd/laag)
-      var y = card.getBoundingClientRect().top + window.pageYOffset - 16;
+      assignHeadingIds(card);
+      var target = subSlug ? document.getElementById(id + '__' + subSlug) : null;
+      history.replaceState(null, '', '#' + id + (subSlug ? '__' + subSlug : ''));
+      // Plaats het artikel (of de subkop) bovenaan, direct onder de navigatie
+      var anchor = target || card;
+      var y = anchor.getBoundingClientRect().top + window.pageYOffset - 16;
       window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
       card.classList.add('highlight');
       setTimeout(function() { card.classList.remove('highlight'); }, 2000);
@@ -614,8 +634,10 @@
   }
 
   function openFromHash() {
-    var id = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim();
-    if (id) openArticleById(id);
+    var raw = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim();
+    if (!raw) return;
+    var parts = raw.split('__');
+    openArticleById(parts[0], parts[1]);
   }
 
   window.addEventListener('hashchange', openFromHash);
