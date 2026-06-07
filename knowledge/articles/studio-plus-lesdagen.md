@@ -3,7 +3,7 @@
 COLLECTIE: Ondersteuning en Begeleiding
 TAGS: begeleiding, kosten, lesdagen, locatie
 
-In dit artikel lees je wat de SanaYou Lesdagen STUDIO+ zijn, voor wie ze bedoeld zijn en hoe je ze kunt boeken.
+In dit artikel lees je wat de SanaYou Lesdagen STUDIO+ precies zijn, voor wie ze geschikt zijn en hoe je ze los kunt boeken.
 
 ## Wat zijn het?
 

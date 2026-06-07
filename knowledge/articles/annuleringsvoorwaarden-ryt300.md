@@ -3,7 +3,7 @@ TAGS: annulering, annuleringsvoorwaarden, ryt300, hybride, klassikaal, online, k
 
 # Wat zijn de annuleringsvoorwaarden voor de RYT300?
 
-In dit artikel lees je wat er geldt als je een klassikale lesdag of online module van de RYT300 wilt annuleren.
+In dit artikel lees je wat de annuleringsvoorwaarden zijn voor de klassikale lesdagen en de online modules van de RYT300, en welke voorwaarden van toepassing zijn.
 
 ## Klassikale lesdagen
 

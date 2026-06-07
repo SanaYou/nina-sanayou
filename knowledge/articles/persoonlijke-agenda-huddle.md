@@ -3,7 +3,7 @@ TAGS: Huddle, agenda, planning, overzicht, modules, voortgang, lesagenda
 
 # Waar vind ik mijn persoonlijke lesagenda en studievoortgang?
 
-In dit artikel lees je waar je je persoonlijke lesagenda en studievoortgang kunt terugvinden.
+In dit artikel lees je waar je je persoonlijke lesagenda terugvindt, hoe je je studievoortgang bekijkt in Huddle en hoe je toegang krijgt tot je modules.
 
 ## Je persoonlijke lesagenda (via bevestigingsmail)
 

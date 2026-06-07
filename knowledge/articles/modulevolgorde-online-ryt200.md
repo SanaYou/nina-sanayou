@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: module, modulevolgorde, online, ryt200, teacher training
 
-In dit artikel lees je in welke volgorde je de modules van de online RYT200 volgt en hoeveel vrijheid je daarin hebt.
+In dit artikel lees je of je de modules van de online RYT200 in een vaste volgorde moet volgen, waar je verplicht mee begint en hoeveel vrijheid je daarna hebt.
 
 ## Je begint altijd met de basismodule
 

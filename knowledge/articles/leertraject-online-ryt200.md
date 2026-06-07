@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: online, ryt200, teacher training
 
-In dit artikel lees je hoe het leertraject van de online RYT200 Teacher Training is opgebouwd en wat je als student doorloopt van start tot afronding.
+In dit artikel lees je hoe het leertraject van de online RYT200 opleiding is opgebouwd, wat je als student concreet doet en leert, en wat je kunt verwachten qua studiebelasting. Je ontdekt ook waarom deze opleiding vraagt om actief studeren, niet passief kijken.
 
 ## Actief studeren, niet passief kijken
 

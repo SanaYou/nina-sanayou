@@ -3,7 +3,7 @@ TAGS: ziekte, afwezigheid, examen, afmelden, doorschuiven, overmacht, klassikaal
 
 # Wat als ik ziek ben op de dag van mijn praktijkexamen?
 
-In dit artikel lees je wat je kunt doen als je door ziekte of overmacht niet bij je klassikale praktijkexamen van de RYT/VYN200 aanwezig kunt zijn.
+In dit artikel lees je wat je opties zijn als je op de dag van je praktijkexamen ziek bent of te maken krijgt met overmacht. Je ontdekt hoe je je correct afmeldt, wanneer je kosteloos kunt doorschuiven en wat er geldt bij een tweede verplaatsing of als je zonder bericht niet bent komen opdagen.
 
 ## Kosteloos doorschuiven
 

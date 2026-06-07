@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training, vyn200, yang yoga, yin yoga
 
 ## Hoe is de RYT/VYN200 Yin & Yang klassikale opleiding opgebouwd?
 
-In dit artikel lees je hoe de klassikale RYT/VYN200 Yin & Yang opleiding is opgebouwd en hoe de verschillende lesmodules samen één geheel vormen.
+In dit artikel lees je hoe de klassikale RYT/VYN200 Yin & Yang opleiding is opgebouwd. Je ziet hoe de vaste trajecten en losse modules zijn georganiseerd, wat de minimale en maximale studieduur is, en hoe Yin en Yang samen één geheel vormen.
 
 ## Opzet van de opleiding
 

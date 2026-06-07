@@ -3,7 +3,7 @@ TAGS: algemene voorwaarden, voorwaarden, regels, KvK, overeenkomst
 
 # Wat zijn de algemene voorwaarden van SanaYou YOGAcademy?
 
-In dit artikel lees je wat de algemene voorwaarden van SanaYou YOGAcademy inhouden en waar je ze kunt vinden.
+In dit artikel lees je wat de algemene voorwaarden van SanaYou YOGAcademy regelen, voor wie ze gelden en waar je de volledige tekst kunt vinden.
 
 ## Wat regelen de algemene voorwaarden?
 

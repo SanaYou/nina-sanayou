@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: aanmelden, kosten, betaald, gratis, online, praktijktoets, ryt200, teacher training
 
-In dit artikel lees je hoe de praktijktoets werkt binnen de erkende RYT200 Yin Yoga, Yang Yoga en Yin & Yang Yoga Teacher Training Online, en hoe je deze aanvraagt.
+In dit artikel lees je hoe de praktijktoets werkt binnen de RYT200 Online opleiding, wanneer je examen kunt aanvragen, wat de toets inhoudt en wat de kosten zijn. Ook lees je wat er gebeurt als een onderdeel nog niet voldoende is en hoe je je optimaal kunt voorbereiden.
 
 ## Wanneer kun je examen aanvragen?
 

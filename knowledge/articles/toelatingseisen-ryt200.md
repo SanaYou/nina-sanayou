@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, studieadvies, teacher training, toelatingseisen, vyn20
 
 ## Wat zijn de toelatingseisen voor de klassikale RYT/VYN200?
 
-In dit artikel lees je welke toelatingseisen gelden voor deelname aan de klassikale RYT/VYN200 Yin & Yang Teacher Training en wat belangrijk is om te weten voordat je start.
+In dit artikel lees je wat de toelatingseisen zijn voor de klassikale RYT/VYN200 Yin & Yang Teacher Training, welke ervaring handig is om mee te nemen en hoe je via een studieadviesgesprek kunt ontdekken of deze opleiding bij je past.
 
 ## Geen selectie, wél duidelijke verwachtingen
 

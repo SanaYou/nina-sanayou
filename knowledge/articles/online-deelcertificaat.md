@@ -3,7 +3,7 @@ TAGS: certificaat, online, deelcertificaat, kennistest, Huddle, module
 
 # Wanneer ontvang ik mijn online deelcertificaat?
 
-In dit artikel lees je wanneer en hoe je een certificaat ontvangt na het afronden van een online lesmodule.
+In dit artikel lees je wanneer je je deelcertificaat ontvangt na het afronden van een online lesmodule, en hoe het automatische proces werkt via de kennistests.
 
 ## Automatisch na het behalen van de kennistests
 

@@ -3,7 +3,7 @@ TAGS: examenvideo, aanlevercriteria, praktijkexamen, videokwaliteit, WeTransfer,
 
 # Aan welke eisen moet mijn examenvideo voldoen?
 
-In dit artikel lees je aan welke criteria de examenvideo moet voldoen wanneer je jouw praktijktoets aanlevert.
+In dit artikel lees je aan welke eisen jouw examenvideo moet voldoen, van de juiste duur en beeldkwaliteit tot het aanleveren van het bestand.
 
 ## Doel van de aanlevercriteria
 

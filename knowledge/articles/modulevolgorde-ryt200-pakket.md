@@ -4,7 +4,7 @@ TAGS: klassikaal, module, modulevolgorde, pakket, ryt200, teacher training, vyn2
 
 ## Als ik de RYT/VYN200 in één keer boek, kan ik dan zelf mijn modulevolgorde bepalen?
 
-In dit artikel lees je wat het betekent voor je modulevolgorde wanneer je de RYT/VYN200 Yin & Yang Teacher Training in één keer boekt en hoe dit verschilt van modulair (losse modules) boeken.
+In dit artikel lees je of je zelf je modulevolgorde kunt bepalen als je de RYT/VYN200 Teacher Training in één keer boekt, wat het verschil is tussen het reguliere en het versnelde pakket, en hoe dit afwijkt van het losse, modulaire traject.
 
 ## In één keer boeken betekent een vast pakket
 

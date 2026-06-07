@@ -4,7 +4,7 @@ TAGS: klassikaal, module, ryt200, teacher training, vyn200, yang yoga, yin yoga,
 
 ## Kan ik ook alleen losse lesmodules volgen in plaats van een volledige RYT/VYN200 Yin & Yang?
 
-In dit artikel lees je welke mogelijkheden er zijn om binnen de RYT/VYN200 Yin & Yang Teacher Training ook alleen losse lesmodules te volgen en hoe dit zich verhoudt tot de volledige 200-uurs opleiding.
+In dit artikel lees je of je losse lesmodules kunt volgen binnen de RYT/VYN200 Yin & Yang opleiding, wat de mogelijkheden zijn via een 100-urige Yin of Yang Yoga opleiding, en hoe dit werkt rondom erkenning, registratie en doorgroeien naar de volledige 200-uurs opleiding.
 
 ## Losse lesmodules
 

@@ -3,7 +3,7 @@ TAGS: betaling, mislukt, stornering, incasso, termijn, herinnering, aanmaning
 
 # Wat gebeurt er bij een mislukte betaling?
 
-In dit artikel lees je wat er gebeurt wanneer een automatische incasso niet lukt en wat de gevolgen zijn.
+In dit artikel lees je wat er gebeurt als een automatische incasso niet lukt, welke kosten daar bij komen kijken en wat je kunt doen om je betalingsgegevens aan te passen.
 
 ## Storneringskosten
 

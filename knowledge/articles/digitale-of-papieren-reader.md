@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: huddle, lesmateriaal, online, ryt200, teacher training
 
-In dit artikel lees je in welke vorm je de lesreader (de lesboeken) ontvangt, en wanneer dat digitaal of in print is.
+In dit artikel lees je of je een digitale of papieren reader krijgt, hoe dat afhangt van de module of opleiding die je volgt, en wat er geldt als je online combineert met klassikale lesdagen.
 
 ## Bij online modules en opleidingen: digitaal
 

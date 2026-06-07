@@ -3,7 +3,7 @@ TAGS: restitutie, terugbetaling, geld terug, bedenktijd, annulering
 
 # Wanneer heb ik recht op restitutie?
 
-In dit artikel lees je in welke gevallen je recht hebt op terugbetaling van (een deel van) het lesgeld.
+In dit artikel lees je wanneer je recht hebt op terugbetaling van het lesgeld, welke regels gelden voor de bedenktijd bij klassikale modules en meerdaagse modules, en wat er gebeurt bij annulering door SanaYou YOGAcademy.
 
 ## Bedenktijd klassikale RYT/VYN200 lesmodules
 

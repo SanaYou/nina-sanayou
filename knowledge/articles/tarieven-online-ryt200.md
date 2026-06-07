@@ -5,6 +5,8 @@ TAGS: betaling, kosten, module, online, ryt200
 
 In dit artikel vind je de actuele tarieven voor alle online opleidingen, losse modules, bijscholingen en klassikale verdiepingsdagen van SanaYou YOGAcademy.
 
+In dit artikel lees je alles over de tarieven van de online RYT200-opleiding, de RYT300, losse modules en klassikale verdiepingsdagen. Je vindt hier ook de prijzen voor weekenden en meerdaagse events, zodat je precies weet wat bij jou past.
+
 ## Online RYT200-opleidingen (volledig pakket)
 
 Alle drie de richtingen hebben dezelfde prijs:

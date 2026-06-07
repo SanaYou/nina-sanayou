@@ -3,7 +3,7 @@ TAGS: RYT300, verplaatsen, lesdagen, annulering, administratiekosten, klassikaal
 
 # Kan ik klassikale lesdagen verplaatsen bij de RYT300?
 
-In dit artikel lees je of en hoe je klassikale lesdagen van de RYT300 kunt verplaatsen naar een ander moment.
+In dit artikel lees je of je een klassikale lesdag van de RYT300 kunt verplaatsen, hoe je dat aanvraagt en welke kosten daarbij komen kijken.
 
 ## Beperkte mogelijkheid tot verplaatsen
 

@@ -3,7 +3,7 @@ TAGS: RYT300, Yoga Alliance, registratie, RYT500, diploma, yogaalliance.org
 
 # Hoe registreer ik mijn RYT300 bij Yoga Alliance?
 
-In dit artikel lees je hoe je je RYT300-diploma omzet naar een RYT500-registratie bij Yoga Alliance.
+In dit artikel lees je hoe je jouw RYT300-diploma omzet naar een RYT500-registratie bij Yoga Alliance, wat je nodig hebt als je al een bestaand account hebt en hoe je de registratie stap voor stap doorloopt.
 
 ## RYT300 + RYT200 = RYT500
 

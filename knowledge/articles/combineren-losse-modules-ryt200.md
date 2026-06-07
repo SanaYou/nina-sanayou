@@ -3,7 +3,7 @@ TAGS: losse modules, RYT200, combineren, doorstroom, opleiding, volledig pakket
 
 # Kan ik losse modules combineren tot een volledige RYT200?
 
-In dit artikel lees je of het mogelijk is om losse modules samen te voegen tot een volledige RYT200 Teacher Training.
+In dit artikel lees je of je losse modules kunt combineren tot een volledige RYT200 Teacher Training, en wat je opties zijn als je de volledige opleiding wilt behalen.
 
 ## Losse modules zijn geen bouwstenen voor de RYT200
 

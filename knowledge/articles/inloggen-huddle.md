@@ -3,7 +3,7 @@ TAGS: Huddle, inloggen, leerplatform, app, toegang, wachtwoord, link
 
 # Hoe log ik in op Huddle?
 
-In dit artikel lees je hoe je inlogt op Huddle, het online leerplatform van SanaYou YOGAcademy, via de browser of de app.
+In dit artikel lees je hoe je inlogt op Huddle, het online leerplatform van SanaYou YOGAcademy, via de browser of de app. Je ontdekt ook wat je kunt doen als je je modules niet ziet, inloggen niet lukt of je wachtwoord wilt herstellen.
 
 ## Inloggen via de browser
 

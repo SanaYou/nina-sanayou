@@ -4,7 +4,7 @@ TAGS: certificering, docent, registratie, yoga alliance
 
 ## Hoe registreer ik mij als erkend yogadocent bij Yoga Alliance?
 
-In dit artikel lees je hoe je je na afronding van de RYT/VYN200 Yin & Yang opleiding kunt registreren als erkend yogadocent bij Yoga Alliance en wat je daarbij kunt verwachten.
+In dit artikel lees je hoe je je na het afronden van de RYT/VYN200 Yin & Yang opleiding registreert als erkend yogadocent bij Yoga Alliance, wat je nodig hebt, hoe het registratieproces werkt en hoe je je registratie daarna onderhoudt.
 
 Na het afronden van de RYT/VYN200 kun je er zelf voor kiezen om je te registreren bij Yoga Alliance als Registered Yoga Teacher (RYT 200). Deze registratie is niet verplicht, maar wel mogelijk omdat SanaYou YOGAcademy een geregistreerde yogaschool is bij Yoga Alliance. Je bepaalt dus zelf of en wanneer je deze stap wilt zetten.
 

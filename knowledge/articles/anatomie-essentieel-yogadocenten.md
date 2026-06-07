@@ -3,7 +3,7 @@ TAGS: anatomie, yogadocent, essentieel, belang, veiligheid, blessure
 
 # Waarom is anatomie essentieel voor yogadocenten?
 
-In dit artikel lees je waarom anatomische kennis belangrijk is als je yogales geeft of wilt gaan geven.
+In dit artikel lees je waarom anatomische kennis onmisbaar is als je yogales geeft of wilt gaan geven, hoe je daarmee omgaat met de unieke verschillen tussen lichamen, en waarom het ook verplicht onderdeel is van je certificering.
 
 ## Veilig lesgeven
 

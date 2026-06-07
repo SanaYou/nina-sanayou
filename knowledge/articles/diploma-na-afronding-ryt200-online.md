@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: aanmelden, diploma, online, ryt200, teacher training, yoga alliance
 
-In dit artikel lees je hoe je het officiële RYT200-diploma ontvangt nadat je de volledige online opleiding hebt afgerond.
+In dit artikel lees je wat je nodig hebt om je officiële RYT200-diploma te ontvangen na afronding van de opleiding. Je ontdekt welke deelcertificaten en het praktijkexamen een rol spelen, en wat je kunt doen als een onderdeel nog niet voldoende is.
 
 ## Alle deelcertificaten en geslaagd praktijkexamen
 

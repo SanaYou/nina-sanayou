@@ -3,7 +3,7 @@ TAGS: conflict, niet eens, bezwaar, mediator, geschil, ontevreden, feedback, con
 
 # Waar kan ik terecht als ik het ergens niet mee eens ben?
 
-In dit artikel lees je waar je terecht kunt als je een situatie anders ervaart dan verwacht, of als je het niet eens bent met een beslissing van SanaYou YOGAcademy.
+In dit artikel lees je waar je terecht kunt als je een situatie anders ervaart dan verwacht of het niet eens bent met een beslissing van SanaYou YOGAcademy, hoe zo'n melding wordt afgehandeld en wat je kunt doen als we er samen niet uitkomen.
 
 ## Neem contact op
 

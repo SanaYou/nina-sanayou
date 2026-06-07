@@ -3,7 +3,7 @@ TAGS: RYT300, Yin Mastery, praktijktoets, examen, opdrachten, video, yin yoga, d
 
 # Wat zijn de opdrachten voor de praktijktoets RYT300 Yin Mastery?
 
-In dit artikel lees je welke opdrachten je uitvoert als je de praktijktoets doet voor de studierichting Yin Mastery binnen de RYT300 Teacher Training.
+In dit artikel lees je welke opdrachten bij de praktijktoets voor de Yin Mastery-richting van de RYT300 opleiding horen, hoe de toets is opgebouwd en hoe je je werk indient.
 
 ## Opbouw van de praktijktoets
 

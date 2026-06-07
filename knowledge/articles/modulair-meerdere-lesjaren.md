@@ -4,7 +4,7 @@ TAGS: klassikaal, module, ryt200, teacher training
 
 ## Kan ik de lesmodules ook verspreid over meerdere lesjaren volgen?
 
-In dit artikel lees je hoe je de lesmodules van de RYT/VYN200 Yin & Yang Teacher Training kunt verspreiden over meerdere lesjaren en wat dat betekent voor de opbouw en het tempo van je opleiding.
+In dit artikel lees je of je de lesmodules van de RYT/VYN200 Yin & Yang Teacher Training kunt verspreiden over meerdere lesjaren, wanneer dat van toepassing is en hoe dat er in de praktijk uitziet. Ook vind je hier informatie over de maximale studieduur.
 
 ## Wat is een lesjaar?
 

@@ -4,7 +4,7 @@ TAGS: klassikaal, kosten, ryt200, teacher training, toegang, verlenging, videole
 
 ## Hoe verleng ik mijn toegang tot de videolessen?
 
-In dit artikel lees je hoe je je toegang tot de ondersteunende videolessen kunt verlengen, wanneer dit mogelijk is en hoe je dit zelf beheert.
+In dit artikel lees je hoe je je toegang tot de videolessen van de opleiding kunt verlengen, wanneer dat mogelijk is en wat de kosten en looptijd zijn. Je vindt hier ook hoe je een verlenging aanvraagt en weer zelf opzegt.
 
 ## Wanneer kun je je toegang verlengen?
 

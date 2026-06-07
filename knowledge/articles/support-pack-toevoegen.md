@@ -3,7 +3,7 @@ TAGS: support pack toevoegen, LIVE+ boeken, teaching assessment boeken, upgrade,
 
 # Hoe voeg ik een Support Pack toe aan mijn opleiding?
 
-In dit artikel lees je hoe je een Support Pack toevoegt aan je bestaande online opleiding en wanneer je dat het beste doet.
+In dit artikel lees je hoe je een LIVE+ Support Pack of een Teaching Assessment Pack toevoegt aan je opleiding, en wanneer je welk pack het beste kiest.
 
 ## LIVE+ Support Pack toevoegen
 

@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training
 
 ## Waar vind ik mijn persoonlijke reserveringen voor klassikale opleidingsdagen?
 
-In dit artikel lees je waar je kunt zien welke lesdata je hebt geboekt voor je klassikale opleiding, lesmodule of workshop, en hoe je jouw persoonlijke boekingsagenda gebruikt.
+In dit artikel lees je waar je jouw geboekte lesdata voor je klassikale opleiding of module terugvindt en hoe je je persoonlijke boekingsagenda opent en gebruikt.
 
 ## Je persoonlijke boekingsagenda na je boeking
 

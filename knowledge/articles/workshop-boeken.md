@@ -3,7 +3,7 @@ TAGS: boeken, aanmelden, reserveren, workshop, themadag, betaling
 
 # Hoe boek ik een workshop of bijscholing?
 
-In dit artikel lees je hoe je je aanmeldt voor een workshop, themadag of verdiepingsdag bij SanaYou YOGAcademy.
+In dit artikel lees je hoe je je aanmeldt voor een workshop, themadag of verdiepingsdag bij SanaYou YOGAcademy, en wanneer je inschrijving definitief is.
 
 ## Aanmelden via de website
 

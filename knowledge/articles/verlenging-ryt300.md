@@ -3,7 +3,7 @@ TAGS: ryt300, verlenging, toegang verlengen, 147 euro, online modules, jaarabonn
 
 # Kan ik mijn toegang tot de online modules van de RYT300 verlengen?
 
-In dit artikel lees je hoe je je toegang tot de online modules van de RYT300 kunt verlengen na afloop van de standaard toegangstermijn van 24 maanden.
+In dit artikel lees je hoe je je toegang tot de online modules van de RYT300 kunt verlengen als de standaard termijn van 24 maanden voorbij is.
 
 ## Verlengen na 24 maanden
 

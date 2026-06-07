@@ -3,7 +3,7 @@ TAGS: annulering, workshop, themadag, bijscholing, annuleringskosten, verdieping
 
 # Wat zijn de annuleringsvoorwaarden voor workshops en themadagen?
 
-In dit artikel lees je wat de voorwaarden zijn als je een workshop, themadag of meerdaagse module wilt annuleren.
+In dit artikel lees je wat de annuleringsvoorwaarden zijn voor losse workshopdagen, meerdaagse klassikale modules en situaties van overmacht. Zo weet je precies waar je aan toe bent en wat je kunt doen als je onverhoopt moet annuleren.
 
 ## Losse workshopdagen (eendaags)
 

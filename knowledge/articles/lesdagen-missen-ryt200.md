@@ -4,7 +4,7 @@ TAGS: huddle, klassikaal, lesdagen, ryt200, teacher training, vyn200
 
 ## Lesdagen missen tijdens de RYT/VYN200 Teacher Training
 
-In dit artikel lees je wat er gebeurt wanneer je één of meerdere klassikale lesdagen niet kunt bijwonen binnen de RYT/VYN200 Yin & Yang Teacher Training en hoe je de gemiste lesstof kunt inhalen.
+In dit artikel lees je wat er gebeurt als je een of meerdere klassikale lesdagen mist tijdens de RYT/VYN200 Yin & Yang Teacher Training, hoe je de gemiste lesstof kunt inhalen en aan welke eisen je daarbij moet voldoen. Je vindt hier ook informatie over afmelden, de aanwezigheidseis en wat er geldt als je ziek bent op de examendag.
 
 ## Kun je een gemiste lesdag inhalen?
 

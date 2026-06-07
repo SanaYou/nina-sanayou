@@ -3,7 +3,7 @@ TAGS: downloaden, download, video, offline, lessen, Huddle, copyright
 
 # Waarom kan ik online lessen niet downloaden?
 
-In dit artikel lees je waarom het niet mogelijk is om videolessen te downloaden vanuit Huddle.
+In dit artikel lees je waarom het downloaden van videolessen niet mogelijk is, hoe je altijd online toegang hebt en wat de toegangsperiode inhoudt.
 
 ## Auteursrechtelijke bescherming
 

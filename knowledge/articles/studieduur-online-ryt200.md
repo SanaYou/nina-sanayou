@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: online, ryt200, studeren, studieduur, teacher training, yoga alliance
 
-In dit artikel lees je hoelang je de tijd hebt om de volledige online RYT200-opleiding af te ronden.
+In dit artikel lees je hoelang je de tijd hebt om de volledige online RYT200-opleiding af te ronden en wat de maximale termijn is die we daarvoor hanteren.
 
 ## Maximaal 3 jaar
 

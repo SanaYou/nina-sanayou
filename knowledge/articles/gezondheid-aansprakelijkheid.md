@@ -3,7 +3,7 @@ TAGS: gezondheid, blessure, aansprakelijkheid, eigen risico, letsel, aandoening,
 
 # Blessures of gezondheidsklachten melden
 
-In dit artikel lees je wat je kunt doen als je een blessure, aandoening of andere gezondheidsklacht hebt bij aanvang van of tijdens de opleiding.
+In dit artikel lees je hoe je een blessure of gezondheidsklacht meldt, wat deelname op eigen risico betekent en hoe je zelf je grenzen bewaakt tijdens de opleiding. Twijfel je of de opleiding op dit moment bij je past? Ook daar vind je antwoord.
 
 ## Meld het van tevoren
 

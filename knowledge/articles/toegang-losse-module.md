@@ -3,7 +3,7 @@ TAGS: toegang, toegangsduur, losse module, verlenging, bijscholing, 24 maanden
 
 # Hoelang heb ik toegang tot een losse online module?
 
-In dit artikel lees je hoe lang je toegang hebt tot een losse online module en wat er gebeurt als die periode afloopt.
+In dit artikel lees je hoe lang je toegang hebt tot een losse online module, wat er gebeurt als die periode afloopt en hoe je je toegang kunt verlengen.
 
 ## 24 maanden toegang
 

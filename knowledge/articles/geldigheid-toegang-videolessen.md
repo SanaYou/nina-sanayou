@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training, toegang, videolessen
 
 ## Hoelang blijft mijn toegang tot de videolessen geldig tijdens de klassikale opleiding?
 
-In dit artikel lees je kort hoe lang je toegang hebt tot de ondersteunende videolessen tijdens de klassikale RYT/VYN200. De achtergrond en uitleg hierover vind je in aanvullende artikelen.
+In dit artikel lees je hoe lang je toegang hebt tot de videolessen tijdens de klassikale RYT/VYN200-opleiding, waarom we drie maanden als termijn hanteren en of je die toegang kunt verlengen.
 
 Je krijgt toegang tot de ondersteunende videolessen per lesmodule, steeds voor een periode van drie maanden. Deze periode start een week vóór de eerste klassikale lesdag van de betreffende module. De videolessen zijn bedoeld om je te ondersteunen tijdens de leerfase van die module binnen de RYT/VYN200.
 

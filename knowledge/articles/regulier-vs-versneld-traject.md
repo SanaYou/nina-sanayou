@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training
 
 ## Wat is het verschil tussen het reguliere en het versnelde traject?
 
-In dit artikel lees je welke pakketvormen er zijn binnen de klassikale RYT/VYN200 Yin & Yang Teacher Training en wat de belangrijkste verschillen zijn tussen het reguliere en het versnelde traject.
+In dit artikel lees je wat het verschil is tussen het reguliere en het versnelde traject van de klassikale RYT/VYN200 Yin & Yang Teacher Training, hoe losse modules boeken werkt en wat je kunt verwachten op het gebied van pakketkorting en boekingsperiodes.
 
 ## Het reguliere traject
 

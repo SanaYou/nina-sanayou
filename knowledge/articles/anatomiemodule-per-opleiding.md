@@ -3,7 +3,7 @@ TAGS: anatomie, module, opleiding, Basis Anatomie, Biomechanica, keuze
 
 # Welke anatomiemodule past bij welke opleiding?
 
-In dit artikel lees je welke anatomiemodules er zijn en bij welk opleidingstraject ze horen.
+In dit artikel lees je welke anatomiemodules er zijn en bij welke opleiding ze horen, zodat je meteen weet welke module voor jou relevant is.
 
 ## Twee anatomiemodules
 

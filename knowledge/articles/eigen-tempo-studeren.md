@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training
 
 ## Kan ik studeren in mijn eigen tempo?
 
-In dit artikel lees je of en hoe je de RYT/VYN200 Yin & Yang Teacher Training in je eigen tempo kunt volgen, en welke keuzes daarin voor jou het verschil maken.
+In dit artikel lees je of je de RYT/VYN200 Yin & Yang Teacher Training in je eigen tempo kunt volgen, waar die keuzevrijheid precies zit en wat de maximale studieduur is.
 
 ## Ja, je kunt studeren in je eigen tempo
 

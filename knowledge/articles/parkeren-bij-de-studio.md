@@ -3,7 +3,7 @@ TAGS: parkeren, adres, studio, zwolle, hasseltendijk, lesdagen, klassikaal, loca
 
 # Waar is de studio en waar kan ik parkeren?
 
-In dit artikel lees je het adres van de studio in Zwolle en waar je de auto kwijt kunt tijdens klassikale lesdagen en workshops.
+In dit artikel lees je het adres van de studio in Zwolle en waar je kunt parkeren tijdens klassikale lesdagen en workshops.
 
 ## Adres
 

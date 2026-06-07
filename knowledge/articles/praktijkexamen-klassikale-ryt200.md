@@ -3,7 +3,7 @@ TAGS: praktijkexamen, klassikaal, ryt200, yin yoga examen, yang yoga examen, exa
 
 # Hoe verloopt de praktijkexamendag van de klassikale RYT/VYN200?
 
-In dit artikel lees je hoe de praktijkexamendagen voor de klassikale Yin Yoga en Yang Yoga zijn opgebouwd, wat je op de dag zelf kunt verwachten en waarop je wordt beoordeeld.
+In dit artikel lees je hoe de praktijkexamendag van de klassikale RYT/VYN200-opleiding is opgebouwd, wat je op de dag zelf kunt verwachten en hoe de beoordeling werkt. Je leest hoe beide examens verlopen, van het loodjes trekken of de opdracht ontvangen tot de beoordelingsschaal die de docenten gebruiken.
 
 ## Twee praktijkexamens
 

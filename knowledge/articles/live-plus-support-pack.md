@@ -3,7 +3,7 @@
 COLLECTIE: Ondersteuning en Begeleiding
 TAGS: aanmelden, begeleiding, huddle, kosten, support pack
 
-In dit artikel lees je wat het LIVE+ Support Pack inhoudt, voor wie het bedoeld is en hoe het werkt.
+In dit artikel lees je wat het LIVE+ Support Pack precies inhoudt, wat erin zit en voor wie het geschikt is. Je vindt hier ook hoe het werkt binnen de RYT300-opleiding en wat de kosten zijn.
 
 ## Wat is het?
 

@@ -3,7 +3,7 @@ TAGS: certificaat, losse module, Yoga Alliance, VYN, CE-punten
 
 # Hoe werkt certificering van een losse module?
 
-In dit artikel lees je hoe de certificering van een losse online module werkt en wat je ermee kunt doen.
+In dit artikel lees je hoe de certificering van een losse online module werkt, wat het certificaat inhoudt en wat je ermee kunt doen. Je ontdekt ook hoe het certificaat erkend wordt en welke doorstroommogelijkheden er voor je zijn.
 
 ## Certificaat na afronding
 

@@ -3,7 +3,7 @@ TAGS: geschikt, voor wie, online, module, bijscholing, specialisatie, ervaring
 
 # Voor wie zijn de losse online modules geschikt?
 
-In dit artikel lees je voor wie de losse online bijscholingen en specialisaties van SanaYou YOGAcademy bedoeld zijn.
+In dit artikel lees je voor wie de losse online modules en specialisaties van SanaYou YOGAcademy geschikt zijn, welke opties er beschikbaar zijn en hoe het werkt met leeftijd en je eigen tempo.
 
 ## Voor wie?
 

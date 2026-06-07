@@ -3,7 +3,7 @@ TAGS: erkend yogadocent, diploma, Yoga Alliance, RYT200, certificaat, registrati
 
 # Wanneer ben ik officieel erkend yogadocent?
 
-In dit artikel lees je welke stappen je doorloopt vóórdat je officieel erkend yogadocent bent en wanneer je jouw Yoga Alliance-registratie kunt aanvragen.
+In dit artikel lees je welke stappen je doorloopt voordat je officieel erkend yogadocent bent, wanneer je jouw Yoga Alliance-registratie kunt aanvragen en wat die wereldwijde erkenning voor jou betekent.
 
 ## Geldigheid certificaten
 

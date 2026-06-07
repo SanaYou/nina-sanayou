@@ -4,6 +4,8 @@ TAGS: zwangerschap, yin yoga, veiligheid, relaxine, trimester, aanpassing
 
 Gefeliciteerd als je dit leest vanwege een zwangerschap! Goed dat je hier alvast bij stilstaat. Er zijn bij yin yoga een paar belangrijke aandachtspunten die je helpen om veilig en comfortabel te blijven bewegen.
 
+In dit artikel lees je waarom je tijdens je zwangerschap extra voorzichtig bent met Yin Yoga, wat het hormoon relaxine daarmee te maken heeft en welke aandachtspunten per trimester belangrijk zijn.
+
 ## Relaxine: waarom je voorzichtig moet zijn
 
 Tijdens je zwangerschap maak je het hormoon relaxine aan. Dit hormoon maakt je ligamenten soepeler, zodat je lichaam zich kan voorbereiden op de bevalling. Het gevolg: je voelt minder snel een grens in een houding. Dat klinkt prettig, maar het betekent ook dat je eerder te ver kunt gaan zonder het te merken.

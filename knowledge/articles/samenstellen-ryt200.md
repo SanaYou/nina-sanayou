@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training, vyn200, yang yoga, yin yoga
 
 ## Hoe stel ik mijn RYT/VYN200 Yin & Yang Teacher Training zelf samen?
 
-In dit artikel lees je welke keuzes je hebt bij het plannen van de RYT/VYN200 Yin & Yang Teacher Training en hoe je jouw opleiding kunt samenstellen op een manier die past bij jouw tempo, agenda en voorkeur.
+In dit artikel lees je hoe je je RYT/VYN200 Yin & Yang Teacher Training zelf samenstelt, welke drie planningstrajecten er zijn en wat je helpt bij het maken van een keuze die past bij jouw tempo en agenda.
 
 ## Jij stelt je opleiding zelf samen
 

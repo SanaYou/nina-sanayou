@@ -4,7 +4,7 @@ TAGS: certificering, examen, online, praktijkexamen
 
 ## Hoe werkt het praktijkexamen van een online opleiding?
 
-In dit artikel lees je hoe het praktijkexamen van een online opleiding is opgebouwd en hoe de beoordeling verloopt.
+In dit artikel lees je hoe het praktijkexamen van een online opleiding is opgebouwd, hoe je het aanlevert en wat de beoordeling inhoudt. Zo weet je precies waar je aan toe bent en hoe je de afsluiting van je opleiding goed aanpakt.
 
 ## Doel van het praktijkexamen
 

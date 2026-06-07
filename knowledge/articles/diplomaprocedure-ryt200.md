@@ -3,6 +3,8 @@ TAGS: certificering, diploma, registratie, ryt200, yoga alliance
 
 # Helpartikel — Diplomaprocedure RYT200 & registratie bij Yoga Alliance
 
+In dit artikel lees je alles over het RYT200-diploma dat je ontvangt via SanaYou YOGAcademy en hoe je je daarna registreert bij Yoga Alliance. Je vindt hier stap voor stap wat je kunt verwachten en wat je zelf moet regelen.
+
 ## SanaYou YOGAcademy
 
 ---

@@ -3,7 +3,7 @@
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
 TAGS: ryt300, teacher training, toelatingseisen
 
-In dit artikel lees je welke voorwaarden gelden om te kunnen starten met de RYT300 The Art of Advanced Teaching.
+In dit artikel lees je wat de toelatingseisen zijn voor de RYT300 The Art of Advanced Teaching, waaronder het diploma dat je nodig hebt en wat we verder belangrijk vinden.
 
 ## Een erkend RYT200-diploma is vereist
 

@@ -3,7 +3,7 @@ TAGS: wachtwoord, reset, vergeten, Huddle, inloggen, herstelmail, magische link
 
 # Hoe reset ik mijn wachtwoord op Huddle?
 
-In dit artikel lees je hoe je je wachtwoord op Huddle opnieuw kunt instellen.
+In dit artikel lees je hoe je je wachtwoord op Huddle opnieuw instelt, wat je doet als de herstelmail uitblijft en hoe je via een magische link alsnog kunt inloggen.
 
 ## Wachtwoord vergeten
 

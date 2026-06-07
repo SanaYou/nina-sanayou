@@ -3,7 +3,7 @@ TAGS: examen, voorwaarden, reglement, herkansing, toetsing, klassikaal, RYT200, 
 
 # Hoe werken de examens bij de klassikale RYT/VYN200?
 
-In dit artikel lees je hoe de examens en toetsing werken bij de klassikale RYT/VYN200 Yin & Yang Yoga Teacher Training.
+In dit artikel lees je hoe de examens en toetsing zijn geregeld binnen de klassikale RYT/VYN200 Yin & Yang Yoga Teacher Training. Je leest over de theorie- en praktijktoets, hoe herkansingen werken en welke eisen er gelden voor aanwezigheid en deelname.
 
 ## Theorietoetsen
 

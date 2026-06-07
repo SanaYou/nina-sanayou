@@ -4,7 +4,7 @@ TAGS: aanmelden, klassikaal, planning, rooster, ryt200, teacher training
 
 ## Waar vind ik de jaarplanning en roosters?
 
-In dit artikel lees je waar je de actuele jaarplanning en lesroosters van de RYT/VYN200 Yin & Yang Teacher Training kunt vinden en hoe je op basis daarvan je eigen planning samenstelt.
+In dit artikel lees je waar je de actuele jaarplanning en lesroosters van de RYT/VYN200 Teacher Training terugvindt, hoe je je eigen rooster samenstelt en wat je daarbij moet weten over de lesdata. Je vindt hier ook info over de pakketten en trajecten op de website.
 
 ## Actuele lesdata
 

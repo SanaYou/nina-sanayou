@@ -4,7 +4,7 @@ TAGS: 200 uur, alleen yin, alleen yang, klassikaal, online aanvullen, ryt200, yo
 
 # Kan ik mijn klassikale 200 uur voltooien met alleen Yin of alleen Yang Yoga?
 
-In dit artikel lees je of het mogelijk is om je 200 uur te halen als je klassikaal gestart bent met Yin of Yang, en je je verder wilt blijven richten op die ene richting.
+In dit artikel lees je of je je 200 uur klassikale opleiding kunt afronden met alleen Yin of alleen Yang Yoga, wat dit betekent voor je diploma en welke opties er zijn als je na je eerste modules liever één richting verder volgt.
 
 ## Na Yin 1 en Yin 2 klassikaal: liever verder met alleen Yin Yoga?
 

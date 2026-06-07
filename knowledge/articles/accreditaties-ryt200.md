@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training, vyn200, yang yoga, yin yoga, yoga al
 
 ## Welke accreditaties heeft de RYT/VYN200 Yin & Yang opleiding?
 
-In dit artikel lees je welke accreditaties de RYT/VYN200 Yin & Yang Yoga Teacher Training heeft en wat deze accreditaties betekenen voor jou als deelnemer en afgestudeerde.
+In dit artikel lees je welke accreditaties de RYT/VYN200 Yin & Yang Yoga Teacher Training heeft, zowel internationaal (Yoga Alliance) als nationaal (Vereniging Yoga Docenten Nederland), en wat die erkenning concreet voor jou betekent als deelnemer en afgestudeerde.
 
 ## Dubbele accreditatie: internationaal én nationaal
 

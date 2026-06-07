@@ -4,7 +4,7 @@ TAGS: certificering, docent, registratie, vyn200, yoga alliance
 
 ## Hoe registreer ik mij als erkend yogadocent bij de VYN?
 
-In dit artikel lees je hoe je je na afronding van de RYT/VYN200 Yin & Yang opleiding kunt registreren als erkend yogadocent bij de Vereniging Yoga Docenten Nederland (VYN) en wat je daarbij kunt verwachten.
+In dit artikel lees je hoe je je na het afronden van de RYT/VYN200 Yin & Yang opleiding registreert als erkend yogadocent bij de Vereniging Yoga Docenten Nederland (VYN). Je leest wanneer je in aanmerking komt, hoe het registratieproces in zijn werk gaat en wat je daarna kunt verwachten.
 
 Na het afronden van de RYT/VYN200 kun je er zelf voor kiezen om je te registreren als erkend yogadocent bij de VYN. Deze registratie is niet verplicht, maar wel mogelijk omdat de opleiding door de VYN is erkend. Je bepaalt dus zelf of en wanneer je deze stap wilt zetten.
 

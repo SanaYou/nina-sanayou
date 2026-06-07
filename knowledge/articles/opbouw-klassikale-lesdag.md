@@ -4,7 +4,7 @@ TAGS: klassikaal, lesdagen, ryt200, teacher training, vyn200, yang yoga, yin yog
 
 ## Hoe ziet een klassikale lesdag eruit binnen de RYT/VYN200 Yin & Yang?
 
-In dit artikel lees je hoe een gemiddelde klassikale lesdag binnen de RYT/VYN200 Yin & Yang Teacher Training is opgebouwd en wat je gedurende zo'n lesdag kunt verwachten.
+In dit artikel lees je hoe een klassikale lesdag binnen de RYT/VYN200 Yin & Yang opleiding is opgebouwd, van de start van de ochtend tot het einde van de middag. Je ontdekt wat je kunt verwachten tijdens de theorie, de yogales, de lunchpauze, het praktisch oefenen en welke uitzonderingen er soms zijn.
 
 In het algemeen bestaat een klassikale lesdag uit een ochtend gericht op theorie en yogales, en een middag gericht op praktisch oefenen en integreren. De exacte invulling kan per lesdag verschillen, maar de opbouw is er steeds op gericht om kennis, ervaring en praktijk met elkaar te verbinden.
 

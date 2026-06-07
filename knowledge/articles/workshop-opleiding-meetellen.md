@@ -3,7 +3,7 @@ TAGS: workshop, opleiding, meetellen, bijscholingspunten, CE, YACEP, certificaat
 
 # Telt een workshop mee als onderdeel van een opleiding?
 
-In dit artikel lees je of en hoe workshops en themadagen meetellen voor je opleiding of bijscholing.
+In dit artikel lees je of een workshop meetelt voor je opleiding of bijscholing, hoe je erkende bijscholingspunten kunt verzamelen en wat de rol van workshops is als aanvulling op je online module.
 
 ## Erkende bijscholingspunten
 

@@ -3,7 +3,7 @@ TAGS: anatomie, toegang, duur, verlenging, Huddle, online
 
 # Hoelang heb ik toegang tot anatomiemodules?
 
-In dit artikel lees je hoelang je toegang hebt tot de anatomiemodules en hoe verlenging werkt.
+In dit artikel lees je hoelang je toegang hebt tot de anatomiemodules, hoe een verlenging werkt en wat de bonusmodule inhoudt als je de klassikale opleiding volgt.
 
 ## 24 maanden toegang
 

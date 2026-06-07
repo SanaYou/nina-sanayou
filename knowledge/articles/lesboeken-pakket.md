@@ -3,7 +3,7 @@
 COLLECTIE: Ondersteuning en Begeleiding
 TAGS: aanmelden, begeleiding, lesmateriaal, pakket
 
-In dit artikel lees je wat het SanaYou Lesboeken Pakket inhoudt en hoe je het kunt toevoegen aan je opleiding.
+In dit artikel lees je wat het SanaYou Lesboeken Pakket inhoudt, welke literatuur erbij hoort en hoe je het toevoegt aan je opleiding.
 
 ## Wat is het?
 

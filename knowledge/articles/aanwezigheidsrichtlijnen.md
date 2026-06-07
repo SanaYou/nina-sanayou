@@ -3,7 +3,7 @@ TAGS: aanwezigheid, afwezigheid, lesdag, missen, verslag, contacturen, inhalen, 
 
 # Wat zijn de aanwezigheidsrichtlijnen bij de modules van de RYT/VYN200 klassikaal?
 
-In dit artikel lees je hoeveel lesdagen je mag missen bij een klassikale module van de RYT/VYN200 en hoe je een gemiste lesdag kunt verwerken.
+In dit artikel lees je hoeveel lesdagen je mag missen tijdens een klassikale module van de RYT/VYN200 opleiding, hoe je een gemiste dag verwerkt via een verslag, en waarom inhalen bij een andere groep niet mogelijk is.
 
 ## Maximaal een lesdag afwezig
 

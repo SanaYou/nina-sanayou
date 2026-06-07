@@ -3,7 +3,7 @@ TAGS: voorkennis, vereisten, ervaring, niveau, workshop, themadag
 
 # Heb ik voorkennis nodig voor een workshop of bijscholing?
 
-In dit artikel lees je of je voorkennis of ervaring nodig hebt om deel te nemen aan een workshop of themadag.
+In dit artikel lees je of je voorkennis of ervaring nodig hebt voor een workshop of themadag, hoe dat per workshop kan verschillen en wat je kunt doen als je twijfelt.
 
 ## Enige yogaervaring gewenst
 

@@ -3,7 +3,7 @@ TAGS: huisregels, klassikaal, lesdag, studio, hygiëne, telefoon, schoenen, spul
 
 # Wat zijn de huisregels voor klassikale lesdagen?
 
-In dit artikel lees je alles wat handig is om te weten voor klassikale lesdagen bij SanaYou YOGAcademy. Gewoon een paar praktische afspraken, zodat iedereen zich prettig voelt.
+In dit artikel lees je de praktische huisregels voor klassikale lesdagen, van kleding en hygiëne tot hoe je binnenkomt, je gedraagt tijdens de les en weer vertrekt. Zo weet je precies wat je kunt verwachten en voelt iedereen zich op zijn gemak.
 
 ## Kleding en hygiëne
 

@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: module, online, ryt200, teacher training, toegang, verlenging
 
-In dit artikel lees je hoe lang je toegang hebt tot een online module en wat je kunt doen als je die wilt verlengen.
+In dit artikel lees je hoe lang je toegang hebt tot een online module en hoe je die kunt verlengen als je er meer tijd voor nodig hebt.
 
 ## 24 maanden toegang
 

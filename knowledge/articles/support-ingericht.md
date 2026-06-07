@@ -4,7 +4,7 @@ TAGS: opleiding, support pack
 
 ## Hoe we onze support hebben ingericht
 
-In dit artikel lees je hoe de supportdesk van de SanaYou YOGAcademy is ingericht, hoe dit onze bereikbaarheid vergroot en wat dit voor jou als deelnemer betekent.
+In dit artikel lees je hoe de support van SanaYou YOGAcademy is ingericht, wat 24/7 toegang tot antwoorden voor je betekent en wanneer je ons persoonlijk kunt bereiken.
 
 Bij SanaYou YOGAcademy zijn we veel te vinden op de yogamat. Lesgeven en opleidingen verzorgen is waar het bij ons om draait. De tijd die we op kantoor zijn, besteden we daarom vooral aan wat direct bijdraagt aan jouw leerproces: het beoordelen van online praktijkexamens, het voeren van studieadviesgesprekken, het begeleiden van live coachcalls en het blijven vernieuwen en uitbreiden van onze lesstof.
 

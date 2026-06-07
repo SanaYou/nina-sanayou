@@ -3,7 +3,7 @@ TAGS: doorstroom, combineren, RYT200, RYT300, module, opleiding, traject
 
 # Welke doorstroommogelijkheden zijn er na een losse module?
 
-In dit artikel lees je hoe losse online modules passen binnen de grotere opleidingstrajecten van SanaYou YOGAcademy.
+In dit artikel lees je welke stappen je kunt zetten na het volgen van een losse module: hoe je modules combineert tot een volledige RYT200, wanneer doorstromen naar de RYT300 mogelijk is, en of je een module ook puur als bijscholing kunt inzetten. Zo zie je meteen welke route bij jou past.
 
 ## Modules combineren tot een volledige RYT200
 

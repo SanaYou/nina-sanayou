@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: module, online, ryt200, teacher training, yin yoga
 
-In dit artikel lees je wat je wel en niet kunt doen na het afronden van een basismodule binnen de online RYT200-opleidingen.
+In dit artikel lees je wat je na het afronden van Yoga Basics of Yin Yoga Basics wel en niet mag doen, en waarom je nog niet erkend bent als yogadocent.
 
 ## Je hebt een basis, maar bent nog niet erkend
 

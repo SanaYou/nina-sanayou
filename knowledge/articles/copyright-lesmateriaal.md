@@ -3,7 +3,7 @@ TAGS: copyright, auteursrecht, lesmateriaal, delen, video, intellectueel eigendo
 
 # Hoe zit het met copyright en gebruik van lesmateriaal?
 
-In dit artikel lees je wat de regels zijn rondom het gebruik en delen van lesmateriaal van SanaYou YOGAcademy.
+In dit artikel lees je wat de regels zijn rondom auteursrecht op het lesmateriaal van SanaYou YOGAcademy, wat je niet mag delen of gebruiken en wat wel is toegestaan.
 
 ## Auteursrecht
 

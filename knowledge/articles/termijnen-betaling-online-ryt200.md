@@ -3,7 +3,7 @@
 COLLECTIE: Betaling, Facturatie & Termijnen
 TAGS: betaling, online, ryt200, termijnen
 
-In dit artikel lees je hoe termijnbetalingen werken bij de erkende online RYT200-opleidingen.
+In dit artikel lees je hoe termijnbetalingen werken bij de online RYT200, welke drie betalingsopties je hebt en hoe de automatische incasso in zijn werk gaat.
 
 ## Drie betalingsopties
 

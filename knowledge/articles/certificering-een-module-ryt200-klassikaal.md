@@ -3,7 +3,7 @@ TAGS: certificering, één module, lesbevoegdheid, yogadocent, VYN, Yoga Allianc
 
 # Word ik gecertificeerd yogadocent als ik één lesmodule volg?
 
-In dit artikel lees je hoe de certificering van de klassikale RYT/VYN200 Teacher Training werkt en wat je per module behaalt.
+In dit artikel lees je hoe de certificering van de RYT/VYN200 Teacher Training is opgebouwd, wat je na iedere module ontvangt en wanneer je het volledige diploma behaalt.
 
 ## Één module geeft nog geen volledige certificering
 

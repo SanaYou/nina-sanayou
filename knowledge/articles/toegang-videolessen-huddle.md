@@ -4,7 +4,7 @@ TAGS: huddle, klassikaal, ryt200, teacher training, toegang, videolessen
 
 ## Hoe krijg ik toegang tot de ondersteunende videolessen?
 
-In dit artikel lees je hoe en wanneer je toegang krijgt tot de ondersteunende videolessen van de RYT/VYN200 Yin & Yang Teacher Training, en wat je daarbij kunt verwachten.
+In dit artikel lees je hoe en wanneer je toegang krijgt tot de ondersteunende videolessen van de RYT/VYN200 Teacher Training, hoe het online lesplatform Huddle werkt en wat je er precies in vindt. Je leest ook hoe je je voorbereidt op de lessen en het huiswerk bijhoudt via Huddle.
 
 ## Je toegang wordt automatisch geregeld
 

@@ -3,7 +3,7 @@ TAGS: ryt300, starten, flexibiliteit, klassikale lesdagen, planning, instappen, 
 
 # Kan ik op elk moment starten met de RYT300 en hoe flexibel is het traject?
 
-In dit artikel lees je wanneer je kunt instappen, hoe de online modules en klassikale lesdagen zijn gepland en wat je kunt doen als een datum niet uitkomt.
+In dit artikel lees je wanneer je kunt starten met de RYT300, hoe de online modules en klassikale lesdagen zijn georganiseerd, en wat je opties zijn als een geplande datum niet uitkomt.
 
 ## Online modules: volledig op jouw tempo
 

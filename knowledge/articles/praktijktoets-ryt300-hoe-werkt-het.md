@@ -3,7 +3,7 @@ TAGS: RYT300, praktijktoets, examen, beoordeling, video, planning, afronden
 
 # Hoe werkt de praktijktoets van de RYT300?
 
-In dit artikel lees je hoe de praktijktoets van de RYT300 Teacher Training is opgebouwd, hoe de beoordeling verloopt en wanneer je kunt starten.
+In dit artikel lees je hoe de praktijktoets van de RYT300 Teacher Training is opgebouwd, wat je precies inlevert, hoe de beoordeling verloopt en aan welke technische richtlijnen je video-opnames moeten voldoen.
 
 ## Wanneer mag je beginnen?
 

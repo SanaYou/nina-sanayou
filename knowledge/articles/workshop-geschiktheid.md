@@ -3,7 +3,7 @@ TAGS: geschikt, voor wie, workshop, themadag, ervaring, beginners, docenten
 
 # Voor wie is een workshop of themadag geschikt?
 
-In dit artikel lees je voor wie de workshops en themadagen van SanaYou YOGAcademy bedoeld zijn.
+In dit artikel lees je voor wie de workshops en themadagen van SanaYou YOGAcademy geschikt zijn, welke leeftijd je kunt hebben en wat je weet moet over gezondheid.
 
 ## Voor wie?
 

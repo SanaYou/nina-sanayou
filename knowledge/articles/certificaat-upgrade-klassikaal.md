@@ -3,7 +3,7 @@ TAGS: certificaat, upgrade, klassikaal, workshop, bijscholingspunten, CE
 
 # Hoe vraag ik een certificaat-upgrade aan na klassikale lesdagen?
 
-In dit artikel lees je hoe je na het volgen van klassikale lesdagen een upgrade van je online certificaat kunt aanvragen.
+In dit artikel lees je wanneer je een certificaat-upgrade kunt aanvragen na klassikale lesdagen, hoe je dat precies doet en hoeveel uren per module in aanmerking komen voor een upgrade.
 
 ## Wanneer kun je een upgrade aanvragen?
 

@@ -3,7 +3,7 @@ TAGS: support pack, begeleiding, CoachCall, LIVE+, teaching assessment
 
 # Wat zijn de Support Packs?
 
-In dit artikel lees je welke aanvullende begeleidingsopties SanaYou YOGAcademy biedt bij de online RYT200 Teacher Training, en wat elk pack inhoudt.
+In dit artikel lees je wat de Support Packs zijn, welke twee opties er beschikbaar zijn en wanneer het zinvol is er een te kiezen.
 
 ## Twee Support Packs
 

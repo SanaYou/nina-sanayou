@@ -3,7 +3,7 @@ TAGS: voorkennis, vereisten, ervaring, niveau, online, module
 
 # Heb ik voorkennis nodig voor een losse module?
 
-In dit artikel lees je of je voorkennis of ervaring nodig hebt om een losse online module te volgen.
+In dit artikel lees je of je voorkennis nodig hebt om een losse online module te volgen, wat per module kan verschillen en wat je kunt doen als je twijfelt.
 
 ## Geen formele vooropleiding vereist
 

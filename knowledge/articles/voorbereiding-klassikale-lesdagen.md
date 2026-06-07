@@ -4,7 +4,7 @@ TAGS: klassikaal, lesdagen, ryt200, teacher training, vyn200
 
 ## Hoe bereid ik me voor op de klassikale lesdagen van de RYT/VYN200?
 
-In dit artikel lees je hoe je je voorbereidt op de klassikale lesdagen van de RYT/VYN200 Yin & Yang Teacher Training en wat je daarvoor nodig hebt.
+In dit artikel lees je hoe je je voorbereidt op de klassikale lesdagen van de RYT/VYN200 Yin & Yang Teacher Training, wat je vooraf wel en niet nodig hebt, en hoe je de periode tussen de lesdagen door optimaal benut.
 
 ## Je hoeft vooraf geen boeken aan te schaffen
 

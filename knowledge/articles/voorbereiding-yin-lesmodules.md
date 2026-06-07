@@ -3,7 +3,7 @@ TAGS: voorbereiding, Yin Yoga, klassikaal, lesdag, Huddle, videolessen, bonusmod
 
 # Hoe bereid ik me voor op de Yin Yoga lesmodules?
 
-In dit artikel lees je wat je moet doen ter voorbereiding op je eerste klassikale lesdagen van Yin Yoga 1 en Yin Yoga 2.
+In dit artikel lees je hoe je je voorbereidt op de klassikale lesdagen van Yin Yoga 1 en Yin Yoga 2. Je ontdekt welke videolessen je vooraf bekijkt via Huddle, hoe je je Huddle-account activeert en welke bonusmodules beschikbaar zijn.
 
 ## Videolessen bekijken in Huddle
 

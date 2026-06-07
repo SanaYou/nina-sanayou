@@ -4,7 +4,7 @@ TAGS: klassikaal, module, ryt200, studeren, studiebelasting, teacher training
 
 ## Hoeveel studiebelasting moet ik rekening mee houden per lesmodule?
 
-In dit artikel lees je hoeveel studiebelasting je kunt verwachten per lesmodule binnen de RYT/VYN200 Yin & Yang Teacher Training. De tijdsindicaties zijn richtlijnen en kunnen per persoon verschillen, afhankelijk van je leerstijl, ervaring en tempo.
+In dit artikel lees je hoeveel studiebelasting je per lesmodule kunt verwachten binnen de RYT/VYN200 Yin & Yang Teacher Training, hoe een lesmodule is opgebouwd en wat het verschil is tussen de Yin en Yang modules. Je vindt hier ook informatie over het versnelde traject en de bonusmodules.
 
 ## Opbouw van een lesmodule
 

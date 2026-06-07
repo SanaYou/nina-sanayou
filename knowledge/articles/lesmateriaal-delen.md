@@ -3,7 +3,7 @@ TAGS: auteursrecht, lesmateriaal, delen, social media, instagram, video, intelle
 
 # Auteursrecht op lesmateriaal
 
-In dit artikel lees je wat je wel en niet mag delen van het lesmateriaal van SanaYou YOGAcademy.
+In dit artikel lees je wat je wel en niet mag doen met het lesmateriaal van SanaYou YOGAcademy, zodat je weet waar je aan toe bent.
 
 ## Wat mag niet
 

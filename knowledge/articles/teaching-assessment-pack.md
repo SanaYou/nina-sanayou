@@ -3,7 +3,7 @@
 COLLECTIE: Ondersteuning en Begeleiding
 TAGS: aanmelden, begeleiding, kosten
 
-In dit artikel lees je wat het Teaching Assessment Pack inhoudt, hoe het werkt en voor wie het bedoeld is.
+In dit artikel lees je wat het Teaching Assessment Pack is, hoe het werkt, voor wie het geschikt is en wat het kost.
 
 ## Wat is het?
 

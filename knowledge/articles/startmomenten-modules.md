@@ -4,7 +4,7 @@ TAGS: aanmelden, klassikaal, module, ryt200, starten, teacher training, yang yog
 
 ## Wanneer starten de losse lesmodules Yin en Yang?
 
-In dit artikel lees je wanneer de losse lesmodules Yin Yoga en Yang Yogadocent jaarlijks starten en hoe deze startmomenten zich over het lesjaar verdelen.
+In dit artikel lees je wanneer de losse modules Yin Yoga en Yang Yogadocent jaarlijks van start gaan, welke startmomenten er in september, januari en april zijn, en wat de voorwaarden zijn om deel te nemen aan Yin Yoga 2 of Yang Yogadocent Level 2.
 
 ## Jaarlijkse startmomenten van de lesmodules
 

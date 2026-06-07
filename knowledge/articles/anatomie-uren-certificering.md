@@ -3,7 +3,7 @@ TAGS: anatomie, uren, certificering, CE, kennistest, certificaat
 
 # Hoe worden anatomie-uren meegeteld voor certificering?
 
-In dit artikel lees je hoe de uren van anatomiemodules meetellen voor je certificaat en diploma.
+In dit artikel lees je hoe anatomie-uren meetellen voor je certificaat en diploma, of ze erkend zijn als CE-uren, en wat de regels zijn voor de klassikale RYT/VYN200 opleiding.
 
 ## Erkende CE-uren
 

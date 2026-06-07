@@ -3,7 +3,7 @@
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
 TAGS: ryt300, teacher training, yin yoga
 
-In dit artikel lees je wat de twee studierichtingen van de RYT300 inhouden en welke modules daarbij horen.
+In dit artikel lees je wat de twee studierichtingen binnen de RYT300 opleiding inhouden, hoe je de gedeelde basis doorloopt en vervolgens kiest tussen Yin Mastery of Yoga Awakening, en welke modules bij elke richting horen.
 
 ## Na de gedeelde basis kies je een richting
 

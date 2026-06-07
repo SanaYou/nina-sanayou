@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: online, ryt200, teacher training
 
-In dit artikel lees je welke taal wordt gebruikt voor de benamingen van yogahoudingen binnen de online RYT200-opleidingen.
+In dit artikel lees je welke taal wordt gebruikt voor de namen van yogahoudingen binnen de YOGAcademy, en waarom dat per yogavorm kan verschillen.
 
 ## Het verschilt per yogavorm
 

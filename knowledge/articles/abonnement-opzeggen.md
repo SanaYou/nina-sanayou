@@ -10,7 +10,7 @@ TAGS: opzeggen, abonnement, LIVE+, klantportaal, verlenging, coachcall, automati
 ARTIKEL:
 ───────────────────────────────────────────────────────────
 
-In dit artikel lees je hoe je je abonnement zelf opzegt via het klantportaal.
+In dit artikel lees je hoe je je abonnement zelf opzegt via het klantportaal, welke abonnementen daarvoor in aanmerking komen en waar je op moet letten als je een LIVE+ abonnement hebt bij de RYT300.
 
 ## Welke abonnementen kun je hier opzeggen?
 

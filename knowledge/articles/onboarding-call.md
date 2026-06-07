@@ -3,7 +3,7 @@ TAGS: onboarding, call, advies, starten, modules, volgorde, begeleiding, coachin
 
 # Wat is de onboarding call en hoe vraag ik die aan?
 
-In dit artikel lees je wat de onboarding call inhoudt, voor wie hij bedoeld is en hoe je hem aanvraagt.
+In dit artikel lees je wat de onboarding call is, voor wie hij bedoeld is en hoe je je interesse kenbaar maakt.
 
 ## Wat is een onboarding call?
 

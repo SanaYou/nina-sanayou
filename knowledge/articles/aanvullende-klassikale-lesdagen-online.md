@@ -3,7 +3,7 @@ TAGS: klassikale lesdagen, online, upgrade, bijboeken, certificaat, verdiepingsd
 
 # Kan ik aanvullende klassikale lesdagen volgen bij mijn online scholing?
 
-In dit artikel lees je hoe je klassikale lesdagen kunt bijboeken als aanvulling op je online scholingstraject.
+In dit artikel lees je hoe je klassikale lesdagen kunt bijboeken als aanvulling op je online opleiding, welke modules je kunt upgraden en hoe je je certificaat kunt upgraden naar een hoger niveau.
 
 ## Klassikale lesdagen bijboeken
 

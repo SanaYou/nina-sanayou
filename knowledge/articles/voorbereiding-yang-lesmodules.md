@@ -3,7 +3,7 @@ TAGS: voorbereiding, Yang Yoga, Yogadocent, klassikaal, lesdag, Huddle, videoles
 
 # Hoe bereid ik me voor op de Yang Yoga lesmodules?
 
-In dit artikel lees je wat je moet doen ter voorbereiding op je eerste klassikale lesdagen van Yogadocent Level 1 en Level 2 (de Yang Yoga modules).
+In dit artikel lees je hoe je je voorbereidt op de Yang Yoga lesmodules van Yogadocent Level 1 en Level 2. Je ontdekt waar je de videolessen in Huddle vindt, hoe je je account activeert, welke bonusmodules anatomie beschikbaar zijn en wat je verder nodig hebt aan lesmateriaal.
 
 ## Videolessen bekijken in Huddle
 

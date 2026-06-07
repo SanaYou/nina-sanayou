@@ -3,7 +3,7 @@ TAGS: religie, geloof, spiritueel, niet religieus, yoga filosofie, levensbeschou
 
 # Moet ik spiritueel of religieus zijn om de opleiding te volgen?
 
-In dit artikel lees je hoe SanaYou YOGAcademy omgaat met traditionele yogaconcepten en of je geloofsovertuiging of spirituele achtergrond een rol speelt.
+In dit artikel lees je of je spiritueel of religieus hoeft te zijn om de opleiding te volgen, hoe SanaYou YOGAcademy omgaat met traditionele yogaconcepten en wat de aanpak is als het gaat om geloofsovertuiging of spirituele achtergrond. Spoiler: jij bepaalt zelf wat je meeneemt.
 
 ## Het maakt niet uit — echt niet
 

@@ -4,7 +4,7 @@ TAGS: groepsgrootte, kleine groep, persoonlijke aandacht, klassikaal, deelnemers
 
 # Hoe groot zijn de groepen bij de klassikale opleiding?
 
-In dit artikel lees je hoe de klassikale groepen bij SanaYou YOGAcademy zijn samengesteld en wat dat betekent voor jouw leerervaring.
+In dit artikel lees je hoe groot de groepen zijn bij de klassikale opleiding, waarom we bewust kiezen voor kleine aantallen en wat je daarvan merkt in de praktijk.
 
 ## Kleine groepen, veel persoonlijke aandacht
 

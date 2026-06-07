@@ -3,7 +3,7 @@
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
 TAGS: aanmelden, ryt300, teacher training, yoga alliance
 
-In dit artikel lees je hoe de RYT300 is opgebouwd en hoe online en klassikaal samenkomen in één verdiepend traject.
+In dit artikel lees je hoe de RYT300 The Art of Advanced Teaching is opgebouwd, hoe online en klassikale lesdagen samenkomen in één verdiepend traject en wat je nodig hebt om in te stappen. Je ontdekt ook wat er inbegrepen is en hoe de erkenning via Yoga Alliance werkt.
 
 ## Een hybride opleiding
 

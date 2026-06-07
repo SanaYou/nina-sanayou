@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: huddle, online, ryt200, teacher training
 
-In dit artikel lees je waar en hoe je vragen stelt tijdens je online module of opleiding.
+In dit artikel lees je waar en hoe je tijdens je online opleiding vragen stelt, hoe je de juiste groep kiest in Huddle en hoe je een docent tagt voor een gericht antwoord. Ook lees je hoe je een vraag goed formuleert en wanneer je een nieuw topic aanmaakt.
 
 ## De online community in Huddle
 

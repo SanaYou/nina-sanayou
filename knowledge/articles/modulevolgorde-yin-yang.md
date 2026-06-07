@@ -4,7 +4,7 @@ TAGS: klassikaal, module, modulevolgorde, ryt200, teacher training, yang yoga, y
 
 ## Wat is de modulevolgorde van de Yin- en Yang-lesmodules?
 
-In dit artikel lees je hoe de volgorde van de Yin- en Yang-lesmodules binnen de RYT/VYN200 Yin & Yang Teacher Training is opgebouwd en waar je zelf keuzeruimte hebt bij het plannen van je opleiding.
+In dit artikel lees je hoe de module­volgorde van de Yin- en Yang-lesmodules binnen de RYT/VYN200 Yin & Yang Teacher Training is opgebouwd, waar je als deelnemer zelf keuzeruimte hebt en waar de volgorde wél vaststaat. Je ontdekt ook hoe je Yin en Yang slim combineert en waar je rekening mee houdt bij het plannen van je opleiding.
 
 ## Vrije startvolgorde: beginnen met Yin of met Yang
 

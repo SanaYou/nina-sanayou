@@ -4,7 +4,7 @@ TAGS: aanmelden, klassikaal, korting, kosten, pakket, ryt200, teacher training
 
 ## Wanneer kom ik in aanmerking voor pakketkorting?
 
-In dit artikel lees je wanneer je in aanmerking komt voor pakketkorting bij de klassikale RYT/VYN200 Yin & Yang Teacher Training en voor welke trajecten deze korting geldt.
+In dit artikel lees je wanneer je in aanmerking komt voor pakketkorting bij de klassikale RYT/VYN200 Yin & Yang Teacher Training, hoe hoog die korting is en voor welke trajecten en boekingsperiodes dit geldt.
 
 ## Wanneer geldt pakketkorting?
 

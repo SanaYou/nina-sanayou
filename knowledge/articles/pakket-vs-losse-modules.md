@@ -4,7 +4,7 @@ TAGS: klassikaal, module, pakket, ryt200, teacher training
 
 ## Wat is het verschil tussen een opleidingspakket en losse lesmodules?
 
-In dit artikel lees je in grote lijnen wat wordt bedoeld met een opleidingspakket en met losse modules binnen de klassikale RYT/VYN200 Yin & Yang Teacher Training, en waar je de uitgebreide uitleg per onderwerp kunt vinden.
+In dit artikel lees je wat het verschil is tussen een opleidingspakket en losse modules binnen de RYT/VYN200 Yin & Yang Teacher Training, en waar je per onderwerp de volledige uitleg vindt.
 
 ## Opleidingspakket of losse modules
 

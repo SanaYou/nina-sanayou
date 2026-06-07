@@ -5,6 +5,8 @@ TAGS: bijscholing, kosten, online, opleiding
 
 In dit artikel vind je de actuele tarieven voor alle klassikale verdiepingsdagen, workshops en meerdaagse events van SanaYou YOGAcademy.
 
+In dit artikel lees je wat de tarieven zijn voor losse verdiepingsdagen, weekenden en meerdaagse events, en klassikale modules die onderdeel zijn van de RYT/VYN200 opleiding. Je vindt ook de praktische informatie die je nodig hebt om je aanmelding te regelen.
+
 ## Losse verdiepingsdagen — €97,50 per dag
 
 De meeste klassikale verdiepingsdagen kosten **€97,50 per dag**. Dit geldt voor:

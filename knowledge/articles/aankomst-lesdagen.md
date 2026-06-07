@@ -4,7 +4,7 @@ TAGS: lesdagen, opleiding
 
 ## Hoe laat ben ik welkom op klassikale les/workshop-dagen?
 
-In dit artikel lees je hoe laat je welkom bent op klassikale lesdagen en wat hierbij belangrijk is.
+In dit artikel lees je hoe laat je welkom bent op klassikale les- en workshopdagen, wat je kunt verwachten bij aankomst en welke praktische informatie handig is om van tevoren te weten.
 
 ## Aankomst op lesdagen
 

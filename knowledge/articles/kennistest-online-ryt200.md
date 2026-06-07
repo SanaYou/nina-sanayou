@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: online, ryt200, teacher training
 
-In dit artikel lees je hoe de kennistests werken binnen de online RYT200-opleidingen en wanneer je het deelcertificaat ontvangt.
+In dit artikel lees je hoe de kennistest werkt aan het einde van een module, wat de cesuur is en wanneer je het deelcertificaat ontvangt.
 
 ## Elke module sluit je af met een kennistest
 

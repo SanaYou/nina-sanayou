@@ -4,7 +4,7 @@ TAGS: begeleiding, huddle, klassikaal, ryt200, teacher training, vyn200
 
 ## Hoe word je begeleid tijdens de klassikale RYT/VYN200 opleiding?
 
-In dit artikel lees je op welke manieren je tijdens de klassikale RYT/VYN200 Yin & Yang Teacher Training wordt begeleid en waar je terechtkunt met vragen, feedback en uitwisseling.
+In dit artikel lees je hoe je begeleid wordt tijdens de klassikale RYT/VYN200 Yin & Yang Teacher Training, welke mogelijkheden je hebt voor persoonlijke begeleiding en vragen, en hoe je verbonden blijft met je medestudenten via Huddle.
 
 ## Persoonlijke begeleiding tijdens de lesdagen
 

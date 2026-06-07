@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: aanmelden, docent, online, ryt200, teacher training
 
-In dit artikel lees je welke mogelijkheden er zijn voor live en persoonlijk contact met een docent tijdens je online opleiding.
+In dit artikel lees je welke mogelijkheden er zijn voor live en persoonlijk contact met een docent tijdens de online RYT200. Van de community tot het LIVE+ Support Pack, je ontdekt precies hoe je ook op afstand persoonlijke begeleiding kunt krijgen.
 
 ## Via de community
 

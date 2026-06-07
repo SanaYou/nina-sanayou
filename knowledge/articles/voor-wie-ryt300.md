@@ -3,7 +3,7 @@
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
 TAGS: ryt300, teacher training, yoga alliance
 
-In dit artikel lees je voor wie de RYT300 bedoeld is en wat je ermee kunt bereiken.
+In dit artikel lees je voor wie de RYT300 geschikt is, wat je ervoor nodig hebt en wat je ermee kunt bereiken. Je ontdekt ook hoe deze opleiding je helpt doorgroeien naar het RYT500-niveau.
 
 ## Een vervolgopleiding op gevorderd niveau
 

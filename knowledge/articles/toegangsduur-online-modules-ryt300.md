@@ -3,7 +3,7 @@ TAGS: ryt300, toegang, toegangsduur, online modules, verlengen, 24 maanden
 
 # Hoelang heb ik toegang tot de online modules van de RYT300?
 
-In dit artikel lees je hoe lang je toegang hebt tot de online lesmodules van de RYT300 en wat je kunt doen als je meer tijd nodig hebt.
+In dit artikel lees je hoe lang je toegang hebt tot de online modules van de RYT300 opleiding, wat er geldt voor de klassikale lesdagen en hoe je je toegang kunt verlengen als je meer tijd nodig hebt.
 
 ## 24 maanden toegang
 

@@ -3,7 +3,7 @@
 COLLECTIE: Betaling, Facturatie & Termijnen
 TAGS: betaling, factuur, module, online
 
-In dit artikel lees je hoe je de factuur van je online module of opleiding terugvindt.
+In dit artikel lees je hoe je de factuur van je online module of opleiding terugvindt, en wat je kunt doen als je hem niet in je inbox ziet staan.
 
 ## Je factuur wordt automatisch verstuurd bij aanmelding
 

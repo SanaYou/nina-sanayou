@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, starten, teacher training, vyn200, yang yoga, yin yoga
 
 ## Hoe vaak per jaar kan ik starten met de RYT/VYN200 Yin & Yang Teacher Training?
 
-In dit artikel lees je op welke momenten je per jaar kunt instappen in de klassikale RYT/VYN200 Yin & Yang Teacher Training en wat elk instroommoment betekent voor je studietraject.
+In dit artikel lees je hoe vaak je per jaar kunt instappen in de klassikale RYT/VYN200 Yin & Yang Teacher Training, wat de twee vaste instroommomenten in september en januari voor je betekenen, en of je ook losse lesmodules kunt volgen.
 
 ## Twee vaste instroommomenten per jaar
 

@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, studeren, studieduur, teacher training, vyn200
 
 ## Hoe lang mag ik maximaal over de RYT/VYN200 doen?
 
-In dit artikel lees je hoe lang je maximaal de tijd hebt om de RYT/VYN200 Yin & Yang Teacher Training af te ronden en voor wie deze termijn van toepassing is.
+In dit artikel lees je hoe lang je maximaal de tijd hebt om de RYT/VYN200 Yin & Yang Teacher Training af te ronden, voor wie die termijn geldt en welke pakketten en trajecten er zijn. Zo weet je meteen of je genoeg ruimte hebt in je planning.
 
 ## Maximale studieduur van drie jaar
 

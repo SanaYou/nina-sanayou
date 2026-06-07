@@ -3,7 +3,7 @@ TAGS: praktijkexamen, beoordeling, semi-live, feedback, lesvideo, feedbackvideo
 
 # Hoe wordt het online praktijkexamen beoordeeld?
 
-In dit artikel lees je hoe de beoordeling van het online praktijkexamen verloopt en wat je na de beoordeling ontvangt.
+In dit artikel lees je hoe de beoordeling van je online praktijkexamen werkt, welke beoordelingsschaal we hanteren en wat je op de beoordelingsdag van ons ontvangt.
 
 ## Beoordelingsmethode: semi-live
 

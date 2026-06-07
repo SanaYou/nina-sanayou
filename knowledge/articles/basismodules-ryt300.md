@@ -3,7 +3,7 @@
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
 TAGS: module, ryt300, teacher training
 
-In dit artikel lees je welke modules iedere RYT300-deelnemer volgt, ongeacht de gekozen studierichting.
+In dit artikel lees je welke vaste modules iedere RYT300-deelnemer volgt, ongeacht de studierichting die je kiest, en wat er na die gedeelde basis voor je in het verschiet ligt.
 
 ## De gedeelde basis: verplicht voor alle deelnemers
 

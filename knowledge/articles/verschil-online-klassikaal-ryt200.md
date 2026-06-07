@@ -3,7 +3,7 @@ TAGS: online opleiding, klassikaal, RYT200, verschil, flexibiliteit, erkenning, 
 
 # Wat is het verschil tussen de online RYT200 en de klassikale opleiding?
 
-In dit artikel lees je wat de online RYT200 Teacher Training onderscheidt van de klassikale variant, zodat je de opleiding kiest die het beste bij jouw situatie past.
+In dit artikel lees je wat de online RYT200 Teacher Training onderscheidt van de klassikale opleiding, van opbouw en studierichtingen tot toegangsduur, begeleiding en prijs. Zo kies je meteen de variant die het beste bij jouw situatie past.
 
 ## Opbouw en vorm
 

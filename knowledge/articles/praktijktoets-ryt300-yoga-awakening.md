@@ -3,7 +3,7 @@ TAGS: RYT300, Yoga Awakening, praktijktoets, examen, opdrachten, video, vinyasa,
 
 # Wat zijn de opdrachten voor de praktijktoets RYT300 Yoga Awakening?
 
-In dit artikel lees je welke opdrachten je uitvoert als je de praktijktoets doet voor de studierichting Yoga Awakening binnen de RYT300 Teacher Training.
+In dit artikel lees je welke opdrachten bij de praktijktoets Yoga Awakening horen, hoe de toets is opgebouwd en wat je zowel in het algemene als het studierichtingspecifieke deel laat zien. Je vindt hier ook de richtlijnen voor adjustments, de technische eisen en hoe je je toets indient.
 
 ## Opbouw van de praktijktoets
 

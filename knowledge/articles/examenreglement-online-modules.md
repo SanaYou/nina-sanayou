@@ -3,7 +3,7 @@ TAGS: examen, toetsing, online, kennistest, certificaat, deelcertificaat
 
 # Hoe werkt de toetsing bij online modules?
 
-In dit artikel lees je hoe de toetsing werkt bij online lesmodules en hoe je je certificaat ontvangt.
+In dit artikel lees je hoe de toetsing werkt bij online modules, wat er geldt voor de volledige RYT200 Online opleiding en hoe je een herkansing aanvraagt als je de theorietoets niet haalt.
 
 ## Kennistests op het online lesplatform
 

@@ -3,7 +3,7 @@ TAGS: studiebelasting, losse modules, uren, bijscholing, CE-punten
 
 # Wat is de studiebelasting van losse online modules?
 
-In dit artikel lees je hoeveel studietijd de losse online modules vragen en welke erkenning je per module ontvangt.
+In dit artikel lees je hoeveel studietijd je per losse online module kwijt bent en welke erkenning je daarvoor ontvangt.
 
 ## Studiebelasting per module
 

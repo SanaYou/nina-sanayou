@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: begeleiding, huddle, online, ryt200, teacher training
 
-In dit artikel lees je welke vormen van begeleiding onderdeel zijn van een online RYT200 Teacher Training, en welke optionele mogelijkheden er zijn.
+In dit artikel lees je hoe de begeleiding bij de online RYT200 Teacher Training is opgebouwd, welke begeleidingsvormen standaard inbegrepen zijn en waar je zelf keuzes in kunt maken.
 
 ## Zelfstandig studeren met ondersteuning
 

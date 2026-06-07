@@ -3,7 +3,7 @@ TAGS: anatomie, integreren, yogales, lesgeven, praktijk, toepassing
 
 # Hoe integreer ik anatomie in mijn yogalessen?
 
-In dit artikel lees je hoe je de anatomische kennis uit de modules kunt toepassen in je yogalessen.
+In dit artikel lees je hoe je anatomische kennis direct toepast in je yogalessen en hoe je je verdiept in specifieke vakgebieden. Zo geef je lessen die niet alleen voelen goed, maar ook écht verantwoord zijn opgebouwd.
 
 ## Functionele anatomie in de praktijk
 

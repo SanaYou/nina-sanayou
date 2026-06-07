@@ -3,7 +3,7 @@ TAGS: workshops, themadagen, verdiepingsdagen, overzicht, aanbod, klassikaal, Zw
 
 # Waar vind ik het overzicht van alle workshops en themadagen?
 
-In dit artikel lees je waar je het actuele aanbod van klassikale workshops, themadagen en verdiepingsdagen van SanaYou YOGAcademy kunt bekijken.
+In dit artikel lees je waar je het actuele workshopaanbod vindt, welke soorten workshops er zijn en waar de lesdagen plaatsvinden.
 
 ## Workshoppagina
 

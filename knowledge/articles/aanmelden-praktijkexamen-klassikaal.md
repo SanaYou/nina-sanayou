@@ -4,7 +4,7 @@ TAGS: aanmelden, certificering, examen, klassikaal, praktijkexamen, vyn200
 
 ## Hoe meld ik mij aan voor een praktijkexamen van de klassikale RYT/VYN200?
 
-In dit artikel lees je hoe je je aanmeldt voor het praktijkexamen van de klassikale RYT/VYN200 Yin & Yang Teacher Training.
+In dit artikel lees je hoe je je aanmeldt voor het praktijkexamen van de klassikale RYT/VYN200 Yin & Yang Teacher Training, en waar je de boekingspagina vindt om je aanmelding te doen.
 
 ## Aanmelden via de boekingspagina
 

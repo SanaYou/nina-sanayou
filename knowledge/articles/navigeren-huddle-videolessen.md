@@ -3,7 +3,7 @@ TAGS: Huddle, videolessen, navigeren, slotje, app, lesdagen, voorbereiding, klas
 
 # Hoe navigeer ik door de videolessen in Huddle?
 
-In dit artikel lees je hoe je de videolessen in Huddle terugvindt, wat de slotjes betekenen en hoe je het beste door de inhoud navigeert als deelnemer aan een klassikale opleiding.
+In dit artikel lees je hoe je de videolessen in Huddle terugvindt, wat de slotjes bij lessen betekenen en hoe je het makkelijkst navigeert via het lesdagenoverzicht. Ook lees je wat je kunt verwachten als je Huddle op desktop gebruikt of via een andere omgeving inlogt.
 
 ## Modules en lesdagen
 

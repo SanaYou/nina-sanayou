@@ -4,7 +4,7 @@ TAGS: begeleiding, online, ryt200, teacher training
 
 ## Welke vormen van begeleiding zijn er bij de RYT200 teacher trainingen Online?
 
-In dit artikel lees je welke vormen van begeleiding onderdeel zijn van een online RYT200 Teacher Training, en welke optionele mogelijkheden er zijn.
+In dit artikel lees je welke begeleidingsvormen er zijn bij de online RYT200 teacher trainingen, wat je zelfstandig doet en waar je ondersteuning bij krijgt, en hoeveel keuzevrijheid je daarin hebt.
 
 ## Zelfstandig studeren met ondersteuning
 

@@ -3,6 +3,8 @@ TAGS: aanmelden, klassikaal, kosten, pakket, ryt200, teacher training, toegang, 
 
 # Helpartikel — Verlengde toegang voor studenten met een volledig RYT200-pakket
 
+In dit artikel lees je alles over de verlengregeling voor studenten met een volledig RYT200-pakket: wanneer je een verlengmail krijgt, hoe de regeling werkt en waar je de verlenglinks per pakket vindt.
+
 ## SanaYou YOGAcademy
 
 ---

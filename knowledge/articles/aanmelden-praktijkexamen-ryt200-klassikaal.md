@@ -4,7 +4,7 @@ TAGS: aanmelden, certificering, examen, klassikaal, kosten, praktijkexamen, ryt2
 
 ## Hoe meld ik mij aan voor het praktijkexamen van de RYT/VYN200?
 
-In dit artikel lees je hoe je je kunt inschrijven voor het praktijkexamen van de RYT/VYN200 opleiding.
+In dit artikel lees je hoe je je aanmeldt voor het praktijkexamen van de RYT/VYN200 opleiding, wat er komt kijken bij het afronden van de Teacher Training en hoe de theorie- en praktijktoetsen zijn opgebouwd. Je leest ook wanneer je je deelcertificaten en einddiploma ontvangt.
 
 ## Het afronden van de RYT/VYN200 Teacher Training
 

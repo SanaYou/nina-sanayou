@@ -3,7 +3,7 @@ TAGS: agenda, boekingsagenda, reservering, datum, overzicht, bevestigingsmail, l
 
 # Waar vind ik mijn persoonlijke boekingsagenda?
 
-In dit artikel lees je waar je je geboekte lesdagen, workshops en themadagen kunt terugvinden.
+In dit artikel lees je waar je je persoonlijke boekingsagenda terugvindt, hoe je hem opent via de link in je bevestigingsmail en wat je er precies in ziet.
 
 ## Link in je bevestigingsmail
 

@@ -3,7 +3,7 @@ TAGS: annulering, annuleringsvoorwaarden, online, module, cursus, terugbetaling
 
 # Wat zijn de annuleringsvoorwaarden voor online scholingen en modules?
 
-In dit artikel lees je wat er geldt als je een online opleiding of module wilt annuleren.
+In dit artikel lees je wat de annuleringsvoorwaarden zijn voor online opleidingen en modules, wanneer annulering niet mogelijk is en wat je kunt doen als je een bijzondere situatie hebt.
 
 ## Annulering is niet mogelijk
 

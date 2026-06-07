@@ -3,7 +3,7 @@ TAGS: ryt300, jaarplanning, lesdagen, klassikaal, roosters, planning, overzicht
 
 # Waar vind ik de jaarplanning van de RYT300 lesdagen?
 
-In dit artikel lees je hoe je de klassikale lesdagen van de RYT300 kunt terugvinden en hoe je weet welke lesdagen bij jouw studierichting horen.
+In dit artikel lees je hoe je de klassikale lesdagen van de RYT300 terugvindt, hoe je bepaalt welke dagen bij jouw studierichting horen en waar je jouw persoonlijke lesagenda vindt.
 
 ## Studierichting bepaalt jouw klassikale lesdagen
 

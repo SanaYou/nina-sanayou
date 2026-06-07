@@ -5,7 +5,7 @@ TAGS: studietijd, uren, online scholing, les, video, kennistoets, certificaat, t
 
 # Hoeveel tijd kost een online scholing?
 
-In dit artikel lees je wat de studieduur van een online scholing inhoudt, wat meer is dan de optelsom van de afspeeltijd van de video's. Dit geldt voor alle online opleidingen: de online RYT200 Teacher Trainingen, de hybride RYT300 Teacher Training en alle losse online modules en bijscholingen.
+In dit artikel lees je wat de studieduur van een online opleiding precies betekent, wat er wel en niet onder valt en of de uren officieel erkend zijn. Dit geldt voor alle online opleidingen van SanaYou YOGAcademy, van de RYT200 en RYT300 Teacher Training tot losse modules en bijscholingen.
 
 ## De genoemde uren zijn de totale studiebelasting om de scholing af te kunnen ronden
 

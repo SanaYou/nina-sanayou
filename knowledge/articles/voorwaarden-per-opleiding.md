@@ -3,7 +3,7 @@ TAGS: voorwaarden, opleiding, module, inschrijving, toelatingseisen, leeftijd, o
 
 # Welke voorwaarden gelden per opleiding of module?
 
-In dit artikel lees je welke voorwaarden van toepassing zijn bij het volgen van een opleiding of module bij SanaYou YOGAcademy.
+In dit artikel lees je welke voorwaarden gelden bij het volgen van een opleiding of module bij SanaYou YOGAcademy. Je vindt hier alles over inschrijving en toelating, de duur van de overeenkomst, toegang tot het online lesplatform en wat er gebeurt als SanaYou wijzigingen doorvoert.
 
 ## Inschrijving en toelating
 

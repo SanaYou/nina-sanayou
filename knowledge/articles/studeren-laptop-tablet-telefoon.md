@@ -3,7 +3,7 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
 TAGS: huddle, online, ryt200, teacher training
 
-In dit artikel lees je via welke apparaten je kunt studeren binnen de online RYT200-opleidingen.
+In dit artikel lees je via welke apparaten je kunt studeren binnen de online RYT200-opleidingen, en waarom Google Chrome daarbij de beste keuze is.
 
 ## Studeren waar en wanneer je wilt
 

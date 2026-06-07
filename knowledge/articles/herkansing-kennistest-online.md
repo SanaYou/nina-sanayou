@@ -4,7 +4,7 @@ TAGS: herkansing, kennistest, quiz, niet geslaagd, opnieuw, theorietoets, certif
 
 # Hoe werkt de herkansing voor een online kennistest?
 
-In dit artikel lees je wat je kunt doen wanneer je niet slaagt voor een online kennistest, of het nu gaat om een module binnen de RYT200 of een losse bijscholing.
+In dit artikel lees je hoe herkansen werkt als je niet slaagt voor een online kennistest, wat de cesuur is, hoe je je voorbereidt, wat de kosten zijn en hoe je een certificaat ontvangt.
 
 ## Herkansen is mogelijk
 
