@@ -465,6 +465,7 @@
   function showHome() {
     document.getElementById('search').value = '';
     showView('view-home');
+    if (location.hash) history.replaceState(null, '', location.pathname);
   }
 
   function showCollection(collectionName) {
@@ -527,6 +528,10 @@
       card.classList.add('open');
       postProcessRelated(card);
     }
+    // Werk de URL bij zodat het artikel deelbaar is (zonder nieuwe history-entry)
+    if (card.dataset.id) {
+      history.replaceState(null, '', '#' + card.dataset.id);
+    }
     card.classList.add('highlight');
     setTimeout(function(c) { return function() { c.classList.remove('highlight'); }; }(card), 2000);
   }
@@ -576,6 +581,27 @@
 
     return false;
   }
+
+  // ─── Deeplink: open een artikel direct via #id in de URL ──
+  // Voorbeeld: support.sanayou.com/#vragen-stellen-online-opleiding
+  function openArticleById(id) {
+    if (!id) return false;
+    var art = allArticles.find(function(a) { return a.id === id; });
+    if (!art) return false;
+    showCollection(art.collection || 'Algemene informatie');
+    setTimeout(function() {
+      var card = document.querySelector('.article-card[data-id="' + id + '"]');
+      if (card) scrollToCard(card);
+    }, 350);
+    return true;
+  }
+
+  function openFromHash() {
+    var id = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim();
+    if (id) openArticleById(id);
+  }
+
+  window.addEventListener('hashchange', openFromHash);
 
   // ─── Gerelateerde artikelen post-processing ────────────
 
@@ -716,6 +742,7 @@
       document.getElementById('loading').style.display = 'none';
       renderTiles(articles);
       showView('view-home');
+      openFromHash();
     })
     .catch(function() {
       document.getElementById('loading').textContent = 'Kon artikelen niet laden. Probeer de pagina te verversen.';
