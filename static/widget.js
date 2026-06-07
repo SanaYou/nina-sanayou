@@ -294,8 +294,9 @@
     inpEl.style.height = Math.min(inpEl.scrollHeight, 80) + "px";
   });
 
-  // Proactief tekstballonnetje — trekt aandacht naar Nina, wegklikbaar
-  var NUDGE_KEY = "nina_nudge_dismissed";
+  // Proactief tekstballonnetje — trekt aandacht naar Nina, wegklikbaar.
+  // sessionStorage: 1x per bezoek (ook bij doorklikken), opnieuw bij een volgend bezoek.
+  var NUDGE_KEY = "nina_nudge_seen";
   var nudge = document.createElement("div");
   nudge.id = "nina-nudge";
   nudge.innerHTML =
@@ -303,22 +304,21 @@
     "<strong>Hoi! 👋 Heb je een vraag?</strong>Ik help je meteen op weg.";
   document.body.appendChild(nudge);
 
-  function hideNudge(persist) {
+  function hideNudge() {
     nudge.classList.remove("show");
     btn.classList.remove("pulse");
-    if (persist) {
-      try { localStorage.setItem(NUDGE_KEY, "1"); } catch (e) {}
-    }
   }
 
-  var nudgeDismissed = false;
-  try { nudgeDismissed = localStorage.getItem(NUDGE_KEY) === "1"; } catch (e) {}
+  var nudgeSeen = false;
+  try { nudgeSeen = sessionStorage.getItem(NUDGE_KEY) === "1"; } catch (e) {}
 
-  if (!nudgeDismissed) {
+  if (!nudgeSeen) {
     setTimeout(function () {
       if (!isOpen) {
         nudge.classList.add("show");
         btn.classList.add("pulse");
+        // markeer als getoond, zodat het deze sessie niet opnieuw verschijnt
+        try { sessionStorage.setItem(NUDGE_KEY, "1"); } catch (e) {}
       }
     }, 4000);
   }
@@ -326,15 +326,15 @@
   nudge.addEventListener("click", function (e) {
     if (e.target && e.target.id === "nina-nudge-x") {
       e.stopPropagation();
-      hideNudge(true);
+      hideNudge();
       return;
     }
-    hideNudge(true);
+    hideNudge();
     if (!isOpen) btn.click();
   });
 
   // Zodra de chat opent (op welke manier dan ook): ballon weg
   btn.addEventListener("click", function () {
-    hideNudge(true);
+    hideNudge();
   });
 })();
