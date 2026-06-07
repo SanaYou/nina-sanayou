@@ -44,6 +44,13 @@
     ".n-send{width:36px;height:36px;background:#66B0B2;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;}",
     ".n-send:hover{background:#5a9ea0;} .n-send:disabled{background:#ccc;cursor:not-allowed;}",
     ".n-credit{text-align:center;font-size:10.5px;color:#c8c8c8;padding:5px;font-family:'Raleway',sans-serif;}",
+    "#nina-nudge{position:fixed;bottom:92px;right:24px;max-width:228px;background:#fff;color:#5a6b6b;font-family:'Raleway',sans-serif;font-size:13.5px;line-height:1.45;padding:13px 30px 13px 15px;border-radius:14px;border-bottom-right-radius:4px;box-shadow:0 6px 22px rgba(0,0,0,0.16);z-index:99997;opacity:0;transform:translateY(8px);transition:opacity .3s ease,transform .3s ease;cursor:pointer;pointer-events:none;}",
+    "#nina-nudge.show{opacity:1;transform:translateY(0);pointer-events:all;}",
+    "#nina-nudge strong{color:#66B0B2;font-family:'Bellota',sans-serif;font-weight:700;display:block;margin-bottom:2px;}",
+    "#nina-nudge-x{position:absolute;top:5px;right:8px;width:18px;height:18px;border:none;background:transparent;color:#bbb;font-size:16px;line-height:1;cursor:pointer;padding:0;}",
+    "#nina-nudge-x:hover{color:#7A7A7A;}",
+    "#nina-btn.pulse{animation:nina-pulse 2s ease-out infinite;}",
+    "@keyframes nina-pulse{0%{box-shadow:0 4px 16px rgba(102,176,178,0.4),0 0 0 0 rgba(102,176,178,0.5);}70%{box-shadow:0 4px 16px rgba(102,176,178,0.4),0 0 0 14px rgba(102,176,178,0);}100%{box-shadow:0 4px 16px rgba(102,176,178,0.4),0 0 0 0 rgba(102,176,178,0);}}",
   ].join("");
 
   var styleEl = document.createElement("style");
@@ -285,5 +292,49 @@
   inpEl.addEventListener("input", function () {
     inpEl.style.height = "auto";
     inpEl.style.height = Math.min(inpEl.scrollHeight, 80) + "px";
+  });
+
+  // Proactief tekstballonnetje — trekt aandacht naar Nina, wegklikbaar
+  var NUDGE_KEY = "nina_nudge_dismissed";
+  var nudge = document.createElement("div");
+  nudge.id = "nina-nudge";
+  nudge.innerHTML =
+    '<button id="nina-nudge-x" aria-label="Sluiten">&times;</button>' +
+    "<strong>Hoi! 👋 Heb je een vraag?</strong>Ik help je meteen op weg.";
+  document.body.appendChild(nudge);
+
+  function hideNudge(persist) {
+    nudge.classList.remove("show");
+    btn.classList.remove("pulse");
+    if (persist) {
+      try { localStorage.setItem(NUDGE_KEY, "1"); } catch (e) {}
+    }
+  }
+
+  var nudgeDismissed = false;
+  try { nudgeDismissed = localStorage.getItem(NUDGE_KEY) === "1"; } catch (e) {}
+
+  if (!nudgeDismissed) {
+    setTimeout(function () {
+      if (!isOpen) {
+        nudge.classList.add("show");
+        btn.classList.add("pulse");
+      }
+    }, 4000);
+  }
+
+  nudge.addEventListener("click", function (e) {
+    if (e.target && e.target.id === "nina-nudge-x") {
+      e.stopPropagation();
+      hideNudge(true);
+      return;
+    }
+    hideNudge(true);
+    if (!isOpen) btn.click();
+  });
+
+  // Zodra de chat opent (op welke manier dan ook): ballon weg
+  btn.addEventListener("click", function () {
+    hideNudge(true);
   });
 })();
