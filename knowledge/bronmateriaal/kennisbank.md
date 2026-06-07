@@ -126,16 +126,15 @@ Dit is de volledige artikelstructuur zoals vastgelegd in de Intercom-opzet van S
 | 2 | Hoe werkt het praktijkexamen van een online opleiding? |
 | 3 | Hoe meld ik mij aan voor een praktijkexamen (klassikaal)? |
 | 4 | Hoe meld ik mij aan voor een praktijkexamen (online)? |
-| 5 | Hoe plan ik mijn online praktijkexamen in? |
-| 6 | Hoe wordt het online praktijkexamen beoordeeld? |
-| 7 | Wat is het Teaching Assessment Pack? |
-| 8 | Wat is het Support Pack en wanneer gebruik ik dit? |
-| 9 | Kan ik aanvullende klassikale lesdagen volgen ter voorbereiding? |
-| 10 | Hoe werkt de theorie-toets? |
-| 11 | Waar vind ik de voorwaarden en het examenreglement? |
-| 12 | Wat kost een herkansing? |
-| 13 | Hoe werkt de procedure van een herkansing? |
-| 14 | Wanneer ben ik officieel erkend yogadocent? |
+| 5 | Hoe wordt het online praktijkexamen beoordeeld? |
+| 6 | Wat is het Teaching Assessment Pack? |
+| 7 | Wat is het Support Pack en wanneer gebruik ik dit? |
+| 8 | Kan ik aanvullende klassikale lesdagen volgen ter voorbereiding? |
+| 9 | Hoe werkt de theorie-toets? |
+| 10 | Waar vind ik de voorwaarden en het examenreglement? |
+| 11 | Wat kost een herkansing? |
+| 12 | Hoe werkt de procedure van een herkansing? |
+| 13 | Wanneer ben ik officieel erkend yogadocent? |
 
 ---
 

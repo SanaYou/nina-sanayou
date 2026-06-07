@@ -23,7 +23,7 @@ Je vraagt een herkansing aan via: [Aanvraag herkansing theorietoets](https://che
 
 ## Gerelateerde artikelen
 
-- Hoe plan ik mijn online praktijkexamen in voor de RYT200?
+- Hoe werkt de praktijktoets voor de RYT200 Online?
 - Hoe wordt het online praktijkexamen beoordeeld?
 - Aan welke eisen moet mijn examenvideo voldoen?
 - Wanneer ben ik officieel erkend yogadocent?

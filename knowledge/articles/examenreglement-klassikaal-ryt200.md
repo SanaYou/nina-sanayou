@@ -30,6 +30,6 @@ Bekijk hier de volledige voorwaarden: [Algemene voorwaarden](https://www.sanayou
 ## Gerelateerde artikelen
 
 - Hoe werkt het praktijkexamen van de klassikale RYT/VYN200?
-- Hoe plan ik mijn online praktijkexamen in voor de RYT200?
+- Hoe werkt de praktijktoets voor de RYT200 Online?
 - Wat zijn de aanwezigheidsrichtlijnen bij de modules van de RYT/VYN200 klassikaal?
 - Wanneer ben ik officieel erkend yogadocent?

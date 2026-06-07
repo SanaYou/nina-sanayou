@@ -5,6 +5,12 @@ TAGS: aanmelden, kosten, betaald, gratis, online, praktijktoets, ryt200, teacher
 
 In dit artikel lees je hoe de praktijktoets werkt binnen de erkende RYT200 Yin Yoga, Yang Yoga en Yin & Yang Yoga Teacher Training Online, en hoe je deze aanvraagt.
 
+## Wanneer kun je examen aanvragen?
+
+Voor het online praktijkexamen van de RYT200 dien je eerst van iedere afzonderlijke lesmodule het deelcertificaat te hebben behaald. Pas daarna kun je het praktijkexamen aanvragen.
+
+Er is geen vast examenmoment, je plant het zelf in wanneer het jou uitkomt. Je neemt de les in je eigen tijd op en levert de video digitaal aan.
+
 ## Wat houdt de praktijktoets in?
 
 Aan het einde van je opleiding sluit je af met een praktijktoets. Je neemt een eigen yogales op en stuurt deze digitaal in, zodat de docent kan beoordelen hoe je de lesstof toepast in je rol als docent.
