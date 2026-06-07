@@ -1,0 +1,7 @@
+weeklog/
+REVIEW-*.md
+TODO-*.md
+ARTIKELEN-*.md
+logs/
+monitor_nina.py
+test_nina.py
