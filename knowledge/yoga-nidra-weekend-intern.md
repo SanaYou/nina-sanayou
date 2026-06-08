@@ -10,9 +10,9 @@ Het Yoga Nidra beleef- en verdiepingsweekend vindt **één keer per jaar** plaat
 
 Dit geldt ook voor alle andere verdiepingsmodules en themadagen van SanaYou YOGAcademy: elk wordt jaarlijks eenmalig aangeboden.
 
-## Data 2026
+## Wanneer precies?
 
-Het Yoga Nidra weekend in 2026 is op **30 en 31 mei**.
+De exacte data wisselen per jaar. Noem nooit zelf een datum, maar verwijs naar het workshopoverzicht, waar de eerstvolgende datum altijd actueel staat: https://sanayou.com/workshops
 
 Locatie: Hasselterdijk 20-E, Zwolle.
 

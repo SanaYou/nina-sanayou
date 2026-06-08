@@ -58,12 +58,12 @@ Alle onderstaande klassikale dagen hebben dezelfde prijs:
 ### Weekenden & meerdaagse
 | Event | Duur | Prijs |
 |---|---|---|
-| Yoga Nidra beleef- & verdiepingsweekend | 2 dagen (30–31 mei) | €125 |
-| Yin Yoga ontmoet Reiki | 2 dagen (3–4 okt) | €175 |
-| The Art of Hands-On Assists | 3 dagen (3, 10, 11 jul) | €175 |
-| Ashtanga Yoga Course | 3 dagen (6, 7, 14 nov) | €142,50 (3 termijnen van €47,50) |
+| Yoga Nidra beleef- & verdiepingsweekend | 2 dagen | €125 |
+| Yin Yoga ontmoet Reiki | 2 dagen | €175 |
+| The Art of Hands-On Assists | 3 dagen | €175 |
+| Ashtanga Yoga Course | 3 dagen | €142,50 (3 termijnen van €47,50) |
 
-*Alle klassikale lesdagen vinden plaats op Hasselterdijk 20-E, Zwolle, 10:30–17:00u.*
+*Alle klassikale lesdagen vinden plaats op Hasselterdijk 20-E, Zwolle, 10:30–17:00u. De actuele data staan op sanayou.com/workshops.*
 
 ### Upgrades (online + klassikale lesdagen)
 Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module. De prijzen zijn identiek aan de losse dagprijzen hierboven -er is geen apart upgradepakket.
@@ -72,10 +72,10 @@ Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module.
 |---|---|---|---|---|---|
 | Critical Alignment Yoga | 32u | €475 | 3 lesdagen (CAY-workshopdagen) | 3x €97,50 = €292,50 | 50u |
 | Ashtanga Yoga | 50u | €475 | Ashtanga Yoga Course (3 dgn) + The Art of Hands-On Assists (3 dgn) | €142,50 + €175 = €317,50 | 100u |
-| Yoga Nidra | 25u | €375 | 2-daags beleef- & verdiepingsweekend (30–31 mei) | €125 | 40u |
+| Yoga Nidra | 25u | €375 | 2-daags beleef- & verdiepingsweekend | €125 | 40u |
 | Yin Yoga & de 5 Elementenleer | 32u | €475 | 5 losse lesdagen (per element één dag) | 5x €97,50 = €487,50 | 75u |
-| Your Body, Your Yoga | 8u | €95 | 1 lesdag (1 mei) | €97,50 | 15u |
-| Restorative Alignment Yoga | 20u | €275 | 1 lesdag Yin Yoga meets Restorative Alignment (4 jul) | €97,50 | 25u |
+| Your Body, Your Yoga | 8u | €95 | 1 lesdag | €97,50 | 15u |
+| Restorative Alignment Yoga | 20u | €275 | 1 lesdag Yin Yoga meets Restorative Alignment | €97,50 | 25u |
 
 ---
 
