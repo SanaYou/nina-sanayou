@@ -17,10 +17,10 @@ Het resultaat is een hoger aantal erkende studieuren én een verdiepend certific
 |---|---|---|---|---|---|
 | Critical Alignment Yoga | 32 uur | €475 | 3 lesdagen (CAY-workshopdagen) | 3x €97,50 = €292,50 | 50 uur |
 | Ashtanga Yoga | 50 uur | €475 | 6 lesdagen: Ashtanga Yoga Course (3 dagen) + The Art of Hands-On Assists (3 dagen) | €142,50 + €175 = €317,50 | 100 uur |
-| Yoga Nidra | 25 uur | €375 | 2-daags beleef- & verdiepingsweekend (30–31 mei) | €125 | 40 uur |
+| Yoga Nidra | 25 uur | €375 | 2-daags beleef- & verdiepingsweekend | €125 | 40 uur |
 | Yin Yoga & de 5 Elementenleer | 32 uur | €475 | 5 losse lesdagen (per element één dag) | 5x €97,50 = €487,50 | 75 uur |
-| Your Body, Your Yoga | 8 uur | €95 | 1 lesdag (1 mei) | €97,50 | 15 uur |
-| Restorative Alignment Yoga | 20 uur | €275 | 1 lesdag Yin Yoga meets Restorative Alignment (4 jul) | €97,50 | 25 uur |
+| Your Body, Your Yoga | 8 uur | €95 | 1 lesdag | €97,50 | 15 uur |
+| Restorative Alignment Yoga | 20 uur | €275 | 1 lesdag Yin Yoga meets Restorative Alignment | €97,50 | 25 uur |
 
 ## Hoe boek je een klassikale uitbreiding?
 

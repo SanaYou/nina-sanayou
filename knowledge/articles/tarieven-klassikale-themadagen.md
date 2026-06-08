@@ -3,8 +3,6 @@
 COLLECTIE: Losse Online Bijscholingen en Specialisaties
 TAGS: bijscholing, kosten, online, opleiding
 
-In dit artikel vind je de actuele tarieven voor alle klassikale verdiepingsdagen, workshops en meerdaagse events van SanaYou YOGAcademy.
-
 In dit artikel lees je wat de tarieven zijn voor losse verdiepingsdagen, weekenden en meerdaagse events, en klassikale modules die onderdeel zijn van de RYT/VYN200 opleiding. Je vindt ook de praktische informatie die je nodig hebt om je aanmelding te regelen.
 
 ## Losse verdiepingsdagen — €97,50 per dag
@@ -28,12 +26,14 @@ De meeste klassikale verdiepingsdagen kosten **€97,50 per dag**. Dit geldt voo
 
 ## Weekenden en meerdaagse events
 
-| Event | Data 2026 | Duur | Prijs |
-|---|---|---|---|
-| Yoga Nidra beleef- & verdiepingsweekend | 30–31 mei | 2 dagen | €125 |
-| Yin Yoga ontmoet Reiki | 3–4 oktober | 2 dagen | €175 |
-| The Art of Hands-On Assists | 3, 10 & 11 juli | 3 dagen | €175 |
-| Ashtanga Yoga Course | 6, 7 & 14 november | 3 dagen | €142,50 (of 3x €47,50) |
+| Event | Duur | Prijs |
+|---|---|---|
+| Yoga Nidra beleef- & verdiepingsweekend | 2 dagen | €125 |
+| Yin Yoga ontmoet Reiki | 2 dagen | €175 |
+| The Art of Hands-On Assists | 3 dagen | €175 |
+| Ashtanga Yoga Course | 3 dagen | €142,50 (of 3x €47,50) |
+
+De actuele data van deze events vind je op [sanayou.com/workshops](https://sanayou.com/workshops).
 
 ## Klassikale modules (onderdeel RYT/VYN200)
 

@@ -17,7 +17,7 @@ Volg je een online opleiding die je kunt aanvullen met klassikale lesdagen? Dan 
 
 ## RYT300 lesdagen
 
-De klassikale lesdagen van de RYT300 vind je op de [RYT300 opleidingspagina](https://www.sanayou.com/overzicht-ryt300-yoga-opleidingen.html), gesorteerd per studierichting (algemeen deel, Yin Mastery en Yoga Awakening). Deze data worden automatisch actueel gehouden. Daarnaast staan ze ook altijd op de workshoppagina.
+De klassikale lesdagen van de RYT300 vind je op de [RYT300 opleidingspagina](https://sanayou.com/overzicht-ryt300-yoga-opleidingen), gesorteerd per studierichting (algemeen deel, Yin Mastery en Yoga Awakening). Deze data worden automatisch actueel gehouden. Daarnaast staan ze ook altijd op de workshoppagina.
 
 ## Wat voor soort workshops zijn er?
 
