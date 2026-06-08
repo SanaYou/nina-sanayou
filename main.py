@@ -144,6 +144,7 @@ def load_base_knowledge() -> str:
         "whatsapp-telefoonnummer.md",
         "naam-email-verzamelen.md",
         "scope-hallucinatie-escalatie.md",
+        "gespreksvoering.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
