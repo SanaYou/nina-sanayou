@@ -143,6 +143,7 @@ def load_base_knowledge() -> str:
         "kortingen-kosten.md",
         "whatsapp-telefoonnummer.md",
         "naam-email-verzamelen.md",
+        "scope-hallucinatie-escalatie.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
