@@ -4,7 +4,7 @@ TAGS: klassikaal, ryt200, teacher training, vyn200, yang yoga, yin yoga, yoga al
 
 ## Welke accreditaties heeft de RYT/VYN200 Yin & Yang opleiding?
 
-In dit artikel lees je welke accreditaties de RYT/VYN200 Yin & Yang Yoga Teacher Training heeft, zowel internationaal (Yoga Alliance) als nationaal (Vereniging Yoga Docenten Nederland), en wat die erkenning concreet voor jou betekent als deelnemer en afgestudeerde.
+In dit artikel lees je welke accreditaties de RYT/VYN200 Yin & Yang Yoga Teacher Training heeft, zowel internationaal (Yoga Alliance) als nationaal (Vereniging Yogadocenten Nederland), en wat die erkenning concreet voor jou betekent als deelnemer en afgestudeerde.
 
 ## Dubbele accreditatie: internationaal én nationaal
 
@@ -14,9 +14,9 @@ De RYT/VYN200 Yin & Yang Yoga Teacher Training heeft een dubbele accreditatie. D
 
 De opleiding is internationaal geaccrediteerd door Yoga Alliance. Na afronding kun je jezelf, als je dat wilt, registreren als Registered Yoga Teacher (RYT 200). De letters RYT staan voor Registered Yoga Teacher en geven aan dat je een erkende 200-uurs yogaopleiding hebt afgerond die voldoet aan de internationale standaarden van Yoga Alliance. Of je je daadwerkelijk registreert, bepaal je zelf. De opleiding biedt je in ieder geval de mogelijkheid om deze registratie aan te vragen.
 
-## Nationale accreditatie: Vereniging Yoga Docenten Nederland (VYN 200)
+## Nationale accreditatie: Vereniging Yogadocenten Nederland (VYN 200)
 
-Naast de internationale accreditatie is de RYT/VYN200 ook geaccrediteerd door de Vereniging Yoga Docenten Nederland (VYN). Deze accreditatie staat in Nederland zeer hoog aangeschreven en geldt als een belangrijke erkenning van kwaliteit en inhoud binnen het yoga-onderwijs. De VYN toetst opleidingen zorgvuldig op opbouw, inhoud, didactiek en professionaliteit.
+Naast de internationale accreditatie is de RYT/VYN200 ook geaccrediteerd door de Vereniging Yogadocenten Nederland (VYN). Deze accreditatie staat in Nederland zeer hoog aangeschreven en geldt als een belangrijke erkenning van kwaliteit en inhoud binnen het yoga-onderwijs. De VYN toetst opleidingen zorgvuldig op opbouw, inhoud, didactiek en professionaliteit.
 
 Na afronding kun je er, als je dat wilt, voor kiezen om je te registreren als erkend yogadocent bij de VYN. Ook deze registratie is een eigen keuze. Een registratie bij de VYN kan aanvullende voordelen hebben, zoals toegang tot collectieve regelingen voor yogadocenten. Meer informatie hierover vind je in een apart artikel.
 

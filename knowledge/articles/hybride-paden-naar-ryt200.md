@@ -44,7 +44,7 @@ Wat het beste bij je past, bespreek je samen met Sandy.
 
 Als je je 200 uur op deze manier afrondt, behaal je een **Yoga Alliance RYT200-diploma**. Dat is een internationaal erkend diploma waarmee je erkend yogadocent wordt.
 
-Eén ding is goed om te weten: de VYN-erkenning (de Vereniging Yoga Docenten Nederland) geldt alleen als je alle vier klassikale blokken hebt gevolgd, dus Yin 1+2 én Yang 1+2, allemaal in Zwolle. Kies je voor aanvulling met online modules, dan is VYN niet van toepassing. Dat is geen probleem, het is gewoon een andere route met een andere erkenning. Voor veel docenten is het Yoga Alliance-diploma meer dan voldoende.
+Eén ding is goed om te weten: de VYN-erkenning (de Vereniging Yogadocenten Nederland) geldt alleen als je alle vier klassikale blokken hebt gevolgd, dus Yin 1+2 én Yang 1+2, allemaal in Zwolle. Kies je voor aanvulling met online modules, dan is VYN niet van toepassing. Dat is geen probleem, het is gewoon een andere route met een andere erkenning. Voor veel docenten is het Yoga Alliance-diploma meer dan voldoende.
 
 ## Heb je een vraag over jouw situatie?
 

@@ -19,7 +19,7 @@ Bij een aantal online modules kun je aanvullend klassikale lesdagen bijboeken. N
 
 ## Los als bijscholing
 
-Elke module is ook los te volgen als bijscholing. Je ontvangt een digitaal deelcertificaat met het aantal erkende CE-uren (Yoga Alliance). Alle modules gelden tevens als erkende bijscholing voor de Vereniging Yoga Docenten Nederland.
+Elke module is ook los te volgen als bijscholing. Je ontvangt een digitaal deelcertificaat met het aantal erkende CE-uren (Yoga Alliance). Alle modules gelden tevens als erkende bijscholing voor de Vereniging Yogadocenten Nederland.
 
 ## Gerelateerde artikelen
 

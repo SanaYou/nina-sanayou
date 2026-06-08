@@ -269,7 +269,7 @@ Bij RYT300: LIVE+ inbegrepen. Teaching Assessment Pack niet nodig als klassikale
 ### 7.3 VYN-erkenning in de beslislogica
 
 Niet als vroege vraag stellen. Pas vermelden in het advies zodra het klassikale pad duidelijk is:
-> *"Goed om te weten: de volledig klassikale 200 uur is erkend door zowel Yoga Alliance als de Vereniging Yoga Docenten Nederland. Dat is uniek voor dit pad."*
+> *"Goed om te weten: de volledig klassikale 200 uur is erkend door zowel Yoga Alliance als de Vereniging Yogadocenten Nederland. Dat is uniek voor dit pad."*
 
 ### 7.4 Adviezen en uitkomsten
 

@@ -15,7 +15,7 @@ Deze instructie bepaalt hoe Nina reageert wanneer een contact aangeeft vragen te
 
 ## Belangrijk onderscheid bij 200-uurs opleidingen
 
-- De **RYT/VYN200** is altijd de klassikale 200-uurs opleiding. Deze is erkend door zowel Yoga Alliance (RYT200) als de Vereniging Yoga Docenten Nederland (VYN200).
+- De **RYT/VYN200** is altijd de klassikale 200-uurs opleiding. Deze is erkend door zowel Yoga Alliance (RYT200) als de Vereniging Yogadocenten Nederland (VYN200).
 - De **online 200-uurs opleidingen** zijn RYT200 (zonder VYN). Deze zijn uitsluitend erkend door Yoga Alliance.
 
 Gebruik dit onderscheid om het gesprek in de juiste richting te sturen zodra duidelijk is welke opleiding bedoeld wordt.

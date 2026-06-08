@@ -23,7 +23,7 @@ Dit is wél mogelijk. De RYT300 bij SanaYou staat open voor docenten die hun RYT
 
 ---
 
-## Erkenning VYN (Vereniging Yoga Docenten Nederland)
+## Erkenning VYN (Vereniging Yogadocenten Nederland)
 
 VYN erkent uitsluitend opleidingen van **200 uur** of **500 uur**.
 

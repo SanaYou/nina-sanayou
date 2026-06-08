@@ -14,7 +14,7 @@ Elke losse module sluit je af met kennistests. Na het succesvol afronden van all
 Het deelcertificaat is erkend door:
 
 - **Yoga Alliance** — de behaalde uren tellen mee als Continuing Education (CE)-uren. Dit is relevant als je je bestaande Yoga Alliance-registratie wilt verlengen of uitbreiden.
-- **VYN (Vereniging voor Yoga Professionals Nederland)** — de uren tellen mee als bijscholingspunten voor VYN-leden.
+- **VYN (Vereniging Yogadocenten Nederland)** — de uren tellen mee als bijscholingspunten voor VYN-leden.
 
 ## Doorstroommogelijkheden
 

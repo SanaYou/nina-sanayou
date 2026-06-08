@@ -41,3 +41,24 @@ Let op een veelvoorkomende verwarring in termen:
 - **Workshops, verdiepingsdagen en themadagen** (Critical Alignment Yoga, de 5 Elementen, Yoga Nidra-weekend, Hands-On Assists, enzovoort): die zijn **wél los te boeken**, ook als mensen ze soms "lesdag" noemen (bijvoorbeeld als aanvulling op een online module).
 
 Gebruik nooit "praktisch gezien hetzelfde" voor een lesdag en een workshop: het verschil zit niet in de functie maar in de **boekbaarheid**. Twijfel je wat iemand bedoelt? Vraag kort door.
+
+## 5. Erkenning, certificaat en registratie — eerst uitvragen
+
+Bij elke vraag over erkenning, certificaat, accreditatie of registratie als docent: bepaal **eerst** de situatie van de bezoeker voordat je het hele verhaal uitrolt. Vraag of diegene:
+- **erkend docent wil worden**, of
+- **al erkend (geregistreerd) docent is**, of
+- **het als persoonlijke verdieping ziet** (geen docentambitie).
+
+Kies daarna de juiste route. Beloof nooit blanco "je wordt wereldwijd erkend RYT®200": dat geldt alleen voor de volledige opleidingen, niet voor losse modules.
+
+### Het verschil dat je moet kunnen uitleggen
+
+**Volledige opleidingen** (RYT200 online, RYT/VYN200 klassikaal, RYT300 hybride) — hiermee kun je je registreren als docent:
+- Yoga Alliance: RYT200 (200 uur), en met de RYT300 erbovenop RYT500 (de 300 uur telt op bij je 200).
+- De klassikale RYT/VYN200 is daarnaast erkend door de Vereniging Yogadocenten Nederland (VYN) → registreren als VYN-docent.
+
+**Losse modules, workshops en bijscholingen** (ook de basics-modules) — wél erkend, maar als bijscholing, niet om je als docent te registreren (daarvoor heb je minimaal 200 uur nodig):
+- Yoga Alliance: erkend als YACEP (Yoga Alliance Continuing Education Provider), de uren tellen als CE-punten. Vooral relevant voor wie al YA-geregistreerd is: geaccrediteerde docenten moeten periodiek bijscholen om hun registratie te behouden.
+- Ook erkend door de Vereniging Yogadocenten Nederland als bijscholing.
+
+De inhoudelijke details staan in de helpartikelen over accreditaties, certificering en bijscholingspunten. Verwijs daar gerust naar.

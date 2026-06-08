@@ -7,7 +7,7 @@ In dit artikel lees je of een workshop meetelt voor je opleiding of bijscholing,
 
 ## Erkende bijscholingspunten
 
-Alle workshops en themadagen van SanaYou YOGAcademy zijn geaccrediteerd door Yoga Alliance als YACEP (Yoga Alliance Continuing Education Provider). Ze leveren Continuing Education (CE) punten op. Daarnaast gelden ze als erkende bijscholing voor de Vereniging Yoga Docenten Nederland.
+Alle workshops en themadagen van SanaYou YOGAcademy zijn geaccrediteerd door Yoga Alliance als YACEP (Yoga Alliance Continuing Education Provider). Ze leveren Continuing Education (CE) punten op. Daarnaast gelden ze als erkende bijscholing voor de Vereniging Yogadocenten Nederland.
 
 ## Aanvulling op je online opleiding
 
