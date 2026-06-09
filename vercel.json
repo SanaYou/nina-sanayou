@@ -1,9 +1,5 @@
 {
   "redirects": [
     { "source": "/helpcenter.html", "destination": "/", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/", "destination": "/helpcenter.html" },
-    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
