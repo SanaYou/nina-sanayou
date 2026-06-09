@@ -456,7 +456,7 @@ async def chat(request: ChatRequest):
 
                 # Strip de [[ESCALATIE]] tag uit het zichtbare antwoord. Aanwezigheid
                 # van de tag = harde trigger om naar Help Scout door te sturen.
-                tag_match = re.search(r'\[\[ESCALATIE[^\]]*\]\]', response_text)
+                tag_match = re.search(r'`*\s*\[\[ESCALATIE[^\]]*\]\]\s*`*', response_text)
                 had_escalatie_tag = bool(tag_match)
                 if tag_match:
                     response_text = response_text.replace(tag_match.group(0), "").strip()
