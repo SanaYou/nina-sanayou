@@ -454,16 +454,19 @@ async def chat(request: ChatRequest):
                 # Taalcheck: corrigeer Engelse calques en slechte vertalingen
                 response_text = _taalcheck(client, response_text)
 
-                # Strip eventuele [[ESCALATIE]] tag als Nina die toch meestuurt
+                # Strip de [[ESCALATIE]] tag uit het zichtbare antwoord. Aanwezigheid
+                # van de tag = harde trigger om naar Help Scout door te sturen.
                 tag_match = re.search(r'\[\[ESCALATIE[^\]]*\]\]', response_text)
+                had_escalatie_tag = bool(tag_match)
                 if tag_match:
                     response_text = response_text.replace(tag_match.group(0), "").strip()
 
-                # Detecteer escalatie: bevat Nina's antwoord een bevestiging
-                # met een e-mailadres dat de gebruiker net heeft gegeven?
+                # Detecteer escalatie: tag aanwezig (primair) óf Nina rondt af
+                # met een afsluitende formulering + een e-mailadres in het gesprek.
                 escalated = False
                 try:
-                    escalated = bool(_detect_and_escalate(request.message, response_text, messages))
+                    escalated = bool(_detect_and_escalate(
+                        request.message, response_text, messages, force=had_escalatie_tag))
                 except Exception as esc_err:
                     logger.error(f"Escalatie-detectie mislukt: {esc_err}")
 
@@ -604,16 +607,19 @@ def _format_chat_html(history: list, summary: str) -> str:
     return html
 
 
-def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: list):
+def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: list, force: bool = False):
     """Detecteer of Nina een escalatie afrondt en stuur door naar Help Scout.
 
-    Trigger: Nina zegt "doorgestuurd" in haar antwoord → dat betekent dat ze
-    klaar is met de escalatieflow (naam+email bevestigd, en bij flow 2 ook
-    het onderwerp gevraagd). Op dat moment zoeken we het emailadres op in
-    de chathistorie en sturen alles door.
+    Primaire trigger: ``force=True`` (Nina zette de onzichtbare [[ESCALATIE]]
+    tag in haar antwoord). Dat signaal is taal-onafhankelijk en dus robuust.
+
+    Vangnet: ook als de tag ontbreekt maar Nina afrondt met een herkenbare
+    afsluitende formulering ("doorgestuurd", "doorgegeven", "genoteerd",
+    "neemt contact"), proberen we alsnog te escaleren. Het e-mailadres-vereiste
+    verderop voorkomt valse triggers bij gewone "genoteerd"-zinnen zonder gegevens.
     """
-    # Check of Nina's antwoord "doorgestuurd" bevat (= escalatie afronden)
-    if not re.search(r'doorgestuurd', nina_response.lower()):
+    afsluit_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd|neemt (?:zo )?(?:snel )?(?:mogelijk )?contact|laat (?:sandy|haar) contact'
+    if not force and not re.search(afsluit_patroon, nina_response.lower()):
         return
 
     # Zoek e-mailadres in de chathistorie (uit Nina's bevestigingsvraag of uit user berichten)
