@@ -32,7 +32,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 async def root():
-    return FileResponse("public/index.html")
+    return FileResponse("static/helpcenter.html")
 
 
 # ── Artikel index (geladen bij startup) ────────────────────────────────────

@@ -1,5 +1,6 @@
 {
   "redirects": [
-    { "source": "/helpcenter.html", "destination": "/", "permanent": true }
+    { "source": "/helpcenter.html", "destination": "/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true }
   ]
 }

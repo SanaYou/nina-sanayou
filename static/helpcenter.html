@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helpcentrum — SanaYou YOGAcademy</title>
+  <link rel="canonical" href="https://support.sanayou.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap">
   <style>
@@ -225,7 +226,14 @@
       color: #7A7A7A;
     }
     .article-content h1 { display: none; }
-    .article-content h2 { display: none; }
+    .article-content h2 {
+      display: block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #66B0B2;
+      margin: 18px 0 6px;
+    }
     .article-content h2.gerelateerd {
       display: block;
       font-family: 'Raleway', sans-serif;
@@ -422,6 +430,7 @@
         card.classList.toggle('open');
         if (card.classList.contains('open')) {
           postProcessRelated(card);
+          assignHeadingIds(card);
         }
       });
     });
@@ -464,6 +473,7 @@
   function showHome() {
     document.getElementById('search').value = '';
     showView('view-home');
+    if (location.hash) history.replaceState(null, '', location.pathname);
   }
 
   function showCollection(collectionName) {
@@ -526,6 +536,10 @@
       card.classList.add('open');
       postProcessRelated(card);
     }
+    // Werk de URL bij zodat het artikel deelbaar is (zonder nieuwe history-entry)
+    if (card.dataset.id) {
+      history.replaceState(null, '', '#' + card.dataset.id);
+    }
     card.classList.add('highlight');
     setTimeout(function(c) { return function() { c.classList.remove('highlight'); }; }(card), 2000);
   }
@@ -575,6 +589,58 @@
 
     return false;
   }
+
+  // ─── Deeplink: open een artikel direct via #id in de URL ──
+  // Voorbeeld: support.sanayou.com/#vragen-stellen-online-opleiding
+  // Geef elke subkop een eigen anker-id (artikel__subkop) zodat je er direct naar kunt linken
+  function assignHeadingIds(card) {
+    var aid = card.dataset.id;
+    card.querySelectorAll('.article-content h2').forEach(function(h) {
+      if (h.classList.contains('gerelateerd')) return;
+      if (!h.id) {
+        h.id = aid + '__' + slug(h.textContent);
+        h.style.cursor = 'pointer';
+        h.title = 'Kopieer de link naar dit onderdeel';
+        h.addEventListener('click', function() {
+          history.replaceState(null, '', '#' + this.id);
+        });
+      }
+    });
+  }
+
+  function openArticleById(id, subSlug) {
+    if (!id) return false;
+    var art = allArticles.find(function(a) { return a.id === id; });
+    if (!art) return false;
+    showCollection(art.collection || 'Algemene informatie');
+    setTimeout(function() {
+      var card = document.querySelector('.article-card[data-id="' + id + '"]');
+      if (!card) return;
+      if (!card.classList.contains('open')) {
+        card.classList.add('open');
+        postProcessRelated(card);
+      }
+      assignHeadingIds(card);
+      var target = subSlug ? document.getElementById(id + '__' + subSlug) : null;
+      history.replaceState(null, '', '#' + id + (subSlug ? '__' + subSlug : ''));
+      // Plaats het artikel (of de subkop) bovenaan, direct onder de navigatie
+      var anchor = target || card;
+      var y = anchor.getBoundingClientRect().top + window.pageYOffset - 16;
+      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+      card.classList.add('highlight');
+      setTimeout(function() { card.classList.remove('highlight'); }, 2000);
+    }, 350);
+    return true;
+  }
+
+  function openFromHash() {
+    var raw = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim();
+    if (!raw) return;
+    var parts = raw.split('__');
+    openArticleById(parts[0], parts[1]);
+  }
+
+  window.addEventListener('hashchange', openFromHash);
 
   // ─── Gerelateerde artikelen post-processing ────────────
 
@@ -715,6 +781,7 @@
       document.getElementById('loading').style.display = 'none';
       renderTiles(articles);
       showView('view-home');
+      openFromHash();
     })
     .catch(function() {
       document.getElementById('loading').textContent = 'Kon artikelen niet laden. Probeer de pagina te verversen.';
