@@ -205,52 +205,68 @@
     var data = null;
     var lastErr = null;
 
-    for (var attempt = 0; attempt < maxRetries; attempt++) {
-      try {
-        var res = await fetch(NINA_API + "/chat", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: text, history: history, session_id: sessionId }),
-        });
-        data = await res.json();
-        lastErr = null;
-        break;
-      } catch (e) {
-        lastErr = e;
-        // Bij eerste netwerkfout: wacht 3s en probeer opnieuw (server start op)
-        if (attempt === 0) {
-          if (!coldStartShown) {
-            hideTyping();
-            addMsg("bot", "Ik zoek het even voor je op, momentje.");
-            showTyping();
-            coldStartShown = true;
+    try {
+      for (var attempt = 0; attempt < maxRetries; attempt++) {
+        try {
+          // Hard time-out per poging: een hangende verbinding mag de chat nooit
+          // permanent blokkeren. Zonder dit blijft isTyping op true staan en kan
+          // de bezoeker wel typen maar niet meer verzenden.
+          var controller = new AbortController();
+          var timeoutId = setTimeout(function () { controller.abort(); }, 60000);
+          try {
+            var res = await fetch(NINA_API + "/chat", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ message: text, history: history, session_id: sessionId }),
+              signal: controller.signal,
+            });
+            data = await res.json();
+          } finally {
+            clearTimeout(timeoutId);
           }
-          await new Promise(function (r) { setTimeout(r, 3000); });
+          lastErr = null;
+          break;
+        } catch (e) {
+          lastErr = e;
+          data = null;
+          // Bij eerste netwerkfout: wacht 3s en probeer opnieuw (server start op)
+          if (attempt === 0) {
+            if (!coldStartShown) {
+              hideTyping();
+              addMsg("bot", "Ik zoek het even voor je op, momentje.");
+              showTyping();
+              coldStartShown = true;
+            }
+            await new Promise(function (r) { setTimeout(r, 3000); });
+          }
         }
       }
+
+      clearTimeout(coldStartTimer);
+      hideTyping();
+
+      if (lastErr || !data) {
+        addMsg(
+          "bot",
+          "Ik kan even geen verbinding maken. Probeer het over een minuutje opnieuw."
+        );
+      } else if (data.error) {
+        addMsg("bot", data.error);
+      } else {
+        addMsg("bot", data.response);
+        history.push({ role: "user", content: text });
+        history.push({ role: "assistant", content: data.response });
+        if (history.length > 20) history = history.slice(-20);
+      }
+    } finally {
+      // Wat er ook gebeurt: de verzendknop moet altijd weer vrijkomen.
+      clearTimeout(coldStartTimer);
+      hideTyping();
+      isTyping = false;
+      sendEl.disabled = false;
+      inpEl.focus();
+      startInactivityTimer();
     }
-
-    clearTimeout(coldStartTimer);
-    hideTyping();
-
-    if (lastErr) {
-      addMsg(
-        "bot",
-        "Ik kan even geen verbinding maken. Probeer het over een minuutje opnieuw."
-      );
-    } else if (data.error) {
-      addMsg("bot", data.error);
-    } else {
-      addMsg("bot", data.response);
-      history.push({ role: "user", content: text });
-      history.push({ role: "assistant", content: data.response });
-      if (history.length > 20) history = history.slice(-20);
-    }
-
-    isTyping = false;
-    sendEl.disabled = false;
-    inpEl.focus();
-    startInactivityTimer();
   }
 
   btn.addEventListener("click", function () {
