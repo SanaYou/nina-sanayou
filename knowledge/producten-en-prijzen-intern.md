@@ -63,7 +63,7 @@ Alle onderstaande klassikale dagen hebben dezelfde prijs:
 | The Art of Hands-On Assists | 3 dagen | €175 |
 | Ashtanga Yoga Course | 3 dagen | €142,50 (3 termijnen van €47,50) |
 
-*Alle klassikale lesdagen vinden plaats op Hasselterdijk 20-E, Zwolle, 10:30–17:00u. De actuele data staan op sanayou.com/workshops.*
+*Alle klassikale lesdagen vinden plaats op Hasselterdijk 20-E, Zwolle, 10:30–17:00u. De actuele data van workshops, themadagen, verdiepingsdagen en weekenden staan op sanayou.com/workshops. **Let op:** de lesdata van de klassikale RYT/VYN200-opleidingsmodules (Yin Yoga 1/2, Yang Level 1/2) staan NIET op /workshops, maar op de opleidingspagina: sanayou.com/yin-yang-yoga-teacher-training-ryt200-klassikaal#lesdata.*
 
 ### Upgrades (online + klassikale lesdagen)
 Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module. De prijzen zijn identiek aan de losse dagprijzen hierboven -er is geen apart upgradepakket.

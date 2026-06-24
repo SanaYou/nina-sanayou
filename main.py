@@ -151,6 +151,7 @@ def load_base_knowledge() -> str:
         "naam-email-verzamelen.md",
         "scope-hallucinatie-escalatie.md",
         "gespreksvoering.md",
+        "startdata-klassikaal.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
