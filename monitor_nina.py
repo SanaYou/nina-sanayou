@@ -38,29 +38,48 @@ def send_telegram(message):
         logger.error(f"Telegram-alert mislukt: {e}")
 
 
-def check_nina():
-    """Test of Nina bereikbaar is via /health (geen API tokens)."""
+HEALTH_TIMEOUT = 30  # was 15 — vangt normale Vercel cold-starts (20-40s)
+RETRY_WAIT = 10      # seconden tussen poging 1 en 2
+
+
+def _single_check():
+    """Eén GET /health-poging. Geeft (ok, detail) terug."""
     try:
-        r = requests.get(f"{NINA_URL}/health", timeout=15)
+        r = requests.get(f"{NINA_URL}/health", timeout=HEALTH_TIMEOUT)
         if r.status_code != 200:
             return False, f"Health check mislukt (status {r.status_code})"
         return True, "Health OK"
     except requests.exceptions.Timeout:
-        return False, "Nina timeout na 15 seconden"
+        return False, f"Nina timeout na {HEALTH_TIMEOUT} seconden"
     except Exception as e:
         return False, f"Nina is niet bereikbaar: {e}"
+
+
+def check_nina():
+    """Test Nina; bij falen 1x retry na RETRY_WAIT seconden.
+    Pas bij 2 mislukkingen op rij = echte storing."""
+    ok, detail = _single_check()
+    if ok:
+        return True, detail
+    logger.warning(f"Eerste poging mislukt ({detail}); {RETRY_WAIT}s wachten en opnieuw…")
+    time.sleep(RETRY_WAIT)
+    ok2, detail2 = _single_check()
+    if ok2:
+        logger.info("Tweede poging OK — eerste was incidentele cold-start, geen alert")
+        return True, f"OK na retry ({detail2})"
+    return False, f"2x mislukt — poging 1: {detail} | poging 2: {detail2}"
 
 
 def run_check():
     """Voer een check uit en stuur alert als er iets mis is."""
     ok, detail = check_nina()
     if ok:
-        logger.info(f"Nina OK: {detail}...")
+        logger.info(f"Nina OK: {detail}")
     else:
         logger.warning(f"Nina FOUT: {detail}")
         send_telegram(
             f"⚠️ <b>Nina-alert</b>\n\n"
-            f"Nina is niet bereikbaar.\n\n"
+            f"Nina is niet bereikbaar (2 pogingen mislukt).\n\n"
             f"<b>Probleem:</b> {detail}\n\n"
             f"Laat dit even checken door Claude Code."
         )
