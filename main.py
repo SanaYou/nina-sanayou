@@ -152,6 +152,7 @@ def load_base_knowledge() -> str:
         "scope-hallucinatie-escalatie.md",
         "gespreksvoering.md",
         "startdata-klassikaal.md",
+        "koopsignaal-gegevens-verzamelen.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():

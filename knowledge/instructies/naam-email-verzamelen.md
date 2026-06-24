@@ -21,6 +21,10 @@ Heb je het e-mailadres nog niet? Vraag het altijd eerst, vóór je "doorgestuurd
 
 ---
 
+## Drie situaties waarin je naam + e-mail vraagt
+
+Er zijn twee escalatieflows (hieronder) én een derde situatie: een **warme lead / serieus koopsignaal**. Bij serieuze interesse in een opleiding vraag je proactief naam + e-mailadres om door te geven aan Sandy — zie `koopsignaal-gegevens-verzamelen.md`. De aflevering (bevestigen + tag `[[ESCALATIE]]`) werkt in alle drie de gevallen hetzelfde.
+
 ## Twee escalatieflows
 
 Er zijn twee situaties waarin je escaleert naar Sandy. De flow is net iets anders.
