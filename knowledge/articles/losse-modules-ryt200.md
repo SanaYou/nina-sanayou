@@ -28,8 +28,12 @@ Ben je al erkend yogadocent in een andere yogavorm, dan kun je de 100-urige ople
 
 Veel deelnemers kiezen ervoor om eerst één yogavorm te volgen en besluiten later de opleiding uit te breiden. Je kunt na één of twee jaar alsnog de andere twee modules volgen, je opleiding aanvullen tot de volledige 200 uur en je vervolgens registreren als erkend yogadocent. Deze opbouw biedt ruimte om stap voor stap te leren en je opleiding af te stemmen op je persoonlijke situatie.
 
+## Alternatief: de klassikale RYT/VYN200 Yin Yoga opleiding
+
+Voelt Yin echt jouw richting en wil je je volledig in Yin verdiepen? Dan is er ook een aparte klassikale Yin Yoga opleiding van 200 uur. Deze opleiding is volledig gericht op Yin Yoga en bestaat uit zes klassikale lesmodules met 21 lesdagen in Zwolle, plus ondersteunende online lesmodules. Ook deze opleiding is erkend door de Vereniging Yogadocenten Nederland (VYN) en door Yoga Alliance, dus je studeert af als volwaardig erkend yogadocent. Startmomenten zijn september en januari.
+
 ## Gerelateerde artikelen
 
-- Hoe vaak per jaar kan ik starten met de RYT/VYN200 Yin & Yang Teacher Training?
-- Wat is de modulevolgorde van de Yin- en Yang-lesmodules?
-- Hoe lang mag ik maximaal over de RYT/VYN200 doen?
+- [Hoe is de RYT/VYN200 Yin Yoga klassikale opleiding opgebouwd?](opbouw-ryt200-yin-klassikaal)
+- [Hoe vaak per jaar kan ik starten met de klassikale RYT/VYN200 Teacher Training?](instroommomenten-ryt200)
+- [Kan ik mijn klassikale 200 uur voltooien met alleen Yin of alleen Yang Yoga?](hybride-paden-naar-ryt200)

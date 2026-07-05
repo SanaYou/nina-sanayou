@@ -32,10 +32,14 @@ Alle checkout-URLs, aanmeldlinks en anchor-links op één plek.
 - Klassikaal - The Art of Hands-on Assists (3-daagse): `https://checkout.sanayou.com/checkout/the-art-of-hands-on-assists-3-daagse`
 - Klassikaal - 3-day Ashtanga Course (3-daagse): `https://checkout.sanayou.com/checkout/ashtanga-yoga-beginners-course-3-daagse`
 
-### RYT/VYN200 Pakketten (volledige opleiding)
+### RYT/VYN200 Yin & Yang Pakketten (volledige klassikale opleiding)
 - Versneld (jan-jun): `https://checkout.sanayou.com/checkout/ryt200-yin-yang-klassikaal-4-modules-x-50-uur`
 - Regulier start Yin (sep-jun): `https://checkout.sanayou.com/checkout/ryt200-yin-yang-klassikaal-sept-juni-start-yin`
 - Regulier start Yang (sep-jun): `https://checkout.sanayou.com/checkout/ryt200-yin-yang-klassikaal-sept-juni-start-yang`
+
+### RYT/VYN200 Yin Yoga Pakketten (volledige klassikale opleiding)
+- Start september: `https://checkout.sanayou.com/checkout/klassikaal-yin-yoga-200-start-september`
+- Start januari: `https://checkout.sanayou.com/checkout/klassikaal-yin-yoga-200-start-januari`
 
 ### RYT300 — Art of Advanced Teaching
 - Yin Mastery: `https://checkout.sanayou.com/checkout/ryt300-yin-mastery-art-of-advanced-teaching`

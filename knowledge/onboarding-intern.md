@@ -215,6 +215,39 @@ Klassikale lesdagen binnen de RYT/VYN200 kunnen **niet** worden verplaatst naar 
 
 ---
 
+## RYT/VYN200 Yin Yoga Teacher Training (klassikaal)
+
+### Opzet
+Volledige klassikale 200-uurs Teacher Training die volledig gericht is op Yin Yoga. Voor mensen die weten dat hun hart bij Yin ligt en zich daar volledig in willen verdiepen, met VYN- én Yoga Alliance-erkenning.
+
+### Wat is inbegrepen?
+- **21 klassikale lesdagen** verdeeld over 6 lesmodules
+  - Yin Yoga 1 (basis, bindweefsel en fascia)
+  - Yin Yoga 2 (meridianen, chakra's en eerste kennismaking met 5 Elementenleer)
+  - Yin Yoga & de 5 Elementenleer (Hout, Vuur, Aarde, Metaal, Water, met Assisted Yin)
+  - Your Body Your Yoga (functionele anatomie)
+  - Yin Yoga & Reiki (tweedaags weekend met Reiki-inwijding eerste graad)
+  - Yin Yoga & Restorative Alignment
+- **4 ondersteunende online lesmodules**: Basisanatomie voor Yogadocenten, Yin en omgaan met Klachten, Your Body Your Yoga, Yin & de 5 Elementenleer
+- Toegang tot het **online lesplatform** met videolessen en de **community**
+- Theorie- en kennistoetsen + één praktijkexamen (twee vaste momenten per jaar: lente en zomer)
+- Deelcertificaten per afgeronde module
+- Certificering tot **RYT200 (Yoga Alliance)** én **VYN erkend docent**
+
+### Startmomenten
+Twee keer per jaar: **september** en **januari**. Beide routes leiden naar het volledige 200-uurs diploma. In de september-route volg je Yin Yoga 1 en 2 grotendeels aaneengesloten. In de januari-route lopen de modules deels parallel, waardoor je binnen één kalenderjaar afrondt.
+
+### Docententeam
+Sandy Karsten (Hoofd Docentenopleider), Amanda Beelen (Yin Yoga, Reiki en 5 Elementenleer) en Manja Weijers (fysiotherapeut, anatomie en biomechanica).
+
+### Locatie
+SanaYou YOGAcademy, Hasselterdijk 20-E in Zwolle. Lesdagen 10:30–17:00, meestal in aaneengesloten weekendblokken.
+
+### Gemiste klassikale lesdagen
+Zelfde regel als bij de RYT/VYN200 Yin & Yang: klassikale lesdagen kunnen niet worden verplaatst naar een volgend jaar. Bij een gemiste lesdag werk je met de bijbehorende online lesvideo's en het lesmateriaal van die dag.
+
+---
+
 ## RYT300 Yoga Teacher Training
 
 ### Opzet
@@ -262,7 +295,7 @@ Na inschrijving is een **onboarding call** met Sandy mogelijk. Daarin worden sam
 ### VYN (Vereniging Yogadocenten Nederland)
 De VYN stelt als eis dat je óf een VYN-erkende 200-uurs opleiding hebt gevolgd, óf via een andere erkende route aan hun voorwaarden voldoet.
 
-SanaYou biedt een VYN-erkende 200-uurs opleiding aan: de **RYT/VYN200 Yin & Yang**. Dit geeft directe toegang tot VYN-registratie.
+SanaYou biedt twee VYN-erkende 200-uurs opleidingen aan: de **RYT/VYN200 Yin & Yang** en de **RYT/VYN200 Yin Yoga** (klassikaal). Beide geven directe toegang tot VYN-registratie.
 
 ### Yoga Alliance
 - Yang Yoga Level 1 en Level 2 vormen samen **100 uur** en zijn als geheel erkend door Yoga Alliance.
@@ -288,8 +321,9 @@ Voor alle verdiepende Yin Yoga lesmodules is een stevige basiskennis van Yin Yog
 Yin en Yang zijn enorm complementair. Waar hatha/vinyasa dynamiek, kracht en flow vraagt, brengt Yin verdieping, verstilling en herstel. Samen maak je als docent een completer aanbod. Sandy adviseert in dit geval:
 
 1. Start met **Yin Yoga Basics (online)** – bouwt de essentiële kennis op
-2. Of: instroom in **Yin Yoga 1** (klassikaal, start september 2026), aansluitend Yin Yoga 2
-3. Verdiepende modules pas daarna
+2. Of: instroom in **Yin Yoga 1** (klassikaal, start september of januari), aansluitend Yin Yoga 2
+3. Of: rechtstreeks starten met de **klassikale RYT/VYN200 Yin Yoga** — een volwaardige 200-uurs klassikale Yin-only opleiding met VYN- én Yoga Alliance-erkenning
+4. Verdiepende modules pas daarna
 
 *Sandy benoemt nooit specifieke verdiepende modules die op dit moment niet worden aangeboden.*
 

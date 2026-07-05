@@ -1,5 +1,5 @@
 # Producten & Diensten SanaYou YOGAcademy -Volledig Overzicht
-*Laatste update: 23 maart 2026*
+*Laatste update: 5 juli 2026*
 
 ---
 
@@ -10,6 +10,13 @@
 - **Prijs per module:** €875 (betaling in 1, 4 of 8 termijnen)
 - **Volledig traject (1 jaar):** €2.999 incl. €500 pakketkorting (betaling in 1, 5 of 10 termijnen)
 - **Duur:** 1 lesjaar (regulier sep–jun, versneld jan–jun)
+
+### Klassikale RYT/VYN200 Yin Yoga Teacher Training
+- **Omschrijving:** Volledig erkende 200u opleiding volledig gericht op Yin Yoga (Yoga Alliance + VYN). 6 klassikale lesmodules met 21 lesdagen in Zwolle + 4 ondersteunende online modules. Start 2x per jaar: september en januari.
+- **Modules:** Yin Yoga 1, Yin Yoga 2, Yin Yoga & de 5 Elementenleer, Your Body Your Yoga, Yin Yoga & Reiki, Yin Yoga & Restorative Alignment.
+- **Volledig traject:** €2.795 incl. €480 pakketkorting (van €3.275). Betaling in 1, 5 of 10 termijnen.
+- **Duur:** 1 lesjaar
+- **Docententeam:** Sandy Karsten, Amanda Beelen, Manja Weijers
 
 ### Online RYT200 -3 richtingen
 - **Omschrijving:** Volledig online opleiding van 200u, eigen tempo, open instroom. Drie richtingen: Yin Yoga / Yin & Yang Yoga / Yang Yoga.
