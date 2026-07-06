@@ -53,6 +53,11 @@ Alle checkout-URLs, aanmeldlinks en anchor-links op één plek.
 - Klassikaal - Water element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-water-element`
 - Klassikaal - Aarde element: `https://checkout.sanayou.com/checkout/verdiepingsdag-yin-yoga-aarde-element`
 
+### Verlengingen online modules
+- Basis Anatomie voor Yogadocenten: `https://checkout.sanayou.com/checkout/verlenging-basisanatomie`
+- Your Body Your Yoga: `https://checkout.sanayou.com/checkout/verlenging-your-body-your-yoga`
+- Yin: Omgaan met Klachten: `https://checkout.sanayou.com/checkout/verlenging-yin-omgaan-klachten`
+
 ## Anchor-links per pagina
 
 _Wordt aangevuld bij livegang_

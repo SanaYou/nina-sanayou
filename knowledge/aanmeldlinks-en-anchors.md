@@ -40,6 +40,11 @@ Alle checkout-URLs, aanmeldlinks en anchor-links op één plek.
 - Yin Mastery: `https://checkout.sanayou.com/checkout/ryt300-yin-mastery-art-of-advanced-teaching`
 - Yoga Awakening: `https://checkout.sanayou.com/checkout/ryt300-yoga-awakening-art-of-advanced-teaching-1761161085`
 
+### Verlengingen online modules
+- Basis Anatomie voor Yogadocenten: `https://checkout.sanayou.com/checkout/verlenging-basisanatomie`
+- Your Body Your Yoga: `https://checkout.sanayou.com/checkout/verlenging-your-body-your-yoga`
+- Yin: Omgaan met Klachten: `https://checkout.sanayou.com/checkout/verlenging-yin-omgaan-klachten`
+
 ## Anchor-links per pagina
 
 _Wordt aangevuld bij livegang_
