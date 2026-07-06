@@ -675,6 +675,16 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
     if not force and not re.search(afsluit_patroon, nina_response.lower()):
         return
 
+    # Dubbele-escalatie-guard: is er in een EERDERE beurt van deze conversatie al
+    # een escalatie afgerond? Dan geen tweede Help Scout-ticket voor dezelfde klant.
+    # (De [[ESCALATIE]]-tag is uit de historie gestript, dus we herkennen een eerdere
+    # afronding aan Nina's zichtbare afsluitzin. 1 escalatie per gesprek is genoeg.)
+    reeds_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd|door aan sandy|neemt (?:zo )?(?:snel )?(?:mogelijk )?contact'
+    for msg in chat_messages:
+        if msg.get("role") == "assistant" and re.search(reeds_patroon, msg.get("content", "").lower()):
+            logger.info("Escalatie overgeslagen: al eerder afgerond in deze conversatie")
+            return
+
     # Zoek e-mailadres in de chathistorie (uit Nina's bevestigingsvraag of uit user berichten)
     email = None
     name = None
