@@ -153,6 +153,10 @@ def load_base_knowledge() -> str:
         "gespreksvoering.md",
         "startdata-klassikaal.md",
         "koopsignaal-gegevens-verzamelen.md",
+        "restorative-yoga-vs-alignment.md",
+        "kennisblogs-alleen-op-verzoek.md",
+        "workshop-gaat-door-en-aanmelden.md",
+        "verboden-woorden.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
@@ -295,6 +299,8 @@ Je helpt studenten en geïnteresseerden met hun vragen. Je communiceert warm, pr
 5. Voeg altijd de relevante link toe als die in de kennisbank staat
 6. Houd antwoorden overzichtelijk — gebruik korte alinea's of tussenkopjes bij langere antwoorden
 7. Schrijf nooit in opsommingen tenzij het echt een stapsgewijze instructie of een lijst van opties is
+8. Bied NOOIT aan om te bellen of terug te bellen. Het enige contactkanaal is e-mail: "Sandy neemt via e-mail contact met je op." Nooit "Sandy belt je", "belt of mailt", of "wil je gebeld worden".
+9. Gok NOOIT productnamen, oorzaken, datums of gegevens die de bezoeker niet zelf gaf. Gaat het over een account, toegang, bestelling of betaling die jij niet kunt inzien? Ga dat niet zelf diagnosticeren en verzin geen oorzaak ("je twee jaar is vast om"). Neem kort over wat de bezoeker zegt en escaleer meteen naar Sandy, zij kan het in de administratie zien.
 
 ## Vragen stellen
 
@@ -396,6 +402,42 @@ def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
         return text
 
 
+# ── Vangnet: Nina biedt NOOIT aan te bellen of terug te bellen ──────────────
+# Het enige escalatiekanaal is e-mail (zie whatsapp-telefoonnummer.md +
+# naam-email-verzamelen.md). Deze regels staan in de altijd-geladen instructies,
+# maar zijn ooit toch overtreden ("Sandy zal je snel bellen of mailen").
+# Dit is de harde, deterministische borging: alleen affirmatieve bel-aanbiedingen
+# worden naar e-mail herschreven; negatieve zinnen ("telefonisch niet bereikbaar")
+# blijven ongemoeid. Geen API-call, dus geen extra latency.
+_CALL_OFFER_PATTERNS = [
+    (re.compile(r"\bbellen of (e-?)?mailen\b", re.I), "mailen"),
+    (re.compile(r"\bbelt of (e-?)?mailt\b", re.I), "mailt"),
+    (re.compile(r"\bgebeld of gemaild\b", re.I), "gemaild"),
+    (re.compile(r"\bmailen of bellen\b", re.I), "mailen"),
+    (re.compile(r"\bmailt of belt\b", re.I), "mailt"),
+    (re.compile(r"\bbelt je(\s+(snel|zo|straks|binnenkort|even))?\s+terug\b", re.I), "mailt je"),
+    (re.compile(r"\bbelt je(\s+(snel|zo|straks|binnenkort|even))?\b", re.I), "mailt je"),
+    (re.compile(r"\b(zal|gaat)\s+je\s+(snel\s+|zo\s+|even\s+)?bellen\b", re.I), r"\1 je mailen"),
+    (re.compile(r"\bneemt telefonisch contact\b", re.I), "neemt per e-mail contact"),
+    (re.compile(r"\bterug te bellen\b", re.I), "te mailen"),
+    (re.compile(r"\bje terugbelt\b", re.I), "je mailt"),
+    (re.compile(r"\bterugbellen\b", re.I), "mailen"),
+]
+
+
+def _contactkanaal_vangnet(text: str) -> str:
+    """Herschrijf bel-/terugbel-aanbiedingen naar e-mail. Faalt nooit, blokkeert nooit."""
+    fired = False
+    for pat, repl in _CALL_OFFER_PATTERNS:
+        new = pat.sub(repl, text)
+        if new != text:
+            fired = True
+            text = new
+    if fired:
+        logger.info("Contactkanaal-vangnet: bel-aanbod herschreven naar e-mail")
+    return text
+
+
 class ChatRequest(BaseModel):
     message: str
     history: Optional[List[Message]] = []
@@ -461,6 +503,9 @@ async def chat(request: ChatRequest):
 
                 # Taalcheck: corrigeer Engelse calques en slechte vertalingen
                 response_text = _taalcheck(client, response_text)
+
+                # Vangnet: nooit bellen/terugbellen aanbieden, alleen e-mail
+                response_text = _contactkanaal_vangnet(response_text)
 
                 # Strip de [[ESCALATIE]] tag uit het zichtbare antwoord. Aanwezigheid
                 # van de tag = harde trigger om naar Help Scout door te sturen.
