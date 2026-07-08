@@ -729,10 +729,14 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
         return
 
     # Dubbele-escalatie-guard: is er in een EERDERE beurt van deze conversatie al
-    # een escalatie afgerond? Dan geen tweede Help Scout-ticket voor dezelfde klant.
+    # een escalatie AFGEROND? Dan geen tweede Help Scout-ticket voor dezelfde klant.
     # (De [[ESCALATIE]]-tag is uit de historie gestript, dus we herkennen een eerdere
     # afronding aan Nina's zichtbare afsluitzin. 1 escalatie per gesprek is genoeg.)
-    reeds_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd|door aan sandy|neemt (?:zo )?(?:snel )?(?:mogelijk )?contact'
+    # LET OP: alleen VOLTOOIDE-tijd markers ("doorgestuurd", "doorgegeven"). NIET
+    # "neemt contact" — die belofte spreekt Nina óók uit terwijl ze nog om naam+mail
+    # vraagt, en dan onderdrukte de guard de échte escalatie erna (gebeurd bij Josje,
+    # gesprek 7-7: geen ticket omdat een eerdere ask-beurt al "neemt contact" bevatte).
+    reeds_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd|door aan sandy'
     for msg in chat_messages:
         if msg.get("role") == "assistant" and re.search(reeds_patroon, msg.get("content", "").lower()):
             logger.info("Escalatie overgeslagen: al eerder afgerond in deze conversatie")
