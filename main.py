@@ -544,7 +544,12 @@ async def chat(request: ChatRequest):
                     ],
                     messages=messages,
                 )
-                response_text = response.content[0].text
+                # Pak het eerste TEKST-blok. Sonnet kan een ThinkingBlock vooraan
+                # zetten; blind content[0].text pakken crasht dan (geen .text).
+                response_text = next(
+                    (b.text for b in response.content if getattr(b, "type", None) == "text"),
+                    "",
+                )
 
                 # Taalcheck: corrigeer Engelse calques en slechte vertalingen
                 response_text = _taalcheck(client, response_text)
