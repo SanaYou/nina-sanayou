@@ -438,6 +438,51 @@ def _contactkanaal_vangnet(text: str) -> str:
     return text
 
 
+# ── Vangnet: Nina verzint NOOIT een checkout-/aanmeldlink ──────────────────
+# Een gegokte checkout.sanayou.com-slug stuurt een koopklare bezoeker naar een
+# dode of verkeerde pagina (dodelijk). De instructie verbiedt dit al, maar is
+# ooit toch overtreden (verzonnen link naar yoga-nidra-opleiding-online). Dit is
+# de harde borging: elke checkout.sanayou.com-URL die NIET letterlijk in
+# aanmeldlinks-en-anchors.md staat, wordt uit het antwoord verwijderd en
+# vervangen door een veilige zin. Geen API-call, dus geen extra latency.
+def _load_checkout_allowlist() -> set:
+    allow = set()
+    try:
+        raw = (Path("knowledge") / "aanmeldlinks-en-anchors.md").read_text(encoding="utf-8")
+        for m in re.finditer(r"https?://checkout\.sanayou\.com/\S+", raw):
+            allow.add(m.group(0).rstrip("`).,;"))
+    except Exception as e:
+        logger.warning(f"Checkout-allowlist niet geladen: {e}")
+    return allow
+
+
+CHECKOUT_ALLOWLIST = _load_checkout_allowlist()
+logger.info(f"Checkout-allowlist geladen: {len(CHECKOUT_ALLOWLIST)} geverifieerde links")
+_CHECKOUT_URL_RE = re.compile(r"https?://checkout\.sanayou\.com/\S+")
+_CHECKOUT_FALLBACK = (
+    "de juiste aanmeldlink, die laat ik je even door Sandy toesturen "
+    "zodat je zeker op de goede pagina uitkomt"
+)
+
+
+def _checkout_link_vangnet(text: str) -> str:
+    """Verwijder verzonnen checkout-links die niet in de bron van waarheid staan. Faalt nooit."""
+    fired = False
+
+    def _repl(match):
+        nonlocal fired
+        url = match.group(0).rstrip("`).,;")
+        if url in CHECKOUT_ALLOWLIST:
+            return match.group(0)
+        fired = True
+        return _CHECKOUT_FALLBACK
+
+    new = _CHECKOUT_URL_RE.sub(_repl, text)
+    if fired:
+        logger.warning("Checkout-vangnet: verzonnen checkout-link verwijderd")
+    return new
+
+
 class ChatRequest(BaseModel):
     message: str
     history: Optional[List[Message]] = []
@@ -484,7 +529,7 @@ async def chat(request: ChatRequest):
         for attempt in range(3):
             try:
                 response = client.messages.create(
-                    model="claude-haiku-4-5-20251001",
+                    model="claude-sonnet-5",
                     max_tokens=1024,
                     system=[
                         {
@@ -506,6 +551,9 @@ async def chat(request: ChatRequest):
 
                 # Vangnet: nooit bellen/terugbellen aanbieden, alleen e-mail
                 response_text = _contactkanaal_vangnet(response_text)
+
+                # Vangnet: nooit een verzonnen checkout-link laten staan
+                response_text = _checkout_link_vangnet(response_text)
 
                 # Strip de [[ESCALATIE]] tag uit het zichtbare antwoord. Aanwezigheid
                 # van de tag = harde trigger om naar Help Scout door te sturen.
