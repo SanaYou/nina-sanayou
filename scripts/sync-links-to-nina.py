@@ -128,7 +128,7 @@ def build(dry_run: bool = False) -> bool:
         print(f"[sync-links] {len(nieuw)} link(s) gecommit + gepusht -> Vercel deployt")
     except subprocess.CalledProcessError as e:
         print(f"[sync-links] git-fout: {e}", file=sys.stderr)
-        return True
+        sys.exit(1)
     return True
 
 
