@@ -15,11 +15,15 @@ Alle checkout-URLs, aanmeldlinks en anchor-links op één plek.
 - Yang Level 2 - Januari: `https://checkout.sanayou.com/checkout/lesmodule-yang-yoga-level-2-klassikaal-januari`
 - Yang Level 2 - April: `https://checkout.sanayou.com/checkout/lesmodule-yang-yoga-level-2-klassikaal-april`
 
-### Praktijkexamens RYT/VYN200
+### Praktijkexamens RYT/VYN200 (klassikaal)
 - Yang Yoga - Voorjaar: `https://checkout.sanayou.com/checkout/praktijktoets-yang-yoga-voorjaar`
 - Yin Yoga - April: `https://checkout.sanayou.com/checkout/praktijktoets-yin-yoga-april`
 - Yang Yoga - Zomer: `https://checkout.sanayou.com/checkout/praktijktoets-yang-yoga-zomer`
 - Yin Yoga - Zomer: `https://checkout.sanayou.com/checkout/praktijktoets-yin-yoga-zomer`
+
+### Praktijktoets online opleidingen
+- Praktijktoets RYT200 (online) aanvragen: `https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt200-online`
+- Praktijktoets RYT300 aanvragen: `https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300`
 
 ### Critical Alignment Yoga
 - Online module: `https://checkout.sanayou.com/checkout/critical-alignment`

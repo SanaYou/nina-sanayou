@@ -157,6 +157,10 @@ def load_base_knowledge() -> str:
         "kennisblogs-alleen-op-verzoek.md",
         "workshop-gaat-door-en-aanmelden.md",
         "verboden-woorden.md",
+        "geen-geverifieerde-link.md",
+        "docenten-per-workshop.md",
+        "alternatieve-combinaties.md",
+        "modulair-korting-intern.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
@@ -460,8 +464,8 @@ CHECKOUT_ALLOWLIST = _load_checkout_allowlist()
 logger.info(f"Checkout-allowlist geladen: {len(CHECKOUT_ALLOWLIST)} geverifieerde links")
 _CHECKOUT_URL_RE = re.compile(r"https?://checkout\.sanayou\.com/\S+")
 _CHECKOUT_FALLBACK = (
-    "de juiste aanmeldlink, die laat ik je even door Sandy toesturen "
-    "zodat je zeker op de goede pagina uitkomt"
+    "die exacte aanmeldlink laat ik je even door Sandy toesturen. Wat is je naam en "
+    "e-mailadres? Dan stuurt zij je vandaag de juiste link"
 )
 
 
