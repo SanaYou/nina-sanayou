@@ -57,3 +57,18 @@ _Wordt aangevuld bij livegang_
 - Checkout-links veranderen regelmatig — ALTIJD bij Sandy checken
 - Bij twijfel: neem de link uit de linker kolom (eenmalige betaling) van de Phoenix termijnentabel
 - Nieuwe links direct hier toevoegen, ook als ze via Telegram of een ander venster binnenkomen
+
+<!-- AUTO-SYNC-VAULT-LINKS:START (niet handmatig bewerken — gesynct uit vault) -->
+
+## Automatisch gesynct uit de vault-referentie
+
+_Deze links komen uit `vault/references/sanayou-reference.md`. Niet met de hand bewerken — pas ze in de vault aan, dan volgt Nina vanzelf._
+
+- Herkansing theorietoets: `https://checkout.sanayou.com/checkout/aanvraag-herkansing-theorietoets-online`
+- Online plus pakket: `https://checkout.sanayou.com/checkout/online-plus-pakket`
+- RYT200 Yang Yoga (online): `https://checkout.sanayou.com/checkout/ryt200-yang-yoga-online-teacher-training-voordeelpakket-2024`
+- RYT200 Yin en Yang Yoga (online): `https://checkout.sanayou.com/checkout/ryt200-yin-yang-yoga-online-teacher-training-voordeelpakket`
+- RYT200 Yin Yoga (online): `https://checkout.sanayou.com/checkout/ryt200-yin-yoga-online-teacher-training`
+- Teaching assessement pack: `https://checkout.sanayou.com/checkout/teaching-assessement-pack`
+
+<!-- AUTO-SYNC-VAULT-LINKS:END -->
