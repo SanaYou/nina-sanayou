@@ -390,6 +390,10 @@ Pas NIETS anders aan — geen stijl, geen inhoud, geen opmaak."""
 
 def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
     """Corrigeer Engelse calques in Nina's antwoord. Tijdslimiet 5s, bij fout origineel teruggeven."""
+    # Lege/whitespace tekst NOOIT naar het model sturen: het antwoordt dan met zijn
+    # eigen intro ("stuur me de tekst!"), die anders naar de bezoeker lekt (13-7).
+    if not text or not text.strip():
+        return text
     try:
         check_client = anthropic.Anthropic(api_key=client.api_key, timeout=2.0)
         result = check_client.messages.create(
@@ -554,6 +558,15 @@ async def chat(request: ChatRequest):
                     (b.text for b in response.content if getattr(b, "type", None) == "text"),
                     "",
                 )
+
+                # Leeg antwoord (bv. alleen een ThinkingBlock, geen tekstblok):
+                # NIET doorgeven aan de nabewerkers. De taalcheck kreeg dan een lege
+                # tekst en antwoordde met zijn eigen intro ("stuur me de tekst!"),
+                # die naar de bezoeker lekte (gesprek 13-7 16:09). Nette fallback.
+                if not response_text.strip():
+                    logger.warning("Leeg modelantwoord (mogelijk alleen ThinkingBlock) — fallback gebruikt")
+                    response_text = ("Sorry, daar ging even iets mis aan mijn kant. "
+                                     "Kun je je vraag nog een keer stellen?")
 
                 # Taalcheck: corrigeer Engelse calques en slechte vertalingen
                 response_text = _taalcheck(client, response_text)
