@@ -538,7 +538,15 @@ async def chat(request: ChatRequest):
             try:
                 response = client.messages.create(
                     model="claude-sonnet-5",
-                    max_tokens=1024,
+                    max_tokens=2048,
+                    # Sonnet 5 zet adaptief 'thinking' AAN als je deze parameter weglaat.
+                    # Dat vrat het hele token-budget op → alleen een thinking-blok, geen
+                    # tekstantwoord (leeg → taalcheck-lek, gesprek 13-7 16:09). Nina is een
+                    # support-chatbot (kennis wordt vóór de call opgehaald, geen tool-loop),
+                    # dus thinking uit = sneller, goedkoper, en het hele budget gaat naar
+                    # het antwoord. Zie claude-api-skill: budget_tokens bestaat niet meer op
+                    # Sonnet 5; {type:"disabled"} mag wél.
+                    thinking={"type": "disabled"},
                     system=[
                         {
                             "type": "text",
