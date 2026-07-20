@@ -9,6 +9,10 @@ In dit artikel lees je hoe je jouw RYT300-diploma omzet naar een RYT500-registra
 
 Met een geldig RYT200-certificaat én het RYT300-diploma van SanaYou YOGAcademy kun je je registreren als RYT500 bij Yoga Alliance. Dit is de hoogste reguliere registratie binnen Yoga Alliance.
 
+## Is je 200-uursopleiding niet door Yoga Alliance erkend?
+
+Deelnemen aan de RYT300 kan dan gewoon — je hebt met een afgeronde 200-uursopleiding een goede ondergrond. Alleen de RYT500-registratie bij Yoga Alliance is dan niet mogelijk, omdat die een erkende 200-uursopleiding vereist. Registreren op RYT200-niveau bij Yoga Alliance kan wel, mocht je dat willen.
+
 ## Je hebt al een Yoga Alliance-account
 
 Als je eerder je RYT200 hebt geregistreerd bij Yoga Alliance, heb je al een account op yogaalliance.org. Je hoeft geen nieuw account aan te maken — je werkt het bestaande account bij.
