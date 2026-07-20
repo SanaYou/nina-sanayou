@@ -13,7 +13,7 @@ De opleiding staat open voor zowel alumni van SanaYou YOGAcademy als voor docent
 
 ## Is jouw 200-uursopleiding niet door Yoga Alliance erkend?
 
-Ook dan kun je gewoon deelnemen aan de RYT300: met een afgeronde 200-uursopleiding heb je een goede ondergrond. De erkenning van je 200 uur speelt alleen een rol bij de latere registratie bij Yoga Alliance: voor de RYT500-registratie moet je 200-uursopleiding door Yoga Alliance erkend zijn. Registreren op RYT200-niveau bij Yoga Alliance kan wel, mocht je dat willen.
+Ook dan kun je gewoon deelnemen aan de RYT300: met een afgeronde 200-uursopleiding heb je een goede ondergrond. De erkenning van je 200 uur speelt alleen een rol bij de latere registratie bij Yoga Alliance: voor de RYT500-registratie moet je 200-uursopleiding door Yoga Alliance erkend zijn.
 
 ## Gratis de basisopleiding van jouw studierichting erbij
 
