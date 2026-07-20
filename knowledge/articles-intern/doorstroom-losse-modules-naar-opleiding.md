@@ -20,12 +20,12 @@ Vraag daarna welke volledige opleiding ze willen doen (bijv. RYT200 Yin Yoga onl
 ### Stap 3: Check overlap en adviseer
 Bekijk welke modules uit de gewenste opleiding de bezoeker al heeft en welke er nog ontbreken. Geef dit overzicht en adviseer:
 
-- **Online RYT200:** losse online modules tellen NIET mee — de RYT200 is een vast pakket. Je kunt niet losse modules samenvoegen tot een RYT200. De bezoeker moet het volledige pakket boeken. Verwijs naar het artikel "Kan ik losse modules combineren tot een volledige RYT200?"
-- **Klassikaal RYT/VYN200:** hier KAN je wel losse modules boeken en stap voor stap opbouwen naar de volledige 200 uur. Check welke klassikale modules ze al hebben en welke er nog nodig zijn.
+- **Online RYT200 (gecorrigeerd 20-7-2026, Sandy):** stap voor stap opbouwen KAN — de bezoeker schaft steeds zelf de volgende losse lesmodule aan. Er is geen pakketprijs (het volledige pakket à € 1.250 in één keer is voordeliger), maar alle deelcertificaten van de studierichting + het praktijkexamen (€ 97,50, apart boeken) leiden tot het volledige erkende RYT200-diploma. LET OP de nuance: alleen de modules die binnen het vaste pakket van die studierichting vallen tellen mee — een zelf samengestelde mix van willekeurige losse modules wordt nooit een RYT200, ook niet bij 200 uur totaal. Check dus welke pakket-modules ze al hebben en welke er nog ontbreken. Zie ook het interne artikel "Online RYT200: pakket in één keer óf stap voor stap via losse modules".
+- **Klassikaal RYT/VYN200:** hier kan het ook stap voor stap — losse lesmodules boeken en opbouwen naar de volledige 200 uur. Check welke klassikale modules ze al hebben en welke er nog nodig zijn.
 
 ### Stap 4: Korting
 - **Pakketkorting (€ 500)** geldt alleen als je de volledige klassikale opleiding in één keer boekt (regulier of versneld traject). Niet bij losse modules.
-- Bij de online RYT200 is er geen korting op basis van eerder gevolgde losse modules.
+- Bij de online RYT200 is er geen korting op basis van eerder gevolgde losse modules; het pakket in één keer is de voordeligste route.
 
 ## BELANGRIJK
 

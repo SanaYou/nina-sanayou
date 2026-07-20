@@ -3,11 +3,15 @@ TAGS: doorstroom, combineren, RYT200, RYT300, module, opleiding, traject
 
 # Welke doorstroommogelijkheden zijn er na een losse module?
 
-In dit artikel lees je welke stappen je kunt zetten na het volgen van een losse module: hoe je modules combineert tot een volledige RYT200, wanneer doorstromen naar de RYT300 mogelijk is, en of je een module ook puur als bijscholing kunt inzetten. Zo zie je meteen welke route bij jou past.
+In dit artikel lees je welke stappen je kunt zetten na het volgen van een losse module: wat de route naar een volledige RYT200 is, wanneer doorstromen naar de RYT300 mogelijk is, en of je een module ook puur als bijscholing kunt inzetten. Zo zie je meteen welke route bij jou past.
 
-## Modules combineren tot een volledige RYT200
+## Van losse module naar een volledige RYT200
 
-Losse online modules kun je combineren tot een volledige RYT200 Online opleiding. Er zijn drie studierichtingen: Yin Yoga, Yang Yoga en Yin & Yang Yoga. Elke richting bestaat uit een vaste combinatie van 6 modules.
+Je kunt op twee manieren naar de volledige online RYT200 toewerken. Het volledige opleidingspakket in één keer aanschaffen (€ 1.250) is de meest voordelige manier. Maar je kunt ook stap voor stap opbouwen: je begint bijvoorbeeld met de Basics-module en schaft daarna steeds zelf de volgende lesmodule aan wanneer je verder wilt. Er is dan geen pakketprijs, maar je beslist na elke module opnieuw of je doorgaat.
+
+Let op: dit werkt alleen met de modules die binnen het vaste pakket van jouw studierichting vallen. Elke richting heeft een vaste modulesamenstelling; je kunt niet zelf een willekeurige combinatie van losse modules bij elkaar zoeken tot 200 uur.
+
+Heb je alle deelcertificaten van jouw studierichting behaald, dan rond je af met het praktijkexamen (€ 97,50, apart te boeken) en behaal je het volledige, erkende RYT200-diploma. Deelcertificaten die je onderweg behaalt zijn ook los geldig bij Yoga Alliance.
 
 ## Doorstromen naar de RYT300
 

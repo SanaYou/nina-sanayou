@@ -3,17 +3,20 @@ TAGS: losse modules, RYT200, combineren, doorstroom, opleiding, volledig pakket
 
 # Kan ik losse modules combineren tot een volledige RYT200?
 
-In dit artikel lees je of je losse modules kunt combineren tot een volledige RYT200 Teacher Training, en wat je opties zijn als je de volledige opleiding wilt behalen.
+In dit artikel lees je hoe je losse modules kunt combineren tot een volledige RYT200 Teacher Training, en wat het verschil is met het volledige opleidingspakket.
 
-## Losse modules zijn geen bouwstenen voor de RYT200
+## Twee routes naar hetzelfde diploma
 
-De drie RYT200 online Teacher Trainingen (Yin Yoga, Yang Yoga en Yin & Yang Yoga) zijn volledige opleidingspakketten met een vaste modulesamenstelling. Je kunt deze niet samenstellen door losse modules afzonderlijk aan te schaffen.
+De drie RYT200 online Teacher Trainingen (Yin Yoga, Yang Yoga en Yin & Yang Yoga) bestaan elk uit een vaste combinatie van lesmodules. Je kunt kiezen hoe je die doorloopt:
 
-De losse online modules zijn bedoeld als bijscholing, verdieping of specialisatie — los van of aanvullend op een volledige opleiding.
+- **Het volledige pakket in één keer** (€ 1.250): de meest voordelige manier. Betalen kan ook in termijnen, met direct toegang tot al het lesmateriaal.
+- **Stap voor stap met losse modules**: je schaft steeds zelf de volgende lesmodule aan wanneer je verder wilt. Er is geen pakketprijs, dus samen zijn de modules duurder, maar je beslist na elke module opnieuw of je doorgaat. Fijn als je eerst wilt ervaren of de manier van lesgeven bij je past.
 
-## Wil je een volledige RYT200 behalen?
+**Belangrijk:** stap voor stap opbouwen kan alléén met de modules die binnen het vaste pakket van jouw studierichting vallen. Je kunt niet zelf een willekeurige mix van losse modules samenstellen tot 200 uur — de samenstelling van de opleiding ligt vast, alleen het tempo en de manier van aanschaffen zijn vrij.
 
-Dan schrijf je je in voor een van de drie volledige RYT200 online Teacher Trainingen. Daarin zitten alle benodigde modules, het examentraject en de certificering als één geheel.
+## Certificering
+
+Elke module sluit je af met kennistests (inbegrepen) en levert een deelcertificaat op dat geldig is bij Yoga Alliance, ook als je niet de volledige 200 uur afrondt. Heb je alle deelcertificaten van jouw studierichting, dan vraag je het afsluitende praktijkexamen aan (€ 97,50, apart te boeken) en behaal je het volledige, erkende RYT200-diploma.
 
 Bekijk hier alle drie de online opleidingen:
 [Bekijk het online aanbod](https://sanayou.com/overzicht-online-ryt200-yoga-opleidingen)
