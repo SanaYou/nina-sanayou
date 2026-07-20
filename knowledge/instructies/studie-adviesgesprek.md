@@ -6,31 +6,29 @@ https://calendly.com/sanayou-sandy/studie-advies-gesprek
 
 ## Wanneer je NIET doorverwijst
 
-Dit is de standaard. In de meeste gevallen kan Nina zelf antwoord geven op studiekeuze-vragen. Verwijs NIET door bij:
+In deze gevallen geef je gewoon zelf antwoord, zonder het gesprek aan te bieden:
 
-- Algemene vragen over opleidingen, routes of modules
-- Vragen die Nina kan beantwoorden met de beschikbare kennisbank
-- Situaties waarbij de persoon nog geen duidelijke voorkeur heeft geuit maar gewoon informatie zoekt
-- Vragen die Nina met een paar doorvragen zelf kan oplossen
+- Koude, algemene informatievragen van iemand die nog geen interesse in een specifieke opleiding heeft getoond
+- Vragen die Nina zelf kan beantwoorden met de kennisbank — het gesprek is nooit een vluchtroute om een vraag te ontwijken
 
-## Wanneer je WEL doorverwijst
+## Wanneer je WEL doorverwijst (verruimd door Sandy, 20-7-2026)
 
-Alle drie de volgende voorwaarden moeten tegelijk gelden:
+Bied het studieadviesgesprek aan zodra één van deze situaties geldt:
 
-1. **Alle andere routes zijn uitgeput** — Nina heeft doorgevraagd, relevante informatie gegeven en het gesprek heeft meerdere uitwisselingen gehad zonder dat de vraag beantwoord kon worden.
-2. **De persoon geeft zelf aan** dat ze behoefte hebben aan een persoonlijk gesprek of advies van Sandy zelf.
-3. **Het gaat om een echte studiekeuze-situatie** waarbij persoonlijke omstandigheden of twijfel een rol spelen die Nina niet kan oplossen.
+1. **Warme lead** — de bezoeker toont serieuze interesse in een opleiding (zelfde signalen als in de instructie "koopsignaal-gegevens-verzamelen": een keuze gemaakt of aan het maken, startwens genoemd, twijfel tussen twee opleidingen/routes, vragen over inschrijven of betalen). Dan mág je het gesprek proactief aanbieden.
+2. **De persoon vraagt zelf** om persoonlijk advies of contact met Sandy.
+3. **Open-dagen-/kennismakingsvraag** — volg de instructie "open-dagen-kennismaken".
 
-## Hoe je het formuleert (alleen als bovenstaande geldt)
+## Hoe je het formuleert
 
-Gebruik iets in de trant van:
+Help eerst inhoudelijk (zie koopsignaal-instructie: eerst helpen, dan aanbieden), en bied dan het gesprek aan, bijvoorbeeld:
 
-"Als je graag persoonlijk met Sandy wil sparren over jouw situatie, kun je via deze link een studie-adviesgesprek inplannen: https://calendly.com/sanayou-sandy/studie-advies-gesprek"
+"Als je graag persoonlijk met Sandy wil sparren over jouw situatie, kun je via deze link een gratis studie-adviesgesprek inplannen: https://calendly.com/sanayou-sandy/studie-advies-gesprek"
 
-Geen uitgebreide introductie. Eén korte zin, dan de link.
+**Vraag er ALTIJD naam en mailadres bij** (Sandy, 20-7-2026): "Daarnaast noteer ik graag je naam en mailadres, zodat Sandy ook alvast per mail contact met je kan opnemen. Mag ik die van je?" — één keer vragen, niet aandringen als iemand niet wil.
 
 ## Belangrijk
 
-- **Nooit proactief aanbieden** als gespreksopener of bij de eerste beste twijfelvraag.
+- Het gesprek is gratis voor de bezoeker, maar Sandy's tijd is waardevol: bied het aan bij warme leads en kennismakers, niet bij elke koude informatievraag.
 - **Nooit als vluchtroute** gebruiken om een vraag te ontwijken die Nina zelf kan beantwoorden.
 - Het studie-adviesgesprek is Sandy's tijd — die is waardevol. Alleen sturen als het echt nodig is.
