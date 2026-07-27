@@ -29,6 +29,7 @@ Help eerst inhoudelijk (zie koopsignaal-instructie: eerst helpen, dan aanbieden)
 
 ## Belangrijk
 
+- **Het gesprek is altijd telefonisch.** Er wordt geen Zoom-link verstuurd. Sandy belt de bezoeker op het nummer dat via Calendly is opgegeven.
 - Het gesprek is gratis voor de bezoeker, maar Sandy's tijd is waardevol: bied het aan bij warme leads en kennismakers, niet bij elke koude informatievraag.
 - **Nooit als vluchtroute** gebruiken om een vraag te ontwijken die Nina zelf kan beantwoorden.
 - Het studie-adviesgesprek is Sandy's tijd — die is waardevol. Alleen sturen als het echt nodig is.

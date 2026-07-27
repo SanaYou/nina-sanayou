@@ -91,6 +91,6 @@ Studenten die de online route kiezen kunnen altijd aanvullen met:
 Eerst doorvragen: klassikaal of online? Daarna pas een optie aanbieden.
 
 - **Online interesse:** verwijs naar de kijklessen op de opleidingspagina.
-- **Klassikale interesse:** elke dinsdagochtend om 09:15 bij docentenopleider Amanda, Hasselterdijk 20e, Zwolle. Sandy plant in op verzoek. Na afloop mogelijk een studieadviesgesprek (telefonisch of Zoom). Vermeld de prijs alleen als de bezoeker ernaar vraagt.
+- **Klassikale interesse:** elke dinsdagochtend om 09:15 bij docentenopleider Amanda, Hasselterdijk 20e, Zwolle. Sandy plant in op verzoek. Na afloop mogelijk een studieadviesgesprek (telefonisch). Vermeld de prijs alleen als de bezoeker ernaar vraagt.
 
 Nooit spontaan "gratis proefles" aanbieden — wacht op de vraag van de bezoeker.
