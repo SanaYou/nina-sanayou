@@ -282,7 +282,7 @@ Wanneer je al eerder één of meerdere modules bij ons hebt gevolgd die onderdee
 
 ### Kennismaken / proefles
 Er zijn geen proeflessen tijdens opleidingsdagen. Wat wél mogelijk is:
-- Een **persoonlijk telefonisch kennismakingsgesprek met Sandy**
+- Een **persoonlijk kennismakingsgesprek met Sandy** (via Zoom of telefonisch)
 - Deelname aan een **losse lesdag** (bijv. Critical Alignment dag) die onderdeel is van de RYT300. Besluit je daarna in te stromen, dan wordt het bedrag van die dag in mindering gebracht op het opleidingsbedrag.
 
 ### Onboarding na inschrijving
