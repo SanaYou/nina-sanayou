@@ -77,6 +77,14 @@ Kern: Wat is de nervus vagus en wat heeft yoga ermee te maken? Over het parasymp
 Link: https://sanayou.com/blog/wat-is-fascia-in-yoga/
 Kern: Wat is fascia en waarom is het belangrijk in yoga? Over het bindweefselnetwerk in je lichaam, de rol van hydratatie en hoe Yin Yoga juist op dit weefsel werkt.
 
+### Wat zijn chakra's? De 7 energiepunten nuchter uitgelegd
+Link: https://sanayou.com/blog/wat-zijn-chakras/
+Kern: Wat zijn chakra's precies? Een nuchtere uitleg van de 7 chakra's, waar ze zitten, welk thema bij elk chakra hoort en hoe je er in yoga mee werkt.
+
+### Wat zijn meridianen in Yin Yoga? De 12 energiebanen uitgelegd
+Link: https://sanayou.com/blog/wat-zijn-meridianen-in-yin-yoga/
+Kern: Wat zijn meridianen en wat doet Yin Yoga ermee? Over de 12 orgaanmeridianen uit de traditionele Chinese geneeskunde, hun thema's en de houdingen die ze aanspreken.
+
 ## Yoga en gezondheid
 
 ### Beter slapen met yoga: Yoga Nidra en diepe ontspanning
@@ -98,3 +106,11 @@ Kern: Welke rustige yogavormen rust en ruimte kunnen geven bij lage rugpijn, en 
 ### Yoga bij stress: hoe je een overprikkeld zenuwstelsel tot rust brengt
 Link: https://sanayou.com/blog/yoga-bij-stress/
 Kern: Hoe rustige yoga via het zenuwstelsel en de nervus vagus helpt bij stress. Noem dit bij vragen over yoga en stress of ontspanning.
+
+### Yoga bij een burn-out: herstellen zonder jezelf opnieuw voorbij te lopen
+Link: https://sanayou.com/blog/yoga-bij-burn-out/
+Kern: Kan yoga helpen bij het herstel van een burn-out? Over een uitgeput zenuwstelsel, de valkuil van wilskracht en welke rustige yogavormen bij welke herstelfase passen. Voeg er altijd bij dat yoga geen medische behandeling vervangt.
+
+### Yoga in de overgang: hoe je rustiger door de menopauze komt
+Link: https://sanayou.com/blog/yoga-in-de-overgang/
+Kern: Kan yoga helpen bij overgangsklachten? Over opvliegers, slecht slapen en een lijf dat verandert, en welke rustige yogavormen je zenuwstelsel juist nu ondersteunen. Voeg er altijd bij dat yoga geen medische behandeling vervangt.
