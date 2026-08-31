@@ -177,6 +177,55 @@ def normalize(text: str) -> str:
     return re.sub(r"[^a-z0-9\s]", " ", text.lower())
 
 
+def _bouw_woordgewichten(index: list) -> dict:
+    """Hoe zeldzamer een woord in de kennisbank, hoe zwaarder het weegt.
+
+    ⚑ 31-8-2026. Zonder dit telde elk woord even zwaar. Gevolg: een breed
+    overzichtsartikel dat élke productnaam opsomt, scoorde op alledaagse woorden als
+    "module", "yoga" en "lesmodules" — die in bijna elk artikel staan — en verdrong
+    daarmee het artikel dat werkelijk over die ene module gaat. Bij een vraag als
+    "wat leer ik in de module Yoga Nidra" won de catalogus van "Lesdoelen: Yoga Nidra".
+    Het onderscheidende woord in die vraag is "nidra", niet "module".
+    """
+    import math
+    totaal = len(index) or 1
+    voorkomen: dict = {}
+    for artikel in index:
+        tekst = normalize(" ".join([
+            artikel["title"], " ".join(artikel["tags"]),
+            " ".join(artikel.get("headings", [])), artikel["clean_content"],
+        ]))
+        for woord in set(tekst.split()):
+            voorkomen[woord] = voorkomen.get(woord, 0) + 1
+    # Ondergrens 0.15: een alledaags woord mag verzwakken, maar nooit tot nul —
+    # anders verdwijnt bij een vraag die alleen uit gewone woorden bestaat élk signaal.
+    return {w: max(0.15, math.log(totaal / (1 + n))) for w, n in voorkomen.items()}
+
+
+WOORDGEWICHTEN = _bouw_woordgewichten(ARTICLES_INDEX)
+# Onbekend woord (bv. een typefout of een synoniem dat nergens staat): behandel als
+# zeldzaam, niet als alledaags. Anders zou een uniek woord juist worden weggedrukt.
+GEWICHT_ONBEKEND = 2.0
+
+
+def _weegt(woord: str) -> float:
+    return WOORDGEWICHTEN.get(woord, GEWICHT_ONBEKEND)
+
+
+def _komt_voor(woord: str, tekst: str) -> bool:
+    """Losse cijfers alleen als heel woord; de rest als deelreeks.
+
+    ⚑ 31-8-2026. Cijfers werden hiervoor helemaal weggegooid door de len>2-filter,
+    waardoor "Yin Yoga 1" en "Yin Yoga 2" niet te onderscheiden waren. Ze meenemen mag
+    echter niet als deelreeks: "1" zit ook in "2021" en in "10". Vandaar de woordgrens.
+    Voor gewone woorden blijft de deelreeks staan — die vangt meervouden gratis op
+    ("opleiding" vindt "opleidingen").
+    """
+    if woord.isdigit():
+        return re.search(rf"(?<!\d){re.escape(woord)}(?!\d)", tekst) is not None
+    return woord in tekst
+
+
 # Synoniemenlijst: mensen gebruiken andere woorden dan in de kennisbank staan
 SYNONIEMEN = {
     "kosten": ["prijs", "prijzen", "bedrag", "betalen", "investering", "tarief"],
@@ -229,7 +278,10 @@ def retrieve_articles(query: str, history: List, top_k: int = 3):
     search_text = query
     for msg in history[-6:]:
         search_text += " " + msg.content
-    base_words = [w for w in normalize(search_text).split() if len(w) > 2]
+    # len>2 laat losse cijfers vallen; die zijn hier juist onderscheidend
+    # ("Yin Yoga 1" vs "Yin Yoga 2"). _komt_voor matcht ze op woordgrens.
+    base_words = [w for w in normalize(search_text).split()
+                  if len(w) > 2 or w.isdigit()]
     words = expand_with_synonyms(base_words)
 
     if not words:
@@ -248,15 +300,31 @@ def retrieve_articles(query: str, history: List, top_k: int = 3):
         for word in words:
             # Synoniemen scoren de helft van directe matches
             multiplier = 1.0 if word in base_words_set else 0.5
-            if word in title_norm:
+            # ...en alles weegt mee naar zeldzaamheid: "nidra" zegt meer dan "module".
+            multiplier *= _weegt(word)
+            if _komt_voor(word, title_norm):
                 score += 8 * multiplier
-            if word in headings_norm:
+            if _komt_voor(word, headings_norm):
                 # subkopjes zijn vaak losse deelvragen: zwaar meewegen
                 score += 5 * multiplier
-            if word in tags_norm:
+            if _komt_voor(word, tags_norm):
                 score += 4 * multiplier
-            if word in content_norm:
+            if _komt_voor(word, content_norm):
                 score += 1 * multiplier
+
+        # Titeldekking: hoeveel van de vraag staat er in de TITEL van dit artikel?
+        # ⚑ 31-8-2026. Zonder dit verliest een specifiek artikel van een zusartikel dat
+        # dezelfde algemene woorden deelt. "Wat is het LIVE+ Support Pack?" verloor van
+        # "Wat zijn de verschillen tussen de Support Packs?", omdat "support" en "pack"
+        # in beide staan en het onderscheidende "live" te licht woog. Een titel die de
+        # héle vraag dekt, hoort te winnen van een titel die er de helft van dekt.
+        # Bereik 10-25 geeft dezelfde uitslag (breed gemeten over alle artikelen), dus
+        # 12 staat niet op een mesrand.
+        if base_words:
+            gewicht_totaal = sum(_weegt(w) for w in base_words) or 1
+            titeldekking = sum(_weegt(w) for w in base_words
+                               if _komt_voor(w, title_norm)) / gewicht_totaal
+            score += 12 * titeldekking
 
         if score > 0:
             scored.append((score, article))
