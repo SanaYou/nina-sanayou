@@ -27,7 +27,7 @@ Je krijgt ook toegang tot de online lesmodule Basis Anatomie voor Yogadocenten. 
 
 ## Lesmateriaal
 
-Bij Yogadocent Level 1 ontvang je op de eerste lesdag een uitgebreide opleidingsreader, samen met een pen en notitieblok. Wil je de lesreader ook digitaal ontvangen? Mail dan naar academy@sanayou.com voor de mogelijkheden.
+Bij Yogadocent Level 1 ontvang je op de eerste lesdag een uitgebreide opleidingsreader, samen met een pen. Wil je de lesreader ook digitaal ontvangen? Mail dan naar academy@sanayou.com voor de mogelijkheden.
 
 ## Huddle account activeren
 

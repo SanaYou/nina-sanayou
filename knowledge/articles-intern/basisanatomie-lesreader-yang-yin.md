@@ -1,25 +1,23 @@
 COLLECTIE: Algemene informatie
 TAGS: basisanatomie-lesreader-yang-yin
 
-# INTERNE INSTRUCTIE — Basisanatomie-lesreader: Yin vs Yang
+# INTERNE INSTRUCTIE — Basisanatomie-lesreader: hoe het nu geregeld is
 
-Gebruik deze informatie als een student vraagt waarom ze geen aparte anatomie-reader hebben bij hun Yang-modules.
+Gebruik deze informatie als een student vraagt of hij een aparte anatomie-reader krijgt, of waarom hij die bij een tweede module niet nog een keer ontvangt.
 
-## Situatie per module (actueel)
+## Hoe het nu werkt (bijgewerkt 1-9-2026)
 
-### Yin-modules
-Bij de Yin-modules ontvang je de basisanatomie als **aparte lesreader**. Sandy heeft de vormgeving van de Yin-modules al vernieuwd en de anatomie-inhoud daarin losgemaakt tot een zelfstandig document.
+De basisanatomie is een **aparte lesreader**, los van de reader van de module zelf. Dit geldt zowel voor Yin als voor Yang: de Yang-lesreaders zijn inmiddels aangepast, dus de oude situatie waarin de anatomie bij Yang in de lesreaders zelf verwerkt zat, geldt niet meer.
 
-### Yang-modules
-Bij de Yang-modules zit de basisanatomie **verwerkt in de lesreaders zelf**. Je ontvangt geen aparte anatomie-reader, maar de inhoud is er volledig in opgenomen — exact dezelfde pagina's.
+Je ontvangt de basisanatomie-reader bij **Yin Yoga 1 of bij Yang Yoga 1**, afhankelijk van waar je begint.
 
-Je beschikt dus over alle relevante informatie, ook als er geen apart document zichtbaar is.
+## Eenmalig verstrekt
 
-## Wat verandert er binnenkort?
+De basisanatomie-reader wordt **één keer** verstrekt. Heeft iemand hem in september bij Yang Yoga 1 ontvangen en start hij in januari ook met Yin Yoga 1, dan krijgt hij hem daar niet opnieuw.
 
-In de zomer van 2026 worden ook de Yang-modules opnieuw vormgegeven. Dan wordt de basisanatomie ook daar losgemaakt. Het plan is dat er uiteindelijk één aparte basisanatomie-reader per 200-uurs opleiding is, die eenmalig wordt uitgereikt.
+## Aantal lesreaders
 
-Volg je nu al de Yang-opleiding, dan hoef je niets te doen. Je hebt de anatomie-informatie al in je lesreader.
+Voor de klassikale 200 uur Yin en Yang Teacher Training worden in totaal **vijf lesreaders** verstrekt.
 
 ## Gerelateerde artikelen
 
