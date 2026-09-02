@@ -672,7 +672,8 @@ async def chat(request: ChatRequest):
 
                 # Leg de gespreksbeurt vast in het weeklog (faalt stil, blokkeert Nina nooit)
                 _log_conversation(
-                    request.session_id, request.message, response_text, used_articles, escalated
+                    request.session_id, request.message, response_text, used_articles, escalated,
+                    chat_messages=messages,
                 )
 
                 return {"response": response_text}
@@ -886,14 +887,24 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
     if not name:
         name = email.split("@")[0].replace(".", " ").title()
 
-    # Bouw een samenvatting uit de eerste gebruikersvraag
+    # Bouw een samenvatting uit de laatste INHOUDELIJKE bezoekersvraag.
+    # Was: het eerste bezoekersbericht uit chat_messages. Dat leek veilig, maar de
+    # opschoonlus in /chat vouwt twee opeenvolgende user-berichten samen tot het
+    # LAATSTE ("cleaned[-1] = msg"), en de trim houdt alleen de laatste 20 beurten.
+    # Beide kunnen de openingsvraag uit chat_messages laten verdwijnen, waarna het
+    # eerste bezoekersbericht "Ja" is — vandaar de Help Scout-tickets met als
+    # onderwerp "Nina-escalatie: Ja" (Olivia, gemeten 1-9-2026).
     summary = "Vraag via Nina-chat"
-    for msg in chat_messages:
-        if msg.get("role") == "user":
-            first_q = msg.get("content", "")[:120]
-            if first_q and "@" not in first_q:
-                summary = first_q
-            break
+    kandidaat = _inhoudelijke_vraag(chat_messages, user_message)
+    if kandidaat and "@" not in kandidaat:
+        summary = kandidaat[:120]
+    else:
+        for msg in chat_messages:
+            if msg.get("role") == "user":
+                first_q = msg.get("content", "")[:120]
+                if first_q and "@" not in first_q:
+                    summary = first_q
+                break
 
     logger.info(f"Escalatie gedetecteerd: {name} ({email}) — {summary[:60]}")
     _send_escalation(name, email, summary, chat_messages)
@@ -937,7 +948,72 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
     logger.info(f"Escalatie aangemaakt in Help Scout: {name} ({email})")
 
 
-def _log_conversation(session_id, user_msg, nina_response, used_articles, escalated):
+# ── De inhoudelijke vraag van een gesprek ──────────────────────────────────
+# Nina vraagt bij onduidelijkheid door; de bezoeker antwoordt dan "Ja". Juist die
+# beurt is de beurt die als vastloper of escalatie gelogd wordt. Wie het LAATSTE
+# bezoekersbericht wegschrijft, logt dus de bevestiging en niet de vraag — en dan
+# meet de maandelijkse kennisgaten-analyse niets bij precies de belangrijkste bron.
+# Gemeten door Olivia op 1-9-2026: 5 van de 5 vastlopers in augustus hadden als
+# vraag letterlijk "Ja", "ja klopt", "Ja dat klopt"; twee Help Scout-tickets heetten
+# "Nina-escalatie: Ja".
+#
+# Daarom: loop de bezoekersberichten ACHTERSTEVOREN door en neem het eerste dat
+# geen kale bevestiging is. Dat is cause-onafhankelijk — het werkt ook als de
+# historie onderweg is ingekort of samengevouwen.
+
+# Losse WOORDEN (niet frasen): de toets kijkt per woord, dus "dank je wel" moet
+# als "dank", "je" en "wel" herkenbaar zijn, niet als één sleutel.
+_BEVESTIGINGEN = {
+    "ja", "nee", "ok", "oke", "oké", "okay", "top", "bedankt", "dank", "dankje",
+    "dankjewel", "dankuwel", "klopt", "prima", "goed", "duidelijk", "helder",
+    "yes", "jazeker", "jawel", "nope", "graag", "mooi", "super", "fijn",
+    "perfect", "akkoord", "precies", "inderdaad", "zeker", "juist", "correct",
+    "begrepen", "snap", "snapte", "gelukt", "thanks", "dankuwel", "oke",
+}
+
+
+def _is_kale_bevestiging(tekst: str) -> bool:
+    """True als dit bericht alleen instemming/afwijzing draagt, geen vraag."""
+    kaal = re.sub(r"[^\w\s]", " ", (tekst or "").lower())
+    woorden = kaal.split()
+    if not woorden:
+        return True
+    # "ja", "ja klopt", "ja dat klopt", "ja helemaal juist" — kort én opgebouwd
+    # uit louter bevestigende woorden of vulwoorden.
+    if len(woorden) > 5:
+        return False
+    vulwoorden = {"dat", "het", "helemaal", "wel", "echt", "heel", "en", "is", "hoor",
+                  "even", "maar", "nou", "ja", "zo", "die", "u", "je", "jou", "ik",
+                  "denk", "al", "dus", "toch", "hem", "ze", "er"}
+    return all(w in _BEVESTIGINGEN or w in vulwoorden for w in woorden)
+
+
+def _inhoudelijke_vraag(chat_messages, laatste_bericht=""):
+    """De laatste ECHTE bezoekersvraag uit dit gesprek.
+
+    Volgorde: (1) achterstevoren het eerste bezoekersbericht dat geen kale
+    bevestiging is, (2) anders het eerste bezoekersbericht van de sessie,
+    (3) anders het laatste bericht zelf. Nooit leeg als er iets gezegd is.
+    """
+    bezoeker = [
+        (m.get("content") or "") if isinstance(m, dict) else (getattr(m, "content", "") or "")
+        for m in (chat_messages or [])
+        if (m.get("role") if isinstance(m, dict) else getattr(m, "role", None)) == "user"
+    ]
+    if laatste_bericht and (not bezoeker or bezoeker[-1] != laatste_bericht):
+        bezoeker.append(laatste_bericht)
+
+    for tekst in reversed(bezoeker):
+        if tekst.strip() and not _is_kale_bevestiging(tekst):
+            return tekst.strip()
+    for tekst in bezoeker:
+        if tekst.strip():
+            return tekst.strip()
+    return (laatste_bericht or "").strip()
+
+
+def _log_conversation(session_id, user_msg, nina_response, used_articles, escalated,
+                      chat_messages=None):
     """Schrijf één gespreksbeurt weg naar het externe weeklog (Google Sheet via Apps Script).
 
     Vercel bewaart zelf niks, dus we sturen elke beurt naar een Apps Script-webhook
@@ -954,7 +1030,12 @@ def _log_conversation(session_id, user_msg, nina_response, used_articles, escala
             json={
                 "secret": os.getenv("NINA_LOG_SECRET", ""),
                 "session_id": session_id or "",
-                "vraag": user_msg or "",
+                # Niet user_msg: dat is per definitie het LAATSTE bezoekersbericht en
+                # bij een vastloper is dat de bevestiging ("Ja"), niet de vraag.
+                "vraag": _inhoudelijke_vraag(chat_messages, user_msg) or (user_msg or ""),
+                # Het kale laatste bericht gaat niet verloren; als de sheet deze kolom
+                # (nog) niet kent, negeert de Apps Script hem.
+                "laatste_bericht": user_msg or "",
                 "antwoord": nina_response or "",
                 "artikelen": ", ".join(used_articles) if used_articles else "— geen artikel gevonden —",
                 "escalatie": "ja" if escalated else "",
