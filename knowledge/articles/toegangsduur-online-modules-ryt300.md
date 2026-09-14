@@ -15,6 +15,8 @@ De klassikale lesdagen van de RYT300 volg je in principe binnen diezelfde 24 maa
 
 ## Toegang verlengen
 
+Wil je zien hoeveel tijd je nog hebt? Dat kun je terugzien in je eigen Huddle-account. Kom je er daar niet uit, zoek dan de factuur van je aanmelding erbij: vanaf die datum gaan de 24 maanden lopen.
+
 Wil je na afloop van de 24 maanden je lesmateriaal blijven raadplegen? Voor het verlopen van je toegangstermijn krijg je automatisch de mogelijkheid om te verlengen. Meer informatie vind je in het artikel over het verlengen van je toegang.
 
 ## Gerelateerde artikelen
