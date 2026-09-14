@@ -834,9 +834,22 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
     # "neemt contact" — die belofte spreekt Nina óók uit terwijl ze nog om naam+mail
     # vraagt, en dan onderdrukte de guard de échte escalatie erna (gebeurd bij Josje,
     # gesprek 7-7: geen ticket omdat een eerdere ask-beurt al "neemt contact" bevatte).
-    reeds_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd|door aan sandy'
+    # ⚑ 14-9-2026: 'door aan sandy' stond hier ook in, en dat is GEEN afronding maar een
+    # belofte ("zodra ik dat heb, geef ik het door aan Sandy"). Die zin spreekt Nina juist uit
+    # terwijl ze nog om naam en e-mailadres vraagt, waarna de guard de echte afronding erna
+    # onderdrukte. Gemeten bij Daphne (gesprek 13-9 19:05): drie beurten, keurig naam en
+    # e-mailadres bevestigd, "ik heb je verzoek doorgestuurd naar Sandy" als slot, en tóch geen
+    # Help Scout-ticket. Zelfde vorm als de Josje-bug hierboven met "neemt contact".
+    # Alleen voltooide deelwoorden blijven over, en een beurt waarin Nina nog om gegevens
+    # vraagt telt nooit als afronding, ook niet als daar "genoteerd" in staat
+    # ("ik heb je naam genoteerd, wat is je e-mailadres?").
+    reeds_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd'
+    vraagt_nog_gegevens = r'mag ik je naam|wat is je e-?mail|je naam en e-?mail|klopt dat\?'
     for msg in chat_messages:
-        if msg.get("role") == "assistant" and re.search(reeds_patroon, msg.get("content", "").lower()):
+        if msg.get("role") != "assistant":
+            continue
+        inhoud = msg.get("content", "").lower()
+        if re.search(reeds_patroon, inhoud) and not re.search(vraagt_nog_gegevens, inhoud):
             logger.info("Escalatie overgeslagen: al eerder afgerond in deze conversatie")
             return
 
