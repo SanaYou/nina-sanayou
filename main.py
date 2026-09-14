@@ -164,6 +164,7 @@ def load_base_knowledge() -> str:
         "gezondheid-blessure-escalatie.md",
         "consumentenprogrammas-escalatie.md",
         "ryt500-instroom-met-elders-behaalde-200.md",
+        "afmelden-en-annuleren-uitvragen.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
