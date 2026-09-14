@@ -19,6 +19,10 @@ Dit is de enige verplichte literatuur bij de opleiding. De lesboeken zijn niet l
 
 Het pakket wordt aangeboden op het moment dat je de opleiding kiest, als extra optie op de checkout-pagina. Het wordt aangeboden met een aanzienlijk voordeel ten opzichte van de losse aankoop.
 
+## Hoe je het pakket ontvangt
+
+De lesboeken worden direct na je bestelling per e-mail naar je verstuurd, met een downloadlink. Ze staan niet op het lesplatform Huddle. Kun je de mail niet vinden, kijk dan even in je spamfolder.
+
 ## Gerelateerde artikelen
 
 - Welke online RYT200-opleidingen kan ik volgen?

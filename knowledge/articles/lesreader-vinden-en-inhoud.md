@@ -1,5 +1,5 @@
 COLLECTIE: Online RYT200 Teacher Trainingen
-TAGS: anatomie, digitaal, huddle, lesmateriaal, lesreader, online opleiding, printen, studiemateriaal
+TAGS: anatomie, digitaal, e-mail, lesboek, lesmateriaal, lesreader, online opleiding, printen, spam, studiemateriaal
 # Lesmateriaal – Waar vind ik mijn lesreader en wat staat erin?
 
 ## Waar vind ik mijn lesreader en wat staat erin?
@@ -17,6 +17,16 @@ Volg je de volledige klassikale RYT/VYN200 opleiding, dan ontvang je de lesboeke
 Volg je een online opleiding of lesmodule, dan ontvang je direct na aanmelding jouw lesreader of lesreaderpakket via e-mail. In die e-mail staan de downloadlinks of downloadknoppen. Zodra je erop klikt, wordt de reader op je apparaat gedownload. Die links zijn beperkt geldig, dus download je reader het liefst meteen en bewaar het bestand op een vaste plek.
 
 Volg je een klassikale lesmodule, dan ontvang je de lesreader van die module tijdens het eerste lesweekend. Je krijgt daar ook een pen bij.
+
+## Je reader staat niet op het lesplatform
+
+Lesreaders, lesboeken en e-books staan niet op Huddle. Op het lesplatform vind je je videolessen, podcasts en kennistests. Je lesmateriaal in PDF komt altijd per e-mail.
+
+## Kun je de mail niet vinden?
+
+De mail is verstuurd direct nadat je de reader of het lesboekenpakket hebt besteld. Zoek dus in je mailbox rond de datum van je bestelling.
+
+Vind je hem daar niet, kijk dan in je spamfolder. Daar belandt hij het vaakst. Staat hij er ook daar niet tussen, laat het ons dan weten via de chat, dan zoeken we het voor je uit.
 
 ## Wat er in je reader staat
 

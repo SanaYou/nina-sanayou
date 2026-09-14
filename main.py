@@ -141,6 +141,12 @@ def load_base_knowledge() -> str:
         parts.append(file.read_text(encoding="utf-8"))
     # Laad alleen universele gedragsregels — content-specifieke instructies
     # worden via RAG geladen zodat ze alleen meekomen als ze relevant zijn.
+    # ⚑ Harde regels gaan vóór alle andere instructies en worden als eerste geladen.
+    # De rest van ALTIJD_LADEN komt daarna in alfabetische volgorde binnen, dus zonder
+    # deze lijst zou een harde regel ergens in het midden van het blok belanden.
+    HARDE_REGELS = [
+        "lesboeken-en-readers-komen-per-mail.md",
+    ]
     ALTIJD_LADEN = {
         "gesprek-afsluiten.md",
         "schrijfstijl.md",
@@ -168,8 +174,16 @@ def load_base_knowledge() -> str:
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
+        for naam in HARDE_REGELS:
+            harde_regel = instructies_dir / naam
+            if harde_regel.exists():
+                parts.insert(0, harde_regel.read_text(encoding="utf-8"))
+            else:
+                logger.warning(f"HARDE REGEL ONTBREEKT: {naam}")
         for file in sorted(instructies_dir.glob("*.md")):
-            if file.name in ALTIJD_LADEN:
+            if file.name in ALTIJD_LADEN or file.name in HARDE_REGELS:
+                if file.name in HARDE_REGELS:
+                    continue  # al vooraan ingevoegd
                 parts.append(file.read_text(encoding="utf-8"))
     return "\n\n".join(parts)
 
