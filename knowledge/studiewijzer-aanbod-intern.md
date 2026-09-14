@@ -304,7 +304,11 @@ Niet als vroege vraag stellen. Pas vermelden in het advies zodra het klassikale 
 ## 9. Toekomstige uitbreidingen aanbod
 
 - **Yin & Reiki klassikaal:** Gepland najaar 2026. Keuzemodule hybride Yin-pad. Vereist Yin-achtergrond.
-- **Kortere programma's voor consumentenmarkt:** In ontwikkeling.
+- **Programma's voor consumenten:** LIVE, niet meer in ontwikkeling. Op dit moment twee:
+  Critical Alignment Therapie voor Thuis en Ashtanga Yoga voor Thuis. Deze vallen BUITEN
+  Nina's ondersteuning: elke vraag erover gaat naar Sandy. Zie de instructie
+  `consumentenprogrammas-escalatie.md`. Nooit ontkennen dat ze bestaan, en nooit verwarren
+  met de gelijknamige opleidingsmodules (Critical Alignment Yoga / Ashtanga).
 
 ---
 

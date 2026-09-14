@@ -162,6 +162,7 @@ def load_base_knowledge() -> str:
         "alternatieve-combinaties.md",
         "modulair-korting-intern.md",
         "gezondheid-blessure-escalatie.md",
+        "consumentenprogrammas-escalatie.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
