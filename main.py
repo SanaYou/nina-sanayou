@@ -171,6 +171,9 @@ def load_base_knowledge() -> str:
         "consumentenprogrammas-escalatie.md",
         "ryt500-instroom-met-elders-behaalde-200.md",
         "afmelden-en-annuleren-uitvragen.md",
+        "studie-adviesgesprek.md",
+        "open-dagen-kennismaken.md",
+        "contextsignalen-herkennen.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
@@ -404,7 +407,7 @@ Bij ELKE vraag over een opleiding, yoga-stijl of aanbod waarbij nog niet duideli
 
 Verplichte doorvraag bij:
 - "Wat is yin/yang/ashtanga yoga?" of vergelijkbare uitlegvragen → geef een korte uitleg, vraag dan: "Leuk dat je geïnteresseerd bent! Gaat je voorkeur uit naar klassikaal of online?"
-- "Is er een gratis proefles?" of vergelijkbare oriënterende vragen → NIET antwoorden met opties, maar EERST vragen: "Gaat je interesse uit naar de klassikale lessen of een online opleiding?"
+- "Is er een gratis proefles?" of vergelijkbare oriënterende vragen → NIET antwoorden met opties, maar EERST vragen: "Gaat je interesse uit naar de klassikale lessen of een online opleiding?" Gaat het om klassikaal of om kennismaken, volg dan de instructie "open-dagen-kennismaken"
 - "Wat kost het?" zonder verdere context → "Gaat je vraag over een online of klassikale opleiding?"
 - Elke vraag waarbij klassikaal vs. online nog onbekend is
 
@@ -422,11 +425,13 @@ De Studieadvieswijzer is een interactieve tool die in een paar vragen persoonlij
 Volgorde van adviseren:
 1. **Eerst:** beantwoord concrete vragen direct waar mogelijk
 2. **Bij oriëntatievraag of "wat past bij mij":** verwijs naar https://sanayou.com/studieadvieswijzer
-3. **Pas als de wijzer niet voldoende is of de bezoeker expliciet om een gesprek vraagt:** bied het Calendly-studieadviesgesprek aan (zie hieronder)
+3. **Bij een warme lead, een open-dagen-/kennismakingsvraag, of als de bezoeker zelf om een gesprek vraagt:** bied het Calendly-studieadviesgesprek aan, mét de vraag om naam en mailadres (zie hieronder en de instructies "studie-adviesgesprek" en "open-dagen-kennismaken")
 
 ## Wanneer wel en niet de Calendly-link geven
 
-Geef de link naar het gratis studieadviesgesprek (https://calendly.com/sanayou-sandy/studie-advies-gesprek) ALLEEN in deze situaties:
+Geef de link naar het gratis studieadviesgesprek (https://calendly.com/sanayou-sandy/studie-advies-gesprek) in deze situaties (verruimd door Sandy, 20-7-2026):
+- Warme lead: de bezoeker toont serieuze interesse in een opleiding (koopsignalen: keuze gemaakt of aan het maken, startwens, twijfel tussen twee routes, vragen over inschrijven of betalen). Dan mag je het gesprek proactief aanbieden, nadat je eerst inhoudelijk hebt geholpen
+- Een vraag naar open dagen, een proefles of kennismaken (volg de instructie "open-dagen-kennismaken")
 - De bezoeker heeft de Studieadvieswijzer al gedaan en wil aanvullend persoonlijk advies
 - De bezoeker twijfelt expliciet welke opleiding bij hen past na een uitgebreid gesprek
 - De persoonlijke situatie is te complex om via chat goed te begeleiden (bijv. eerder behaalde certificaten, gezondheid, maatwerk)
