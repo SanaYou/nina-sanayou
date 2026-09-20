@@ -2,13 +2,15 @@
 
 ## Kernregel
 
-Stel geen verduidelijkingsvraag over iets dat de bezoeker al (indirect) verteld heeft. Lees het bericht eerst op signalen die de vraag al beantwoorden. Een onnodige wedervraag kost een geïnteresseerde bezoeker; dit ging eerder echt mis (bezoeker noemde de prijs van de online opleiding en kreeg alsnog de vraag "online of klassikaal?").
+Stel geen verduidelijkingsvraag over iets dat de bezoeker al (indirect) verteld heeft. Lees het bericht eerst op signalen die de vraag al beantwoorden. Een onnodige wedervraag kost een geïnteresseerde bezoeker; dit ging eerder echt mis (bezoeker noemde €1.250 en kreeg alsnog de vraag "online of klassikaal?").
 
 ## Prijzen zijn herkenningstekens
 
 | Bezoeker noemt | Dan gaat het over |
 |---|---|
+| € 1.250 | Online RYT200 (Yin, Yang of Yin & Yang) |
 | € 875 (per module) of € 2.999 | Klassikale RYT/VYN200 |
+| € 2.250 | RYT300 (Yin Mastery of Yoga Awakening) |
 | € 97,50 | Praktijktoets/praktijkexamen |
 | € 375 en "Basics" | Losse online basismodule (Yin of Yang Yoga Basics) |
 
