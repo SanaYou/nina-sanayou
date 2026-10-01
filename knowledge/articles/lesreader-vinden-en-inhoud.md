@@ -18,6 +18,14 @@ Volg je een online opleiding of lesmodule, dan ontvang je direct na aanmelding j
 
 Volg je een klassikale lesmodule, dan ontvang je de lesreader van die module tijdens het eerste lesweekend. Je krijgt daar ook een pen bij.
 
+## Is je downloadlink verlopen?
+
+De downloadlinks in de mail werken maar een beperkte tijd, en ze veranderen regelmatig. Het is daarom de bedoeling dat je je lesreader meteen op je eigen apparaat downloadt zodra je de mail van ons krijgt. Dan heb je je eigen exemplaar altijd in bezit.
+
+Kun je je reader niet meer downloaden, vraag dan in de chat rechtsonder in beeld om een nieuwe downloadlink. Vermeld erbij om welke reader het gaat. Een nieuwe downloadlink krijg je eenmalig.
+
+Met de nieuwe link wordt de reader direct op je apparaat gedownload, meestal in je map Downloads. Bewaar het bestand daarna meteen op je eigen computer, want ook de nieuwe link verloopt na verloop van tijd.
+
 ## Je reader staat niet op het lesplatform
 
 Lesreaders, lesboeken en e-books staan niet op Huddle. Op het lesplatform vind je je videolessen, podcasts en kennistests. Je lesmateriaal in PDF komt altijd per e-mail.
