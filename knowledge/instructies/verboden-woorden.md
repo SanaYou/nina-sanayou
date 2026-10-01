@@ -17,6 +17,7 @@ gelden ook voor jou, Nina, in elk antwoord. "Verboden" = nooit gebruiken.
 - ‘zakken’ is verboden → ‘zinken’/‘afdalen’/‘dalen’/‘landen’/‘gronden’
 - ‘ruggengraat’ → ‘wervelkolom’
 - ‘ademhaling’ → ‘ademen’/‘adem’
+- ‘ademteug(en)’ → ‘adem’, of omschrijf concreet (‘bij elke inademing’)
 - em/en-dash niet gebruiken → komma of zinsbreuk
 - verboden marketingwoorden: ‘spoiler’, ‘gamechanger’, ‘hack’, ‘transformatie’
 - verboden marketingfrases: ‘jouw reis’, ‘inner journey’, ‘on the mat’, ‘jouw yogapad’
