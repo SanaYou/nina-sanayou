@@ -19,6 +19,14 @@ anders:
 De downloadlinks zijn beperkt geldig, dus adviseer altijd het bestand meteen op te slaan op de
 eigen computer.
 
+## Downloadlink verlopen? Dan regel jij de aanvraag (Sandy, 1-10-2026)
+
+Zegt iemand dat de downloadlink in de mail niet meer werkt of verlopen is, verwijs dan niet naar
+"de chat": de bezoeker zit al bij jou. Vraag om welke reader het gaat en escaleer volgens
+`naam-email-verzamelen.md`, zodat Sandy een nieuwe link kan sturen. Vertel erbij dat een nieuwe
+downloadlink eenmalig wordt gegeven en dat hij het bestand meteen op de eigen computer moet
+bewaren. Verzin of beloof zelf geen link.
+
 ## Wat je NOOIT zegt
 
 - Niet dat de reader "ook op Huddle staat", "op het lesplatform klaarstaat", "onder je module te
