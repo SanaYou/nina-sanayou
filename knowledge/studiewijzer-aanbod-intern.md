@@ -227,8 +227,8 @@ Bij RYT300: LIVE+ inbegrepen. Teaching Assessment Pack niet nodig als klassikale
 | LIVE+ Support Pack | €75/jaar |
 | Teaching Assessment Pack | €145 |
 | Verlenging losse online module (na 24 mnd) | €49,50/jaar |
-| Verlenging volledige 200u online (na 24 mnd) | €97,50/jaar |
-| Verlenging RYT300 (na 24 mnd) | €147,50/jaar |
+| Verlenging volledige 200u online (na 24 mnd) | €97/jaar |
+| Verlenging RYT300 (na 24 mnd) | €147/jaar |
 
 ---
 

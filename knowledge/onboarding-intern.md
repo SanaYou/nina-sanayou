@@ -161,7 +161,7 @@ Aanbevolen minimale duur: **1,5 uur**, zodat er voldoende ruimte is voor uitleg,
 
 ### Vraag: Ik ontvang een verlengaanbod voor mijn module. Wat houdt dat in?
 
-Na afloop van de standaard toegangsperiode van twee jaar bieden we de mogelijkheid om de toegang te verlengen. Voor de meeste online bijscholingen geldt een verlengtarief van **€ 49,95 per jaar**. Dit is uitsluitend de kostprijs voor het online lesplatform.
+Na afloop van de standaard toegangsperiode van twee jaar bieden we de mogelijkheid om de toegang te verlengen. Voor de meeste online bijscholingen geldt een verlengtarief van **€ 49,50 per jaar**. Dit is uitsluitend de kostprijs voor het online lesplatform.
 
 Veel deelnemers kiezen ervoor om te verlengen, ook wanneer ze de module al volledig hebben doorlopen, omdat het prettig is om de lesstof later nog eens te kunnen raadplegen.
 

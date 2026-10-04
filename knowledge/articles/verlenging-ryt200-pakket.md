@@ -19,7 +19,7 @@ Van toepassing op:
 
 ## Verlengmails voor losse modules
 
-Studenten die het volledige RYT200-pakket hebben aangeschaft, ontvangen soms automatisch verlengmails voor losse modules (€ 49,95 per module per jaar). Dit is een fout. Die mails mogen worden genegeerd.
+Studenten die het volledige RYT200-pakket hebben aangeschaft, ontvangen soms automatisch verlengmails voor losse modules (€ 49,50 per module per jaar). Dit is een fout. Die mails mogen worden genegeerd.
 
 ---
 
@@ -27,7 +27,7 @@ Studenten die het volledige RYT200-pakket hebben aangeschaft, ontvangen soms aut
 
 Voor het volledige RYT200-pakket geldt een eigen verlengregeling:
 
-- Prijs: **slechts € 97,50 per jaar** voor alle lesmodules die onder de 200-uurs opleiding vallen
+- Prijs: **slechts € 97 per jaar** voor alle lesmodules die onder de 200-uurs opleiding vallen
 - De bijdrage verlengt automatisch, tenzij je zelf opzegt
 - Opzeggen kan via het klantportaal, waarvan de link staat in de bevestigingsmail na aanschaf van de verlenging
 
