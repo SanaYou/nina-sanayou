@@ -2,36 +2,26 @@ COLLECTIE: Algemene informatie
 TAGS: yin200-combinatieroutes
 
 # Interne instructie Nina: Routes naar erkend Yin Yoga 200-uursdiploma
-*Interne instructie — geen helpartikel | Opgeslagen 2 maart 2026*
+*Interne instructie — geen helpartikel | Opgeslagen 2 maart 2026 | Bijgewerkt 20 september 2026*
 
 ---
 
 ## Wanneer gebruik je deze instructie?
 
-Als een bezoeker vraagt naar een volledig Yin Yoga diploma van 200 uur, of naar de combinatie van klassikaal + online om tot 200 uur te komen. Denk aan vragen als:
-- "Kan ik mijn Yin Yoga opleiding combineren met online modules?"
+Als een bezoeker vraagt naar een volledig Yin Yoga diploma van 200 uur. Denk aan vragen als:
 - "Hoe kom ik aan 200 uur Yin Yoga?"
+- "Kan ik alleen Yin Yoga doen voor mijn RYT200?"
 - "Wat is het verschil tussen de Yin-only route en Yin & Yang?"
 
 ---
 
-## Route 1: Volledig Yin Yoga via klassikaal + online combinatie
+## Route 1: Klassikale RYT/VYN200 Yin Yoga (volwaardige klassikale opleiding)
 
-Dit is mogelijk en erkend door Yoga Alliance. De opbouw:
-
-1. **Yin Yoga 1 klassikaal** (deel van de RYT/VYN200)
-2. **Yin Yoga 2 klassikaal** (deel van de RYT/VYN200)
-   → samen 100 uur
-
-3. **Yin en de Vijf Elementen** — 32 uur online + 5 klassikale lesdagen = 70 uur
-   → brengt het totaal op 170 uur
-
-4. **Vrije keuze online Yin Yoga module** naar eigen interesse
-   → voor de resterende 30 uur
-
-**Totaal: 200 uur erkend door Yoga Alliance**
-
-⚠️ VYN-erkenning (Vereniging Yogadocenten Nederland) geldt alleen als je zowel Yin als Yang modules volgt (klassikale RYT/VYN200). De Yin-only combinatieroute geeft wel RYT200 (Yoga Alliance), maar geen VYN-erkenning.
+- Aparte klassikale 200-uursopleiding volledig gericht op Yin Yoga
+- Zes klassikale lesmodules met 21 lesdagen in Zwolle, aangevuld met ondersteunende online modules
+- Dubbele erkenning: Yoga Alliance (RYT200) + VYN
+- Startmomenten in september en januari
+- Verwijzing: sanayou.com/ryt200-yin-yoga-opleiding-klassikaal
 
 ---
 
@@ -40,6 +30,7 @@ Dit is mogelijk en erkend door Yoga Alliance. De opbouw:
 - De online RYT200 Yin Yoga opleiding, volledig op eigen tempo
 - Direct instromen mogelijk (geen vaste startdata)
 - Erkend door Yoga Alliance
+- Verwijzing: checkout.sanayou.com/ryt200-teacher-trainingen-online
 
 ---
 
@@ -48,6 +39,7 @@ Dit is mogelijk en erkend door Yoga Alliance. De opbouw:
 - Volledige klassikale opleiding met zowel Yin als Yang modules
 - Dubbele erkenning: Yoga Alliance (RYT200) + VYN
 - Start in januari of september
+- Verwijzing: checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal
 
 ---
 
@@ -61,9 +53,9 @@ Wat wél kan: als bijscholingspunten **na** het behalen van het diploma, voor de
 
 ## Hoe verwijst Nina naar de routes?
 
-- Combinatieroute (klassikaal + online): verwijs naar de klassikale opleiding + de Yin en de Vijf Elementen module
-- Online route: verwijs naar `checkout.sanayou.com/ryt200-teacher-trainingen-online`
-- Yin & Yang klassikaal: verwijs naar `checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal`
+- Klassikale Yin 200: `sanayou.com/ryt200-yin-yoga-opleiding-klassikaal`
+- Online route: `checkout.sanayou.com/ryt200-teacher-trainingen-online`
+- Yin & Yang klassikaal: `checkout.sanayou.com/ryt200-vyn200-yin-en-yang-yoga-teacher-trainingen-klassikaal`
 
 Bij twijfel over welke route past: naam en e-mail verzamelen en Sandy laten opvolgen.
 
