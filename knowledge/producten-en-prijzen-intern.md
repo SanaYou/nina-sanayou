@@ -94,7 +94,7 @@ Losse klassikale lesdagen zijn ook boekbaar als aanvulling op een online module.
 | LIVE+ Support Pack (bij RYT300) | Zelfde als boven | Gratis inbegrepen voor duur opleiding |
 | Verlenging RYT200 volledig pakket (online) | Toegang tot alle lesmodules na afloop | €97/jaar |
 | Verlenging RYT300 (YIN Mastery / Yoga Awakening) | Toegang tot de online modules na afloop | €147/jaar |
-| Verlenging losse module (maandelijks) | Toegang na afloop | €4,50/maand |
+| Verlenging Ashtanga voor Thuis (online, P&P 291661) | Toegang na afloop | €4,50/maand of €49/jaar |
 | Verlenging losse online module (jaarlijks) | Toegang na afloop | €49,50/jaar |
 | Verlenging klassikale lesmodule | Toegang na afloop klassikale module | €4,50/mnd of €49/jaar |
 
