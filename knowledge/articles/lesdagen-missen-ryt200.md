@@ -22,7 +22,7 @@ Per gemiste lesdag zien we graag de volgende onderdelen in verslagvorm terug:
 
 ## Aanleveren van het verslag
 
-Je stuurt het verslag uitgetypt in een Word- of PDF-bestand per e-mail naar academy@sanayou.com. Het verslag ontvangen we minimaal één week vóór de eerstvolgende lesdag van de betreffende lesmodule.
+Je stuurt het verslag uitgetypt in een Word- of PDF-bestand per e-mail naar academy@sanayou.com. Stuur je verslag bij voorkeur binnen een week na de gemiste lesdag; de precieze datum staat in de mail die je van ons krijgt. Uiterlijk moet het binnen zijn vóór de start van de volgende module.
 
 Heb je een lesdag gemist van het laatste lesweekend van een lesmodule, dan dient het verslag bij ons binnen te zijn vóórdat je examen plaatsvindt.
 
