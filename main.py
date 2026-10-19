@@ -476,7 +476,16 @@ Voorbeelden van fouten:
 
 Als je een fout vindt: geef alleen de gecorrigeerde tekst terug, geen uitleg.
 Als de tekst al goed is: geef de tekst ongewijzigd terug.
-Pas NIETS anders aan — geen stijl, geen inhoud, geen opmaak."""
+Pas NIETS anders aan — geen stijl, geen inhoud, geen opmaak.
+Engelse product- en modulenamen zijn eigennamen en vertaal je NOOIT: Your Body Your Yoga, Yin Yoga Basics, Yang Yoga Basics, Restorative Alignment, Critical Alignment, The Art of Hands-on Assists, Teaching Assessment Pack, LIVE+, Teacher Training."""
+
+# Vangnet (19-10-2026): de taalcheck vertaalde "Your Body Your Yoga" twee keer naar
+# "Jouw Lichaam Jouw Yoga". Productnaam deterministisch terugzetten.
+_PRODUCTNAAM_VANGNET = re.compile(r"\b[Jj]ouw [Ll]ichaam,? [Jj]ouw [Yy]oga\b")
+
+
+def _productnamen_vangnet(text: str) -> str:
+    return _PRODUCTNAAM_VANGNET.sub("Your Body Your Yoga", text) if text else text
 
 
 def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
@@ -495,10 +504,10 @@ def _taalcheck(client: anthropic.Anthropic, text: str) -> str:
         corrected = result.content[0].text.strip()
         if corrected and corrected != text:
             logger.info("Taalcheck: correctie toegepast")
-        return corrected if corrected else text
+        return _productnamen_vangnet(corrected if corrected else text)
     except Exception as e:
         logger.warning(f"Taalcheck mislukt (origineel gebruikt): {e}")
-        return text
+        return _productnamen_vangnet(text)
 
 
 # ── Vangnet: Nina biedt NOOIT aan te bellen of terug te bellen ──────────────
