@@ -19,11 +19,11 @@ SanaYou YOGAcademy is een erkende yogadocentenopleider in Nederland, opgericht d
 
 | Erkenning | Wanneer van toepassing |
 |---|---|
-| **VYN + Yoga Alliance (RYT200)** | Uitsluitend bij de volledig klassikale 200 uur: Yin 1+2 én Yang 1+2 alle vier klassikaal gevolgd. VYN-eis: max. 25% online. |
+| **VYN + Yoga Alliance (RYT200)** | Uitsluitend bij een volledig klassikale 200 uur in Zwolle: de RYT/VYN200 Yin & Yang (Yin 1+2 én Yang 1+2) óf de RYT/VYN200 Yin Yoga (Yin 1+2 + 5 Elementenleer, Your Body Your Yoga, Yin & Reiki, Yin & Restorative Alignment). VYN-eis: max. 25% online. |
 | **Yoga Alliance only (RYT200/300)** | Alle online, hybride en RYT300 paden. Online aandeel overschrijdt VYN-grens van 25%. |
 | **VYN bijscholing + Yoga Alliance PE** | Losse modules en verdiepingen voor erkende docenten. Tellen bij zowel VYN als Yoga Alliance als bijscholingspunten. |
 
-**Sleutelregel:** VYN-erkenning voor de volledige 200u is uitsluitend mogelijk via de volledig klassikale route (Yin 1+2 + Yang 1+2 in Zwolle). Dit is het enige pad met dubbele erkenning.
+**Sleutelregel:** VYN-erkenning voor de volledige 200u is uitsluitend mogelijk via een volledig klassikale route in Zwolle: de RYT/VYN200 Yin & Yang (Yin 1+2 + Yang 1+2) of de RYT/VYN200 Yin Yoga (sanayou.com/ryt200-yin-yoga-opleiding-klassikaal). Dit zijn de enige paden met dubbele erkenning. ⚑ 19-10-2026 (Sandy): een Yin-only route geeft dus wél VYN, mits volledig klassikaal.
 
 ---
 
@@ -47,7 +47,21 @@ SanaYou YOGAcademy is een erkende yogadocentenopleider in Nederland, opgericht d
 
 **Volgorde:** Vrije keuze (Yin eerst of Yang eerst), afhankelijk van beschikbaarheid. Overstap modulair → cohort altijd mogelijk als er plek is.
 
-**Noot:** VYN-erkenning alleen bij dit volledig klassikale pad. Alle andere paden zijn Yoga Alliance only.
+**Noot:** VYN-erkenning alleen bij een volledig klassikaal pad: dit pad of de klassikale RYT/VYN200 Yin Yoga (3.1b). Alle andere paden zijn Yoga Alliance only.
+
+### 3.1b Klassikale RYT/VYN200 Yin Yoga (200 uur, volledig Yin)
+
+*Toegevoegd 19-10-2026 (correctie Sandy). Bron: sanayou.com/ryt200-yin-yoga-opleiding-klassikaal*
+
+| Opleiding | Uren | Locatie | Erkenning |
+|---|---|---|---|
+| RYT/VYN200 Yin Yoga Teacher Training Klassikaal | 200u | Zwolle | VYN200 + Yoga Alliance |
+
+**Opbouw:** zes klassikale onderdelen, 21 lesdagen: Yin Yoga 1, Yin Yoga 2, Yin Yoga & de 5 Elementenleer, Your Body Your Yoga, Yin Yoga & Reiki, Yin Yoga & Restorative Alignment. Plus als bonus vier online lesmodules (Basisanatomie voor Yogadocenten, Yin en omgaan met Klachten, Your Body Your Yoga, Yin & de 5 Elementenleer).
+
+**Start:** september of januari. **Prijs volledige opleiding:** €2.795 (van €3.275), in 1, 5 of 10 termijnen. **Afronding:** theorietoetsen, deelcertificaten en één Yin praktijktoets (€97,50); daarna het RYT/VYN200 Yin Yoga diploma.
+
+Yin Yoga 1 en 2 zijn ook los te volgen. Wie die al heeft, rondt af met de vier verdiepingen (zie 3.3).
 
 ---
 
@@ -73,18 +87,16 @@ Elk blok sluit af met een eigen certificaat. Ook als instap of stap-voor-stap tr
 
 ---
 
-### 3.3 Hybride Paden naar 200 uur (Yoga Alliance only)
+### 3.3 Na 100 uur klassikaal: de resterende 100 uur
 
-Voor wie 100 uur klassikaal heeft gedaan maar de resterende 100 uur via online of hybride modules wil invullen.
+Voor wie 100 uur klassikaal heeft gedaan en de 200 uur in één richting wil afronden. Na Yin 1+2 is dat weer een volledig klassikaal pad (VYN + Yoga Alliance); na Yang 1+2 een hybride pad (Yoga Alliance only).
 
-#### Hybride Yin-pad (na Yin 1+2 klassikaal)
-- Yin 1 + Yin 2 klassikaal = 100u Yin (inclusief Basis Anatomie + Yin & Omgaan met Klachten)
-- + Yin & 5 Elementenleer hybride (32u online + 5 klassikale elementen-lesdagen = 75u)
-- + Keuzemodule(s) ~25u → totaal ≥200u
-- Keuzemodule opties (in overleg o.b.v. interesse en urentelling):
-  - Yoga Nidra online (25u) + optioneel klassikale upgrade
-  - Yin & Reiki klassikaal (gepland najaar 2026, vereist Yin-achtergrond)
-  - Of een andere online module die aansluit
+#### Na Yin 1+2 klassikaal: afronden via de klassikale RYT/VYN200 Yin Yoga (VYN + Yoga Alliance)
+⚑ Bijgewerkt 19-10-2026 (correctie Sandy). Het oude hybride Yin-pad (Yin & 5 Elementenleer 75u + keuzemodule ~25u, Yoga Alliance only) is VERVALLEN als advies.
+- Yin 1 + Yin 2 klassikaal = de eerste 100u van de klassikale RYT/VYN200 Yin Yoga (zie 3.1b)
+- Resterende 100u = de vier klassikale verdiepingen van die opleiding: Yin Yoga & de 5 Elementenleer, Your Body Your Yoga, Yin Yoga & Reiki, Yin Yoga & Restorative Alignment
+- Erkenning: VYN + Yoga Alliance
+- Prijs en boekwijze van alleen de resterende onderdelen staan niet op de opleidingspagina: Sandy stemt dit af, niet zelf invullen.
 
 #### Hybride Yang-pad (na Yang Level 1+2 klassikaal)
 - Yang Level 1 + Yang Level 2 klassikaal = 100u Yang (inclusief anatomie & biomechanica)
@@ -182,7 +194,7 @@ Alle modules tellen als **VYN bijscholing én Yoga Alliance PE credits** voor er
 | Critical Alignment Yoga lesdagen (los) | 3 lesdagen | Geschikt voor iedereen incl. rug/nek/schouderklachten. Upgrade-optie voor online module. |
 | Yin & Restorative Alignment dag | 1 lesdag | Gegeven door Sandy. Losse beleefdag, niet gekoppeld aan online module. |
 | Your Body Your Yoga dag | 1 lesdag | Thema: individuele botverschillen. Goede eerste oriëntatie Yin/Yang. |
-| Yin & Reiki | 2 lesdagen | Gepland najaar 2026. Vereist Yin-achtergrond. Keuzemodule hybride Yin-pad. |
+| Yin & Reiki | 2 lesdagen | Tweedaags weekend, vereist Yin-achtergrond. Onderdeel van de klassikale RYT/VYN200 Yin Yoga (3.1b). |
 
 **Positionering lesdagen:** Beleef- en kennismakingsdagen. Toegankelijk voor iedereen — beoefenaars, oriënterende studenten én docenten. Geen introductie tot de basislesstof, maar kennismaking met de docent, ruimte en sfeer.
 
@@ -280,7 +292,7 @@ Niet als vroege vraag stellen. Pas vermelden in het advies zodra het klassikale 
 | Online · Beide · 200u | RYT200 Yin & Yang Teacher Training | Yoga Alliance |
 | Online · Yin of Yang · Basics | Yin of Yang Yoga Basics (70u) | Geen (instap) |
 | Klassikaal · volledig · cohort of modulair | Yin & Yang Teacher Training Zwolle | VYN + Yoga Alliance |
-| Klassikaal · Yin 1+2 · hybride vervolg | Hybride Yin-pad ≥200u | Yoga Alliance |
+| Klassikaal · Yin 1+2 · alleen Yin verder | Afronden via de vier verdiepingen van de klassikale RYT/VYN200 Yin Yoga | VYN + Yoga Alliance |
 | Klassikaal · Yang 1+2 · hybride vervolg | Hybride Yang-pad ≥200u | Yoga Alliance |
 | Beleefdag | Losse klassikale lesdag | Geen |
 | Al docent · RYT500 | RYT300 The Art of Advanced Teaching | Yoga Alliance |
@@ -292,7 +304,7 @@ Niet als vroege vraag stellen. Pas vermelden in het advies zodra het klassikale 
 ## 8. Doorstroommogelijkheden
 
 - Basics → volledige RYT200: altijd mogelijk
-- Yin 1 → Yin 2 → keuze: Yang klassikaal (VYN-pad) of hybride Yin-verdieping (YA-pad)
+- Yin 1 → Yin 2 → keuze: Yang klassikaal (RYT/VYN200 Yin & Yang) of de vier Yin-verdiepingen (RYT/VYN200 Yin Yoga). Beide VYN + Yoga Alliance.
 - Yang 1 → Yang 2 → keuze: Yin klassikaal (VYN-pad) of hybride Yang-verdieping (YA-pad)
 - 100u Yin klassikaal + hybride vervolg → ≥200u Yoga Alliance
 - 100u Yang klassikaal + hybride vervolg → ≥200u Yoga Alliance
@@ -303,7 +315,7 @@ Niet als vroege vraag stellen. Pas vermelden in het advies zodra het klassikale 
 
 ## 9. Toekomstige uitbreidingen aanbod
 
-- **Yin & Reiki klassikaal:** Gepland najaar 2026. Keuzemodule hybride Yin-pad. Vereist Yin-achtergrond.
+- **Yin & Reiki klassikaal:** Tweedaags weekend, onderdeel van de klassikale RYT/VYN200 Yin Yoga. Vereist Yin-achtergrond.
 - **Programma's voor consumenten:** LIVE, niet meer in ontwikkeling. Op dit moment twee:
   Critical Alignment Therapie voor Thuis en Ashtanga Yoga voor Thuis. Deze vallen BUITEN
   Nina's ondersteuning: elke vraag erover gaat naar Sandy. Zie de instructie

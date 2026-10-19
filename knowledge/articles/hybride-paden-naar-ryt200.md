@@ -14,6 +14,21 @@ Kies je vooraf voor deze klassikale Yin-only route, dan is dat de meest complete
 
 Meer info: sanayou.com/ryt200-yin-yoga-opleiding-klassikaal
 
+## Al Yin Yoga 1 en Yin Yoga 2 klassikaal gevolgd? Rond af met de RYT/VYN200 Yin Yoga
+
+Heb je Yin Yoga 1 en Yin Yoga 2 klassikaal gevolgd en wil je verder met alleen Yin? Dan hoef je geen Yang meer te doen.
+
+Yin Yoga 1 en 2 vormen de eerste 100 uur van de klassikale RYT/VYN200 Yin Yoga Teacher Training. De resterende 100 uur volg je met de vier klassikale verdiepingen van diezelfde opleiding, in onze studio in Zwolle:
+
+- Yin Yoga & de 5 Elementenleer
+- Your Body Your Yoga
+- Yin Yoga & Reiki
+- Yin Yoga & Restorative Alignment
+
+Zo behaal je een 200-uursdiploma dat volledig over Yin Yoga gaat, erkend door de VYN én door Yoga Alliance.
+
+De lesdata vind je op sanayou.com/ryt200-yin-yoga-opleiding-klassikaal. Hoe je de resterende onderdelen boekt, stemt Sandy graag persoonlijk met je af. Stel je vraag gerust via de chat rechtsonder in beeld.
+
 ## Na Yang Level 1 en Yang Level 2 klassikaal: liever verder met alleen Yang?
 
 Stel, je hebt Yang Level 1 en Yang Level 2 klassikaal gevolgd. Je bent thuis in de dynamische yogavormen, Vinyasa, Critical Alignment, Hatha, Ashtanga, en je wilt je daarin verder verdiepen. Je vraagt je af: moet ik nu ook nog twee klassikale Yin-modules doen?
@@ -36,11 +51,11 @@ Wat het beste bij je past, bespreek je samen met Sandy.
 
 ## Wat betekent dit voor je diploma?
 
-Als je je 200 uur afrondt via aanvulling met online modules na Yang 1+2, behaal je een **Yoga Alliance RYT200-diploma**. Dat is een internationaal erkend diploma waarmee je erkend yogadocent wordt. Alle 200 uur volg je bij SanaYou YOGAcademy als één en dezelfde erkende opleider — dat is de voorwaarde van Yoga Alliance.
+Als je je 200 uur afrondt via aanvulling met online modules na Yang 1+2, behaal je een **Yoga Alliance RYT200-diploma**. Dat is een internationaal erkend diploma waarmee je erkend yogadocent wordt. Alle 200 uur volg je bij SanaYou YOGAcademy als één en dezelfde erkende opleider. Dat is de voorwaarde van Yoga Alliance.
 
-Eén ding is goed om te weten: de VYN-erkenning (de Vereniging Yogadocenten Nederland) geldt bij de RYT/VYN200 Yin & Yang alleen als je alle vier klassikale blokken hebt gevolgd, dus Yin 1+2 én Yang 1+2, allemaal in Zwolle. Kies je voor aanvulling met online modules, dan is VYN bij deze route niet van toepassing. Dat is geen probleem, het is gewoon een andere route met een andere erkenning. Voor veel docenten is het Yoga Alliance-diploma meer dan voldoende.
+Eén ding is goed om te weten: de VYN-erkenning (de Vereniging Yogadocenten Nederland) krijg je bij een volledig klassikale 200 uur in Zwolle. Kies je na Yang 1+2 voor aanvulling met online modules, dan is VYN bij die route niet van toepassing. Dat is geen probleem, het is gewoon een andere route met een andere erkenning. Voor veel docenten is het Yoga Alliance-diploma meer dan voldoende.
 
-Wil je zowel VYN- als Yoga Alliance-erkenning én je volledig op Yin richten? Dan is de aparte klassikale RYT/VYN200 Yin Yoga opleiding een volwaardig alternatief: die geeft je beide erkenningen.
+Na Yin 1+2 ligt dat anders: rond je af met de vier verdiepingen van de klassikale RYT/VYN200 Yin Yoga, dan krijg je wél beide erkenningen, VYN én Yoga Alliance.
 
 ## Heb je een vraag over jouw situatie?
 
