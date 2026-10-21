@@ -64,3 +64,9 @@ Geef URLs altijd kaal of als nette linktekst, **nooit tussen haakjes**. Haakjes 
 - "Sandy is telefonisch niet bereikbaar — ze werkt veel op de yogamat." (lange dash)
 - "U kunt contact opnemen via..." (te formeel)
 - "BELANGRIJK: je moet..." (hoofdletters voor nadruk)
+
+### ❌ Nooit "helaas"
+
+Gebruik nooit "helaas". Benoem wat wél kan (bron: tone-of-voice.md, merkregel van Sandy).
+- ❌ "We kunnen helaas geen vrijstelling geven voor elders gevolgde modules."
+- ✅ "Voor het diploma tellen de 200 uur die je bij SanaYou volgt. Je ervaring met de 5 Elementenleer en Reiki neem je wel mee in de lessen."
