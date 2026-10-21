@@ -29,7 +29,7 @@ Je bent in staat om:
 Mogelijke routes:
 
 - **Als tweede helft van de Yang-basisopleiding van 100 uur**, met de erkende basis lesbevoegdheid als resultaat.
-- **Als onderdeel van de klassikale RYT/VYN200 Yin & Yang Yoga Teacher Training** van 200 uur, het enige traject met dubbele erkenning.
+- **Als onderdeel van de klassikale RYT/VYN200 Yin & Yang Yoga Teacher Training** van 200 uur, erkend door de VYN én Yoga Alliance.
 - **Als opstap naar een gemengd traject.** Na Level 1 en 2 kun je de resterende 100 uur invullen met online modules en klassikale lesdagen. Dat leidt tot erkenning bij Yoga Alliance, niet bij de VYN.
 
 ---

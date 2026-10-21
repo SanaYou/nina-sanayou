@@ -31,6 +31,6 @@ Mogelijke routes:
 - **Als losse module van 50 uur**, om te ervaren of Yin Yoga bij je past voordat je verder gaat.
 - **Als eerste helft van de Yin-basisopleiding van 100 uur**, samen met Yin Yoga 2.
 - **Als onderdeel van de klassikale RYT/VYN200 Yin Yoga Teacher Training** van 200 uur.
-- **Als onderdeel van de klassikale RYT/VYN200 Yin & Yang Yoga Teacher Training** van 200 uur, het enige traject met dubbele erkenning van Yoga Alliance én de VYN.
+- **Als onderdeel van de klassikale RYT/VYN200 Yin & Yang Yoga Teacher Training** van 200 uur, erkend door Yoga Alliance én de VYN.
 
 ---

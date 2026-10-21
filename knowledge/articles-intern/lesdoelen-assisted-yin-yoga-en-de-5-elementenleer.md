@@ -30,6 +30,5 @@ Mogelijke routes:
 - **Uitgebreid naar 75 uur** met de vijf klassikale elementen-lesdagen. Die lesdagen zijn ook los te volgen als beleefdag, zonder voorkennis.
 - **Als onderdeel van de RYT200 Yin Yoga Teacher Training**, online, en van de klassikale RYT/VYN200 Yin Yoga Teacher Training.
 - **Als keuzemodule binnen de RYT300**, richting Yin Mastery.
-- **Als bouwsteen in een gemengd traject naar 200 uur**, voor wie 100 uur klassikaal Yin heeft gevolgd.
 
 ---

@@ -29,6 +29,5 @@ Mogelijke routes:
 - **Als losse verdiepingsmodule van 25 uur**, online.
 - **Uitgebreid naar 40 uur** met het klassikale weekend van twee lesdagen.
 - **Als onderdeel van de gedeelde basis van de RYT300**, in beide studierichtingen.
-- **Als keuzemodule in een gemengd traject naar 200 uur**, voor wie 100 uur klassikaal Yin heeft gevolgd.
 
 ---
