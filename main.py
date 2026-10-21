@@ -174,6 +174,7 @@ def load_base_knowledge() -> str:
         "studie-adviesgesprek.md",
         "open-dagen-kennismaken.md",
         "contextsignalen-herkennen.md",
+        "vyn-en-yoga-alliance-verschil.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
