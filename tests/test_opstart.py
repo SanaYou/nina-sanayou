@@ -46,9 +46,14 @@ sys.modules["pydantic"].BaseModel = Alles
 sys.modules["dotenv"].load_dotenv = lambda *a, **k: None
 sys.modules["anthropic"].Anthropic = Alles
 
-os.chdir("/Users/skarsten/nina-chatbot")
-sys.path.insert(0, "/Users/skarsten/nina-chatbot")
+# De repo-wortel van DIT testbestand, niet een vast pad: met het vaste pad
+# "/Users/skarsten/nina-chatbot" toetste elke kopie (review, wegwerpmap) stil de live
+# code (Jared, 21-10-2026). Geen resolve(): die volgt een symlink terug naar live.
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(REPO)
+sys.path.insert(0, REPO)
 import main
+assert os.path.dirname(os.path.abspath(main.__file__)) == REPO, main.__file__
 print("✅ module-body volledig uitgevoerd — geen NameError")
 print("   artikelen:", len(main.ARTICLES_INDEX), "| woordgewichten:", len(main.WOORDGEWICHTEN))
 _t, titels = main.retrieve_articles("wat leer ik precies in de module Yoga Nidra?", [])

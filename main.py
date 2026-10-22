@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -175,6 +175,7 @@ def load_base_knowledge() -> str:
         "open-dagen-kennismaken.md",
         "contextsignalen-herkennen.md",
         "vyn-en-yoga-alliance-verschil.md",
+        "gesprek-mailen.md",
     }
     instructies_dir = knowledge_dir / "instructies"
     if instructies_dir.exists():
@@ -599,7 +600,10 @@ class ChatRequest(BaseModel):
 
 
 @app.post("/chat")
-async def chat(request: ChatRequest):
+async def chat(request: ChatRequest, http_request: Request = None):
+    # http_request levert alleen het IP voor de bron-grens van de claimdienst (als
+    # sha256, nooit het IP zelf). FastAPI vult hem in; een directe aanroep zonder
+    # (zoals de tests) geeft None en dan is de bron leeg, wat het contract toestaat.
     api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
         return {"error": "Er is een technisch probleem. Probeer het later opnieuw."}
@@ -677,8 +681,23 @@ async def chat(request: ChatRequest):
                     response_text = ("Sorry, daar ging even iets mis aan mijn kant. "
                                      "Kun je je vraag nog een keer stellen?")
 
+                # Beide tags worden gelezen en weggehaald vóór de taalcheck. Dan hangt
+                # niets af van een model dat een tag zou kunnen herschrijven of wissen.
+                # ⚑ r2 (Jordan F2, 21-10-2026): de escalatietrigger is één boolean, hier
+                # één keer vastgelegd op de ruwe modeltekst. Dezelfde waarde bepaalt
+                # hieronder de route én `force`. In r1 opende de ruwe tag de route, maar
+                # kwam `force` uit de tekst ná de taalcheck; wiste die de tag, dan ging de
+                # escalatie stil verloren.
+                escalatie_trigger = bool(_ESCALATIE_TAG_RE.search(response_text))
+                response_text = _strip_escalatie_tag(response_text)
+                response_text, had_chatmail_tag = _strip_chatmail_tag(response_text)
+
                 # Taalcheck: corrigeer Engelse calques en slechte vertalingen
                 response_text = _taalcheck(client, response_text)
+                # Restjes weghalen (bv. een model dat zelf een tag verzint); de trigger
+                # hierboven verandert daardoor niet meer.
+                response_text, _ = _strip_chatmail_tag(response_text)
+                response_text = _strip_escalatie_tag(response_text)
 
                 # Vangnet: nooit bellen/terugbellen aanbieden, alleen e-mail
                 response_text = _contactkanaal_vangnet(response_text)
@@ -686,26 +705,49 @@ async def chat(request: ChatRequest):
                 # Vangnet: nooit een verzonnen checkout-link laten staan
                 response_text = _checkout_link_vangnet(response_text)
 
-                # Strip de [[ESCALATIE]] tag uit het zichtbare antwoord. Aanwezigheid
-                # van de tag = harde trigger om naar Help Scout door te sturen.
-                tag_match = re.search(r'`*\s*\[\[ESCALATIE[^\]]*\]\]\s*`*', response_text)
-                had_escalatie_tag = bool(tag_match)
-                if tag_match:
-                    response_text = response_text.replace(tag_match.group(0), "").strip()
+                # De modeltekst zoals hij was vóór de chatmail-afronding. De escalatie-
+                # detectie krijgt deze tekst, net als in r1, zodat het vangnet op
+                # "doorgestuurd" e.d. niet verandert doordat hieronder een zin wegvalt.
+                model_tekst = response_text
 
-                # Detecteer escalatie: tag aanwezig (primair) óf Nina rondt af
-                # met een afsluitende formulering + een e-mailadres in het gesprek.
+                # Gesprek mailen. ⚑ r2 (Jordan C1/F1): een tag of een modelzin is een
+                # VERZOEK om te mailen, geen bewijs. De server bepaalt de zichtbare zin uit
+                # de geverifieerde uitkomst. Het gesprek gaat ongekort mee (request.history),
+                # niet de tot 20 berichten ingekorte `messages`.
+                chatmail = None
+                volledig = [{"role": m.role, "content": m.content} for m in (request.history or [])]
+                volledig.append({"role": "user", "content": request.message})
+                if had_chatmail_tag:
+                    chatmail = _verwerk_chatmail(volledig, response_text,
+                                                 session_id=request.session_id,
+                                                 bron=_bron_hash(http_request),
+                                                 modeltekst_houden=escalatie_trigger)
+                    response_text = chatmail["antwoord"]
+                else:
+                    # Geen tag = geen verzending in deze beurt. Zegt het model toch dat
+                    # het gesprek gemaild is, dan gaat die zin eruit (J1). In de
+                    # mailbevestigingsfase (nu een bevestigd adres) met de ruimere herkenning.
+                    fase = bool(_adresstatus(volledig)["bevestigd"])
+                    response_text = _zonder_onbewezen_claim(response_text, fase=fase)
+
+                # Detecteer escalatie: tag (primair) óf Nina rondt af met een afsluitende
+                # formulering + een e-mailadres in het gesprek (vangnet, alleen zonder tags).
+                # Een chatmailbeurt zonder escalatietrigger is nooit een escalatie: haar
+                # bevestigde adres staat in het gesprek, dus het vangnet zou op een zin als
+                # "ik heb het doorgestuurd" een tweede ticket maken.
                 escalated = False
-                try:
-                    escalated = bool(_detect_and_escalate(
-                        request.message, response_text, messages, force=had_escalatie_tag))
-                except Exception as esc_err:
-                    logger.error(f"Escalatie-detectie mislukt: {esc_err}")
+                if escalatie_trigger or not had_chatmail_tag:
+                    try:
+                        escalated = bool(_detect_and_escalate(
+                            request.message, model_tekst, messages, force=escalatie_trigger))
+                    except Exception as esc_err:
+                        logger.error(f"Escalatie-detectie mislukt: {esc_err}")
 
                 # Leg de gespreksbeurt vast in het weeklog (faalt stil, blokkeert Nina nooit)
                 _log_conversation(
                     request.session_id, request.message, response_text, used_articles, escalated,
                     chat_messages=messages,
+                    chatmail=bool(chatmail and chatmail["verstuurd"]),
                 )
 
                 return {"response": response_text}
@@ -800,6 +842,15 @@ import requests as _requests
 
 _hs_token_cache = {"access_token": None, "expires_at": 0}
 
+# Bovengrenzen (r2) voor elke wacht op een externe dienst, als requests-timeout
+# (verbinden, lezen) in seconden. Dat is per verbindingspoging en per leespauze,
+# geen wandklok-totaal; zie de LEESMIJ voor het gemeten slechtste geval.
+HS_TIMEOUT = (5, 15)
+MAILBLUE_TIMEOUT = (5, 10)
+# De claimdienst wacht zelf tot 10 s op zijn lock (waitLock(10000)); de leesgrens ligt
+# daar ruim boven, anders geeft Nina op terwijl de claim nog loopt.
+CLAIM_TIMEOUT = (5, 20)
+
 def _hs_get_token():
     """Haal Help Scout OAuth2 access token (cached)."""
     import time as _t
@@ -812,11 +863,12 @@ def _hs_get_token():
     if not app_id or not app_secret:
         return None
 
+    # timeout (r2): elke wacht op een externe dienst heeft een bovengrens.
     resp = _requests.post("https://api.helpscout.net/v2/oauth2/token", json={
         "grant_type": "client_credentials",
         "client_id": app_id,
         "client_secret": app_secret,
-    })
+    }, timeout=HS_TIMEOUT)
     resp.raise_for_status()
     data = resp.json()
     _hs_token_cache["access_token"] = data["access_token"]
@@ -988,9 +1040,569 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
                 }
             ],
         },
+        timeout=HS_TIMEOUT,  # r2: ook in een beurt met beide tags wacht niets onbegrensd
     )
     resp.raise_for_status()
     logger.info(f"Escalatie aangemaakt in Help Scout: {name} ({email})")
+
+
+# ── Gesprek mailen (Sandy, 21-10-2026; r2 na Jordans review van 21-10) ─────────
+# Nina biedt aan het gesprek te mailen. Zegt de bezoeker ja, dan vraagt en bevestigt
+# Nina naam en e-mailadres (zelfde vorm als de escalatie) en zet zij [[CHATMAIL]] op
+# haar afsluitende bericht. Die tag is een VERZOEK, geen bewijs. Dan, in deze volgorde:
+#   1. alleen naar het adres dat NU bevestigd is (_adresstatus): elk nieuw of afwijkend
+#      adres ontkracht een eerdere bevestiging, ook na een ja (Jordan F3);
+#   2. een atomaire claim bij de claimdienst (Apps Script, CLAIMDIENST-CONTRACT.md) op
+#      sleutel HMAC-SHA256(CLAIM_SECRET, 'chatmail|' + sessie + '|' + adres): dezelfde actie herhaald of
+#      tegelijk geeft hooguit één verzendpoging (Jordan F4). Geen claimdienst of een
+#      claimfout = geen mail (fail closed);
+#   3. het gesprek gaat als NIEUW UITGAAND Help Scout-gesprek vanaf de academy-mailbox
+#      naar de bezoeker, op gesloten; een antwoord van de bezoeker heropent het bij ons;
+#   4. pas na een geslaagde mail: MailBlue (brontag [BRON] Nina-chat, Hoofdlijst als daar
+#      nog géén record staat), daarna `bevestig` bij de claimdienst;
+#   5. de beurt krijgt in de Nina-log de markering "gesprek gemaild".
+# De zichtbare zin komt van de server, uit de uitkomst (Jordan C1/F1): alleen een in
+# deze beurt geslaagde verzending laat "ik heb ons gesprek naar je gemaild" staan, en
+# `al_verstuurd` van de claimdienst geeft de zin dat het al eerder gemaild is.
+# Een woordmatch op de historie bewijst niets meer (r1 deed dat; J3 sloeg zo de eerste
+# mail over).
+
+import hashlib as _hashlib
+import hmac as _hmac
+from datetime import datetime as _datetime, timedelta as _timedelta, timezone as _timezone
+
+_CHATMAIL_TAG_RE = re.compile(r'`*\s*\[\[CHATMAIL[^\]]*\]\]\s*`*')
+_ESCALATIE_TAG_RE = re.compile(r'`*\s*\[\[ESCALATIE[^\]]*\]\]\s*`*')
+CHATMAIL_HS_TAG = "nina-chatmail"
+
+# Begeleidende tekst: Carrie, 21-10-2026, letterlijk overgenomen uit
+# ~/.flashbag/output/carrie/sandy-schrijverskamer/2026-10-21/privacy-en-groet/
+# chatmail-nina-zonder-groet.txt (sha256 4a49fbea6d91ed6b1fb2f337b192748a127cf4874cfbed5ca46eca10b30cca7e).
+# Zonder groet: de mail leest onder Sandy's Help Scout-handtekening (besluit Olivia 21-10,
+# punt 2). Eén alinea per regel; "\n\n".join(...) + "\n" is byte-gelijk aan dat bestand.
+CHATMAIL_ONDERWERP = "Ons gesprek van vandaag, om rustig terug te lezen"
+CHATMAIL_BEGELEIDING = (
+    "Hallo {voornaam},",
+    "Zoals beloofd: hieronder staat je gesprek met Nina, onze digitale assistent, zodat je "
+    "alles nog eens rustig kunt teruglezen.",
+    "We lezen het ook zelf nog even na. Heeft Nina iets over het hoofd gezien, of zie ik voor "
+    "jou nog een andere mogelijkheid, dan sturen we je een aanvulling.",
+    "En heb je daarna nog een vraag, reageer dan gewoon op deze mail. Dan komt hij "
+    "rechtstreeks bij ons terecht.",
+)
+
+# ── Wat de bezoeker ziet. De server kiest de zin uit de uitkomst. ───────────────
+# Afronding bij een in DEZE beurt geslaagde mail: de zin uit de instructie
+# gesprek-mailen.md (vastgesteld door Olivia, 21-10-2026).
+CHATMAIL_AFRONDING = "Top, ik heb ons gesprek naar je gemaild."
+# Bevestigingsvraag: dezelfde vorm als stap 2 van de vastgestelde instructie. De server
+# stelt hem zelf als de bezoeker een ander adres noemt (F3).
+CHATMAIL_BEVESTIGINGSVRAAG = "Even checken: je naam is {naam} en je e-mailadres is {email}, klopt dat?"
+# ── Meldingen: Carrie, definitief 21-10-2026 (team-log 2026-10-21-retour-jared-negen-korte-meldingen-
+# chatmail-en-wijzer-carrie.md; bestanden in ~/.flashbag/output/carrie/sandy-schrijverskamer/2026-10-21/
+# nina-wijzer-negen-meldingen/, zonder slotregel-einde). N1, N2, N3, N5 en N6 staan er BYTE-GELIJK in;
+# de test toetst elke constante tegen de sha256 van het bestand (en tegen het bestand zelf als het er is).
+# N1 (sha256 8534a35dad6ee7a95c2d82974d9860598c69f1294af769f429d6090aa8d90d76). Help Scout weigerde zeker (HTTP 400-499), of de claimdienst/
+# Help Scout is niet ingesteld of gaf een fout.
+CHATMAIL_MISLUKT = 'Het is me nu niet gelukt om ons gesprek te mailen. Wil je het straks nog een keer vragen? Dan probeer ik het opnieuw.'
+# N2 (sha256 a0124a90c608ed9ea510615d1a567f7963e056adfa8ad09330f34e6a3a183370). Geen adres dat nu bevestigd is, en geen nieuw adres om te bevestigen.
+CHATMAIL_GEEN_ADRES = 'Ik heb je e-mailadres nog niet goed binnen. Wil je het nog een keer typen? Dan kijken we samen even of het klopt.'
+# N3 (sha256 76626f21dbc09fa9975360de729e0590cccb66013e5a6d4e082f2fc312551260). Claimdienst: al_verstuurd.
+# De eerste zin is zelf een verzendclaim (bewezen door `al_verstuurd`). De server zet hem ná het
+# filteren neer, en een volgende beurt leest de geschiedenis niet als bewijs (test meetpunt 1).
+CHATMAIL_AL_VERSTUURD = 'Ik heb ons gesprek al eerder naar je gemaild. Zie je de mail niet? Kijk dan even bij je spam of in het tabblad Reclame.'
+# N4: Carrie's tekst (sha256 b0ca73cc2ce1cf1eaba1194756568755b1a35c32b362bf7daded845b01cc1bf6) MIN de zin "We kijken het ook na."
+# en min "dus " in de laatste zin. Aanpassing van Jared (r2.4), op Carrie's eigen voorwaarde ("Kijkt niemand,
+# dan hoort die zin eruit"): er is geen Nina-overzicht dat onzekere rijen oppakt. Claimdienst: bezig, of Help
+# Scout gaf geen antwoord (time-out, netwerkfout) of een 5xx: het kan zijn dat de mail weg is, of niet.
+CHATMAIL_ONDERWEG = 'Ik weet nog niet zeker of de mail met ons gesprek goed is aangekomen. Kijk over een paar minuten even in je inbox. Je hoeft het niet opnieuw te vragen.'
+# N5 (sha256 6c4e7d6d699b0cd4cb496efe066024fefd3760416c1378794d482abd363e0d12). Claimdienst: limiet_ontvanger/limiet_bron.
+CHATMAIL_LIMIET = 'Ik kan ons gesprek nu even niet mailen. Probeer het later nog eens.'
+# N6 (sha256 1e21c064a16005404c4887c2b3b97d31f85920c697939f0096b904a956eeb402). Het model zei zonder tag dat het gesprek gemaild is:
+# in deze beurt ging niets weg (J1); of het eerder wél gebeurde weet de server zonder claim niet.
+CHATMAIL_NIET_VERSTUURD = 'Ik kan hier niet zien of ons gesprek al naar je gemaild is. Wil je het gemaild krijgen? Zeg het dan even.'
+
+CHATMAIL_LOGMARKERING = " · 📧 gesprek gemaild"
+
+# Zelfde vormen als in _detect_and_escalate. Bewust geen gedeelde helper: de escalatie
+# valt terug op een onbevestigd adres uit de bezoekersberichten, een chatmail nooit.
+_EMAIL_RE = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')
+_BEVESTIGINGSVRAAG_RE = re.compile(r'klopt|checken|kloppen|check', re.I)
+_NAAM_IN_BEVESTIGING_RE = re.compile(
+    r'(?:naam is|naam:)\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s-]{1,40}?)(?:\s+en\b|\s*[,.])')
+_JA_WOORDEN = {"ja", "jaa", "jazeker", "jawel", "yes", "klopt", "correct", "juist",
+               "precies", "goed", "prima", "top", "ok", "oke", "oké", "okay", "akkoord", "zeker"}
+_NEE_WOORDEN = {"nee", "neen", "niet", "fout", "verkeerd", "anders", "ander", "nope"}
+# "Nee, mail het toch maar niet" na een ja: een ontkenning over het adres of het mailen.
+_ADRESVERWIJZING_RE = re.compile(r'\b(?:e-?mail\w*|mail\w*|adres\w*|gemaild)\b', re.I)
+
+# Een zin die zegt dat het gesprek al gemaild/verstuurd IS (voltooid). Gebruikt om zo'n
+# zin weg te halen als er geen bewezen verzending achter zit. Nooit om een aflevering
+# te bewijzen. ⚑ Dit is een BEGRENSDE herkenning met regels, geen garantie over vrije
+# modeltekst. Twee standen (r2.3, Jordan closing C1/F1):
+#   - gewoon: bij verstuurd/verzonden/gestuurd/toegestuurd moet er een ontvanger bij staan
+#     ("naar je", "per mail" …), zodat gewone antwoorden niet onterecht een zin verliezen;
+#   - mailbevestigingsfase (er is NU een bevestigd adres): elk voltooid verzendwerkwoord
+#     telt, ook zonder ontvanger en met "je" vóór het onderwerp ("Het gesprek is verzonden.",
+#     "Ik heb je de chat verstuurd."), en ook "de mail" als onderwerp; behalve als er een
+#     andere ontvanger staat ("naar Sandy"): dat is een escalatiezin.
+_CLAIM_ONDERWERP_RE = re.compile(r'\b(?:gesprek|gesprekje|chatgesprek|chat)\b', re.I)
+_CLAIM_ONDERWERP_FASE_RE = re.compile(r'\b(?:gesprek|gesprekje|chatgesprek|chat|mail|e-mail|mailtje)\b', re.I)
+_CLAIM_ANDERE_ONTVANGER_RE = re.compile(
+    r'\b(?:naar|aan)\s+(?:sandy|het team|ons team|een collega|haar)\b', re.I)
+_CLAIM_VOLTOOID_RE = re.compile(
+    r'\b(?:heb|hebben|is|zijn|werd|werden|ging)\b(?P<tussen>[^.!?\n]{0,80}?)'
+    r'\b(?P<ww>gemaild|doorgemaild|onderweg|verstuurd|toegestuurd|verzonden|gestuurd)\b', re.I)
+_CLAIM_STAAT_IN_RE = re.compile(r'\bstaat\b(?P<tussen>[^.!?\n]{0,60}?)\bin je (?:mail|inbox|mailbox)\b', re.I)
+_CLAIM_ONTVANGER_RE = re.compile(
+    r'\b(?:naar je|naar jou|aan je|aan jou|je toe|in je (?:mail|inbox|mailbox)|per (?:e-?)?mail)\b', re.I)
+_ONTKENNING_RE = re.compile(r'\b(?:niet|geen|nooit)\b', re.I)
+
+MAILBLUE_API_URL = "https://sanayouyogacademy.api-us1.com/api/3"
+MAILBLUE_HOOFDLIJST = 80
+# [BRON] Nina-chat: tag 454, aangemaakt 21-10-2026 en met een losse GET teruggelezen
+# (tagType contact). Nooit raden: een verkeerd ID tagt stil het verkeerde segment.
+MAILBLUE_TAG_NINA_CHAT = 454
+# Hoofdlijst-inschrijving staat apart te schakelen: de toestemmingszin is van Carrie.
+CHATMAIL_OP_HOOFDLIJST = True
+
+# Claimdienst (CLAIMDIENST-CONTRACT.md). URL en secret komen uit de Vercel-omgeving:
+# CLAIM_URL en CLAIM_SECRET. Ontbreekt één van beide, dan gaat er geen mail uit.
+CLAIM_SOORT = "chatmail"
+CLAIM_UITKOMSTEN = {"geclaimd", "al_verstuurd", "bezig", "limiet_ontvanger", "limiet_bron"}
+
+
+class ClaimFout(Exception):
+    """De claimdienst gaf geen geldig antwoord: geen mail (fail closed)."""
+
+
+class OnzekereVerzending(Exception):
+    """Het verzoek aan Help Scout vertrok, maar er kwam geen antwoord (time-out of
+    netwerkfout). De mail kan weg zijn: niet als mislukt melden, niet opnieuw proberen."""
+
+
+def _strip_chatmail_tag(text: str):
+    """(tekst zonder [[CHATMAIL]], stond de tag erin)."""
+    if not text:
+        return text, False
+    gevonden = bool(_CHATMAIL_TAG_RE.search(text))
+    if gevonden:
+        text = _CHATMAIL_TAG_RE.sub(" ", text).strip()
+    return text, gevonden
+
+
+def _strip_escalatie_tag(text: str) -> str:
+    """Tekst zonder [[ESCALATIE]]. Of de tag er stond, legt de aanroeper vóór de taalcheck vast."""
+    if not text:
+        return text
+    return _ESCALATIE_TAG_RE.sub(" ", text).strip() if _ESCALATIE_TAG_RE.search(text) else text
+
+
+def _is_claimzin(zin: str, fase: bool = False) -> bool:
+    """Zegt deze zin dat het gesprek al gemaild/verstuurd IS? Een toekomst ("je krijgt ons
+    gesprek per mail"), een aanbod of een ontkenning ("nog niet gemaild") telt niet.
+    `fase=True`: de mailbevestigingsfase, zie de uitleg bij _CLAIM_ONDERWERP_FASE_RE."""
+    onderwerp = _CLAIM_ONDERWERP_FASE_RE if fase else _CLAIM_ONDERWERP_RE
+    if not zin or not onderwerp.search(zin):
+        return False
+    for m in _CLAIM_VOLTOOID_RE.finditer(zin):
+        if _ONTKENNING_RE.search(m.group("tussen")):
+            continue
+        if m.group("ww").lower() in ("gemaild", "doorgemaild", "onderweg") or _CLAIM_ONTVANGER_RE.search(zin):
+            return True
+        if fase and not _CLAIM_ANDERE_ONTVANGER_RE.search(zin):
+            return True
+    for m in _CLAIM_STAAT_IN_RE.finditer(zin):
+        if not _ONTKENNING_RE.search(m.group("tussen")):
+            return True
+    return False
+
+
+def _zonder_claimzinnen(text: str, fase: bool = False):
+    """(tekst zonder zinnen die een verzending melden, aantal weggehaald). Alinea's blijven."""
+    if not text:
+        return text, 0
+    regels, weg = [], 0
+    for regel in text.split("\n"):
+        zinnen = re.split(r'(?<=[.!?])\s+', regel)
+        houden = [z for z in zinnen if not _is_claimzin(z, fase)]
+        weg += len(zinnen) - len(houden)
+        if houden or not regel.strip():
+            regels.append(" ".join(houden))
+    tekst = re.sub(r'\n{3,}', '\n\n', "\n".join(regels)).strip()
+    return tekst, weg
+
+
+def _met_uitkomstzin(text: str, zin: str) -> str:
+    """Servertekst voor een [[CHATMAIL]]-beurt: wat er van de modeltekst over is (zonder
+    verzendclaims, herkend in de mailbevestigingsfase) met de zin van de server erachter.
+    Zonder modeltekst (de gewone chatmailbeurt) is het alleen de zin van de server."""
+    rest, _ = _zonder_claimzinnen(text or "", fase=True)
+    return f"{rest}\n\n{zin}" if rest else zin
+
+
+def _zonder_onbewezen_claim(text: str, fase: bool = False) -> str:
+    """Beurt zonder [[CHATMAIL]]: er ging niets weg. Een zin die toch zegt dat het gesprek
+    gemaild is, gaat eruit en de bezoeker hoort eerlijk wat de server weet.
+    `fase=True` (er is nu een bevestigd adres): de ruimere herkenning."""
+    rest, weg = _zonder_claimzinnen(text or "", fase=fase)
+    if not weg:
+        return text
+    logger.warning(f"Chatmail-claim zonder tag weggehaald ({weg} zin, fase={fase}): er ging geen mail uit")
+    return f"{rest}\n\n{CHATMAIL_NIET_VERSTUURD}" if rest else CHATMAIL_NIET_VERSTUURD
+
+
+def _adresstatus(berichten: list) -> dict:
+    """De actuele adresbevestiging, als begrensde toestand (r2, Jordan F3).
+
+    Loopt het gesprek in volgorde door:
+    - Nina's bevestigingsvraag met precies één adres opent een nieuwe vraag en maakt elke
+      eerdere bevestiging ongeldig;
+    - het eerste bezoekersbericht daarna beslist: een ja zonder ontkenning en zonder ander
+      adres bevestigt; noemt het een ander adres ("Ja, stuur het naar nieuw@…"), dan is er
+      niets bevestigd en is dat nieuwe adres het adres om opnieuw te bevestigen;
+    - ná een ja maakt elk nieuw of afwijkend adres, of een ontkenning over het adres of het
+      mailen, de bevestiging weer ongeldig.
+    Alleen een nieuwe ja op een nieuwe bevestigingsvraag ontsluit een ander adres.
+
+    Geeft {"bevestigd": (naam, email) of None, "nieuw": email of None, "naam": str of None}.
+    """
+    vraag = None        # (naam, email) uit de openstaande bevestigingsvraag
+    bevestigd = None
+    naam = None         # laatst bekende naam uit een bevestigingsvraag
+    nieuw = None        # door de bezoeker genoemd adres dat nog bevestigd moet worden
+    for m in berichten:
+        rol = m.get("role")
+        inhoud = m.get("content") or ""
+        adressen = {x.lower() for x in _EMAIL_RE.findall(inhoud)}
+        if rol == "assistant":
+            if adressen and _BEVESTIGINGSVRAAG_RE.search(inhoud):
+                bevestigd, nieuw = None, None
+                if len(adressen) != 1:
+                    vraag = None  # twee adressen in één vraag: niets is ondubbelzinnig
+                    continue
+                n = _NAAM_IN_BEVESTIGING_RE.search(inhoud)
+                if n:
+                    naam = n.group(1).strip()
+                vraag = (n.group(1).strip() if n else None, next(iter(adressen)))
+            elif adressen and (bevestigd is None or adressen != {bevestigd[1]}):
+                bevestigd, vraag = None, None
+            continue
+        if rol != "user":
+            continue
+        woorden = set(re.sub(r"[^\w\s]", " ", inhoud.lower()).split())
+        if vraag is not None:
+            if adressen and adressen != {vraag[1]}:
+                anders = adressen - {vraag[1]}
+                bevestigd, nieuw = None, (next(iter(anders)) if len(anders) == 1 else None)
+            elif (woorden & _JA_WOORDEN) and not (woorden & _NEE_WOORDEN):
+                bevestigd, nieuw = vraag, None
+            else:
+                bevestigd = None
+            vraag = None
+            continue
+        if adressen:
+            if bevestigd is None or adressen != {bevestigd[1]}:
+                anders = adressen - ({bevestigd[1]} if bevestigd else set())
+                bevestigd, nieuw = None, (next(iter(anders)) if len(anders) == 1 else None)
+        elif bevestigd is not None and (woorden & _NEE_WOORDEN) and _ADRESVERWIJZING_RE.search(inhoud):
+            bevestigd = None
+    if bevestigd:
+        email = bevestigd[1]
+        bevestigd = (bevestigd[0] or email.split("@")[0].replace(".", " ").title(), email)
+    return {"bevestigd": bevestigd, "nieuw": nieuw, "naam": naam}
+
+
+def _bevestigde_gegevens(berichten: list):
+    """(naam, e-mail) als het adres NU bevestigd is, anders (None, None).
+
+    Een chatmail gaat alleen naar een adres dat de bezoeker zelf heeft bevestigd. Nooit
+    terugvallen op een los adres uit de bezoekersberichten.
+    """
+    status = _adresstatus(berichten)
+    return status["bevestigd"] if status["bevestigd"] else (None, None)
+
+
+def _voornaam(naam: str) -> str:
+    """Eerste woord van wat de bezoeker als naam gaf ("Petra de Vries" -> "Petra")."""
+    delen = (naam or "").split()
+    return delen[0] if delen else ""
+
+
+def _claimhash(tekst: str) -> str:
+    """HMAC-SHA256 (hex, 64 tekens) met CLAIM_SECRET als sleutel, voor `sleutel`, `ontvanger` en
+    `bron` (contract § Sleutels, aangescherpt 21-10 20:4x). Een kale sha256 van een mailadres of
+    IPv4 is met een woordenlijst terug te rekenen door wie alleen de Sheet ziet; dit niet zonder
+    het secret. Zonder secret geen hash: ClaimFout (fail closed)."""
+    secret = os.getenv("CLAIM_SECRET")
+    if not secret:
+        raise ClaimFout("CLAIM_SECRET ontbreekt")
+    return _hmac.new(secret.encode("utf-8"), tekst.encode("utf-8"), _hashlib.sha256).hexdigest()
+
+
+def _datum_amsterdam(nu=None) -> str:
+    """JJJJ-MM-DD in Europe/Amsterdam, zonder tz-database (die is op Vercel niet zeker).
+    EU-zomertijd: van de laatste zondag van maart 01:00 UTC tot de laatste zondag van
+    oktober 01:00 UTC is het UTC+2, anders UTC+1. De test vergelijkt dit met zoneinfo."""
+    nu = (nu or _datetime.now(_timezone.utc)).astimezone(_timezone.utc)
+
+    def laatste_zondag(maand):
+        d = _datetime(nu.year, maand, 31, 1, 0, tzinfo=_timezone.utc)
+        return d - _timedelta(days=(d.weekday() + 1) % 7)
+
+    zomer = laatste_zondag(3) <= nu < laatste_zondag(10)
+    return (nu + _timedelta(hours=2 if zomer else 1)).strftime("%Y-%m-%d")
+
+
+def _chatmail_sleutel(session_id, email: str, nu=None) -> str:
+    """Claimsleutel: één mail per Nina-sessie per adres (contract).
+    `session_id` is Optional in ChatRequest. Zonder sessie: één mail per adres per dag
+    (Europe/Amsterdam), zodat ook dan herhalen of tegelijk versturen één mail geeft."""
+    adres = (email or "").strip().lower()
+    if session_id and str(session_id).strip():
+        return _claimhash(f"chatmail|{session_id}|{adres}")
+    return _claimhash(f"chatmail|geen-sessie|{adres}|{_datum_amsterdam(nu)}")
+
+
+def _bron_hash(http_request) -> str:
+    """HMAC van het bezoekers-IP (eerste x-forwarded-for, anders x-real-ip), of '' (ook zonder
+    CLAIM_SECRET; dan mailt Nina toch niet). Het IP zelf gaat nooit naar buiten."""
+    try:
+        headers = getattr(http_request, "headers", None)
+        if headers is None:
+            return ""
+        ip = (headers.get("x-forwarded-for") or "").split(",")[0].strip() or \
+             (headers.get("x-real-ip") or "").strip()
+        return _claimhash(ip) if ip else ""
+    except Exception:
+        return ""
+
+
+def _claimdienst(bericht: dict) -> dict:
+    """Eén POST naar de claimdienst. Geldig alleen bij HTTP 2xx én JSON én ok === true
+    (contract); al het andere is een ClaimFout. Het secret komt nooit in een log."""
+    url, secret = os.getenv("CLAIM_URL"), os.getenv("CLAIM_SECRET")
+    if not url or not secret:
+        raise ClaimFout("claimdienst niet ingesteld (CLAIM_URL/CLAIM_SECRET)")
+    try:
+        r = _requests.post(url, json={"secret": secret, **bericht}, timeout=CLAIM_TIMEOUT)
+    except Exception as e:
+        raise ClaimFout(f"geen antwoord: {type(e).__name__}") from e
+    status = getattr(r, "status_code", 0)
+    if not isinstance(status, int) or not 200 <= status < 300:
+        raise ClaimFout(f"HTTP {status}")
+    try:
+        data = r.json()
+    except Exception as e:
+        raise ClaimFout("geen geldige JSON") from e
+    if not isinstance(data, dict) or data.get("ok") is not True:
+        fout = data.get("error") if isinstance(data, dict) else type(data).__name__
+        raise ClaimFout(f"ok is niet true ({str(fout)[:40]})")
+    return data
+
+
+def _claim_chatmail(sleutel: str, ontvanger: str, bron: str) -> str:
+    data = _claimdienst({"actie": "claim", "soort": CLAIM_SOORT, "sleutel": sleutel,
+                         "ontvanger": ontvanger, "bron": bron or ""})
+    uitkomst = data.get("uitkomst")
+    if uitkomst not in CLAIM_UITKOMSTEN:
+        raise ClaimFout(f"onbekende uitkomst {str(uitkomst)[:30]!r}")
+    return uitkomst
+
+
+def _bevestig_claim(sleutel: str, status: str, kenmerk="", registratie="") -> bool:
+    """`bevestig` naar de claimdienst. Faalt nooit naar buiten; False = niet vastgelegd
+    (de rij blijft dan `bezig`: onzeker, nooit stil opnieuw verstuurd)."""
+    try:
+        _claimdienst({"actie": "bevestig", "sleutel": sleutel, "status": status,
+                      "kenmerk": str(kenmerk or ""), "registratie": registratie})
+        return True
+    except Exception as e:
+        logger.error(f"Chatmail-claim niet bevestigd ({status}): {type(e).__name__}: {e}")
+        return False
+
+
+def _chatmail_html(naam: str, berichten: list) -> str:
+    """De mail aan de bezoeker: begeleidende tekst + het gesprek, alles ge-escaped."""
+    import html as _html
+
+    def opmaak(tekst: str) -> str:
+        veilig = _html.escape(tekst.strip())
+        veilig = re.sub(r'\[([^\]\n]+)\]\((https?://[^\s)]+)\)', r'<a href="\2">\1</a>', veilig)
+        veilig = re.sub(r'\*\*([^*\n]+)\*\*', r'<strong>\1</strong>', veilig)
+        return veilig.replace("\n", "<br>")
+
+    delen = [f"<p>{opmaak(alinea.format(voornaam=_voornaam(naam)))}</p>" for alinea in CHATMAIL_BEGELEIDING]
+    delen.append("<hr>")
+    for m in berichten:
+        tekst = (m.get("content") or "").strip()
+        if not tekst:
+            continue
+        wie = "Jij" if m.get("role") == "user" else "Nina"
+        kleur = "#555555" if wie == "Jij" else "#66B0B2"
+        delen.append(f'<p><strong style="color:{kleur}">{wie}:</strong><br>{opmaak(tekst)}</p>')
+    return "\n".join(delen)
+
+
+def _stuur_chatmail(naam: str, email: str, berichten: list) -> int:
+    """Nieuw uitgaand Help Scout-gesprek, op gesloten. Geeft het gesprek-id (0 = onbekend).
+
+    Zeker mislukt (er ging niets weg, of Help Scout antwoordde 400-499): gewone exception.
+    Onzeker (het verzoek vertrok; geen antwoord, een 5xx, of 1xx/3xx): OnzekereVerzending.
+    ⚑ Contract aangescherpt 21-10 19:5x: een 5xx (bv. 502/504 van een gateway) zegt niet of het
+    gesprek al is aangemaakt; als `mislukt` vastleggen zou een herhaling een tweede mail kunnen geven.
+    """
+    if not _hs_get_token():  # een fout hier is zeker: het gesprek is nog niet verstuurd
+        raise RuntimeError("Help Scout-sleutels ontbreken")
+    mailbox_id = int(os.getenv("HELPSCOUT_MAILBOX_ID", "0") or 0)
+    if not mailbox_id:
+        raise RuntimeError("HELPSCOUT_MAILBOX_ID ontbreekt")
+    headers = _hs_headers()
+    body = {
+        "subject": CHATMAIL_ONDERWERP,
+        "customer": {"email": email, "firstName": naam},
+        "mailboxId": mailbox_id,
+        "type": "email",
+        "status": "closed",
+        "imported": False,
+        "tags": [CHATMAIL_HS_TAG],
+        "threads": [{"type": "reply", "customer": {"email": email},
+                     "text": _chatmail_html(naam, berichten)}],
+    }
+    try:
+        resp = _requests.post("https://api.helpscout.net/v2/conversations",
+                              headers=headers, json=body, timeout=HS_TIMEOUT)
+    except Exception as e:
+        raise OnzekereVerzending(type(e).__name__) from e
+    status = getattr(resp, "status_code", 0)
+    if isinstance(status, int) and 400 <= status <= 499:
+        raise RuntimeError(f"Help Scout HTTP {status}")
+    if not isinstance(status, int) or not 200 <= status < 300:
+        raise OnzekereVerzending(f"HTTP {status}")
+    try:
+        return int(resp.headers.get("Resource-Id") or 0)
+    except Exception:
+        return 0  # de mail is weg; een onleesbaar kenmerk maakt dat niet ongedaan
+
+
+def _chatmail_naar_mailblue(naam: str, email: str) -> str:
+    """Contact + brontag (+ Hoofdlijst als er nog geen record is). Geeft een korte uitkomst."""
+    sleutel = os.getenv("MAILBLUE_API_KEY")
+    if not sleutel:
+        return "overgeslagen: MAILBLUE_API_KEY ontbreekt"
+    if not MAILBLUE_TAG_NINA_CHAT:
+        return "overgeslagen: brontag-ID nog niet ingesteld"
+    h = {"Api-Token": sleutel, "Content-Type": "application/json"}
+    contact = {"email": email, "firstName": _voornaam(naam)}
+    achternaam = " ".join((naam or "").split()[1:])
+    if achternaam:  # een lege achternaam zou een bestaande in MailBlue wissen
+        contact["lastName"] = achternaam
+    r = _requests.post(f"{MAILBLUE_API_URL}/contact/sync", headers=h, timeout=MAILBLUE_TIMEOUT,
+                       json={"contact": contact})
+    r.raise_for_status()
+    contact_id = r.json()["contact"]["id"]
+    r = _requests.post(f"{MAILBLUE_API_URL}/contactTags", headers=h, timeout=MAILBLUE_TIMEOUT,
+                       json={"contactTag": {"contact": contact_id, "tag": MAILBLUE_TAG_NINA_CHAT}})
+    r.raise_for_status()
+    if not CHATMAIL_OP_HOOFDLIJST:
+        return f"contact {contact_id} getagd"
+    # Eerst lezen: een POST met status 1 zet een afgemeld record terug op actief
+    # (gemeten 24-9 bij de brochure). Wie zich afmeldde komt er nooit opnieuw op.
+    r = _requests.get(f"{MAILBLUE_API_URL}/contacts/{contact_id}/contactLists", headers=h,
+                      timeout=MAILBLUE_TIMEOUT)
+    r.raise_for_status()
+    if any(str(x.get("list")) == str(MAILBLUE_HOOFDLIJST) for x in r.json().get("contactLists", [])):
+        return f"contact {contact_id} getagd, Hoofdlijst-record bestond al"
+    r = _requests.post(f"{MAILBLUE_API_URL}/contactLists", headers=h, timeout=MAILBLUE_TIMEOUT,
+                       json={"contactList": {"list": MAILBLUE_HOOFDLIJST, "contact": contact_id, "status": 1}})
+    r.raise_for_status()
+    return f"contact {contact_id} getagd en op de Hoofdlijst"
+
+
+def _verwerk_chatmail(berichten: list, antwoord: str, session_id=None, bron: str = "",
+                      modeltekst_houden: bool = False) -> dict:
+    """Voert één [[CHATMAIL]]-verzoek uit. Faalt nooit naar buiten; geeft de zichtbare
+    tekst voor de bezoeker.
+
+    ⚑ r2.3 (Jordan closing C1/F1): wat de bezoeker over de verzending leest is SERVERtekst
+    uit de gemeten status. Bij een gewone chatmailbeurt is het antwoord alleen die zin; de
+    modeltekst telt niet mee. Alleen als er in dezelfde beurt ook geëscaleerd wordt
+    (`modeltekst_houden=True`) blijven de modelzinnen staan die geen verzendclaim zijn
+    (bv. "Ik heb je vraag doorgestuurd naar Sandy."), met de serverzin erachter.
+    """
+    basis = antwoord if modeltekst_houden else ""
+    uitkomst = {"antwoord": antwoord, "verstuurd": False, "reden": "", "conversation_id": None,
+                "mailblue": "", "claim": "", "bevestigd": None}
+
+    status = _adresstatus(berichten)
+    if not status["bevestigd"]:
+        if status["nieuw"] and status["naam"]:
+            zin = CHATMAIL_BEVESTIGINGSVRAAG.format(naam=status["naam"], email=status["nieuw"])
+            reden = "ander adres genoemd: opnieuw bevestigen"
+        else:
+            zin, reden = CHATMAIL_GEEN_ADRES, "geen bevestigd adres"
+        uitkomst.update(antwoord=_met_uitkomstzin(basis, zin), reden=reden)
+        logger.warning(f"Chatmail niet verstuurd: {reden}")
+        return uitkomst
+    naam, email = status["bevestigd"]
+
+    # Zonder Help Scout-instellingen gaat er nooit een mail uit: dan ook niet claimen.
+    if not (os.getenv("HELPSCOUT_APP_ID") and os.getenv("HELPSCOUT_APP_SECRET")
+            and os.getenv("HELPSCOUT_MAILBOX_ID")):
+        uitkomst.update(antwoord=_met_uitkomstzin(basis, CHATMAIL_MISLUKT),
+                        reden="Help Scout niet ingesteld")
+        logger.error("Chatmail niet verstuurd: Help Scout niet ingesteld")
+        return uitkomst
+
+    try:
+        sleutel = _chatmail_sleutel(session_id, email)
+        claim = _claim_chatmail(sleutel, _claimhash(email.strip().lower()), bron)
+    except Exception as e:  # ClaimFout of iets onverwachts: fail closed
+        uitkomst.update(antwoord=_met_uitkomstzin(basis, CHATMAIL_MISLUKT),
+                        reden=f"claimfout: {e}", claim="fout")
+        logger.error(f"Chatmail niet verstuurd, claimfout: {type(e).__name__}: {e}")
+        return uitkomst
+    uitkomst["claim"] = claim
+    if claim != "geclaimd":
+        zin = {"al_verstuurd": CHATMAIL_AL_VERSTUURD, "bezig": CHATMAIL_ONDERWEG}.get(claim, CHATMAIL_LIMIET)
+        uitkomst.update(antwoord=_met_uitkomstzin(basis, zin), reden=f"claimdienst: {claim}")
+        logger.info(f"Chatmail niet opnieuw verstuurd: claimdienst zegt {claim}")
+        return uitkomst
+
+    succes = _met_uitkomstzin(basis, CHATMAIL_AFRONDING)
+    try:
+        uitkomst["conversation_id"] = _stuur_chatmail(naam, email, berichten + [
+            {"role": "assistant", "content": succes}])
+    except OnzekereVerzending as e:
+        # Niet bevestigen: de rij blijft `bezig`. Het overzicht toont hem na 10 min als
+        # onzeker; een herhaling krijgt `bezig` en verstuurt niets.
+        uitkomst.update(antwoord=_met_uitkomstzin(basis, CHATMAIL_ONDERWEG),
+                        reden=f"onzeker: {e}")
+        logger.error(f"Chatmail onzeker (geen antwoord van Help Scout): {e}")
+        return uitkomst
+    except Exception as e:
+        # Zeker mislukt: vastleggen als `mislukt`, dan geeft een volgende claim weer
+        # `geclaimd` (de veilige herhaalroute).
+        uitkomst["bevestigd"] = _bevestig_claim(sleutel, "mislukt")
+        uitkomst.update(antwoord=_met_uitkomstzin(basis, CHATMAIL_MISLUKT),
+                        reden=f"verzending mislukt: {type(e).__name__}")
+        logger.error(f"Chatmail niet verstuurd: {type(e).__name__}: {e}")
+        return uitkomst
+
+    uitkomst.update(verstuurd=True, antwoord=succes)
+    logger.info(f"Chatmail verstuurd via Help Scout (gesprek {uitkomst['conversation_id']})")
+    registratie = ""
+    try:
+        uitkomst["mailblue"] = _chatmail_naar_mailblue(naam, email)
+        registratie = "" if uitkomst["mailblue"].startswith("overgeslagen") else "ok"
+        logger.info(f"Chatmail MailBlue: {uitkomst['mailblue']}")
+    except Exception as e:
+        uitkomst["mailblue"] = f"mislukt: {type(e).__name__}"
+        registratie = "mislukt"
+        logger.error(f"Chatmail MailBlue mislukt (mail is wel verstuurd): {type(e).__name__}: {e}")
+    uitkomst["bevestigd"] = _bevestig_claim(sleutel, "verstuurd", uitkomst["conversation_id"] or "",
+                                            registratie)
+    return uitkomst
 
 
 # ── De inhoudelijke vraag van een gesprek ──────────────────────────────────
@@ -1058,7 +1670,7 @@ def _inhoudelijke_vraag(chat_messages, laatste_bericht=""):
 
 
 def _log_conversation(session_id, user_msg, nina_response, used_articles, escalated,
-                      chat_messages=None):
+                      chat_messages=None, chatmail=False):
     """Schrijf één gespreksbeurt weg naar het externe weeklog (Google Sheet via Apps Script).
 
     Vercel bewaart zelf niks, dus we sturen elke beurt naar een Apps Script-webhook
@@ -1069,6 +1681,12 @@ def _log_conversation(session_id, user_msg, nina_response, used_articles, escala
     log_url = os.getenv("NINA_LOG_URL")
     if not log_url:
         return
+    artikelen = ", ".join(used_articles) if used_articles else "— geen artikel gevonden —"
+    # De Sheet kent zes vaste kolommen; een zevende sleutel negeert de Apps Script.
+    # Daarom staat de markering óók in de artikelkolom: die toont het weekoverzicht
+    # al als "↳ bron: …", zonder dat Sheet of overzicht hoeven te veranderen.
+    if chatmail:
+        artikelen += CHATMAIL_LOGMARKERING
     try:
         _requests.post(
             log_url,
@@ -1082,8 +1700,9 @@ def _log_conversation(session_id, user_msg, nina_response, used_articles, escala
                 # (nog) niet kent, negeert de Apps Script hem.
                 "laatste_bericht": user_msg or "",
                 "antwoord": nina_response or "",
-                "artikelen": ", ".join(used_articles) if used_articles else "— geen artikel gevonden —",
+                "artikelen": artikelen,
                 "escalatie": "ja" if escalated else "",
+                "chatmail": "ja" if chatmail else "",
             },
             timeout=3,
         )
