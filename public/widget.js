@@ -76,9 +76,62 @@
   var isTyping = false;
   var inactivityTimer = null;
   var INACTIVITY_TIMEOUT = 10 * 60 * 1000; // 10 minuten
+  var GREETING =
+    "Hoi, ik ben Nina, de digitale assistent van SanaYou YOGAcademy.\n\nIk ben 24/7 beschikbaar om jouw vragen te beantwoorden.\n\nEn als ik je toch niet verder kan helpen, zorg ik dat hoofddocent Sandy het zelf oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?";
+
+  // Gespreksgeheugen: de geschiedenis staat in sessionStorage, zodat een bezoeker
+  // die doorklikt naar een andere pagina zijn gesprek terugziet. sessionStorage
+  // verdwijnt met het tabblad; bewust geen localStorage.
+  // Geldigheid: bij het laden van een pagina vervalt opslag ouder dan 10 minuten;
+  // bij een geopende chat wist de timer na 10 minuten; sluiten pauzeert die timer,
+  // openen verlengt de geldigheid.
+  var HISTORY_KEY = "nina_history";
+  var MAX_HISTORY = 20;
+  // Gespreksgeneratie: "Nieuw gesprek" en de inactiviteitstimer verhogen hem. Een
+  // verzoek dat in een oudere generatie begon, toont, bewaart en herstelt niets meer.
+  var generation = 0;
+
+  function saveHistory() {
+    try {
+      sessionStorage.setItem(HISTORY_KEY, JSON.stringify({ ts: Date.now(), history: history }));
+    } catch (e) {}
+  }
+
+  function clearStoredHistory() {
+    try {
+      sessionStorage.removeItem(HISTORY_KEY);
+    } catch (e) {}
+  }
+
+  function loadHistory() {
+    try {
+      var raw = sessionStorage.getItem(HISTORY_KEY);
+      if (!raw) return [];
+      var saved = JSON.parse(raw);
+      if (
+        !saved ||
+        typeof saved.ts !== "number" ||
+        !Array.isArray(saved.history) ||
+        Date.now() - saved.ts > INACTIVITY_TIMEOUT
+      ) {
+        clearStoredHistory();
+        return [];
+      }
+      return saved.history
+        .filter(function (m) {
+          return m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string";
+        })
+        .slice(-MAX_HISTORY);
+    } catch (e) {
+      clearStoredHistory();
+      return [];
+    }
+  }
 
   function resetChat() {
+    generation++;
     history = [];
+    clearStoredHistory();
     msgsEl.innerHTML = "";
     isTyping = false;
     sendEl.disabled = false;
@@ -187,6 +240,14 @@
     inpEl.style.height = "auto";
     addMsg("user", text);
 
+    // Dit verzoek hoort bij deze generatie. Na "Nieuw gesprek" of de inactiviteitstimer
+    // is het verlopen: dan toont, bewaart en herstelt het niets meer, en een
+    // herhaalpoging gaat niet meer de deur uit.
+    var gen = generation;
+    function actueel() {
+      return gen === generation;
+    }
+
     isTyping = true;
     sendEl.disabled = true;
     showTyping();
@@ -194,6 +255,7 @@
     // Cold-start detectie: als het langer dan 8s duurt, toon een melding
     var coldStartShown = false;
     var coldStartTimer = setTimeout(function () {
+      if (!actueel()) return;
       coldStartShown = true;
       hideTyping();
       addMsg("bot", "Ik zoek het even voor je op, momentje.");
@@ -207,6 +269,7 @@
 
     try {
       for (var attempt = 0; attempt < maxRetries; attempt++) {
+        if (!actueel()) return;
         try {
           // Hard time-out per poging: een hangende verbinding mag de chat nooit
           // permanent blokkeren. Zonder dit blijft isTyping op true staan en kan
@@ -231,7 +294,7 @@
           data = null;
           // Bij eerste netwerkfout: wacht 3s en probeer opnieuw (server start op)
           if (attempt === 0) {
-            if (!coldStartShown) {
+            if (!coldStartShown && actueel()) {
               hideTyping();
               addMsg("bot", "Ik zoek het even voor je op, momentje.");
               showTyping();
@@ -243,6 +306,7 @@
       }
 
       clearTimeout(coldStartTimer);
+      if (!actueel()) return;
       hideTyping();
 
       if (lastErr || !data) {
@@ -256,17 +320,31 @@
         addMsg("bot", data.response);
         history.push({ role: "user", content: text });
         history.push({ role: "assistant", content: data.response });
-        if (history.length > 20) history = history.slice(-20);
+        if (history.length > MAX_HISTORY) history = history.slice(-MAX_HISTORY);
+        saveHistory();
       }
     } finally {
-      // Wat er ook gebeurt: de verzendknop moet altijd weer vrijkomen.
+      // Wat er ook gebeurt: de verzendknop moet altijd weer vrijkomen. Is het gesprek
+      // intussen gewist, dan heeft resetChat() de knop al vrijgegeven, en de knop,
+      // het typ-icoon en de timer zijn dan van het nieuwe gesprek.
       clearTimeout(coldStartTimer);
-      hideTyping();
-      isTyping = false;
-      sendEl.disabled = false;
-      inpEl.focus();
-      startInactivityTimer();
+      if (actueel()) {
+        hideTyping();
+        isTyping = false;
+        sendEl.disabled = false;
+        inpEl.focus();
+        startInactivityTimer();
+      }
     }
+  }
+
+  // Lopend gesprek van een vorige pagina terugzetten (zelfde tabblad, < 10 min).
+  history = loadHistory();
+  if (history.length) {
+    addMsg("bot", GREETING);
+    history.forEach(function (m) {
+      addMsg(m.role === "user" ? "user" : "bot", m.content);
+    });
   }
 
   btn.addEventListener("click", function () {
@@ -274,14 +352,13 @@
     win.classList.toggle("open", isOpen);
     if (isOpen) {
       startInactivityTimer();
+      // Openen telt als activiteit: het bewaarde gesprek blijft 10 min geldig.
+      if (history.length) saveHistory();
     } else {
       clearInactivityTimer();
     }
     if (isOpen && msgsEl.children.length === 0) {
-      addMsg(
-        "bot",
-        "Hoi, ik ben Nina, de digitale assistent van SanaYou YOGAcademy.\n\nIk ben 24/7 beschikbaar om jouw vragen te beantwoorden.\n\nEn als ik je toch niet verder kan helpen, zorg ik dat hoofddocent Sandy het zelf oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
-      );
+      addMsg("bot", GREETING);
       inpEl.focus();
     }
   });
@@ -289,10 +366,7 @@
   var resetEl = document.getElementById("nina-reset");
   resetEl.addEventListener("click", function () {
     resetChat();
-    addMsg(
-      "bot",
-      "Hoi, ik ben Nina, de digitale assistent van SanaYou YOGAcademy.\n\nIk ben 24/7 beschikbaar om jouw vragen te beantwoorden.\n\nEn als ik je toch niet verder kan helpen, zorg ik dat hoofddocent Sandy het zelf oppakt zodra ze weer beschikbaar is.\n\nWaarmee kan ik je helpen?"
-    );
+    addMsg("bot", GREETING);
     inpEl.focus();
   });
 
