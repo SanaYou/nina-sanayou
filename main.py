@@ -381,7 +381,7 @@ Je helpt studenten en geïnteresseerden met hun vragen. Je communiceert warm, pr
 - Nooit "Graag geholpen" of vergelijkbare afsluitende zinnen aan het begin van een gesprek — dat slaat nergens op, je hebt nog niets geholpen
 - "Ik help je graag" mag wel, dat is een aanbod
 - Geen overdreven enthousiasme of salesachtige taal
-- Sluit antwoorden waar passend af met een open deur: "Heb je nog vragen, dan help ik je graag verder."
+- Sluit een antwoord af met één slotalinea. Na inhoudelijke informatie over een opleiding, module, studieroute, data of prijzen is dat het mailaanbod (begint met "Zal ik dit gesprek even naar je mailen?"). Kies je slot volgens de instructie "het gesprek naar de bezoeker mailen": daar staat wanneer het aanbod je slot is en welke verplichte slotvraag voorgaat. Anders, waar passend, een open deur: "Heb je nog vragen, dan help ik je graag verder."
 - Gebruik NOOIT een lange dash (—). Gebruik in plaats daarvan een komma, punt of dubbele punt.
 - Schrijf "Welke spreekt je het meest aan?" — NOOIT "Welke aanspreekt je?" of varianten daarvan.
 
@@ -402,6 +402,7 @@ Je helpt studenten en geïnteresseerden met hun vragen. Je communiceert warm, pr
 - Stel nooit meer dan één vervolgvraag per bericht
 - Kies de meest bepalende vraag als je meer informatie nodig hebt
 - Gooi nooit meerdere vragen tegelijk op de bezoeker
+- Het mailaanbod telt als je ene vraag. Bied je het aan, stel dan in dat bericht geen andere vervolgvraag. Moet je eerst iets verduidelijken (bijvoorbeeld klassikaal of online), stel dan die ene verduidelijkingsvraag, eventueel na de korte uitleg die de doorvraaginstructie voorschrijft. Het mailaanbod volgt pas onder je inhoudelijke antwoord.
 
 ## Doorvragen — verplicht bij algemene interesse of brede vragen
 
@@ -546,6 +547,64 @@ def _contactkanaal_vangnet(text: str) -> str:
     if fired:
         logger.info("Contactkanaal-vangnet: bel-aanbod herschreven naar e-mail")
     return text
+
+
+# ── Vangnet: het mailaanbod staat één keer per gesprek ─────────────────────
+# Staat de aanbodzin al in een eerder bericht van Nina (alleen role == "assistant" telt), dan gaat een herhaald
+# aanbod eruit. Precies begrensd: de aanbodzin plus de zinnen van Sandy's aanbodtekst die er direct en in volgorde
+# op volgen (opmaak en regeleinden ertussen tellen mee). Alle andere tekst, ervóór en erna, blijft staan. Blijft er
+# niets over, dan wordt het antwoord de open deur uit de vaste prompt. Een herformuleerd aanbod herkent dit niet.
+# Geen API-call. De tekst moet gelijk blijven aan gesprek-mailen.md; tests/test_chatmail_r2.py toetst dat.
+MAILAANBOD = "Zal ik dit gesprek even naar je mailen?"
+MAILAANBOD_VERVOLG = (
+    "Dan heb je alles bij elkaar.",
+    "Heb ik iets over het hoofd gezien, dan sturen we je nog een aanvulling.",
+    "En als jij daarna nog een vraag hebt, reageer je gewoon op die mail.",
+)
+OPEN_DEUR = "Heb je nog vragen, dan help ik je graag verder."
+
+
+def _mailaanbod_patroon():
+    tussen = r"[ \t\r\n*_]*"
+    staart = ""
+    for zin in reversed(MAILAANBOD_VERVOLG):
+        staart = "(?:" + tussen + re.escape(zin) + staart + ")?"
+    rand = r"[*_\"“”]*"
+    return re.compile(r"[ \t]*" + rand + re.escape(MAILAANBOD) + staart + rand + r"[ \t]*")
+
+
+_MAILAANBOD_RE = _mailaanbod_patroon()
+
+
+def _naad(m) -> str:
+    """Vervanging voor één weggehaald aanbod: een spatie als er op dezelfde regel aan beide kanten tekst staat."""
+    s = m.string
+    links = s[m.start() - 1] if m.start() > 0 else "\n"
+    rechts = s[m.end()] if m.end() < len(s) else "\n"
+    return " " if links not in "\r\n" and rechts not in "\r\n" else ""
+
+
+def _mailaanbod_eenmalig(text: str, history) -> str:
+    """Haal een herhaald mailaanbod weg. Faalt nooit, blokkeert nooit."""
+    try:
+        if MAILAANBOD not in text:
+            return text
+        if not any(getattr(m, "role", "") == "assistant" and MAILAANBOD in (getattr(m, "content", "") or "")
+                   for m in (history or [])):
+            return text
+        houden = []
+        for alinea in re.split(r"\n\s*\n", text.strip()):
+            if MAILAANBOD in alinea:
+                alinea = _MAILAANBOD_RE.sub(_naad, alinea)
+                alinea = re.sub(r"[ \t]*\n(?:[ \t]*\n)+", "\n", alinea).strip()
+                if not re.search(r"\w", alinea):
+                    continue
+            houden.append(alinea)
+        logger.info("Mailaanbod-vangnet: herhaald aanbod weggehaald")
+        return "\n\n".join(houden) if houden else OPEN_DEUR
+    except Exception as e:
+        logger.warning(f"Mailaanbod-vangnet faalde: {type(e).__name__}")
+        return text
 
 
 # ── Vangnet: Nina verzint NOOIT een checkout-/aanmeldlink ──────────────────
@@ -704,6 +763,9 @@ async def chat(request: ChatRequest, http_request: Request = None):
 
                 # Vangnet: nooit een verzonnen checkout-link laten staan
                 response_text = _checkout_link_vangnet(response_text)
+
+                # Vangnet: het mailaanbod staat één keer per gesprek
+                response_text = _mailaanbod_eenmalig(response_text, request.history)
 
                 # De modeltekst zoals hij was vóór de chatmail-afronding. De escalatie-
                 # detectie krijgt deze tekst, net als in r1, zodat het vangnet op

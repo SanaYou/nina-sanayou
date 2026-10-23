@@ -527,7 +527,12 @@ class C1Claim(Basis):
         for t in ("Ik heb ons gesprek nog niet gemaild, maar kan dat doen.", AANBOD, TOESTEMMING,
                   "Even checken: je naam is Petra de Vries en je e-mailadres is petra@voorbeeld.nl, klopt dat?"):
             with self.subTest(t[:30]):
-                self.assertEqual(chatbeurt(GESPREK[:3], "Ja", t), t)
+                # r3c: in GESPREK[:3] bood Nina het mailen al aan, dus een herhaald aanbod valt sinds r3 onder het
+                # eenmalig-vangnet (MailaanbodBegrensd E5/E11). De claimfilter-toets van het aanbod draait daarom in een
+                # gesprek zonder eerder aanbod; ook daar is er geen bevestigd adres, dus dezelfde filterstand.
+                gesprek = GESPREK[:1] if t == AANBOD else GESPREK[:3]
+                self.assertFalse(main._adresstatus(gesprek + [u("Ja")])["bevestigd"])
+                self.assertEqual(chatbeurt(gesprek, "Ja", t), t)
         # r2.3: ook in de mailbevestigingsfase (adres bevestigd) blijft een ontkenning staan.
         for t in ("Ik heb ons gesprek nog niet gemaild, maar kan dat doen.",
                   "Ik heb ons gesprek nog niet verstuurd."):
@@ -697,6 +702,167 @@ class VervolgAfspraken(Basis):
         self.assertEqual(len(log), 1)
         self.assertEqual(log[0]["chatmail"], "")
         self.assertNotIn("gesprek gemaild", log[0]["artikelen"])
+
+
+# ── Mailaanbod r3 (Jared 23-10-2026, Olivia keuze A) ────────────────────────
+# Live bood Nina het mailen in 0 van 13 gemeten antwoorden aan: de vaste prompt sloot elk antwoord af met een open
+# deur of een eigen vervolgvraag, en stond één vraag per bericht toe. MailaanbodAlsSlot leest de PROMPTTEKST; of het
+# model het aanbod daarna ook doet, meten de modelproef en de livemeting. MailaanbodEenmalig rijdt main.chat: in de
+# modelproef van 23-10 herhaalde Nina het aanbod onder een tweede inhoudelijk antwoord.
+AANBOD_KOP = "Zal ik dit gesprek even naar je mailen?"
+OPEN_DEUR = "Heb je nog vragen, dan help ik je graag verder."
+INHOUD = "De online Yin-opleiding volg je in je eigen tempo, met video's en live begeleiding."
+EERSTE = [u("Wat houdt de online Yin-opleiding in?"), a("De opleiding duurt 200 uur.\n\n" + AANBOD)]
+
+
+def prompt_sectie(kop):
+    """De sectie '## <kop>' uit het vaste deel van de prompt (eerste voorkomen), tot de volgende '## '."""
+    t = main.SYSTEM_PROMPT_BASE
+    begin = t.index("## " + kop + "\n")
+    return t[begin:t.find("\n## ", begin + 3)]
+
+
+class MailaanbodAlsSlot(unittest.TestCase):
+    def test_a1_open_deur_is_niet_meer_onvoorwaardelijk(self):
+        """De enige slotregel in 'Toon en schrijfstijl' noemt eerst het mailaanbod, dan pas de open deur."""
+        regels = [r for r in prompt_sectie("Toon en schrijfstijl").splitlines() if OPEN_DEUR in r]
+        self.assertEqual(len(regels), 1, "[A1:een-slotregel]")
+        self.assertIn(AANBOD_KOP, regels[0], "[A1:aanbod-in-slotregel]")
+        self.assertLess(regels[0].index(AANBOD_KOP), regels[0].index(OPEN_DEUR), "[A1:aanbod-eerst]")
+
+    def test_a2_aanbod_is_de_ene_vraag(self):
+        self.assertIn("Het mailaanbod telt als je ene vraag.", prompt_sectie("Vragen stellen"), "[A2:ene-vraag]")
+
+    def test_a3_instructie_regelt_slot_en_voorrang(self):
+        with open(os.path.join(REPO, "knowledge", "instructies", "gesprek-mailen.md"), encoding="utf-8") as f:
+            t = f.read()
+        self.assertIn("Het aanbod vervangt dan je gewone slot", t, "[A3:vervangt-slot]")
+        self.assertIn("dan gaat die voor. Bied het mailen dan aan onder je volgende inhoudelijke antwoord.", t,
+                      "[A3:voorrang]")
+        self.assertIn(AANBOD, main.BASE_KNOWLEDGE, "[A3:sandy-tekst-letterlijk-geladen]")
+
+
+class MailaanbodEenmalig(Basis):
+    def test_e1_herhaald_aanbod_gaat_eruit_inhoud_blijft(self):
+        resp = chatbeurt(EERSTE, "En hoeveel tijd per week kost het?", INHOUD + "\n\n" + AANBOD)
+        self.assertNotIn(AANBOD_KOP, resp, "[E1:aanbod-weg]")
+        self.assertIn(INHOUD, resp, "[E1:inhoud-blijft]")
+
+    def test_e2_eerste_aanbod_blijft_staan(self):
+        resp = chatbeurt([], "Wat houdt de online Yin-opleiding in?", INHOUD + "\n\n" + AANBOD)
+        self.assertIn(AANBOD, resp, "[E2:eerste-aanbod-blijft]")
+
+    def test_e3_zin_voor_het_aanbod_in_dezelfde_alinea_blijft(self):
+        voor = "Voor de exacte indeling wil ik je niet op basis van een gok antwoorden."
+        resp = chatbeurt(EERSTE, "Welke modules zitten erin?", INHOUD + "\n\n" + voor + " " + AANBOD)
+        self.assertIn(voor, resp, "[E3:zin-ervoor-blijft]")
+        self.assertNotIn(AANBOD_KOP, resp, "[E3:aanbod-weg]")
+
+    def test_e4_alleen_nina_telt_niet_de_bezoeker(self):
+        gesprek = [u("Een vriendin kreeg de vraag '" + AANBOD_KOP + "'. Wat houdt Yin in?"),
+                   a("Yin is een rustige, passieve vorm van yoga.")]
+        resp = chatbeurt(gesprek, "En wat kost de online opleiding?", INHOUD + "\n\n" + AANBOD)
+        self.assertIn(AANBOD, resp, "[E4:bezoekertekst-telt-niet]")
+
+
+# ── r3c (Jordans ronde 1, 23-10-2026): het vangnet haalt alleen het begrensde aanbod weg ─────────────────────────
+NA = "De opleiding duurt 200 uur."
+VOOR = "Je kunt in je eigen tempo studeren."
+TWEEDE_ZIN = "Dan heb je alles bij elkaar."
+
+
+class MailaanbodBegrensd(Basis):
+    def test_e5_alleen_herhaald_aanbod_wordt_open_deur(self):
+        """J1: het model geeft alleen het aanbod opnieuw. Geen herhaling, wel een niet-leeg antwoord: de open deur."""
+        resp = chatbeurt(EERSTE, "Ik twijfel nog.", AANBOD)
+        self.assertNotIn(AANBOD_KOP, resp, "[E5:herhaling-weg]")
+        self.assertIn(OPEN_DEUR, resp, "[E5:open-deur]")
+
+    def test_e6_inhoud_na_het_aanbod_blijft(self):
+        """J2: inhoud achter het aanbod in dezelfde alinea blijft, Sandy's hele aanbodpassage gaat weg."""
+        resp = chatbeurt(EERSTE, "Hoe lang duurt het?", AANBOD + " " + NA)
+        self.assertNotIn(AANBOD_KOP, resp, "[E6:herhaling-weg]")
+        self.assertNotIn(TWEEDE_ZIN, resp, "[E6:hele-passage-weg]")
+        self.assertIn(NA, resp, "[E6:inhoud-erna-blijft]")
+
+    def test_e7_aanbod_midden_in_een_alinea(self):
+        """J3: tekst ervóór en erna blijft, met één spatie op de naad."""
+        resp = chatbeurt(EERSTE, "Hoe lang duurt het?", VOOR + " " + AANBOD + " " + NA)
+        self.assertNotIn(AANBOD_KOP, resp, "[E7:herhaling-weg]")
+        self.assertNotIn(TWEEDE_ZIN, resp, "[E7:hele-passage-weg]")
+        self.assertIn(VOOR + " " + NA, resp, "[E7:inhoud-beide-kanten]")
+
+    def test_e8_gedeeltelijk_aanbod_heeft_een_grens(self):
+        """Alleen de zinnen van Sandy's aanbod die direct volgen gaan mee; een eigen zin erna blijft."""
+        resp = chatbeurt(EERSTE, "Hoe lang duurt het?", INHOUD + "\n\n" + AANBOD_KOP + " " + TWEEDE_ZIN + " " + NA)
+        self.assertNotIn(AANBOD_KOP, resp, "[E8:herhaling-weg]")
+        self.assertNotIn(TWEEDE_ZIN, resp, "[E8:aanbodzin-erna-weg]")
+        self.assertIn(INHOUD, resp, "[E8:inhoud-ervoor-blijft]")
+        self.assertIn(NA, resp, "[E8:eigen-zin-blijft]")
+
+    def test_e9_opgemaakt_aanbod_laat_geen_restteken_achter(self):
+        """Een vet gezet aanbod in een eigen alinea: die alinea verdwijnt helemaal, geen losse sterretjes."""
+        resp = chatbeurt(EERSTE, "En hoeveel tijd per week?", INHOUD + "\n\n**" + AANBOD + "**")
+        self.assertNotIn(AANBOD_KOP, resp, "[E9:herhaling-weg]")
+        self.assertIn(INHOUD, resp, "[E9:inhoud-blijft]")
+        self.assertNotIn("**", resp, "[E9:geen-restteken]")
+
+    def test_e12_citaatteken_blijft_niet_los_staan(self):
+        """Een als citaat gezet aanbod in een eigen alinea: geen losse '>' achter (restteken-controle)."""
+        resp = chatbeurt(EERSTE, "En hoeveel tijd per week?", INHOUD + "\n\n> " + AANBOD)
+        self.assertNotIn(AANBOD_KOP, resp, "[E12:herhaling-weg]")
+        self.assertEqual(resp.strip(), INHOUD, "[E12:alleen-inhoud]")
+
+    def test_e13_opmaak_midden_in_een_alinea(self):
+        """Vet gezet aanbod tussen twee zinnen: de opmaaktekens gaan mee, de naad is één spatie."""
+        resp = chatbeurt(EERSTE, "Hoe lang duurt het?", VOOR + " **" + AANBOD + "** " + NA)
+        self.assertNotIn(AANBOD_KOP, resp, "[E13:herhaling-weg]")
+        self.assertIn(VOOR + " " + NA, resp, "[E13:schone-naad]")
+
+    def test_e11_herhaald_aanbod_na_een_ja_wordt_open_deur(self):
+        """Gevolg van J1, zichtbaar gemaakt: zei de bezoeker al ja en herhaalt het model alleen het aanbod, dan krijgt
+        de bezoeker de open deur (niet de toestemmingsvraag). Tot r3b kwam het aanbod hier ongewijzigd terug."""
+        resp = chatbeurt(GESPREK[:3], "Ja", AANBOD)
+        self.assertEqual(resp, OPEN_DEUR, "[E11:open-deur-na-ja]")
+
+    def test_e10_eerste_aanbod_alleen_blijft_staan(self):
+        """J6: een eerste aanbod dat het hele antwoord vormt, blijft staan."""
+        resp = chatbeurt([], "Wat houdt de online Yin-opleiding in?", AANBOD)
+        self.assertIn(AANBOD, resp, "[E10:eerste-aanbod-blijft]")
+
+
+class SlotregelEenBron(unittest.TestCase):
+    def test_a4_slotregel_verwijst_naar_de_instructie(self):
+        """C1: de slotregel noemt het aanbod, de voorwaarden en de voorrang staan alleen in de instructie."""
+        regels = [r for r in prompt_sectie("Toon en schrijfstijl").splitlines() if OPEN_DEUR in r]
+        self.assertEqual(len(regels), 1, "[A4:een-slotregel]")
+        self.assertIn('Kies je slot volgens de instructie "het gesprek naar de bezoeker mailen"', regels[0],
+                      "[A4:verwijst]")
+        self.assertNotIn("bood je het mailen in dit gesprek nog niet aan", main.SYSTEM_PROMPT_BASE, "[A4:geen-tweede-bron]")
+
+    def test_a5_verduidelijken_volgt_de_doorvraaginstructie(self):
+        """C1: geen 'die vraag is je hele bericht' naast de doorvraagregel (korte uitleg, dan klassikaal of online)."""
+        s = prompt_sectie("Vragen stellen")
+        self.assertNotIn("dan is die vraag je hele bericht", s, "[A5:geen-botsing]")
+        self.assertIn("eventueel na de korte uitleg die de doorvraaginstructie voorschrijft", s, "[A5:korte-uitleg-mag]")
+
+    def test_a6_instructie_zonder_wijzigingsgeschiedenis(self):
+        """C2: Nina leest geen versienotities."""
+        with open(os.path.join(REPO, "knowledge", "instructies", "gesprek-mailen.md"), encoding="utf-8") as f:
+            t = f.read()
+        self.assertNotIn("r2 (Jared", t, "[A6:geen-r2]")
+        self.assertNotIn("r3 (Jared", t, "[A6:geen-r3]")
+
+    def test_a7_vangnettekst_gelijk_aan_instructie_en_prompt(self):
+        """Contract: de tekst die het vangnet herkent is Sandy's aanbod uit de instructie; de open deur staat in de prompt."""
+        vervolg, open_deur = getattr(main, "MAILAANBOD_VERVOLG", None), getattr(main, "OPEN_DEUR", None)
+        self.assertIsNotNone(vervolg, "[A7:vervolg-bestaat]")
+        self.assertIsNotNone(open_deur, "[A7:open-deur-bestaat]")
+        self.assertEqual(" ".join((main.MAILAANBOD,) + tuple(vervolg)), AANBOD, "[A7:aanbod-gelijk]")
+        with open(os.path.join(REPO, "knowledge", "instructies", "gesprek-mailen.md"), encoding="utf-8") as f:
+            self.assertIn("> " + AANBOD, f.read(), "[A7:aanbod-in-instructie]")
+        self.assertEqual(open_deur, OPEN_DEUR, "[A7:open-deur-gelijk]")
+        self.assertIn('een open deur: "' + open_deur + '"', prompt_sectie("Toon en schrijfstijl"), "[A7:open-deur-in-prompt]")
 
 
 class ZZVangnet(unittest.TestCase):
