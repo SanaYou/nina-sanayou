@@ -121,13 +121,10 @@ class Basis(unittest.TestCase):
         self._env.start()
         for weg in [k for k in ("CLAIM_URL", "CLAIM_SECRET") if k not in self.omgeving]:
             os.environ.pop(weg, None)
-        self._tag = mock.patch.object(main, "MAILBLUE_TAG_NINA_CHAT", 999)
-        self._tag.start()
 
     def tearDown(self):
         main._requests = self._oud
         self._env.stop()
-        self._tag.stop()
 
     def ontvangers(self):
         return [p["json"]["customer"]["email"] for p in self.nep.chatmail_posts()]
@@ -486,10 +483,13 @@ class F4ZonderSessie(Basis):
 
 class F4ElkeWachtBegrensd(Basis):
     def test_f4_elke_wacht_begrensd(self):
-        """Beurt met beide tags: claim, token, twee Help Scout-posts, MailBlue, log."""
+        """Beurt met beide tags: claim, token, twee Help Scout-posts, registratie, bevestig, log.
+        ⚑ r3 (route B): de vier MailBlue-aanroepen zijn één aanroep van de websiteroute geworden,
+        dus 7 in plaats van 9; dat die registratie in de beurt zat, eist de toets nu apart."""
         chatbeurt(GESPREK[:-1], GESPREK[-1]["content"], AFRONDING + " [[ESCALATIE]] [[CHATMAIL]]")
         soorten = {re.sub(r"https://[^/]+", "", u_) or u_ for m, u_, kw in self.nep.aanroepen}
-        self.assertGreaterEqual(len(self.nep.aanroepen), 9, soorten)
+        self.assertGreaterEqual(len(self.nep.aanroepen), 7, soorten)
+        self.assertIn("/api/nina-registratie", soorten)
         for m, u_, kw in self.nep.aanroepen:
             t = kw.get("timeout")
             self.assertIsNotNone(t, f"{m} {u_} zonder timeout")

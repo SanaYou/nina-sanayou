@@ -47,16 +47,13 @@ class Basis(unittest.TestCase):
         main._hs_token_cache.update(access_token=None, expires_at=0)
         self._env = mock.patch.dict(os.environ, self.omgeving, clear=False)
         self._env.start()
-        for k in ("HELPSCOUT_APP_ID", "MAILBLUE_API_KEY"):
+        for k in ("HELPSCOUT_APP_ID",):
             if k not in self.omgeving:
                 os.environ.pop(k, None)
-        self._tag = mock.patch.object(main, "MAILBLUE_TAG_NINA_CHAT", 999)
-        self._tag.start()
 
     def tearDown(self):
         main._requests = self._oud
         self._env.stop()
-        self._tag.stop()
 
 
 class DatumAmsterdam(unittest.TestCase):
@@ -331,7 +328,8 @@ class NaDeVerzending(Basis):
         self.assertEqual([(b["status"], b["kenmerk"]) for b in self.claim.bevestigingen()], [("verstuurd", "")])
 
     def test_mailblue_fout_registratie_mislukt(self):
-        self.nep.mb_sync_status = 500
+        # ⚑ r3: de MailBlue-fout komt nu als 502 van de websiteroute.
+        self.nep.website.status, self.nep.website.body = 502, {"ok": False, "fout": "MailBlue: sync 500"}
         uit = main._verwerk_chatmail(GESPREK, AFRONDING, session_id="m1")
         self.assertTrue(uit["verstuurd"])
         self.assertEqual([(b["status"], b["registratie"]) for b in self.claim.bevestigingen()],
@@ -349,13 +347,17 @@ class NaDeVerzending(Basis):
 
 
 class ZonderMailBlueSleutel(Basis):
-    omgeving = {k: v for k, v in OMGEVING.items() if k != "MAILBLUE_API_KEY"}
+    """⚑ r3 (route B): Nina heeft nooit een MailBlue-sleutel; registreren gaat via de website.
+    r2 toetste hier 'overgeslagen, registratie leeg'; die stand bestaat niet meer."""
+    omgeving = OMGEVING
 
-    def test_mailblue_overgeslagen_registratie_leeg(self):
+    def test_registratie_via_website_zonder_eigen_sleutel(self):
+        os.environ.pop("MAILBLUE_API_KEY", None)  # mock.patch.dict zet hem bij stop terug
         uit = main._verwerk_chatmail(GESPREK, AFRONDING, session_id="m2")
         self.assertTrue(uit["verstuurd"])
+        self.assertEqual(len(self.nep.registraties()), 1)
         self.assertEqual([(b["status"], b["registratie"]) for b in self.claim.bevestigingen()],
-                         [("verstuurd", "")])
+                         [("verstuurd", "ok")])
 
 
 class ZonderHelpScout(Basis):

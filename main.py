@@ -846,7 +846,8 @@ _hs_token_cache = {"access_token": None, "expires_at": 0}
 # (verbinden, lezen) in seconden. Dat is per verbindingspoging en per leespauze,
 # geen wandklok-totaal; zie de LEESMIJ voor het gemeten slechtste geval.
 HS_TIMEOUT = (5, 15)
-MAILBLUE_TIMEOUT = (5, 10)
+# De websiteroute begrenst het MailBlue-deel zelf op 9 s; Nina wacht daar ruim boven.
+REGISTRATIE_TIMEOUT = (5, 12)
 # De claimdienst wacht zelf tot 10 s op zijn lock (waitLock(10000)); de leesgrens ligt
 # daar ruim boven, anders geeft Nina op terwijl de claim nog loopt.
 CLAIM_TIMEOUT = (5, 20)
@@ -1058,8 +1059,9 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
 #      claimfout = geen mail (fail closed);
 #   3. het gesprek gaat als NIEUW UITGAAND Help Scout-gesprek vanaf de academy-mailbox
 #      naar de bezoeker, op gesloten; een antwoord van de bezoeker heropent het bij ons;
-#   4. pas na een geslaagde mail: MailBlue (brontag [BRON] Nina-chat, Hoofdlijst als daar
-#      nog géén record staat), daarna `bevestig` bij de claimdienst;
+#   4. pas na een geslaagde mail: registratie in MailBlue via de website (route B, Tonny
+#      22-10: Nina houdt geen MailBlue-sleutel; brontag en Hoofdlijst liggen daar vast),
+#      daarna `bevestig` bij de claimdienst, met registratie ok of mislukt;
 #   5. de beurt krijgt in de Nina-log de markering "gesprek gemaild".
 # De zichtbare zin komt van de server, uit de uitkomst (Jordan C1/F1): alleen een in
 # deze beurt geslaagde verzending laat "ik heb ons gesprek naar je gemaild" staan, en
@@ -1069,6 +1071,7 @@ def _send_escalation(name: str, email: str, summary: str, chat_messages: list):
 
 import hashlib as _hashlib
 import hmac as _hmac
+import time as _time_mod
 from datetime import datetime as _datetime, timedelta as _timedelta, timezone as _timezone
 
 _CHATMAIL_TAG_RE = re.compile(r'`*\s*\[\[CHATMAIL[^\]]*\]\]\s*`*')
@@ -1158,13 +1161,13 @@ _CLAIM_ONTVANGER_RE = re.compile(
     r'\b(?:naar je|naar jou|aan je|aan jou|je toe|in je (?:mail|inbox|mailbox)|per (?:e-?)?mail)\b', re.I)
 _ONTKENNING_RE = re.compile(r'\b(?:niet|geen|nooit)\b', re.I)
 
-MAILBLUE_API_URL = "https://sanayouyogacademy.api-us1.com/api/3"
-MAILBLUE_HOOFDLIJST = 80
-# [BRON] Nina-chat: tag 454, aangemaakt 21-10-2026 en met een losse GET teruggelezen
-# (tagType contact). Nooit raden: een verkeerd ID tagt stil het verkeerde segment.
-MAILBLUE_TAG_NINA_CHAT = 454
-# Hoofdlijst-inschrijving staat apart te schakelen: de toestemmingszin is van Carrie.
-CHATMAIL_OP_HOOFDLIJST = True
+# Registratie in MailBlue loopt via de website (Tonny, MailBlue-eigenaar, 22-10-2026, route B): Nina's
+# Vercel-project heeft geen MailBlue-sleutel en krijgt er geen. De route zet zelf brontag 454 [BRON] Nina-chat
+# en Hoofdlijst 80 (alleen als er nog geen lijstrecord is). Nina stuurt alleen naam en adres, ondertekend met
+# het claimgeheim dat beide projecten delen; het doelvoorvoegsel scheidt dit van de claimsleutels.
+# Contract: sanayou-pages api/nina-registratie.js (tekenTekst); gedeelde testvector in beide testreeksen.
+REGISTRATIE_URL = "https://sanayou.com/api/nina-registratie"
+REGISTRATIE_DOEL = "nina-registratie|v1"
 
 # Claimdienst (CLAIMDIENST-CONTRACT.md). URL en secret komen uit de Vercel-omgeving:
 # CLAIM_URL en CLAIM_SECRET. Ontbreekt één van beide, dan gaat er geen mail uit.
@@ -1485,38 +1488,30 @@ def _stuur_chatmail(naam: str, email: str, berichten: list) -> int:
         return 0  # de mail is weg; een onleesbaar kenmerk maakt dat niet ongedaan
 
 
+def _registratie_handtekening(geheim: str, ts: str, email: str, naam: str) -> str:
+    tekst = f"{REGISTRATIE_DOEL}|{ts}|{email.strip().lower()}|{naam}"
+    return _hmac.new(geheim.encode("utf-8"), tekst.encode("utf-8"), _hashlib.sha256).hexdigest()
+
+
 def _chatmail_naar_mailblue(naam: str, email: str) -> str:
-    """Contact + brontag (+ Hoofdlijst als er nog geen record is). Geeft een korte uitkomst."""
-    sleutel = os.getenv("MAILBLUE_API_KEY")
-    if not sleutel:
-        return "overgeslagen: MAILBLUE_API_KEY ontbreekt"
-    if not MAILBLUE_TAG_NINA_CHAT:
-        return "overgeslagen: brontag-ID nog niet ingesteld"
-    h = {"Api-Token": sleutel, "Content-Type": "application/json"}
-    contact = {"email": email, "firstName": _voornaam(naam)}
-    achternaam = " ".join((naam or "").split()[1:])
-    if achternaam:  # een lege achternaam zou een bestaande in MailBlue wissen
-        contact["lastName"] = achternaam
-    r = _requests.post(f"{MAILBLUE_API_URL}/contact/sync", headers=h, timeout=MAILBLUE_TIMEOUT,
-                       json={"contact": contact})
-    r.raise_for_status()
-    contact_id = r.json()["contact"]["id"]
-    r = _requests.post(f"{MAILBLUE_API_URL}/contactTags", headers=h, timeout=MAILBLUE_TIMEOUT,
-                       json={"contactTag": {"contact": contact_id, "tag": MAILBLUE_TAG_NINA_CHAT}})
-    r.raise_for_status()
-    if not CHATMAIL_OP_HOOFDLIJST:
-        return f"contact {contact_id} getagd"
-    # Eerst lezen: een POST met status 1 zet een afgemeld record terug op actief
-    # (gemeten 24-9 bij de brochure). Wie zich afmeldde komt er nooit opnieuw op.
-    r = _requests.get(f"{MAILBLUE_API_URL}/contacts/{contact_id}/contactLists", headers=h,
-                      timeout=MAILBLUE_TIMEOUT)
-    r.raise_for_status()
-    if any(str(x.get("list")) == str(MAILBLUE_HOOFDLIJST) for x in r.json().get("contactLists", [])):
-        return f"contact {contact_id} getagd, Hoofdlijst-record bestond al"
-    r = _requests.post(f"{MAILBLUE_API_URL}/contactLists", headers=h, timeout=MAILBLUE_TIMEOUT,
-                       json={"contactList": {"list": MAILBLUE_HOOFDLIJST, "contact": contact_id, "status": 1}})
-    r.raise_for_status()
-    return f"contact {contact_id} getagd en op de Hoofdlijst"
+    """Registreert de bezoeker via de websiteroute. Geeft de uitkomst van de website; elke
+    andere afloop is een exception (de aanroeper legt dan `registratie: mislukt` vast)."""
+    geheim = os.getenv("CLAIM_SECRET")
+    if not geheim:
+        raise RuntimeError("CLAIM_SECRET ontbreekt")
+    naam = " ".join((naam or "").split())
+    ts = str(int(_time_mod.time()))
+    r = _requests.post(REGISTRATIE_URL, timeout=REGISTRATIE_TIMEOUT, allow_redirects=False, json={
+        "naam": naam, "email": email.strip(), "ts": ts,
+        "mac": _registratie_handtekening(geheim, ts, email, naam)})
+    try:
+        data = r.json()
+    except Exception:
+        data = None
+    if r.status_code != 200 or not isinstance(data, dict) or data.get("ok") is not True:
+        fout = data.get("fout") if isinstance(data, dict) else None
+        raise RuntimeError(f"website HTTP {r.status_code}" + (f": {str(fout)[:80]}" if fout else ""))
+    return str(data.get("uitkomst") or "geregistreerd")[:200]
 
 
 def _verwerk_chatmail(berichten: list, antwoord: str, session_id=None, bron: str = "",
@@ -1591,10 +1586,9 @@ def _verwerk_chatmail(berichten: list, antwoord: str, session_id=None, bron: str
 
     uitkomst.update(verstuurd=True, antwoord=succes)
     logger.info(f"Chatmail verstuurd via Help Scout (gesprek {uitkomst['conversation_id']})")
-    registratie = ""
     try:
         uitkomst["mailblue"] = _chatmail_naar_mailblue(naam, email)
-        registratie = "" if uitkomst["mailblue"].startswith("overgeslagen") else "ok"
+        registratie = "ok"
         logger.info(f"Chatmail MailBlue: {uitkomst['mailblue']}")
     except Exception as e:
         uitkomst["mailblue"] = f"mislukt: {type(e).__name__}"

@@ -36,7 +36,8 @@ socket.create_connection = _geen_netwerk
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import tests.test_opstart  # noqa: E402,F401  — nep-pakketten + importeert main van DEZE repo
 import main  # noqa: E402
-from tests.nep_claimdienst import NepClaimdienst, CLAIM_URL, CLAIM_SECRET, hm  # noqa: E402
+from tests.nep_claimdienst import (  # noqa: E402
+    NepClaimdienst, NepWebsite, CLAIM_URL, CLAIM_SECRET, REGISTRATIE_URL, hm)
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 assert os.path.dirname(os.path.abspath(main.__file__)) == REPO, main.__file__
@@ -80,12 +81,11 @@ class Antwoord:
 class NepRequests:
     """Noteert elke aanroep; antwoordt per URL-patroon."""
 
-    def __init__(self, hs_status=201, lijsten=None, mb_sync_status=200):
+    def __init__(self, hs_status=201):
         self.aanroepen = []
         self.claimdienst = NepClaimdienst()  # r2: claimdienst volgens het contract
         self.hs_status = hs_status
-        self.lijsten = lijsten if lijsten is not None else []
-        self.mb_sync_status = mb_sync_status
+        self.website = NepWebsite()  # r3: registratie via de websiteroute (route B)
 
     def _antwoord(self, methode, url, kw):
         self.aanroepen.append((methode, url, kw))
@@ -96,14 +96,9 @@ class NepRequests:
             return Antwoord(200, {"access_token": "nep-token", "expires_in": 7200})
         if url.endswith("/v2/conversations"):
             return Antwoord(self.hs_status, {}, {"Resource-Id": "4242"})
-        if url.endswith("/contact/sync"):
-            return Antwoord(self.mb_sync_status, {"contact": {"id": "77"}})
-        if url.endswith("/contactTags"):
-            return Antwoord(201, {})
-        if url.endswith("/contacts/77/contactLists"):
-            return Antwoord(200, {"contactLists": self.lijsten})
-        if url.endswith("/contactLists"):
-            return Antwoord(201, {})
+        if url == REGISTRATIE_URL:
+            status, body = self.website.verwerk(kw)
+            return Antwoord(status, body)
         return Antwoord(200, {})
 
     def post(self, url, **kw):
@@ -119,12 +114,16 @@ class NepRequests:
         return [kw for m, u, kw in self.aanroepen if u.endswith("/v2/conversations")]
 
     def mailblue(self):
+        """Rechtstreekse MailBlue-aanroepen vanuit Nina: sinds r3 altijd leeg."""
         return [(m, u.split("/api/3")[-1]) for m, u, _ in self.aanroepen if "/api/3" in u]
+
+    def registraties(self):
+        return [kw for m, u, kw in self.aanroepen if u == REGISTRATIE_URL]
 
 
 OMGEVING = {
     "HELPSCOUT_APP_ID": "nep-id", "HELPSCOUT_APP_SECRET": "nep-geheim",
-    "HELPSCOUT_MAILBOX_ID": "363337", "MAILBLUE_API_KEY": "nep-mb",
+    "HELPSCOUT_MAILBOX_ID": "363337",
     "NINA_LOG_URL": "https://log.voorbeeld.invalid/exec", "NINA_LOG_SECRET": "nep",
     "ANTHROPIC_API_KEY": "nep-anthropic",
     "CLAIM_URL": CLAIM_URL, "CLAIM_SECRET": CLAIM_SECRET,  # r2: zonder claimdienst geen mail
@@ -133,17 +132,14 @@ OMGEVING = {
 
 class Basis(unittest.TestCase):
     hs_status = 201
-    lijsten = None
 
     def setUp(self):
-        self.nep = NepRequests(hs_status=self.hs_status, lijsten=self.lijsten)
+        self.nep = NepRequests(hs_status=self.hs_status)
         self._oud_requests = main._requests
         main._requests = self.nep
         main._hs_token_cache.update(access_token=None, expires_at=0)
         self._env = mock.patch.dict(os.environ, OMGEVING, clear=False)
         self._env.start()
-        self._tag = mock.patch.object(main, "MAILBLUE_TAG_NINA_CHAT", 999)
-        self._tag.start()
 
     def enige_mailtekst(self):
         """De tekst van de ene Help Scout-post; eerst het aantal, zodat een ontbrekende post FAIL is, geen IndexError."""
@@ -154,7 +150,6 @@ class Basis(unittest.TestCase):
     def tearDown(self):
         main._requests = self._oud_requests
         self._env.stop()
-        self._tag.stop()
 
 
 # ── 1. De tag ───────────────────────────────────────────────────────────────
@@ -220,7 +215,7 @@ class T3Dubbel(unittest.TestCase):
         oud, main._requests = main._requests, nep
         main._hs_token_cache.update(access_token=None, expires_at=0)
         try:
-            with mock.patch.dict(os.environ, OMGEVING), mock.patch.object(main, "MAILBLUE_TAG_NINA_CHAT", 999):
+            with mock.patch.dict(os.environ, OMGEVING):
                 uit = main._verwerk_chatmail(GESPREK + [a(AFRONDING), u("Kun je het nog eens mailen?")],
                                              AFRONDING, session_id="t3")
         finally:
@@ -285,25 +280,24 @@ class T4Verzending(Basis):
         self.assertNotIn('href="javascript', tekst)
 
     def test_mailblue_contact_tag_en_hoofdlijst(self):
+        """⚑ r3 (route B, Tonny 22-10): Nina praat niet meer met MailBlue. Eén aanroep van de
+        websiteroute met naam en adres; contact, brontag 454 en Hoofdlijst 80 zet de website
+        (toetsen in sanayou-pages test/nina-registratie-api.test.mjs)."""
         uit = main._verwerk_chatmail(GESPREK, AFRONDING)
-        self.assertEqual(self.nep.mailblue(), [
-            ("POST", "/contact/sync"), ("POST", "/contactTags"),
-            ("GET", "/contacts/77/contactLists"), ("POST", "/contactLists")])
-        kw = [kw for m, u_, kw in self.nep.aanroepen if u_.endswith("/contact/sync")][0]
-        self.assertEqual(kw["json"], {"contact": {"email": "petra@voorbeeld.nl", "firstName": "Petra",
-                                                  "lastName": "de Vries"}})
-        kw = [kw for m, u_, kw in self.nep.aanroepen if u_.endswith("/contactTags")][0]
-        self.assertEqual(kw["json"], {"contactTag": {"contact": "77", "tag": 999}})
-        kw = [kw for m, u_, kw in self.nep.aanroepen if u_.endswith("/api/3/contactLists")][0]
-        self.assertEqual(kw["json"], {"contactList": {"list": 80, "contact": "77", "status": 1}})
+        self.assertEqual(self.nep.mailblue(), [])
+        regs = self.nep.registraties()
+        self.assertEqual(len(regs), 1)
+        self.assertEqual({k: regs[0]["json"][k] for k in ("naam", "email")},
+                         {"naam": "Petra de Vries", "email": "petra@voorbeeld.nl"})
+        self.assertEqual(self.nep.website.geweigerd, [])
         self.assertIn("op de Hoofdlijst", uit["mailblue"])
 
     def test_mail_gaat_voor_mailblue(self):
         main._verwerk_chatmail(GESPREK, AFRONDING)
         urls = [u_ for m, u_, kw in self.nep.aanroepen]
         eerste_hs = min(i for i, x in enumerate(urls) if x.endswith("/v2/conversations"))
-        eerste_mb = min(i for i, x in enumerate(urls) if "/api/3" in x)
-        self.assertLess(eerste_hs, eerste_mb)
+        eerste_reg = min(i for i, x in enumerate(urls) if x == REGISTRATIE_URL)
+        self.assertLess(eerste_hs, eerste_reg)
 
     def test_zonder_bevestigd_adres_geen_enkele_aanroep(self):
         uit = main._verwerk_chatmail(GESPREK[:-1] + [u("nee")], AFRONDING)
@@ -322,17 +316,8 @@ class T4Verzending(Basis):
         self.assertEqual(uit["antwoord"], main.CHATMAIL_AL_VERSTUURD)
         self.assertEqual([u_ for m, u_, kw in self.nep.aanroepen], [CLAIM_URL])
 
-    def test_brontag_niet_ingesteld_geen_mailblue(self):
-        with mock.patch.object(main, "MAILBLUE_TAG_NINA_CHAT", None):
-            uit = main._verwerk_chatmail(GESPREK, AFRONDING)
-        self.assertTrue(uit["verstuurd"])
-        self.assertEqual(self.nep.mailblue(), [])
-        self.assertIn("brontag-ID nog niet ingesteld", uit["mailblue"])
-
-    def test_hoofdlijst_uitgeschakeld(self):
-        with mock.patch.object(main, "CHATMAIL_OP_HOOFDLIJST", False):
-            main._verwerk_chatmail(GESPREK, AFRONDING)
-        self.assertEqual(self.nep.mailblue(), [("POST", "/contact/sync"), ("POST", "/contactTags")])
+    # ⚑ r3: test_brontag_niet_ingesteld_geen_mailblue en test_hoofdlijst_uitgeschakeld zijn weg:
+    # brontag en Hoofdlijst liggen sinds route B vast in de websiteroute, niet meer in Nina.
 
 
 class T4bAlleenVoornaam(Basis):
@@ -341,18 +326,14 @@ class T4bAlleenVoornaam(Basis):
              a("Even checken: je naam is Petra en je e-mailadres is petra@voorbeeld.nl, klopt dat?")
              for m in GESPREK]
         main._verwerk_chatmail(g, AFRONDING)
-        kw = [kw for m, u_, kw in self.nep.aanroepen if u_.endswith("/contact/sync")]
-        self.assertEqual(len(kw), 1)
-        self.assertEqual(kw[0]["json"], {"contact": {"email": "petra@voorbeeld.nl", "firstName": "Petra"}})
+        regs = self.nep.registraties()
+        self.assertEqual(len(regs), 1)
+        # ⚑ r3: de website splitst de naam; "geen lege achternaam" toetst de website zelf.
+        self.assertEqual(regs[0]["json"]["naam"], "Petra")
 
 
-class T5BestaandLijstrecord(Basis):
-    lijsten = [{"list": "80", "status": "2"}]
-
-    def test_afgemeld_record_wordt_niet_heraangemeld(self):
-        uit = main._verwerk_chatmail(GESPREK, AFRONDING)
-        self.assertNotIn(("POST", "/contactLists"), self.nep.mailblue())
-        self.assertIn("bestond al", uit["mailblue"])
+# ⚑ r3: T5BestaandLijstrecord ("afgemeld blijft afgemeld") staat nu in de websitetoetsen
+# (sanayou-pages test/nina-registratie-api.test.mjs: 'afgemeld Hoofdlijst-record blijft afgemeld').
 
 
 class T6HelpScoutFaalt(Basis):
@@ -366,11 +347,12 @@ class T6HelpScoutFaalt(Basis):
         self.assertEqual(uit["antwoord"], main.CHATMAIL_MISLUKT)
         self.assertNotIn("gemaild", uit["antwoord"])
         self.assertEqual(self.nep.mailblue(), [])
+        self.assertEqual(self.nep.registraties(), [])
 
 
 class T7MailBlueFaalt(Basis):
     def test_mail_staat_bezoeker_ziet_succes(self):
-        self.nep.mb_sync_status = 500
+        self.nep.website.status, self.nep.website.body = 502, {"ok": False, "fout": "MailBlue: sync 500"}
         uit = main._verwerk_chatmail(GESPREK, AFRONDING)
         self.assertTrue(uit["verstuurd"])
         self.assertEqual(uit["antwoord"], AFRONDING)
@@ -489,10 +471,12 @@ class T10Instructie(unittest.TestCase):
 
 
 class T11Constanten(unittest.TestCase):
-    def test_brontag_is_teruggelezen_id(self):
-        """454 = '[BRON] Nina-chat', aangemaakt en teruggelezen op 21-10-2026."""
-        self.assertEqual(main.MAILBLUE_TAG_NINA_CHAT, 454)
-        self.assertEqual(main.MAILBLUE_HOOFDLIJST, 80)
+    def test_registratieroute_letterlijk(self):
+        """⚑ r3: brontag 454 en Hoofdlijst 80 staan in de websiteroute (en worden daar letterlijk
+        getoetst). Hier: het adres van die route en het doelvoorvoegsel van de handtekening."""
+        self.assertEqual(main.REGISTRATIE_URL, "https://sanayou.com/api/nina-registratie")
+        self.assertEqual(main.REGISTRATIE_DOEL, "nina-registratie|v1")
+        self.assertFalse(hasattr(main, "MAILBLUE_TAG_NINA_CHAT"))
 
 
 class ZZVangnet(unittest.TestCase):

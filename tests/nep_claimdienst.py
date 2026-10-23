@@ -10,6 +10,10 @@ trefwoordargumenten, dus ook `timeout`) en antwoordt per URL. Niets gaat het net
 
 Bewust zelfstandig (geen import uit test_chatmail.py): dezelfde regressietests draaien
 ook tegen de r1-kandidaat, waar test_chatmail.py anders is.
+
+r3 (22-10, route B van Tonny): `NepWebsite` speelt de websiteroute /api/nina-registratie
+volgens het contract in sanayou-pages api/nina-registratie.js. Hij controleert de
+handtekening zelf (onafhankelijk van main.py nagebouwd) en weigert een verkeerde.
 """
 import hashlib
 import threading
@@ -25,11 +29,58 @@ LIMIET_BRON = 10
 
 OMGEVING = {
     "HELPSCOUT_APP_ID": "nep-id", "HELPSCOUT_APP_SECRET": "nep-geheim",
-    "HELPSCOUT_MAILBOX_ID": "363337", "MAILBLUE_API_KEY": "nep-mb",
+    "HELPSCOUT_MAILBOX_ID": "363337",
     "NINA_LOG_URL": LOG_URL, "NINA_LOG_SECRET": "nep",
     "ANTHROPIC_API_KEY": "nep-anthropic",
     "CLAIM_URL": CLAIM_URL, "CLAIM_SECRET": CLAIM_SECRET,
 }
+
+
+REGISTRATIE_URL = "https://sanayou.com/api/nina-registratie"
+# Gedeelde testvector met de website (test/nina-registratie-api.test.mjs), letterlijk uitgeschreven.
+VECTOR = {"geheim": "proefgeheim", "ts": "1761170000", "email": " Petra@Voorbeeld.nl ", "naam": "Petra de Vries",
+          "mac": "1aad8c31a9cbe6b5afa4d61a8220e832e0b254b5d04d52fe22889ea3504231ed"}
+WEBSITE_UITKOMST = "contact 77: brontag gezet, op de Hoofdlijst"
+
+
+def registratie_mac(geheim, ts, email, naam):
+    """Contract api/nina-registratie.js (tekenTekst), hier zelfstandig nagebouwd."""
+    import hmac
+    t = "nina-registratie|v1|" + ts + "|" + email.strip().lower() + "|" + naam
+    return hmac.new(geheim.encode("utf-8"), t.encode("utf-8"), hashlib.sha256).hexdigest()
+
+
+class NepWebsite:
+    """De websiteroute: controleert vorm, venster (300 s) en handtekening, en antwoordt dan
+    met `status` en `body`. `modus`: "ok" | "timeout" | "geen_json"."""
+
+    def __init__(self, secret=CLAIM_SECRET, klok=time.time):
+        self.secret = secret
+        self.klok = klok
+        self.status = 200
+        self.body = {"ok": True, "uitkomst": WEBSITE_UITKOMST}
+        self.modus = "ok"
+        self.verzoeken = []
+        self.geweigerd = []
+
+    def verwerk(self, kw):
+        b = kw.get("json")
+        self.verzoeken.append(b)
+        if self.modus == "timeout":
+            raise requests.exceptions.ReadTimeout("nep: website antwoordt niet")
+        reden = None
+        if not isinstance(b, dict) or set(b) != {"naam", "email", "ts", "mac"}:
+            reden = "velden"
+        elif not (isinstance(b["ts"], str) and b["ts"].isdigit()) or abs(self.klok() - int(b["ts"])) > 300:
+            reden = "venster"
+        elif b["mac"] != registratie_mac(self.secret, b["ts"], b["email"], b["naam"]):
+            reden = "handtekening"
+        if reden:
+            self.geweigerd.append(reden)
+            return 401, {"ok": False, "fout": "handtekening ongeldig"}
+        if self.modus == "geen_json":
+            return self.status, None
+        return self.status, self.body
 
 
 def sha(t):
@@ -172,12 +223,11 @@ class NepRequests:
     (int = HTTP-status, "timeout" = ReadTimeout). Leeg = altijd 201.
     """
 
-    def __init__(self, claimdienst=None, hs_reeks=None, lijsten=None, mb_sync_status=200):
+    def __init__(self, claimdienst=None, hs_reeks=None, website=None):
         self.aanroepen = []
         self.claimdienst = claimdienst if claimdienst is not None else NepClaimdienst()
         self.hs_reeks = list(hs_reeks or [])
-        self.lijsten = lijsten if lijsten is not None else []
-        self.mb_sync_status = mb_sync_status
+        self.website = website if website is not None else NepWebsite()
         self.hs_resource_id = "4242"
         self._lock = threading.Lock()
 
@@ -195,14 +245,9 @@ class NepRequests:
             if gedrag == "timeout":
                 raise requests.exceptions.ReadTimeout("nep: Help Scout antwoordt niet")
             return Antwoord(gedrag, {}, {"Resource-Id": self.hs_resource_id} if gedrag < 300 else {})
-        if url.endswith("/contact/sync"):
-            return Antwoord(self.mb_sync_status, {"contact": {"id": "77"}})
-        if url.endswith("/contactTags"):
-            return Antwoord(201, {})
-        if url.endswith("/contacts/77/contactLists"):
-            return Antwoord(200, {"contactLists": self.lijsten})
-        if url.endswith("/contactLists"):
-            return Antwoord(201, {})
+        if url == REGISTRATIE_URL:
+            status, body = self.website.verwerk(kw)
+            return Antwoord(status, body, geen_json=body is None)
         return Antwoord(200, {})
 
     def post(self, url, **kw):
@@ -212,6 +257,10 @@ class NepRequests:
         return self._antwoord("GET", url, kw)
 
     # ── uitlezen ──
+    def registraties(self):
+        """Elke aanroep van de websiteroute, met alle trefwoordargumenten."""
+        return [(m, kw) for m, u, kw in self.aanroepen if u == REGISTRATIE_URL]
+
     def hs_posts(self):
         """Elke POST-poging naar /v2/conversations (ook een die faalde of time-out gaf)."""
         return [kw for m, u, kw in self.aanroepen if u.endswith("/v2/conversations")]
