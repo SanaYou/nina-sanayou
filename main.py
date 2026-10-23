@@ -1114,11 +1114,11 @@ CHATMAIL_GEEN_ADRES = 'Ik heb je e-mailadres nog niet goed binnen. Wil je het no
 # De eerste zin is zelf een verzendclaim (bewezen door `al_verstuurd`). De server zet hem ná het
 # filteren neer, en een volgende beurt leest de geschiedenis niet als bewijs (test meetpunt 1).
 CHATMAIL_AL_VERSTUURD = 'Ik heb ons gesprek al eerder naar je gemaild. Zie je de mail niet? Kijk dan even bij je spam of in het tabblad Reclame.'
-# N4: Carrie's tekst (sha256 b0ca73cc2ce1cf1eaba1194756568755b1a35c32b362bf7daded845b01cc1bf6) MIN de zin "We kijken het ook na."
-# en min "dus " in de laatste zin. Aanpassing van Jared (r2.4), op Carrie's eigen voorwaarde ("Kijkt niemand,
-# dan hoort die zin eruit"): er is geen Nina-overzicht dat onzekere rijen oppakt. Claimdienst: bezig, of Help
-# Scout gaf geen antwoord (time-out, netwerkfout) of een 5xx: het kan zijn dat de mail weg is, of niet.
-CHATMAIL_ONDERWEG = 'Ik weet nog niet zeker of de mail met ons gesprek goed is aangekomen. Kijk over een paar minuten even in je inbox. Je hoeft het niet opnieuw te vragen.'
+# N4 (sha256 b0ca73cc2ce1cf1eaba1194756568755b1a35c32b362bf7daded845b01cc1bf6), letterlijk. "We kijken het ook na."
+# staat er sinds 23-10 weer in: de dagelijkse onzeker-controle (08:30, eigenaar Olivia) leest ook de Nina-rijen en
+# draait aantoonbaar; dat was Carrie's voorwaarde. Claimdienst: bezig, of Help Scout gaf geen antwoord (time-out,
+# netwerkfout) of een 5xx: het kan zijn dat de mail weg is, of niet.
+CHATMAIL_ONDERWEG = 'Ik weet nog niet zeker of de mail met ons gesprek goed is aangekomen. Kijk over een paar minuten even in je inbox. We kijken het ook na. Je hoeft het dus niet opnieuw te vragen.'
 # N5 (sha256 6c4e7d6d699b0cd4cb496efe066024fefd3760416c1378794d482abd363e0d12). Claimdienst: limiet_ontvanger/limiet_bron.
 CHATMAIL_LIMIET = 'Ik kan ons gesprek nu even niet mailen. Probeer het later nog eens.'
 # N6 (sha256 1e21c064a16005404c4887c2b3b97d31f85920c697939f0096b904a956eeb402). Het model zei zonder tag dat het gesprek gemaild is:

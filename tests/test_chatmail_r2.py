@@ -640,7 +640,7 @@ class VervolgAfspraken(Basis):
     }
     N4_CARRIE_SHA = "b0ca73cc2ce1cf1eaba1194756568755b1a35c32b362bf7daded845b01cc1bf6"
     N4_NU = ("Ik weet nog niet zeker of de mail met ons gesprek goed is aangekomen. "
-             "Kijk over een paar minuten even in je inbox. Je hoeft het niet opnieuw te vragen.")
+             "Kijk over een paar minuten even in je inbox. We kijken het ook na. Je hoeft het dus niet opnieuw te vragen.")
 
     def test_carrie_meldingen_byte_gelijk(self):
         """N1, N2, N3, N5, N6: sha256 van de constante = sha256 van Carrie's bestand; is het bestand er
@@ -655,18 +655,16 @@ class VervolgAfspraken(Basis):
                     with open(pad, "rb") as f:
                         self.assertEqual(waarde, f.read())
 
-    def test_onderweg_is_carrie_n4_min_de_belofte(self):
-        """N4: Carrie's tekst min "We kijken het ook na." en min "dus " (Jared, r2.4, op haar voorwaarde)."""
+    def test_onderweg_is_carrie_n4(self):
+        """N4 letterlijk, mét "We kijken het ook na." en "dus" (terug sinds 23-10: de onzeker-controle draait,
+        eigenaar Olivia). sha256 van de constante = Carrie's opgave; is haar bestand er, dan byte-gelijk."""
         import hashlib
         self.assertEqual(tekst("CHATMAIL_ONDERWEG"), self.N4_NU)
+        self.assertEqual(hashlib.sha256(tekst("CHATMAIL_ONDERWEG").encode("utf-8")).hexdigest(), self.N4_CARRIE_SHA)
         pad = os.path.join(self.CARRIE, "N4-CHATMAIL_ONDERWEG.txt")
         if os.path.exists(pad):
             with open(pad, "rb") as f:
-                n4 = f.read()
-            self.assertEqual(hashlib.sha256(n4).hexdigest(), self.N4_CARRIE_SHA)
-            afgeleid = n4.decode("utf-8").replace(" We kijken het ook na.", "").replace(
-                "Je hoeft het dus niet", "Je hoeft het niet")
-            self.assertEqual(tekst("CHATMAIL_ONDERWEG"), afgeleid)
+                self.assertEqual(tekst("CHATMAIL_ONDERWEG").encode("utf-8"), f.read())
 
     def test_geen_concept_markering_meer(self):
         with open(main.__file__, encoding="utf-8") as f:
@@ -691,12 +689,6 @@ class VervolgAfspraken(Basis):
                           session_id="andere-sessie-n3")
         self.assertEqual(len(self.nep.chatmail_posts()), 1)
         self.assertEqual(resp3, AFRONDING)
-
-    def test_onderweg_belooft_geen_nakijken(self):
-        """r2.3: er is geen Nina-overzicht dat onzekere mails oppakt; de zin belooft dat niet."""
-        t = tekst("CHATMAIL_ONDERWEG").lower()
-        for belofte in ("kijken het na", "we kijken", "nakijken", "we controleren", "we zoeken het uit"):
-            self.assertNotIn(belofte, t)
 
     def test_a1_geen_logmarkering_zonder_verzending(self):
         self.claim.zaai(hm(f"chatmail|{SESSIE}|petra@voorbeeld.nl"), "verstuurd")
