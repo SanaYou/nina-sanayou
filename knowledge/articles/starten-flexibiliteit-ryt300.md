@@ -21,9 +21,9 @@ Een goede voorbereiding maakt het meeste uit van een klassikale lesdag: bekijk d
 
 ## Datum verplaatsen
 
-Kom je na het bekijken van je persoonlijke lesagenda tot de ontdekking dat niet alle data uitkomen? Geef dit dan direct na je boeking door via academy@sanayou.com. Maximaal twee lesdagen kunnen we kosteloos voor je verplaatsen naar het volgende jaar.
+Kom je na het bekijken van je persoonlijke lesagenda tot de ontdekking dat niet alle data uitkomen? Geef dit dan direct na je boeking door via academy@sanayou.com. In overleg verplaatsen we een lesdag naar een ander moment, zolang er plek is. De eerste twee verplaatsingen zijn kosteloos.
 
-Mochten er meerdere lesdagen verplaatst moeten worden, dan rekenen we €25 administratiekosten per te verplaatsen datum. Houd er ook rekening mee dat de annuleringsvoorwaarden gelden wanneer je kort van tevoren een datum wilt verplaatsen. Die zijn als volgt: tot één maand voor aanvang geldt 25% van het lesgeld, vanaf één maand voor aanvang 50%, en vanaf één week voor aanvang of na de aanvangsdatum 100%.
+Moeten er meer lesdagen verplaatst worden, dan rekenen we € 25 administratiekosten per te verplaatsen datum. Daarnaast gelden de gewone annuleringskosten uit artikel 6 van de algemene voorwaarden. Hoe die voor de RYT300 werken, lees je in het artikel over de annuleringsvoorwaarden voor de RYT300.
 
 ## Jouw persoonlijke lesagenda
 

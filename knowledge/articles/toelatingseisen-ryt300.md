@@ -1,15 +1,21 @@
 # Wat zijn de toelatingseisen voor de RYT300 Teacher Training?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
-TAGS: ryt300, teacher training, toelatingseisen
+TAGS: ryt300, teacher training, toelatingseisen, vooropleiding, 200 uur
 
-In dit artikel lees je wat de toelatingseisen zijn voor de RYT300 The Art of Advanced Teaching, waaronder het diploma dat je nodig hebt en wat we verder belangrijk vinden.
+In dit artikel lees je wat je nodig hebt om te starten met de RYT300 The Art of Advanced Teaching, welke vooropleiding we je aanraden en wat we verder belangrijk vinden.
 
-## Een afgeronde 200-uursopleiding is de basis
+## Een afgeronde 200-uursopleiding is de aanbevolen basis
 
-De RYT300 is een vervolgopleiding op gevorderd niveau. Om deel te kunnen nemen, heb je een afgeronde 200-uursopleiding nodig. Dit is de basis waarop de RYT300 voortbouwt, zowel inhoudelijk als didactisch.
+De RYT300 is een vervolgopleiding op gevorderd niveau. De aanbevolen basis is een afgeronde 200-uursopleiding. Daar bouwt de RYT300 op voort, zowel inhoudelijk als didactisch.
 
 De opleiding staat open voor zowel alumni van SanaYou YOGAcademy als voor docenten die hun 200 uur elders hebben behaald.
+
+## Heb je (nog) geen afgeronde 200-uursopleiding?
+
+Dan kijkt hoofddocente Sandy met je mee. De 200 uur is een aanbeveling, en Sandy beoordeelt zelf of de RYT300 bij jou past. Mail daarvoor naar academy@sanayou.com en vertel wat je al aan yogaopleiding en lespraktijk hebt.
+
+Voor alle opleidingen van SanaYou YOGAcademy geldt verder dat je 18 jaar of ouder bent en al enige yogaervaring hebt.
 
 ## Is jouw 200-uursopleiding niet door Yoga Alliance erkend?
 
@@ -21,7 +27,7 @@ Bij onze RYT300 krijg je de basisopleiding van de door jou gekozen studierichtin
 
 ## Wat we verder belangrijk vinden
 
-Naast het diploma vinden we het belangrijk dat je:
+Daarnaast vinden we het belangrijk dat je:
 
 - gemotiveerd bent om je verder te verdiepen als docent
 - bereid bent om zowel online als klassikaal te investeren in je ontwikkeling

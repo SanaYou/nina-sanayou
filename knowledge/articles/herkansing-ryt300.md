@@ -1,26 +1,27 @@
 # Kan ik een herkansing aanvragen binnen de RYT300?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
-TAGS: aanmelden, herkansing, kosten, ryt300, teacher training
+TAGS: aanmelden, herkansing, kosten, ryt300, teacher training, praktijktoets, kennistest
 
-In dit artikel lees je hoe je een herkansing aanvraagt binnen de RYT300-opleiding, wat de tarieven zijn en hoe het proces werkt.
+In dit artikel lees je wat je kunt doen als een kennistest of je praktijktoets binnen de RYT300 nog niet voldoende is, en hoe je een herkansing aanvraagt.
 
-## Herkansen is mogelijk
+## Herkansen kan, zonder maximum
 
-Wanneer een kennistest of praktijkopdracht nog niet voldoende is, kun je een herkansing aanvragen. Per toets kun je maximaal drie herkansingen aanvragen. Je ontvangt eerst gerichte feedback zodat je weet welke onderdelen je kunt verbeteren.
+Is een kennistest of je praktijktoets nog niet voldoende, dan kun je een herkansing aanvragen. Voor de RYT300 geldt daarbij geen maximum aantal herkansingen. Je ontvangt eerst gerichte feedback, zodat je weet welke onderdelen je kunt verbeteren.
 
-## Tarieven
+## Een kennistest herkansen
 
-De tarieven voor een herkansing zijn:
+Een herkansing van een online kennistest vraag je aan via de checkout [Herkansing theorietoets online lesmodule aanvragen](https://checkout.sanayou.com/checkout/aanvraag-herkansing-theorietoets-online). Het actuele tarief staat op die pagina.
 
-- Herkansing kennistest: € 24,95
-- Herkansing praktijkopdracht: € 97,50
+## De praktijktoets herkansen
 
-## Aanvragen
+Is je praktijktoets nog niet voldoende, dan boek je hem opnieuw via dezelfde checkout waarmee je de praktijktoets aanvraagt. Je betaalt dan het tarief dat op die pagina staat.
 
-De aanvraag verloopt via de daarvoor bestemde checkout-pagina. Je ontvangt na aanvraag een bevestiging en verdere instructies per e-mail.
+[Praktijktoets RYT300 aanvragen](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300)
 
-[Vraag je praktijktoets RYT300 aan](https://checkout.sanayou.com/checkout/aanvraag-praktijktoets-ryt300)
+## Na je aanvraag
+
+Je ontvangt na je aanvraag een bevestiging en verdere instructies per e-mail.
 
 ## Gerelateerde artikelen
 

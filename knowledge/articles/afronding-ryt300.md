@@ -1,7 +1,7 @@
 # Hoe rond ik de RYT300 af en wat zit er inbegrepen?
 
 COLLECTIE: Erkende RYT300 Teacher Training (hybride)
-TAGS: ryt300, teacher training, yoga alliance
+TAGS: ryt300, teacher training, yoga alliance, lesboekenpakket
 
 In dit artikel lees je hoe de toetsing verloopt, wat je moet afronden om je diploma te ontvangen en wat er allemaal inbegrepen zit bij de RYT300.
 
@@ -24,7 +24,7 @@ De opdracht wordt digitaal ingediend en zorgvuldig beoordeeld. Je ontvangt inhou
 
 Wanneer je alle modules hebt afgerond, alle kennistests hebt behaald en de praktijkopdracht succesvol hebt ingeleverd, ontvang je het officiële RYT300-diploma digitaal per e-mail.
 
-Met een RYT200 én RYT300 kun je je registreren als RYT500 bij Yoga Alliance via yogaalliance.org. Dat is de hoogste reguliere registratie binnen Yoga Alliance.
+Met een door Yoga Alliance erkende RYT200 én je RYT300 kun je je registreren als RYT500 bij Yoga Alliance via yogaalliance.org. Dat is de hoogste reguliere registratie binnen Yoga Alliance.
 
 ## Wat is inbegrepen?
 
@@ -38,7 +38,9 @@ Bij de RYT300 is standaard inbegrepen:
 - Het officiële RYT300-diploma
 - Erkenning door Yoga Alliance
 
-Het lesboekenpakket is optioneel bij te bestellen.
+## Het lesboekenpakket schaf je apart aan
+
+Het lesboekenpakket is verplicht en schaf je apart aan, naast de opleiding. Het is de enige verplichte literatuur voor de RYT300. Je krijgt de lesboeken als pdf, die je desgewenst zelf kunt printen.
 
 ## Gerelateerde artikelen
 
