@@ -29,7 +29,7 @@ Bij de online RYT200 heb je 24 maanden toegang tot alle modules vanaf het moment
 
 De klassikale opleiding levert een dubbele erkenning op: **Yoga Alliance RYT200 én VYN200**. De VYN is de Vereniging Yogadocenten Nederland — een erkenning die relevant is als je in Nederland als gecertificeerd yogadocent wilt worden geregistreerd.
 
-De online opleidingen zijn erkend door **Yoga Alliance (RYT200)**, maar leveren geen VYN-erkenning op. Wil je ook een VYN-registratie, dan is de klassikale opleiding de juiste keuze.
+De online opleidingen zijn erkend door **Yoga Alliance (RYT200)**, maar leveren geen VYN-erkenning op. Wil je je na de online opleiding registreren bij Yoga Alliance, dan volg je minstens 30 uur live, met het Support Pack LIVE+. Wil je ook een VYN-registratie, dan is de klassikale opleiding de juiste keuze.
 
 ## Begeleiding
 

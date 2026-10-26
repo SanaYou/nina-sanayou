@@ -8,6 +8,8 @@ In dit artikel lees je hoe je je na het afronden van de RYT/VYN200 Yin & Yang op
 
 Na het afronden van de RYT/VYN200 kun je er zelf voor kiezen om je te registreren bij Yoga Alliance als Registered Yoga Teacher (RYT 200). Deze registratie is niet verplicht, maar wel mogelijk omdat SanaYou YOGAcademy een geregistreerde yogaschool is bij Yoga Alliance. Je bepaalt dus zelf of en wanneer je deze stap wilt zetten.
 
+Volg je een van de online RYT200-opleidingen? Dan vraagt Yoga Alliance ook dat je minstens 30 van je 200 uur live volgt. Die uren haal je met het Support Pack LIVE+. Meer daarover lees je in het artikel "Welke online RYT200-opleidingen kan ik volgen?".
+
 ## Wat heb je nodig voor registratie?
 
 Om je te kunnen registreren bij Yoga Alliance is het belangrijk dat je de volledige RYT/VYN200 Yin & Yang Yoga Teacher Training hebt afgerond, dat je beschikt over een geldig opleidingscertificaat en dat je akkoord gaat met de ethische richtlijnen van Yoga Alliance. Meerdere losse opleidingen of cursussen van verschillende scholen kunnen niet worden gecombineerd om aan de vereiste uren te voldoen.

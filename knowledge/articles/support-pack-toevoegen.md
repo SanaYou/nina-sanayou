@@ -9,6 +9,8 @@ In dit artikel lees je hoe je een LIVE+ Support Pack of een Teaching Assessment 
 
 Je kunt het LIVE+ Support Pack op elk moment toevoegen — zowel bij aanschaf van de opleiding als later. Het pack is direct beschikbaar na betaling.
 
+Wil je je na je opleiding registreren bij Yoga Alliance? Kies LIVE+ dan bij voorkeur meteen bij je aanmelding, in de checkout. Zo bouw je vanaf het begin je 30 live-uren op.
+
 Het abonnement wordt jaarlijks automatisch verlengd. Opzeggen doe je vóór de verlengingsdatum.
 
 Boek het LIVE+ Support Pack via:

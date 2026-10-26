@@ -16,7 +16,7 @@ De online RYT200 bij SanaYou YOGAcademy is een gestructureerd leertraject. Je do
 - Je maakt kennistoetsen per module
 - Je deelt ervaringen en stelt vragen in de studentencommunity
 
-Na alle modules sluit je af met een praktijktoets: een eigen yogales die je opneemt en instuurt.
+Na alle modules sluit je af met een praktijktoets: een eigen yogales die je opneemt en instuurt. Daarvoor heb je ook je 30 live-uren nodig, die je haalt met het Support Pack LIVE+. Dat vraagt Yoga Alliance voor je registratie. Zonder LIVE+ volg je dezelfde opleiding en ontvang je voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance.
 
 ## Wat je leert
 

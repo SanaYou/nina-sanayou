@@ -1,13 +1,15 @@
 # Hoe werkt de praktijktoets voor de RYT200 Online?
 
 COLLECTIE: Online RYT200 Teacher Trainingen
-TAGS: aanmelden, kosten, betaald, gratis, online, praktijktoets, ryt200, teacher training
+TAGS: aanmelden, kosten, betaald, gratis, online, praktijktoets, ryt200, teacher training, live-uren, LIVE+
 
 In dit artikel lees je hoe de praktijktoets werkt binnen de RYT200 Online opleiding, wanneer je examen kunt aanvragen, wat de toets inhoudt en wat de kosten zijn. Ook lees je wat er gebeurt als een onderdeel nog niet voldoende is en hoe je je optimaal kunt voorbereiden.
 
 ## Wanneer kun je examen aanvragen?
 
-Voor het online praktijkexamen van de RYT200 dien je eerst van iedere afzonderlijke lesmodule het deelcertificaat te hebben behaald. Pas daarna kun je het praktijkexamen aanvragen.
+Voor het online praktijkexamen van de RYT200 dien je eerst van iedere afzonderlijke lesmodule het deelcertificaat te hebben behaald én je 30 live-uren binnen te hebben met het Support Pack LIVE+. Pas daarna kun je het praktijkexamen aanvragen.
+
+Ben je sneller door de modules heen en wil je toch graag afronden met een praktijktoets? Dan vul je je uren uit de livesessies aan met een of meer klassikale lesdagen in de studio in Zwolle, tot je aan 30 uur komt. Welke dagen dat worden, spreken we samen af.
 
 Er is geen vast examenmoment, je plant het zelf in wanneer het jou uitkomt. Je neemt de les in je eigen tijd op en levert de video digitaal aan.
 
@@ -36,7 +38,7 @@ Na je aanvraag ontvang je een bevestiging en verdere instructies per e-mail.
 Als je graag gerichte feedback wilt op je lesgeven voordat je het examen doet, dan zijn de Support Packs er speciaal voor:
 
 - **Teaching Assessment Pack** (€ 145, eenmalig) — stuur een lesvideo in (max. 30 min) en ontvang uitgebreid schriftelijk feedback + een individuele CoachCall van 60 minuten met Sandy. Ideaal als voorbereiding op je praktijktoets.
-- **LIVE+ Support Pack** (€ 75/jaar) — maandelijkse CoachCall, besloten community en gastdocent Q&A's. Geschikt als je doorlopend vragen hebt over de stof of meer structuur wilt.
+- **LIVE+ Support Pack** (€ 75 per jaar, jaarabonnement) — maandelijkse livesessie via Zoom, besloten community en gastdocent Q&A's. Hiermee haal je ook de 30 live-uren die je nodig hebt voor de praktijktoets en je registratie bij Yoga Alliance.
 
 Meer informatie vind je in de artikelen over de Support Packs.
 

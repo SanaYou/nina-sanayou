@@ -1,5 +1,5 @@
 COLLECTIE: Ondersteuning en Begeleiding
-TAGS: support pack vergelijken, LIVE+, teaching assessment pack, prijs, begeleiding
+TAGS: support pack vergelijken, LIVE+, teaching assessment pack, prijs, begeleiding, live-uren, yoga alliance
 
 # Wat zijn de verschillen tussen de Support Packs?
 
@@ -13,10 +13,10 @@ Wat zit erin:
 
 - Maandelijkse CoachCall via Zoom — elke eerste woensdag van de maand
 - Live vragen stellen aan de hoofddocent tijdens de call
-- Replay beschikbaar als je een CoachCall hebt gemist
+- Replay beschikbaar als je een CoachCall hebt gemist (een replay telt niet mee voor je live-uren)
 - Toegang tot de besloten LIVE+ community
 
-Het LIVE+ Pack is geschikt als je gedurende de hele opleiding regelmatig live contact wilt en vragen over de lesstof direct wilt kunnen stellen.
+Het LIVE+ Pack is geschikt als je gedurende de hele opleiding regelmatig live contact wilt en vragen over de lesstof direct wilt kunnen stellen. Wil je je na je online RYT200 registreren bij Yoga Alliance, dan heb je LIVE+ nodig: daarmee haal je de 30 live-uren die Yoga Alliance vraagt.
 
 ## Teaching Assessment Pack — €145
 
