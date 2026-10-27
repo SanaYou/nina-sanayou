@@ -10,7 +10,7 @@ In dit artikel lees je wat de Support Packs zijn, welke twee opties er beschikba
 Bij de online RYT200 Teacher Training zijn standaard de community en de online modules inbegrepen. Wil je meer begeleiding of voorbereiding op het praktijkexamen, dan kun je een van de twee Support Packs toevoegen:
 
 **LIVE+ Support Pack — € 75 per jaar**
-Extra live contact met de hoofddocent via maandelijkse CoachCalls. Geschikt als je vragen hebt over de lesstof, feedback wilt of meer structuur zoekt in je studieproces. Wordt jaarlijks automatisch verlengd; opzeggen via het klantportaal.
+Extra live contact met de hoofddocent via maandelijkse CoachCalls. Geschikt als je vragen hebt over de lesstof, feedback wilt of meer structuur zoekt in je studieproces. Met LIVE+ haal je ook de 30 live-uren die Yoga Alliance voor je registratie vraagt. De praktijktoets en het diploma RYT200 horen bij de route met LIVE+. Wordt jaarlijks automatisch verlengd; opzeggen via het klantportaal.
 Aanmelden: https://checkout.sanayou.com/checkout/online-plus-pakket
 
 **Teaching Assessment Pack — € 145**

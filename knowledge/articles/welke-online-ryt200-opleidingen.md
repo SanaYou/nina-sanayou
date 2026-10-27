@@ -27,7 +27,7 @@ Het Support Pack LIVE+ is een jaarabonnement van € 75 per jaar. Het wordt elk 
 
 ### Zonder LIVE+
 
-Kies je niet voor LIVE+? Dan volg je precies dezelfde opleiding, met dezelfde kennis en kunde. Je ontvangt voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance.
+Kies je niet voor LIVE+? Dan volg je precies dezelfde opleiding, met dezelfde kennis en kunde. Je ontvangt voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance. De praktijktoets en het diploma RYT200 horen bij de route met LIVE+.
 
 Volg je de opleiding zonder LIVE+ en besluit je later dat je je toch wilt registreren bij Yoga Alliance? Neem dan contact met ons op. Dan spreken we samen af hoe je aan je live-uren komt.
 

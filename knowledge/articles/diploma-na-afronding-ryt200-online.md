@@ -12,7 +12,7 @@ Wanneer je alle verplichte online modules hebt afgerond, alle kennistests hebt b
 
 Na een succesvolle beoordeling vraagt SanaYou YOGAcademy het diploma voor je aan bij Yoga Alliance. Je ontvangt het diploma digitaal per e-mail. Dit document gebruik je vervolgens voor je registratie bij Yoga Alliance.
 
-Kies je niet voor LIVE+? Dan volg je dezelfde opleiding en ontvang je voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance.
+Kies je niet voor LIVE+? Dan volg je dezelfde opleiding en ontvang je voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance. De praktijktoets en het diploma RYT200 horen bij de route met LIVE+.
 
 ## Wat als een onderdeel nog niet voldoende is?
 

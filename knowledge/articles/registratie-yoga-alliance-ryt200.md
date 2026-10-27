@@ -18,7 +18,7 @@ Je kunt je registreren bij Yoga Alliance zodra je:
 
 Yoga Alliance vraagt dat je minstens 30 van je 200 uur live volgt. Die uren haal je met de maandelijkse livesessies van het Support Pack LIVE+, eventueel aangevuld met een of meer klassikale lesdagen in Zwolle. Een replay terugkijken telt niet mee.
 
-Kies je niet voor LIVE+? Dan volg je precies dezelfde opleiding en ontvang je voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance. Besluit je later dat je je toch wilt registreren? Neem dan contact met ons op, dan spreken we samen af hoe je aan je live-uren komt.
+Kies je niet voor LIVE+? Dan volg je precies dezelfde opleiding en ontvang je voor iedere afgeronde module een deelcertificaat, alleen kun je je dan niet registreren bij Yoga Alliance. De praktijktoets en het diploma RYT200 horen bij de route met LIVE+. Besluit je later dat je je toch wilt registreren? Neem dan contact met ons op, dan spreken we samen af hoe je aan je live-uren komt.
 
 ## Registreren doe je zelf
 

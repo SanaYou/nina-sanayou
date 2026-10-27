@@ -25,6 +25,8 @@ Bij 12 maanden toegang heb je recht op 12 CoachCalls. Als er geen vragen of onde
 
 Wil je je na je online RYT200 registreren bij Yoga Alliance? Dan vraagt Yoga Alliance dat je minstens 30 van je 200 uur live volgt. Die 30 uur haal je met het Support Pack LIVE+. Live betekent dat je docent, je medestudenten en jij op hetzelfde moment online zijn en echt contact met elkaar hebben. Wij houden je live-uren voor je bij.
 
+Volg je LIVE+ en rond je af, dan ontvang je je diploma RYT200 Teacher Training en registreer je je als Registered Yoga Teacher (RYT200) bij Yoga Alliance. Zonder LIVE+ ontvang je de deelcertificaten van alle modules. De praktijktoets en het diploma RYT200 horen bij de route met LIVE+.
+
 De online opleiding heeft een looptijd van 2 jaar. In die 2 jaar zijn er 48 uur aan livesessies, dus je hoeft niet iedere maand live online te zijn om aan je 30 uur te komen. Meer hierover lees je in het artikel over de online RYT200-opleidingen.
 
 ## LIVE+ bij de RYT300
