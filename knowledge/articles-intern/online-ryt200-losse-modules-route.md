@@ -30,6 +30,7 @@ De prijzen zijn btw-vrij: SanaYou YOGAcademy is CRKBO-geregistreerd, waardoor de
 
 - Beantwoord de vraag "kan ik eerst een basismodule proberen?" direct met JA + de twee routes (pakket = voordeligst, losse modules = vrijheid). Stel niet eerst een wedervraag als de context al duidelijk is (zie instructie contextsignalen).
 - Noem geen prijzen van individuele losse modules uit het hoofd behalve de bedragen die in de kennisbank staan.
+- Vraagt iemand of een losse module (bijvoorbeeld Yin Yoga Basics) later meetelt als korting of verrekend wordt met het pakket? Volg de pakketregel uit de instructie "Vragen over kortingen en kosten": in principe gaat de module niet van de pakketprijs af, en je stuurt de vraag naar Sandy voor een mogelijke kortingscoupon.
 
 ## INTERN – 30 live-uren voor Yoga Alliance (Sandy, 26-10-2026)
 

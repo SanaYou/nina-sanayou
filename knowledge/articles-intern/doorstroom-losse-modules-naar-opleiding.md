@@ -7,6 +7,10 @@ TAGS: doorstroom-losse-modules
 
 Als een bezoeker aangeeft dat ze al losse modules hebben gevolgd bij SanaYou en nu een volledige opleiding willen doen.
 
+## Eerst: gaat de vraag over korting of verrekening?
+
+Vraagt de bezoeker of eerder gevolgde modules als korting meetellen, verrekend worden of van de opleidingsprijs afgaan? Dan stel je geen doorvraag: je antwoordt meteen met de pakketregel uit stap 4. Welke modules al gedaan zijn, zoekt Sandy uit.
+
 ## Gedragsinstructie — stap voor stap doorvragen
 
 Stel per bericht maar ÉÉN vraag. Volg deze volgorde:
@@ -25,7 +29,7 @@ Bekijk welke modules uit de gewenste opleiding de bezoeker al heeft en welke er 
 
 ### Stap 4: Korting
 - **Pakketkorting (€ 500)** geldt alleen als je de volledige klassikale opleiding in één keer boekt (regulier of versneld traject). Niet bij losse modules.
-- Bij de online RYT200 is er geen korting op basis van eerder gevolgde losse modules; het pakket in één keer is de voordeligste route.
+- Voor elke opleiding (online, klassikaal en RYT300) volg je bij een vraag over korting of verrekening de pakketregel uit de instructie "Vragen over kortingen en kosten": eerst het uitgangspunt (pakketkorting alleen bij het volledige pakket in één keer), dan dat een eerder gevolgde module in principe niet van de pakketprijs afgaat, dan het aanbod om de vraag naar Sandy door te sturen voor een mogelijke kortingscoupon, en als slotvraag naam en e-mailadres.
 
 ## BELANGRIJK
 

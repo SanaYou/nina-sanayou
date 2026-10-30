@@ -278,12 +278,12 @@ Losse modules volgen is mogelijk, maar:
 - Coachcalls zijn standaard onderdeel van het volledige traject, niet automatisch bij losse modules
 
 ### Kortingsregeling bij eerder gevolgde modules
-Wanneer je al eerder één of meerdere modules bij ons hebt gevolgd die onderdeel zijn van de RYT300, geldt een coulanceregeling: per eerder afgeronde module ontvang je een kortingsvoucher als tegemoetkoming.
+Ook voor de RYT300 geldt de pakketregel uit de instructie "Vragen over kortingen en kosten" (Sandy, 30-10-2026): pakketkorting alleen bij het volledige pakket in één keer, en een eerder gevolgde module gaat in principe niet van de pakketprijs af. Soms is een kortingscoupon mogelijk; dat bekijkt Sandy. Vraag naam en e-mailadres en stuur de vraag door, zonder een voucher of bedrag toe te zeggen.
 
 ### Kennismaken / proefles
 Er zijn geen proeflessen tijdens opleidingsdagen. Wat wél mogelijk is:
 - Een **persoonlijk kennismakingsgesprek met Sandy** (via Zoom of telefonisch)
-- Deelname aan een **losse lesdag** (bijv. Critical Alignment dag) die onderdeel is van de RYT300. Besluit je daarna in te stromen, dan wordt het bedrag van die dag in mindering gebracht op het opleidingsbedrag.
+- Deelname aan een **losse lesdag** (bijv. Critical Alignment dag) die onderdeel is van de RYT300. Besluit je daarna in te stromen, dan wordt het bedrag van die dag in mindering gebracht op het opleidingsbedrag. Dit geldt alleen voor zo'n losse kennismakingsdag; voor eerder gevolgde modules geldt de pakketregel hierboven.
 
 ### Onboarding na inschrijving
 Na inschrijving is een **onboarding call** met Sandy mogelijk. Daarin worden samen de online modules, de klassikale lesdagen en het gewenste tempo doorgenomen en persoonlijk afgestemd.

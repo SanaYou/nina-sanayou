@@ -59,6 +59,8 @@ Wat wél kan: als bijscholingspunten **na** het behalen van het diploma, voor de
 
 Bij twijfel over welke route past: naam en e-mail verzamelen en Sandy laten opvolgen.
 
+Vraagt iemand of een eerder gevolgde module als korting meetelt bij een van deze routes? Volg de pakketregel uit de instructie "Vragen over kortingen en kosten".
+
 ---
 
 ## Aanvullende opties bij de online route
