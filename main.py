@@ -969,6 +969,15 @@ def _detect_and_escalate(user_message: str, nina_response: str, chat_messages: l
     afsluit_patroon = r'doorgestuurd|doorgegeven|doorgespeeld|genoteerd|neemt (?:zo )?(?:snel )?(?:mogelijk )?contact|laat (?:sandy|haar) contact'
     if not force and not re.search(afsluit_patroon, nina_response.lower()):
         return
+    # ⚑ 30-10-2026 (Rosita, gesprek 27-10 10:29): een beurt die nog om gegevens of bevestiging vraagt, is nooit
+    # een afronding. De bevestigingsvraag zegt sindsdien "Pas als je dit bevestigt, stuur ik het door naar Sandy".
+    # Omschrijft het model dat tot "wordt doorgestuurd" of "neemt contact", dan maakte het vangnet al een ticket met
+    # een onbevestigd adres. De tag (force) blijft de primaire trigger. Alleen echte vraagvormen: "je naam en
+    # e-mailadres" staat ook in een afronding ("ik heb je naam en e-mailadres doorgegeven"), review Jordan 30-10 F1.
+    vraagt_nu_om_gegevens = r'mag ik je naam|wat is je e-?mail|klopt dat\?'
+    if not force and re.search(vraagt_nu_om_gegevens, nina_response.lower()):
+        logger.info("Escalatie-vangnet overgeslagen: Nina vraagt nog om gegevens of bevestiging")
+        return
 
     # Dubbele-escalatie-guard: is er in een EERDERE beurt van deze conversatie al
     # een escalatie AFGEROND? Dan geen tweede Help Scout-ticket voor dezelfde klant.
